@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS only -->
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"-->
+    <!-- icon css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">        
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script> 
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script> 
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <style>      
+      
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      main {
+        min-height: 100%;
+      }
+
+      footer{
+        margin-top: -100px;
+      }
+      .floating-menu{
+        border-radius:100px;
+        z-index:999;
+        padding-top:10px;
+        padding-bottom:10px;
+        right:38.4rem;
+        position:fixed;
+        display:inline-block;
+        bottom:0%;
+        -webkit-transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+        transform:translateY(-50%);
+      }    
+      .multi-graph{
+        width: 300px;
+        height: 150px;
+        position: relative;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 600;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        overflow: hidden;
+        box-sizing : border-box;
+      }
+      
+    </style>
+    
+    <main>
+      <!-- GNB START-->
+      <div class="container px-0">                
+        <nav class="navbar navbar-expand-lg navbar-light">                
+          <!-- Logo START -->
+          <a class="navbar-brand" href="index.html">
+            <!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
+            <!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
+            <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
+          </a>
+          <!-- Logo END -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-2">
+                <a class="nav-link active" href="#">전체교육</a>
+              </li>
+              <li class="nav-item pe-2">
+                <a class="nav-link" href="#">교육원소개</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">고객지원</a>
+              </li>
+            </ul>
+            <!-- Nav Search START -->
+            <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+              <div class="nav-item w-100">
+                <form class="position-relative">
+                  <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+                  <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- Nav Search END -->
+            <!-- 교육문의 -->
+            <button type="button" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+          </div>                
+        </nav>
+      </div>
+      <!-- GNB END-->
+
+      <!-- USER START -->      
+      <div class="" style="background-color: #F0F3F7">
+        <div class="container px-4 px-lg-0">  
+          <div class="py-4 text-center">
+            <div class="mb-4 mb-md-0">
+              <p class="text-primary mb-1 h6">원라인에듀의 과정 선택과 상담을 한번에</p>
+              <p class="text-dark mb-0 mt-0 h5">교육 문의하기</p>              
+            </div>
+            <div class="row" style="color: #00287A;">
+                <div class="col text-start">
+                    <p class="text-start mb-0">분류선택</p>
+                    <div class="btn btn-group-toggle text-start px-0" data-toggle="buttons">
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="vbtn-radio1">전체</label>
+
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="vbtn-radio2">직무교육</label>
+
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="vbtn-radio3">디지털 융합</label>
+
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="vbtn-radio4">의료교육</label>
+
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio5" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="vbtn-radio5">영유아교육과정</label>
+
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio6" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="vbtn-radio6">산업안전</label>
+
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio7" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="vbtn-radio7">법정교육</label>
+
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio8" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="vbtn-radio8">중대재해</label>
+
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio9" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="vbtn-radio9">국가안전교육원</label>
+                    </div>
+                </div>                
+            </div>
+            <div class="row" style="color: #00287A;">
+                <div class="col text-start">
+                    <p class="text-start mb-0">과정선택</p>
+                    <div class="btn btn-group-toggle text-start px-0" data-toggle="buttons">
+                        <input type="checkbox" class="btn-check" id="btn-check-1" checked autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-1">전체</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-2" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-2">마케팅</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-3">커뮤니케이션</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-4">경영기획</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-5" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-5">문서작성</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-6">영업</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-7" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-7">정보보호</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-8" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-8">전자상거래</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-9" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-9">리더십</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-10" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-10">기획</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-11" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-11">CS</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-12" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-12">인사</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-13" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-13">교육</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-14" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-14">품질관리</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-15" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-15">생산관리</label>
+
+                        <input type="checkbox" class="btn-check" id="btn-check-16" autocomplete="off">
+                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="btn-check-16">기타</label>
+                    </div>
+                </div>                
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- USER END -->      
+      <!-- main START -->            
+      <div class="container">        
+        <div class="row">
+            <div class="col-9 mb-5 mt-4">          
+                <!-- 검색영역 -->
+                <div class="nav mb-3 justify-content-end">
+                    <div class="dropdown-center px-2">
+                        <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">환급+비환급</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">환급</a></li>
+                            <li><a class="dropdown-item" href="#">비환급</a></li>
+                            <li><a class="dropdown-item" href="#">환금+비환급</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-item">
+                        <form class="position-relative">
+                            <input class="form-control pe-5 bg-transparent" type="search" placeholder="" aria-label="Search">
+                            <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                    </div>                          
+                </div>
+                <hr />
+                <div class="pb-4 mb-4">
+                    <ul class="list-unstyled list-group m-0">
+                      <li class="border-bottom border-0 list-group-item mb-3 pb-2 pt-0">
+                        <div class="form-check">
+                            <input class="form-check-input h3 mt-4" type="checkbox" id="defaultCheck1">
+                            <label class="form-check-label d-flex" for="defaultCheck1">
+                                <img class="avatar-img" src="assets/images/best3.png" style="width: 6rem;">                                                                    
+                                <div class="col ps-3">
+                                    <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>                          
+                                    <p class="fs-xs">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
+                                    <p class="small"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
+                                </div>
+                                <div class="col-1 text-end">
+                                  <span class="badge border border-primary text-primary px-3">환급</span>
+                                </div>
+                            </label>
+                        </div>
+                      </li>
+                      <li class="border-bottom border-0 list-group-item mb-3 pb-2 pt-0">
+                        <div class="form-check">
+                            <input class="form-check-input h3 mt-4" type="checkbox" id="defaultCheck2">
+                            <label class="form-check-label d-flex" for="defaultCheck2">
+                                <img class="avatar-img" src="assets/images/best3.png" style="width: 6rem;">                                                                    
+                                <div class="col ps-3">
+                                    <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>                          
+                                    <p class="fs-xs">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
+                                    <p class="small"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
+                                </div>
+                                <div class="col-1 text-end">
+                                  <span class="badge border border-primary text-primary px-3">비환급</span>
+                                </div>
+                            </label>
+                        </div>
+                      </li>
+                      <li class="border-bottom border-0 list-group-item mb-3 pb-2 pt-0">
+                        <div class="form-check">
+                            <input class="form-check-input h3 mt-4" type="checkbox" id="defaultCheck3">
+                            <label class="form-check-label d-flex" for="defaultCheck3">
+                                <img class="avatar-img" src="assets/images/best3.png" style="width: 6rem;">                                                                    
+                                <div class="col ps-3">
+                                    <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>                          
+                                    <p class="fs-xs">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
+                                    <p class="small"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
+                                </div>
+                                <div class="col-1 text-end">
+                                  <span class="badge border border-primary text-primary px-3">비환급</span>
+                                </div>
+                            </label>
+                        </div>
+                      </li>
+                      <li class="border-bottom border-0 list-group-item mb-3 pb-2 pt-0">
+                        <div class="form-check">
+                            <input class="form-check-input h3 mt-4" type="checkbox" id="defaultCheck4">
+                            <label class="form-check-label d-flex" for="defaultCheck4">
+                                <img class="avatar-img" src="assets/images/best3.png" style="width: 6rem;">                                                                    
+                                <div class="col ps-3">
+                                    <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>                          
+                                    <p class="fs-xs">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
+                                    <p class="small"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
+                                </div>
+                                <div class="col-1 text-end">
+                                  <span class="badge border border-primary text-primary px-3">비환급</span>
+                                </div>
+                            </label>
+                        </div>
+                      </li>
+                      <li class="border-bottom border-0 list-group-item mb-3 pb-2 pt-0">
+                        <div class="form-check">
+                            <input class="form-check-input h3 mt-4" type="checkbox" id="defaultCheck5">
+                            <label class="form-check-label d-flex" for="defaultCheck5">
+                                <img class="avatar-img" src="assets/images/best3.png" style="width: 6rem;">                                                                    
+                                <div class="col ps-3">
+                                    <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>                          
+                                    <p class="fs-xs">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
+                                    <p class="small"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
+                                </div>
+                                <div class="col-1 text-end">
+                                  <span class="badge border border-primary text-primary px-3">비환급</span>
+                                </div>
+                            </label>
+                        </div>
+                      </li>
+                      <li class="border-bottom border-0 list-group-item mb-3 pb-2 pt-0">
+                        <div class="form-check">
+                            <input class="form-check-input h3 mt-4" type="checkbox" id="defaultCheck6">
+                            <label class="form-check-label d-flex" for="defaultCheck6">
+                                <img class="avatar-img" src="assets/images/best3.png" style="width: 6rem;">                                                                    
+                                <div class="col ps-3">
+                                    <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>                          
+                                    <p class="fs-xs">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
+                                    <p class="small"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
+                                </div>
+                                <div class="col-1 text-end">
+                                  <span class="badge border border-primary text-primary px-3">비환급</span>
+                                </div>
+                            </label>
+                        </div>
+                      </li>
+                      <li class="border-bottom border-0 list-group-item mb-3 pb-2 pt-0">
+                        <div class="form-check">
+                            <input class="form-check-input h3 mt-4" type="checkbox" id="defaultCheck7">
+                            <label class="form-check-label d-flex" for="defaultCheck7">
+                                <img class="avatar-img" src="assets/images/best3.png" style="width: 6rem;">                                                                    
+                                <div class="col ps-3">
+                                    <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>                          
+                                    <p class="fs-xs">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
+                                    <p class="small"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
+                                </div>
+                                <div class="col-1 text-end">
+                                  <span class="badge border border-primary text-primary px-3">비환급</span>
+                                </div>
+                            </label>
+                        </div>
+                      </li>
+                      <li class="border-bottom border-0 list-group-item mb-3 pb-2 pt-0">
+                        <div class="form-check">
+                            <input class="form-check-input h3 mt-4" type="checkbox" id="defaultCheck8">
+                            <label class="form-check-label d-flex" for="defaultCheck8">
+                                <img class="avatar-img" src="assets/images/best3.png" style="width: 6rem;">                                                                    
+                                <div class="col ps-3">
+                                    <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>                          
+                                    <p class="fs-xs">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
+                                    <p class="small"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
+                                </div>
+                                <div class="col-1 text-end">
+                                  <span class="badge border border-primary text-primary px-3">비환급</span>
+                                </div>
+                            </label>
+                        </div>
+                      </li>
+                      <li class="border-bottom border-0 list-group-item mb-3 pb-2 pt-0">
+                        <div class="form-check">
+                            <input class="form-check-input h3 mt-4" type="checkbox" id="defaultCheck9">
+                            <label class="form-check-label d-flex" for="defaultCheck9">
+                                <img class="avatar-img" src="assets/images/best3.png" style="width: 6rem;">                                                                    
+                                <div class="col ps-3">
+                                    <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>                          
+                                    <p class="fs-xs">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
+                                    <p class="small"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
+                                </div>
+                                <div class="col-1 text-end">
+                                  <span class="badge border border-primary text-primary px-3">비환급</span>
+                                </div>
+                            </label>
+                        </div>
+                      </li>
+                      <li class="border-bottom border-0 list-group-item mb-3 pb-2 pt-0">
+                        <div class="form-check">
+                            <input class="form-check-input h3 mt-4" type="checkbox" id="defaultCheck10">
+                            <label class="form-check-label d-flex" for="defaultCheck10">
+                                <img class="avatar-img" src="assets/images/best3.png" style="width: 6rem;">                                                                    
+                                <div class="col ps-3">
+                                    <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>                          
+                                    <p class="fs-xs">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
+                                    <p class="small"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
+                                </div>
+                                <div class="col-1 text-end">
+                                  <span class="badge border border-primary text-primary px-3">비환급</span>
+                                </div>
+                            </label>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="d-flex justify-content-center">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+              <div class="mx-auto text-center mt-5">
+                <p class="display-1 mb-0 text-danger"><i class="bi bi-inbox"></i></p>
+                <p><span class="text-danger">상세 과정 선택</span>후<br /> 문의하기를 통해 견적을 받아보세요. <br /><br /> 과정은 다중 선택 가능합니다.</p>
+              </div>
+              <div>
+                <button type="button" class="btn btn-primary mt-4 w-100">다음</button>
+              </div>
+            </div>
+        </div>        
+      </div>    
+    </main>
+    
+    <!-- footer START -->
+    <footer class="navbar-fixed-bottom mt-4" style="background-color: #F4F4F4;">
+      <div class="container px-0">
+        <!-- Tops Links -->
+        <div class="row pt-3">
+          <div class="col-sm-7 col-md-6 col-lg-6">
+            <ul class="list-inline lh-lg">
+              <li class="list-inline-item"><a class="text-muted">이용약관</a></li>
+              <li class="list-inline-item"><a class="text-muted">개인정보 취급방침</a></li>
+              <li class="list-inline-item"><a class="text-muted">사업주지원교육 유의사항</a></li>
+              <li class="list-inline-item"><a class="text-muted">본인인증 안내</a></li>
+            </ul>
+          <div class="col text-sm-end">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="width: 13rem;">
+                관련사이트
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment and card -->
+        <div class="row mb-7">
+          <div class="col-sm mb-3 mb-sm-0">
+            <!-- Socials -->
+            <ul class="list-inline list-separator list-separator-light mb-0">
+              <li class="list-inline-item">
+                <div class="card">
+                  <img src="assets/images/이미지 3.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="card">
+                  <img src="assets/images/이미지 4.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="card">
+                  <img src="assets/images/이미지 5.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                </div>
+              </li>
+            </ul>
+            <!-- End Socials -->
+          </div>
+  
+          <div class="col-sm-auto">
+            <!-- Socials -->
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-warning" href="#">카카오채널</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-success" href="#">N 블로그
+                </a>
+              </li>
+            </ul>
+            <!-- End Socials -->
+          </div>
+        </div>
+    
+        <!-- Bottom footer -->
+        <div class="row">
+          <div class="">
+            <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-lg-start">
+              <!-- copyright text -->              
+              <div class="text-muted"> 
+                <p>원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br /> 
+                  TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+                  통신판매번호 : 제 2021-서울영등포-0322호 <br />                  
+                  COPYRIGHT 2018 원라인에듀 ALLRIGHT & RESERVED.
+                </p>
+                <a class="text-muted">©2022 Booking</a>. All rights reserved.
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer END -->
+    
+    <nav class="floating-menu">
+      
+    </nav>    
+  </body>  
+</html>

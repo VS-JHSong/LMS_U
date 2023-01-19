@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- icon css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">        
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script> 
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <style>      
+      
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      main {
+        min-height: 100%;
+      }
+
+      footer{
+        margin-top: -100px;
+      }
+      .floating-menu{
+        border-radius:100px;
+        z-index:999;
+        padding-top:10px;
+        padding-bottom:10px;
+        right:38.4rem;
+        position:fixed;
+        display:inline-block;
+        bottom:0%;
+        -webkit-transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+        transform:translateY(-50%)
+      }                    
+      
+    </style>
+    
+    <main>
+      <!-- GNB START-->
+      <div class="container px-0">                
+        <nav class="navbar navbar-expand-lg navbar-light">                
+          <!-- Logo START -->
+          <a class="navbar-brand" href="index.html">
+            <!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
+            <!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
+            <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
+          </a>
+          <!-- Logo END -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-2">
+                <a class="nav-link" href="education.html">전체교육</a>
+              </li>
+              <li class="nav-item pe-2">
+                <a class="nav-link" href="about_us.html">교육원소개</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary fw-bold" href="support.html">고객지원</a>
+              </li>
+            </ul>
+            <!-- Nav Search START -->
+            <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+              <div class="nav-item w-100">
+                <form class="position-relative">
+                  <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+                  <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- Nav Search END -->
+            <!-- 교육문의 -->
+            <button type="button" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+          </div>                
+        </nav>
+      </div>
+      <!-- GNB END-->
+
+      <!-- USER START -->      
+      <div class="" style="background-color: #00287A;">
+        <div class="container px-4 px-lg-0">  
+          <div class="row py-4 text-md-start">
+            <div class="col mb-4 mb-md-0">
+              <h3 class="text-white mb-1">홍길동님 환영합니다.</h3>
+              <p class="text-white mb-1 pt-2 pb-2">원라인에듀 홈페이지를 방문해주신 여러분을 진심으로 환영합니다.</p>
+              <p class="text-white mb-1 ">
+                <span>수강완료 : </span>1개 &nbsp;&nbsp;&nbsp;<span>진행(대기)중 : </span>
+                <span data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="응시하지 않은 최종평가가 있습니다.">2개</span>
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="row justify-content-end text-end">
+                <div class="">                  
+                  <span class="pe-1"><button type="button" class="btn btn-outline-light" onclick = "location.href='find_id.html'"><i class="bi bi-person"></i><span class="px-2">개인정보 수정</span></button></span>
+                  <span class="pe-1"><button type="button" class="btn btn-outline-light" onclick = "location.href='find_id.html'"><i class="bi bi-box-arrow-right"></i><span class="px-2">로그아웃</span></button></span>
+                </div>                
+              </div>              
+            </div>
+            <div class="row mx-0"> 
+              
+              <div class="col justify-content-end text-end">
+                <button type="button" class="btn btn-outline-light me-2"><i class="bi bi-person-video3 fs-1"></i><br /><span class="">내 강의실</span></button>
+                <button type="button" class="btn btn-outline-light me-2" onclick = "location.href='mypage.html'"><i class="bi bi-person-bounding-box fs-1"></i><br /><span class="">마이페이지</span></button>
+                <button type="button" class="btn btn-outline-light me-2"><i class="bi bi-bookmark-dash-fill fs-1"></i><br /><span class="">수료증</span></button>
+                <button type="button" class="btn btn-outline-light me-2"><i class="bi bi-pencil fs-1"></i><br /><span class="">재응시</span></button>
+                <button type="button" class="btn btn-outline-light"><i class="bi bi-book fs-1"></i><br /><span class="">학습 도움말</span></button>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- USER END -->      
+      <!-- main START -->            
+      <div class="container">
+        <div class="mt-4">
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-end">
+              <i class="bi bi-house-door-fill pe-2"></i>
+              <li class="breadcrumb-item text-muted">원라인에듀</a></li>
+              <li class="breadcrumb-item text-muted">고객지원</a></li>              
+              <li class="breadcrumb-item active" aria-current="page">공지사항</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="row mb-5">          
+          <div class="col-md-12 col-lg-12">            
+            <div class="card rounded-3 border-0 mt-4">
+              <!-- Card header -->
+              <div class="card-header border-bottom-0 p-0">
+                <div>
+                  <!-- Nav -->
+                  <ul class="nav nav-lb-tab bg-white" id="tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" id="notice-tab" data-bs-toggle="pill" href="#notice" role="tab" aria-controls="notice" aria-selected="true">공지사항</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="FAQ-tab" data-bs-toggle="pill" href="#FAQ" role="tab" aria-controls="FAQ" aria-selected="false" tabindex="-1">자주묻는질문</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" id="review-tab" data-bs-toggle="pill" href="#review" role="tab" aria-controls="review" aria-selected="false" tabindex="-1">수강후기</a>
+                    </li>                      
+                  </ul>
+                </div>
+              </div>      
+
+              <div class="tab-content" id="tabContent">
+                <!-- 공지사항 -->
+                <div class="tab-pane fade active show" id="notice" role="tabpanel" aria-labelledby="notice-tab">                  
+                  <div class="mb-4 row">                      
+                    <div class="">                      
+                      <!-- 검색영역 -->
+                      <div class="nav my-3 my-xl-0 justify-content-end">
+                        <div class="dropdown-center px-2">
+                          <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            내용
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Action two</a></li>
+                            <li><a class="dropdown-item" href="#">Action three</a></li>
+                          </ul>
+                        </div>
+                        <div class="nav-item">
+                          <form class="position-relative">
+                            <input class="form-control pe-5 bg-transparent" type="search" placeholder="키워드를 입력해주세요" aria-label="Search">
+                            <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                              <i class="bi bi-search"></i>
+                            </button>
+                          </form>
+                        </div>                          
+                      </div>
+                      <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-2 pb-4 pt-4 border-bottom mb-2">
+                        <div class="px-1 py-1 mt-0 btn">
+                          <div class="p-2 border small btn-outline-primary text-start"><span>전체</span></div>
+                        </div>
+                        <div class="px-1 py-1 mt-0 btn">                               
+                          <div class="p-2 border small btn-outline-primary text-start"><span>공지</span></div>
+                        </div>
+                        <div class="px-1 py-1 mt-0 btn">
+                          <div class="p-2 border small btn-outline-primary text-start"><span>시스템 공지</span></div>
+                        </div>                          
+                      </div> 
+                      <table class="table table-border-0 table-hover">
+                        <tbody class="table-border-0">
+                          <tr onclick = "location.href='notice_detail.html'">
+                            <td class="border-bottom-1"><span class="pe-2 text-primary">[시스템공지]</span>오류대응<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td class="border-bottom-1"><span class="pe-2 text-primary">[공통]</span>MOTP인증오류 해결방법 [반복현상]<i class="bi bi-paperclip"></i><p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[공통]</span>인터넷 익스플로러(IE) 지원종료 안내<i class="bi bi-paperclip"></i><p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[공통]</span>코로나19 예방관련수칙 안내<i class="bi bi-paperclip"></i><p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[공통]</span>학습진행 메뉴얼(비환급과정)<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[공통]</span>원격훈련 훈련생 OTP인증 사용법 안내<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[공통]</span>2022 관리감독자 오프라인 교육안내<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[공통]</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[공통]</span>2022년 안전보건교육 안내서 공유<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                        </tbody>  
+                      </table>
+                      <div class="d-flex justify-content-center">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>               
+                  </div>                                                          
+                </div>    
+                <!-- FAQ 시작 -->              
+                <div class="tab-pane fade" id="FAQ" role="tabpanel" aria-labelledby="FAQ-tab">                  
+                  <div class="mb-4 row">                      
+                    <div class="">                      
+                      <!-- 검색영역 -->
+                      <div class="nav my-3 my-xl-0 justify-content-end">
+                        <div class="dropdown-center px-2">
+                          <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            내용
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Action two</a></li>
+                            <li><a class="dropdown-item" href="#">Action three</a></li>
+                          </ul>
+                        </div>
+                        <div class="nav-item">
+                          <form class="position-relative">
+                            <input class="form-control pe-5 bg-transparent" type="search" placeholder="키워드를 입력해주세요." aria-label="Search">
+                            <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                              <i class="bi bi-search"></i>
+                            </button>
+                          </form>
+                        </div>                          
+                      </div>
+                      <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-2 pb-4 pt-4 border-bottom mb-2">
+                        <div class="px-1 py-1 mt-0 btn">
+                          <div class="p-2 border small btn-outline-primary text-start"><span>전체</span></div>
+                        </div>
+                        <div class="px-1 py-1 mt-0 btn">                               
+                          <div class="p-2 border small btn-outline-primary text-start"><span>학습</span></div>
+                        </div>
+                        <div class="px-1 py-1 mt-0 btn">
+                          <div class="p-2 border small btn-outline-primary text-start"><span>과제</span></div>
+                        </div>
+                        <div class="px-1 py-1 mt-0 btn">
+                          <div class="p-2 border small btn-outline-primary text-start"><span>평가</span></div>
+                        </div>
+                        <div class="px-1 py-1 mt-0 btn">
+                          <div class="p-2 border small btn-outline-primary text-start"><span>회원가입</span></div>
+                        </div>
+                        <div class="px-1 py-1 mt-0 btn">
+                          <div class="p-2 border small btn-outline-primary text-start"><span>회원탈퇴</span></div>
+                        </div>
+                        <div class="px-1 py-1 mt-0 btn">
+                          <div class="p-2 border small btn-outline-primary text-start"><span>본인인증</span></div>
+                        </div>
+                        <div class="px-1 py-1 mt-0 btn">
+                          <div class="p-2 border small btn-outline-primary text-start"><span>기타</span></div>
+                        </div>
+                      </div> 
+                      <table class="table table-border-0 table-hover">
+                        <tbody class="table-border-0">
+                          <tr onclick = "location.href='FAQ_detail.html'">
+                            <td class="border-bottom-1"><span class="pe-2 text-primary">[본인인증]</span>mOTP이용 방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td class="border-bottom-1"><span class="pe-2 text-primary">[학습]</span><비공개 연결이 아닙니다>에 대한 오류처리법(레지스트리 변경)<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[회원탈퇴]</span>수강생 수료증 출력방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                          <tr>
+                            <td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+                          </tr>
+                        </tbody>  
+                      </table>
+                      <div class="d-flex justify-content-center">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>               
+                  </div>                                                          
+                </div>
+                <!-- review 시작 -->
+                <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">                  
+                  <div class="mb-4 row">                      
+                    <div class="">                      
+                      <!-- 검색영역 -->
+                      <div class="nav my-3 my-xl-0 justify-content-end">
+                        <div class="dropdown-center px-2">
+                          <button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            내용
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Action two</a></li>
+                            <li><a class="dropdown-item" href="#">Action three</a></li>
+                          </ul>
+                        </div>
+                        <div class="nav-item">
+                          <form class="position-relative">
+                            <input class="form-control pe-5 bg-transparent" type="search" placeholder="키워드를 입력해주세요." aria-label="Search">
+                            <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                              <i class="bi bi-search"></i>
+                            </button>
+                          </form>
+                        </div>                          
+                      </div>                      
+                      <ul class="list-group list-group-flush mb-4">
+                        <!-- list group -->
+                        <li class="list-group-item py-3 py-lg-0 px-0">
+                          <!-- row -->
+                          <div class="row align-items-center py-3" onclick = "location.href='education_detail_review.html'">
+                            <div class="col-lg-1 col-md-2 col-sm-2">
+                              <!-- img -->
+                              <img src="assets/images/educate/그룹 11719.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-sm-12">
+                              <!-- title -->
+                              <a class="text-decoration-none text-inherit text-dark"><h5 class="mb-0">홍길동</h5></a>
+                              <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+                              <!-- text -->
+                              <div class="mt-2 small lh-1">
+                                <a class="text-decoration-none text-inherit">
+                                  <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- price -->
+                            <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- list group -->                          
+                        <li class="list-group-item py-3 py-lg-0 px-0">
+                          <!-- row -->
+                          <div class="row align-items-center py-3">
+                            <div class="col-lg-1 col-md-2 col-sm-2">
+                              <!-- img --> 
+                              <img src="assets/images/educate/그룹 11719.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-sm-12">
+                              <!-- title -->
+                              <a class="text-decoration-none text-inherit text-dark"><h5 class="mb-0">홍길동</h5></a>
+                              <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+                              <!-- text -->
+                              <div class="mt-2 small lh-1">
+                                <a class="text-decoration-none text-inherit">
+                                  <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- price -->
+                            <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>                            
+                          </div>
+                        </li>
+                        <!-- list group -->
+                        <li class="list-group-item py-3 py-lg-0 px-0">
+                          <!-- row -->
+                          <div class="row align-items-center py-3">
+                            <div class="col-lg-1 col-md-2 col-sm-2">
+                              <!-- img --> 
+                              <img src="assets/images/educate/그룹 11719.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-sm-12">
+                              <!-- title -->
+                              <a class="text-decoration-none text-inherit text-dark"><h5 class="mb-0">홍길동</h5></a>
+                              <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+                              <!-- text -->
+                              <div class="mt-2 small lh-1">
+                                <a class="text-decoration-none text-inherit">
+                                  <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- price -->
+                            <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- list group -->
+                        <li class="list-group-item py-3 py-lg-0 px-0">
+                          <!-- row -->
+                          <div class="row align-items-center py-3">
+                            <div class="col-lg-1 col-md-2 col-sm-2">
+                              <!-- img --> 
+                              <img src="assets/images/educate/그룹 11719.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-sm-12">
+                              <!-- title -->
+                              <a class="text-decoration-none text-inherit text-dark"><h5 class="mb-0">홍길동</h5></a>
+                              <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+                              <!-- text -->
+                              <div class="mt-2 small lh-1">
+                                <a class="text-decoration-none text-inherit">
+                                  <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- price -->
+                            <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>                            
+                          </div>
+                        </li>
+                        <!-- list group -->
+                        <li class="list-group-item py-3 py-lg-0 px-0">
+                          <!-- row -->
+                          <div class="row align-items-center py-3">
+                            <div class="col-lg-1 col-md-2 col-sm-2">
+                              <!-- img --> 
+                              <img src="assets/images/educate/그룹 11719.png" class="img-fluid">
+                            </div>
+                            <div class="col-lg-9 col-md-12 col-sm-12">
+                              <!-- title -->
+                              <a class="text-decoration-none text-inherit text-dark"><h5 class="mb-0">홍길동</h5></a>
+                              <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+                              <!-- text -->
+                              <div class="mt-2 small lh-1">
+                                <a class="text-decoration-none text-inherit">
+                                  <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- price -->
+                            <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="d-flex justify-content-center">
+                        <nav aria-label="Page navigation example">
+                          <ul class="pagination">
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                              </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>               
+                  </div>                                                          
+                </div>
+              </div>                                  
+            </div>
+          </div>
+        </div>
+      </div>    
+    </main>
+    
+    <!-- footer START -->
+    <footer class="navbar-fixed-bottom mt-4" style="background-color: #f2f2f2;">
+      <div class="container px-0">
+        <!-- Tops Links -->
+        <div class="row pt-3">
+          <div class="col-sm-7 col-md-6 col-lg-6">
+            <ul class="list-inline lh-lg">
+              <li class="list-inline-item"><a class="text-muted">이용약관</a></li>
+              <li class="list-inline-item"><a class="text-muted">개인정보 취급방침</a></li>
+              <li class="list-inline-item"><a class="text-muted">사업주지원교육 유의사항</a></li>
+              <li class="list-inline-item"><a class="text-muted">본인인증 안내</a></li>
+            </ul>
+          </div>
+          <div class="col text-sm-end">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="width: 13rem;">
+                관련사이트
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment and card -->
+        <div class="row mb-7">
+          <div class="col-sm mb-3 mb-sm-0">
+            <!-- Socials -->
+            <ul class="list-inline list-separator list-separator-light mb-0">
+              <li class="list-inline-item">
+                <div class="card">
+                  <img src="assets/images/이미지 3.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="card">
+                  <img src="assets/images/이미지 4.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="card">
+                  <img src="assets/images/이미지 5.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                </div>
+              </li>
+            </ul>
+            <!-- End Socials -->
+          </div>
+  
+          <div class="col-sm-auto">
+            <!-- Socials -->
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-warning" href="#">카카오채널</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-success" href="#">N 블로그
+                </a>
+              </li>
+            </ul>
+            <!-- End Socials -->
+          </div>
+        </div>
+    
+        <!-- Bottom footer -->
+        <div class="row">
+          <div class="">
+            <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-lg-start">
+              <!-- copyright text -->              
+              <div class="text-muted"> 
+                <p>원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br /> 
+                  TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+                  통신판매번호 : 제 2021-서울영등포-0322호 <br />                  
+                  COPYRIGHT 2018 원라인에듀 ALLRIGHT & RESERVED.
+                </p>
+                <a class="text-muted">©2022 Booking</a>. All rights reserved.
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer END -->
+    
+    <nav class="floating-menu">
+      
+    </nav>
+    <script type="text/javascript">
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))       
+      var num = Math.random(); 
+      var data = { 
+          labels: [ 
+            "pink" 
+          ], 
+          datasets: [ 
+            { 
+              data: [num, 1-num], 
+              backgroundColor: [ 
+                "#FF6384"
+               ], 
+              hoverBackgroundColor: [ 
+                "#FF6384" 
+              ] 
+            }] 
+        }; 
+      window.onload = function() { 
+        var ctx8 = $('#chart8').get(0).getContext("2d"); 
+        window.theChart8 = new Chart(ctx8, { 
+          type: 'doughnut', 
+          data: data, 
+          options: { 
+            responsive: true, 
+            legend: { 
+              display: false 
+            }, 
+            elements: { 
+              center: { 
+                text: Math.round(num*100), 
+                fontStyle: 'Helvetica', //Default Arial 
+                sidePadding: 15 //Default 20 (as a percentage) 
+              }
+            }, 
+            maintainAspectRatio : false, 
+            cutoutPercentage:70, 
+            animation:false, 
+            rotation: 1 * Math.PI, 
+            circumference: 1 * Math.PI 
+          } 
+        }); 
+      };
+    </script>
+  </body>
+  
+</html>

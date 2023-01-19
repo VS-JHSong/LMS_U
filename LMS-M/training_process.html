@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- icon css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    
+        <title>Hello, world!</title>
+    </head>
+    <body>    
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        
+        
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        -->
+        <style>      
+        
+            html, body {
+                height: 100%;
+                margin: 0;
+            }
+
+            main {
+                min-height: 100%;
+            }
+
+            footer{
+                margin-top: -100px;
+            }
+            .floating-menu{
+                border-radius:100px;
+                z-index:999;
+                padding-top:10px;
+                padding-bottom:10px;
+                right:38.4rem;
+                position:fixed;
+                display:inline-block;
+                bottom:0%;
+                -webkit-transform:translateY(-50%);
+                -ms-transform:translateY(-50%);
+                transform:translateY(-50%)
+            }                    
+        
+        </style>
+        <main>
+            <!-- GNB START-->
+            <div class="container px-0">        
+                <div>
+                    <nav class="navbar navbar-expand-lg navbar-light">                
+                        <!-- Logo START -->
+                        <a class="navbar-brand" href="index.html">
+                        <!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
+                        <!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
+                            <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
+                        </a>
+                        <!-- Logo END -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item pe-2">
+                                    <a class="nav-link active" href="#">전체교육</a>
+                                </li>
+                                <li class="nav-item pe-2">
+                                    <a class="nav-link" href="#">교육원소개</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">고객지원</a>
+                                </li>
+                            </ul>
+                            <!-- Nav Search START -->
+                            <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+                                <div class="nav-item w-100">
+                                    <form class="position-relative">
+                                        <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+                                        <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Nav Search END -->
+                            <!-- 교육문의 -->
+                            <button type="button" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+                        </div>                
+                    </nav>
+                </div>        
+            </div>
+            <!-- GNB END-->
+
+            <!-- USER START -->
+            <div>
+                <div class="" style="background-color: #00287A;">
+                    <div class="container px-4 px-lg-0">  
+                        <div class="row py-4 text-md-start">
+                            <div class="col mb-4 mb-md-0">
+                                <h3 class="text-white mb-1">학습을 위해 로그인을 진행해주세요.</h3>
+                                <p class="text-white mb-1 pt-2 pb-2">회사를 통해 수강을 하시는 경우 문자 또는 카카오톡 메시지로부터 <br/> 받은 정보로 로그인 하세요.</p>
+                                <button type="button" class="btn btn-outline-light btn-sm" style="width: 5.5rem;"><i class="bi bi-globe2 fs-1"></i> <br />LMS SITE</button>
+                                <button type="button" class="btn btn-outline-light btn-sm" style="width: 5.5rem;"><i class="bi bi-twitter fs-1"></i><br />교강사전용</button>
+                            </div>
+                            <div class="col-4">
+                                <div class="row justify-content-end">
+                                    <div class="ms-md-8 col-9 pe-0">
+                                        <div class="form-floating pb-2">
+                                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput">아이디</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                            <label for="floatingPassword">비밀번호</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-light btn-lg fs-6" style="height: 7.8rem;">로그인</button>
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <span class="pe-1"><button type="button" class="btn btn-outline-light" style="width: 9rem;" onclick = "location.href='find_id.html'">아이디 찾기</button></span>
+                                    <span class="pe-1"><button type="button" class="btn btn-outline-light" style="width: 10rem;" onclick = "location.href='find_pw.html'">비밀번호 찾기</button></span>
+                                    <span><button type="button" class="btn btn-outline-light" style="width: 6rem;">회원가입</button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- USER END -->      
+
+            <!-- side START -->            
+            <div class="container">
+                <div class="mt-4">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-end">
+                            <i class="bi bi-house-door-fill pe-2"></i>
+                            <li class="breadcrumb-item text-muted">원라인에듀</a></li>
+                            <li class="breadcrumb-item text-muted">전체교육</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">직무교육과정</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-5 col-lg-2 offcanvas-body p-3 p-lg-0">
+                        <div class="card" style="background-color: #00287A;">
+                            <!-- Card body START -->
+                            <div class="card-body p-3">
+                                <!-- Avatar and content -->
+                                <div class="text-center mb-3" style="background-color: #00287A;">
+                                    <!-- Avatar -->
+                                    <div class="avatar avatar-xl mb-2">
+                                        <img class="avatar-img" src="assets/images/study.png" alt="">
+                                    </div>
+                                    <h6 class="text-white">전체교육</h6>
+                                </div>
+                                <!-- Sidebar menu item START -->
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-action list-group-item-primary border-0">
+                                        <a class="nav-link active" href="account-profile.html">직무교육</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-primary border-0">
+                                        <a class="nav-link" href="account-bookings.html">디지털융합</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-primary border-0">
+                                        <a class="nav-link" href="account-travelers.html">의료교육</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-primary border-0">
+                                        <a class="nav-link" href="account-payment-details.html">산업안전</a>
+                                    </li>
+                                    <li class="list-group-item list-group-item-action list-group-item-primary border-0">
+                                        <a class="nav-link" href="account-wishlist.html">법정교육</a>
+                                    </li>
+                                </ul>
+                                <!-- Sidebar menu item END -->
+                            </div>
+                            <!-- Card body END -->
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <div class="align-self-center">
+                                    <h6 class="my-0 small">위탁교육 안내</h6>
+                                </div>
+                                <div class="align-self-end">
+                                    <i class="bi bi-bookmark-dash-fill"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <div class="align-self-center">
+                                    <h6 class="my-0 small">교육 진행 절차</h6>
+                                </div>
+                                <div class="align-self-end">
+                                    <i class="bi bi-pc-display-horizontal"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <div class="align-self-center">
+                                    <h6 class="my-0 small">환급 절차</h6>
+                                </div>
+                                <div class="align-self-end">
+                                    <i class="bi bi-bag-fill"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <div class="align-self-center">
+                                    <h6 class="my-0 small">교육 이용 안내</h6>
+                                </div>
+                                <div class="align-self-end">
+                                    <i class="bi bi-file-post-fill"></i>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <div class="align-self-center">
+                                    <h6 class="my-0 small">과정 개발 절차</h6>
+                                </div>
+                                <div class="align-self-end">
+                                    <i class="bi bi-lightbulb-fill"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 본문 START -->
+                    <div class="col-md-7 col-lg-10">
+                        <div class="mb-5">
+                            <p class="fw-bold h4 mb-2">위탁교육 진행순서</p>
+                            <p class="small text-primary">아래 순서에 따라 위탁교육을 진행해주세요.</p>
+                        </div>
+                        <div>
+                            <table class="table table-bordered">
+                                <tbody class="align-middle">
+                                    <tr class="text-center">
+                                        <td class="fs-1" style="background-color: #F0F3F7; width: 300px;">
+                                            <i class="bi bi-1-circle-fill text-muted"></i>
+                                            <p class="h5 fw-bold" style="color: #00287A;">회원사 등록</p>
+                                        </td>
+                                        <td>
+                                            <p>수강할 업체 사업자등록증을 이메일(<a href="https://online@oneline.kr">online@oneline.kr</a>) 또는 팩스(050-8094-0019)로 보내 주셔야 합니다.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="text-center">
+                                        <td class="fs-1" style="background-color: #F0F3F7; width: 300px;">
+                                            <i class="bi bi-1-circle-fill text-muted"></i>
+                                            <p class="h5 fw-bold" style="color: #00287A;">회원사 등록</p>
+                                        </td>
+                                        <td>
+                                            <p>수강할 업체 사업자등록증을 이메일(<a href="https://online@oneline.kr">online@oneline.kr</a>) 또는 팩스(050-8094-0019)로 보내 주셔야 합니다.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main END-->
+    
+        <!-- footer START -->
+        <footer class="navbar-fixed-bottom mt-4" style="background-color: #f2f2f2;">
+            <div class="container px-0">
+                <!-- Tops Links -->
+                <div class="row pt-3">
+                    <div class="col-sm-7 col-md-6 col-lg-6">
+                        <ul class="list-inline lh-lg">
+                            <li class="list-inline-item"><a class="text-muted">이용약관</a></li>
+                            <li class="list-inline-item"><a class="text-muted">개인정보 취급방침</a></li>
+                            <li class="list-inline-item"><a class="text-muted">사업주지원교육 유의사항</a></li>
+                            <li class="list-inline-item"><a class="text-muted">본인인증 안내</a></li>
+                        </ul>
+                    </div>
+                    <div class="col text-sm-end">
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="width: 13rem;">
+                                관련사이트
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Payment and card -->
+            <div class="row mb-7">
+                <div class="col-sm mb-3 mb-sm-0">
+                    <!-- Socials -->
+                    <ul class="list-inline list-separator list-separator-light mb-0">
+                        <li class="list-inline-item">
+                            <div class="card">
+                                <img src="assets/images/이미지 3.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="card">
+                                <img src="assets/images/이미지 4.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="card">
+                                <img src="assets/images/이미지 5.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Socials End -->
+                    </div>
+        
+                    <div class="col-sm-auto">
+                        <!-- Socials -->
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="btn btn-warning" href="#">카카오채널</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn btn-success" href="#">N 블로그</a>
+                            </li>
+                        </ul>
+                        <!-- Socials End -->
+                    </div>
+                </div>    
+                <!-- Bottom footer -->
+                <div class="row">
+                    <div class="">
+                        <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-lg-start">
+                        <!-- copyright text -->              
+                            <div class="text-muted"> 
+                                <p>원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br /> 
+                                TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+                                통신판매번호 : 제 2021-서울영등포-0322호 <br />                  
+                                COPYRIGHT 2018 원라인에듀 ALLRIGHT & RESERVED.
+                                </p>
+                                <a class="text-muted">©2022 Booking</a>. All rights reserved.
+                            </div>              
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer END -->
+    
+        <!-- floating START -->
+        <nav class="floating-menu">
+            
+        </nav>
+        <!-- floating END -->
+    </body>
+</html>
