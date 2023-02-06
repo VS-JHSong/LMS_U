@@ -789,13 +789,57 @@
                                 </div>   
                                 <!-- 평가응시 -->
                                 <div class="text-center">                                                    
-                                    <button type="button" class="btn btn-primary btn-lg px-5 py-2 waves-effect waves-light evaluation-apply" data-bs-toggle="modal" data-bs-target=".evaluation-detail">평가응시</button>
+                                    <button type="button" class="btn btn-primary btn-lg px-5 py-2 waves-effect waves-light evaluation-apply" data-bs-toggle="modal" data-bs-target=".assignment-detail">과제제출</button>
                                 </div>
                             </div>
                         </div>                                                
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
-            </div><!-- /.modal -->                                   
+            </div>
+            <!-- /.modal -->
+            <!--  과제제출 Detail Modal1 -->
+            <div id="assignment-detail" class="modal assignment-detail" tabindex="-1" role="dialog" aria-labelledby="assignmentDetailLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header container">                            
+                            <div class="modal-title" id="assignmentDetailLabel">
+                                <p class="h5 text-primary">과제제출</p>
+                                <p class="h1">병원CS A부터 Z까지</p>
+                            </div>
+                            <button type="button" class="btn-close display-5" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div style="background-color: #F2F2F2;">
+                            <div class="container">                                                                           
+                                <div class="text-center mt-3">
+                                    <p class="mb-0">과제제출은 <span class="text-danger">1회만 가능</span>하며, 최종제출 후에는 재제출이 불가능합니다.</p>
+                                    <p>최종제출 전까지는 임시저장 기능을 활용하시고, 학습기간 내에 꼭 <span class="text-danger">최종제출을 완료</span>하여야 합니다.</p>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <!-- 문제영역 -->                                                            
+                            <div class="mt-5">
+                                <div class="mb-3">
+                                    <p class="h3">문제 1</p>
+                                </div>
+                                <div>
+                                    <p class="mb-0 h5">병원 내 커뮤니케이션을 방해하는 요인에 대해 서술하시오.</p>
+                                    <div class="my-2">
+                                        <textarea class="form-control" rows="20"></textarea>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- 버튼영역 -->
+                            <div class="text-center my-4">                                
+                                <button type="button" class="btn btn-outline-primary btn-lg px-5 py-2 waves-effect waves-light">임시저장</button>
+                                <button type="button" class="btn btn-primary btn-lg px-5 py-2 waves-effect waves-light">최종제출</button>
+                            </div>
+                            
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
 
             <!--진행중인 교육 card2-->
             <div class="card mb-3 p-4">

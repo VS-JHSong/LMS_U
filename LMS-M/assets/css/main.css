@@ -42,3 +42,7 @@ html, body {
 
   .bb-red{color: red;}
 
+
+  .modal-fullscreen .modal-content {
+    min-height: 100%;
+  }
