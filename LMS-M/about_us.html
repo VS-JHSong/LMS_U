@@ -4,15 +4,21 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Bootstrap CSS --> 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        
         <!-- icon css-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Main css-->
+        <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+
         <!-- AOS CSS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--swiper CSS-->
@@ -153,44 +159,46 @@
             </div>            
             <!-- USER END -->      
 
-            <!-- side START -->
-            <div style="background-color: #438DFF;"">
-                <div class="container">
-                    <div class="pt-4 text-white">
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                            <ol class="breadcrumb justify-content-end breadcrumb primary-color">
-                                <i class="bi bi-house-door-fill pe-2"></i>
-                                <li class="breadcrumb-item">원라인에듀</li>
-                                <li class="breadcrumb-item" aria-current="page">교육원소개</li>
-                            </ol>
-                        </nav>
-                    </div>                                   
+            <!-- side START -->            
+            <div style="background-color: #438DFF;">
+                <div>
+                    <div class="container">
+                        <div class="pt-4 text-white">
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-end breadcrumb primary-color">
+                                    <i class="bi bi-house-door-fill pe-2"></i>
+                                    <li class="breadcrumb-item">원라인에듀</li>
+                                    <li class="breadcrumb-item" aria-current="page">교육원소개</li>
+                                </ol>
+                            </nav>
+                        </div>                                   
+                    </div>     
                 </div>                
-            </div>            
-            <!-- 소개글 -->                
-            <section id="introduction" class="text-white pb-4" style="background-color: #438DFF;">
-                <div class="container aos-init aos-animate" data-aos="fade-up">
-                    <div class="section-title fw-bold h5">교육원 소개:</div>
-                    <div class="content text-center">
-                        <div class="h4">
-                            <p>함께 성장,</p>
-                            <p>발전해가자는 신념으로 <span class="fw-bold">사람이 행복한 교육</span>을 만들겠습니다.</p>                                
-                        </div>
-                        <div>
-                            <p>안녕하세요. 원라인에듀입니다. <br/>
-                                원라인에듀를 통해 학습자분들을 만나게 되어 무척 기쁘고 감사한 마음입니다. <br/>
-                                우리 원라인에듀는 사람이 너무나 소중한 교육원입니다. <br/>
-                                우리 직원분들과 학습자분들과 함께 성장 발전해가자는 신념으로 항상 고민하고 부단히 소통하고, <br/>
-                                경청하는 행동에 옮기며 사람이 행복한 교육을 만들고자 합니다. <br/><br/>
-                                우리가 가진 생각과 철학이 현실화 되는 그 날까지 여러분들과 함게 하며, 좋은 문화, <br/>
-                                신뢰있는 사회를 만들어 가는데 작은 보탬이 되고자 합니다.<br/>
-                                다변화하는 세상에서 배움의 엄춤이 없는 평생교육의 길. 그 길에서 이상을 실현시키시기 바랍니다.<br/>
-                                늘 행복하세요!    
-                            </p>  
+                <!-- 소개글 -->                
+                <section id="introduction" class="pb-4" style="background-color: #438DFF;">
+                    <div class="container aos-init aos-animate text-white" data-aos="fade-up">
+                        <div class="fw-bold h5 pt-2 text-white">교육원 소개:</div>
+                        <div class="content text-center">
+                            <div class="h4 text-white">
+                                <p>함께 성장,</p>
+                                <p>발전해가자는 신념으로 <span class="fw-bold">사람이 행복한 교육</span>을 만들겠습니다.</p>                                
+                            </div>
+                            <div>
+                                <p>안녕하세요. 원라인에듀입니다. <br/>
+                                    원라인에듀를 통해 학습자분들을 만나게 되어 무척 기쁘고 감사한 마음입니다. <br/>
+                                    우리 원라인에듀는 사람이 너무나 소중한 교육원입니다. <br/>
+                                    우리 직원분들과 학습자분들과 함께 성장 발전해가자는 신념으로 항상 고민하고 부단히 소통하고, <br/>
+                                    경청하는 행동에 옮기며 사람이 행복한 교육을 만들고자 합니다. <br/><br/>
+                                    우리가 가진 생각과 철학이 현실화 되는 그 날까지 여러분들과 함게 하며, 좋은 문화, <br/>
+                                    신뢰있는 사회를 만들어 가는데 작은 보탬이 되고자 합니다.<br/>
+                                    다변화하는 세상에서 배움의 엄춤이 없는 평생교육의 길. 그 길에서 이상을 실현시키시기 바랍니다.<br/>
+                                    늘 행복하세요!    
+                                </p>  
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>           
+            </div>                        
             <!---->
             <!-- 목표 및 경영원칙 -->
             <section id="rule" class="pt-4 mb-4">
@@ -236,14 +244,14 @@
             <section id="vision" style="height: 800px;">
                 <div class="pt-4" style="background-color: #00287A; height: 600px;">
                     <div class="container aos-init aos-animate text-white" data-aos="fade-up">                    
-                        <div class="section-title fw-bold h5">비전:</div>
+                        <div class="section-title fw-bold h5 text-white">비전:</div>
                         <div class="content text-center">
                             <div>
-                                <p class="h2">사람이 중심이 되는, 사람을 소중히 하는 문화속에</p>
-                                <p class="h2"><span class="fw-bold">지속적 자기계발을 지원</span>하고 함께 성장하는 기업이 되겠습니다.</p>
+                                <p class="h2 text-white">사람이 중심이 되는, 사람을 소중히 하는 문화속에</p>
+                                <p class="h2 text-white"><span class="fw-bold">지속적 자기계발을 지원</span>하고 함께 성장하는 기업이 되겠습니다.</p>
                                 <span style="writing-mode:vertical-rl">......................</span>
                                 <div class="custom-fraction">
-                                    <p class="h5">인증현황(<span class="current">1</span>/<span class="all">2</span> )</p>
+                                    <p class="h5 text-white">인증현황(<span class="current">1</span>/<span class="all">2</span> )</p>
                                 </div>
                             </div>
                             <div class="d-flex">
@@ -337,17 +345,17 @@
                         <div class="col-10">
                             <div class="section-title fw-bold h5 text-white pb-4">찾아오시는 길:</div>
                             <div>
-                                <p class="small pt-4 mb-0" style="color:#42D8FF">주소</p>
-                                <p class="text-white small">서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀</p>
+                                <p class="pt-4 mb-0" style="color:#42D8FF">주소</p>
+                                <p class="text-white">서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀</p>
                             </div>                        
                         </div>
                         <div class="col-2">
-                            <p class="small mb-0" style="color:#42D8FF">전화번호</p>
-                            <p class="text-white mb-1 small">1811-0014 / 0018</p>
-                            <p class="small mb-0" style="color:#42D8FF">팩스</p>
-                            <p class="text-white mb-1 small">050-8094-0019</p>
-                            <p class="small mb-0" style="color:#42D8FF">이메일</p>
-                            <p class="text-white mb-1 small">oneline0906@oneline.kr</p>
+                            <p class="mb-0" style="color:#42D8FF">전화번호</p>
+                            <p class="text-white mb-1">1811-0014 / 0018</p>
+                            <p class="mb-0" style="color:#42D8FF">팩스</p>
+                            <p class="text-white mb-1">050-8094-0019</p>
+                            <p class="mb-0" style="color:#42D8FF">이메일</p>
+                            <p class="text-white mb-1">oneline0906@oneline.kr</p>
                         </div>
                     </div>
                     <div class="content pb-5">                                                

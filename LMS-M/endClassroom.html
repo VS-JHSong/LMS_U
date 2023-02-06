@@ -1,0 +1,1122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <!-- icon css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">        
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Main css-->
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
+        
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>    
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    
+    <main>
+      <!-- GNB START-->
+      <div class="container px-0">                
+        <nav class="navbar navbar-expand-lg navbar-light">                
+          <!-- Logo START -->
+          <a class="navbar-brand" href="index.html">
+            <!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
+            <!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
+            <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
+          </a>
+          <!-- Logo END -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item pe-2">
+                <a class="nav-link" href="classroom.html">진행중인과정</a>
+              </li>
+              <li class="nav-item pe-2">
+                <a class="nav-link text-primary fw-bold" href="endClassroom.html">학습종료과정</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="support.html">수강신청내역</a>
+              </li>
+            </ul>
+            <!-- Nav Search START -->
+            <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+              <div class="nav-item w-100">
+                <form class="position-relative">
+                  <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+                  <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- Nav Search END -->
+            <!-- 교육문의 -->
+            <button type="button" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+          </div>                
+        </nav>
+      </div>
+      <!-- GNB END-->
+
+      <!-- USER START -->      
+      <div class="" style="background-color: #00287A;">
+        <div class="container px-4 px-lg-0">  
+          <div class="row py-4 text-md-start">
+            <div class="col mb-4 mb-md-0">
+              <h3 class="text-white mb-1">홍길동님 환영합니다.</h3>
+              <p class="text-white mb-1 pt-2 pb-2">원라인에듀 홈페이지를 방문해주신 여러분을 진심으로 환영합니다.</p>
+              <p class="text-white mb-1 ">
+                <span>수강완료 : </span>1개 &nbsp;&nbsp;&nbsp;<span>진행(대기)중 : </span>
+                <span data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="응시하지 않은 최종평가가 있습니다.">2개</span>
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="row justify-content-end text-end">
+                <div class="">                  
+                  <!--span class="pe-1"><button type="button" class="btn btn-outline-light" onclick = "location.href='find_id.html'"><i class="bi bi-person"></i><span class="px-2">개인정보 수정</span></button></!--span-->
+                  <span class="pe-1"><button type="button" class="btn btn-outline-light" onclick = "location.href='find_id.html'"><i class="bi bi-box-arrow-right"></i><span class="px-2">로그아웃</span></button></span>
+                </div>                
+              </div>              
+            </div>
+            <div class="row mx-0 justify-content-end"> 
+              <div class="col-2">                
+                <div id="chart" class="apex-charts"></div>
+              </div>
+              <div class="col text-end align-self-center">
+                <button type="button" class="btn btn-outline-light me-2 px-2" onclick = "location.href='mypage.html'"><i class="bi bi-person-bounding-box fs-1"></i><br /><span class="">마이페이지</span></button>
+                <button type="button" class="btn btn-outline-light me-2 px-4"><i class="bi bi-bookmark-dash-fill fs-1"></i><br /><span class="">수료증</span></button>
+                <button type="button" class="btn btn-outline-light px-4"><i class="bi bi-pencil fs-1"></i><br /><span class="">재응시</span></button>
+                <!--button type="button" class="btn btn-outline-light"><i class="bi bi-book fs-1"></i><br /><span class="">학습 도움말</span></button-->
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- USER END -->      
+        <!-- main START -->            
+        <div class="container">
+            <div class="mt-4">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-end">
+                        <i class="bi bi-house-door-fill pe-2"></i>
+                        <li class="breadcrumb-item text-muted">내 강의실</a></li>            
+                        <li class="breadcrumb-item active" aria-current="page">진행중인교육</li>
+                    </ol>
+                </nav>
+            </div>
+            <!--진행중인 교육 card-->
+            <div class="card mb-3 p-4">
+                <div class="row g-0">
+                    <div class="mb-2">
+                        <p class="text-primary mb-0">의료교육 > 직무교육</p>
+                        <p class="h5">Good Morning, 행복한 병원을 위한 고객 만족 서비스 - 병원 편</p>                        
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="assets/images/educate/NoPath_detail.png" class="img-fluid rounded-start" />
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="card-body pt-2">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p class="text-muted mb-1">수강기간</p>
+                                    <p class="text-muted mb-1">평가(응시)</p>
+                                    <p class="text-muted mb-1">복습기간</p>
+                                    <p class="text-muted mb-1">첨삭강사</p>
+                                </div>
+                                <div class="col">
+                                    <p class="mb-1">2020.11.10 - 2020.12.09</p>
+                                    <p class="mb-1">진도율 80% 부터 가능</p>
+                                    <p class="mb-1">2021.12.09</p>
+                                    <p class="waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".instructor-0">천 미현</p>
+                                </div>                                
+                                <div class="col-3 border-start border-dark">
+                                    <h5><span class="badge bg-dark">수강마감</span></h5>
+                                    <p class="mb-0 text-secondary">최근학습일</p>
+                                    <span>2021.12.01 13:21</span>
+                                    <p class="mb-0 text-secondary">진도율</p>
+                                    <span class="h4">100%</span>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col text-start">
+                                    <button class="btn btn-outline-dark"><i class="bi bi-folder-fill pe-3"></i>학습자료</button>
+                                    <button class="btn btn-outline-dark"><i class="bi bi-printer-fill pe-3"></i>수료증출력</button>                                    
+                                    <button type="button" class="btn btn-outline-dark waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i class="fas fa-book-reader pe-3"></i>수강후기</button>
+                                </div>
+                                <div class="col text-end">
+                                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_1" aria-expanded="false" aria-controls="collapse_1">상세 보기<i class="bi bi-caret-down-fill ps-3"></i></button>                                    
+                                </div>
+                            </div>                        
+                        </div>                    
+                    </div>
+                    <div class="collapse" id="collapse_1">
+                        <div class="card card-body border-0">
+                            <div>
+                                <table class="table table-bordered">                                
+                                    <tbody class="text-center align-middle">
+                                        <tr>
+                                            <td rowspan="4" style="background-color: #00287A;"><span class="text-white">수료기준</span></td>
+                                            <td style="background-color: #F0F3F7;">총진도율</td>
+                                            <td>80%이상</td>                              
+                                            <td rowspan="4">반영된 평가,과제 점수 <br/> 합산 60점 이상</td>
+                                        </tr>                                    
+                                        <tr>                                        
+                                            <td style="background-color: #F0F3F7;">중간평가</td>
+                                            <td>100점 중 10%반영</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #F0F3F7;">최종평가</td>
+                                            <td>100점 중 90%반영</td>
+                                        </tr>                                                                                                 
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <table class="table table-bordered border-1 align-middle">
+                                    <tbody>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">1차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">2차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">3차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">중간평가</td>
+                                            <td class="row border-0">
+                                                <div class="col my-auto">
+                                                    <p class="mb-0"><span class="fw-bold">68점</span>(재 응시 불가능합니다.)</p>
+                                                </div>    
+                                                <div class="col-3 text-end my-auto">
+                                                    <p class="mb-0">응시일자 : 2022.02.28 06:20</p>
+                                                </div>                                                                                  
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">수강마감</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">5차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">6차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">7차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">8차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">최종평가</td>
+                                            <td class="row border-0">
+                                                <div class="col my-auto">
+                                                    <p class="mb-0"><span class="fw-bold">68점</span>(재 응시 불가능합니다.)</p>
+                                                </div>    
+                                                <div class="col-2 text-end my-auto">
+                                                    <p class="mb-0">응시일자 : 2022.02.28 06:20</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">수강마감</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>                            
+                        </div>
+                    </div>  
+                </div>
+            </div>            
+            <!-- 강사 modal -->
+            <div class="modal fade instructor-0" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <div class="modal-title row">
+                                <div class="col-auto">
+                                    <img src="assets/images/classroom/NoPath.png" class="rounded avatar-sm">
+                                </div>
+                                <div class="col">
+                                    <p class="mb-0 h5">천미현</p>
+                                    <span>의료교육 > 직무교육</span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-primary">기획력, 리더십, 스피드 <br /> 그리고 열정넘치는 PR문구를 넣어주세요.</p>
+                            <div>
+                                <p class="text-secondary">학력 및 경력</p>
+                                <ul class="px-3">
+                                    <li>제주 한양고등학교 졸업</li>
+                                    <li>서울시립대 국어국문학과 졸업</li>
+                                    <li>現) 교사</li>
+                                    <li>現) 원라인에듀 리더십 강사</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal -->
+
+            <!--진행중인 교육 card2-->
+            <div class="card mb-3 p-4">
+                <div class="row g-0">
+                    <div class="mb-2">
+                        <p class="text-primary mb-0">의료교육 > 직무교육</p>
+                        <p class="h5">Good Morning, 행복한 병원을 위한 고객 만족 서비스 - 병원 편</p>
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="assets/images/classroom/NoPath - 복사본 (16).png" class="img-fluid rounded-start" />
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="card-body pt-2">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p class="text-muted mb-1">수강기간</p>
+                                    <p class="text-muted mb-1">평가(응시)</p>
+                                    <p class="text-muted mb-1">복습기간</p>
+                                    <p class="text-muted mb-1">첨삭강사</p>
+                                </div>
+                                <div class="col">
+                                    <p class="mb-1">2020.11.10 - 2020.12.09</p>
+                                    <p class="mb-1">진도율 80% 부터 가능</p>
+                                    <p class="mb-1">2021.12.09</p>
+                                    <p class="waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".instructor-1">천 미현</p>
+                                </div>                               
+                                <div class="col-3 border-start border-dark">
+                                    <h5><span class="badge bg-dark">수강마감</span></h5>
+                                    <p class="mb-0 text-secondary">최근학습일</p>
+                                    <span>2021.12.01 13:21</span>
+                                    <p class="mb-0 text-secondary">진도율</p>
+                                    <span class="h4">95%</span>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col text-start">
+                                    <button class="btn btn-outline-dark"><i class="bi bi-folder-fill pe-3"></i>학습자료</button>
+                                    <button class="btn btn-outline-dark"><i class="bi bi-printer-fill pe-3"></i>수료증출력</button>                                    
+                                    <button type="button" class="btn btn-outline-dark waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i class="fas fa-book-reader pe-3"></i>수강후기</button>
+                                </div>
+                                <div class="col text-end">
+                                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse_123" aria-expanded="true" aria-controls="Collapse_123">상세 보기<i class="bi bi-caret-down-fill ps-3"></i></button>                                    
+                                </div>
+                            </div>                        
+                        </div>                    
+                    </div>                    
+                    <div class="collapse" id="Collapse_123">
+                        <div class="card card-body border-0">
+                            <div>
+                                <table class="table table-bordered">                                
+                                    <tbody class="text-center align-middle">
+                                        <tr>
+                                            <td rowspan="4" style="background-color: #00287A;"><span class="text-white">수료기준</span></td>
+                                            <td style="background-color: #F0F3F7;">총진도율</td>
+                                            <td>80%이상</td>                              
+                                            <td rowspan="4">반영된 평가,과제 점수 <br/> 합산 60점 이상</td>
+                                        </tr>                                    
+                                        <tr>                                        
+                                            <td style="background-color: #F0F3F7;">중간평가</td>
+                                            <td>100점 중 10%반영</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #F0F3F7;">최종평가</td>
+                                            <td>100점 중 90%반영</td>
+                                        </tr>                                                                                                 
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <table class="table table-bordered border-1 align-middle">
+                                    <tbody>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">1차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">80%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">2차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">3차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 91%;" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">91%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">중간평가</td>
+                                            <td class="row border-0">
+                                                <div class="col my-auto">
+                                                    <p class="mb-0"><span class="fw-bold"></span>평가없음</p>                                                                            
+                                                </div>    
+                                                <div class="col-3 text-end my-auto">
+                                                    <p class="mb-0">평가가 없는 과정</p>                                                    
+                                                </div>                                                                                  
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">평가없음</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">5차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">6차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">7차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">8차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">최종평가</td>
+                                            <td class="row border-0">
+                                                <div class="col my-auto">
+                                                    <p class="mb-0"><span class="fw-bold">68점</span>(재 응시 불가능합니다.)</p>
+                                                </div>    
+                                                <div class="col-3 text-end my-auto">
+                                                    <p class="mb-0">응시일자 : 2022.02.28 06:20</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">수강마감</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>                            
+                        </div>
+                    </div>                      
+                </div>
+            </div>
+            <!--진행중인 교육 card End-->
+            <!-- 강사 modal -->
+            <div class="modal fade instructor-1 " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <div class="modal-title row">
+                                <div class="col-auto">
+                                    <img src="assets/images/classroom/NoPath.png" class="rounded avatar-sm">
+                                </div>
+                                <div class="col">
+                                    <p class="mb-0 h5">천미현</p>
+                                    <span>의료교육 > 직무교육</span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-primary">기획력, 리더십, 스피드 <br /> 그리고 열정넘치는 PR문구를 넣어주세요.</p>
+                            <div>
+                                <p class="text-secondary">학력 및 경력</p>
+                                <ul class="px-3">
+                                    <li>제주 한양고등학교 졸업</li>
+                                    <li>서울시립대 국어국문학과 졸업</li>
+                                    <li>現) 교사</li>
+                                    <li>現) 원라인에듀 리더십 강사</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal -->
+            <!-- 수강후기 modal -->
+            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header border-0">
+                            <div class="modal-title" id="myLargeModalLabel">
+                                <p class="small text-primary mb-1">수강후기</p>
+                                <p class="h5">Good Morning, 행복한 병원을 위한 고객 만족 서비스 - 병원 편</p>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <p>후기는 교육을 만든 분들에게 큰 힘이 됩니다. <br /> 별점을 눌러 평가해주세요.</p>
+                            </div>                            
+                            <div class="display-5 text-center text-primary my-4">
+                                <i class="bi bi-star-fill p-2"></i><i class="bi bi-star-fill p-2"></i><i class="bi bi-star-fill p-2"></i><i class="bi bi-star-fill p-2"></i><i class="bi bi-star p-2"></i>
+                            </div>
+                            <div>                                
+                                <div class="mb-3">
+                                    <label for="basicpill-address-input"><i class="bx bxs-message-rounded"></i>솔직한 리뷰를 작성해주세요.</label>
+                                    <textarea id="basicpill-address-input" class="form-control" rows="10" placeholder="욕설, 비속어가 포함된 리뷰는 사전 고지 없이 삭제될 수 있습니다."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary waves-effect waves-light w-100">리뷰 등록하기</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+            <!-- 수강후기 modal -->
+            <!--진행중인 교육 card3-->
+            <div class="card mb-3 p-4">
+                <div class="row g-0">
+                    <div class="mb-2">
+                        <p class="text-primary mb-0">의료교육 > 직무교육</p>
+                        <p class="h5">Good Morning, 행복한 병원을 위한 고객 만족 서비스 - 병원 편</p>
+                    </div>
+                    <div class="col-lg-2">
+                        <img src="assets/images/classroom/NoPath - 복사본 (17).png" class="img-fluid rounded-start" />
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="card-body pt-2">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <p class="text-muted mb-1">수강기간</p>
+                                    <p class="text-muted mb-1">평가(응시)</p>
+                                    <p class="text-muted mb-1">복습기간</p>
+                                    <p class="text-muted mb-1">첨삭강사</p>
+                                </div>
+                                <div class="col">
+                                    <p class="mb-1">2020.11.10 - 2020.12.09</p>
+                                    <p class="mb-1">진도율 80% 부터 가능</p>
+                                    <p class="mb-1">2021.12.09</p>
+                                    <p class="waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".instructor-1">천 미현</p>
+                                </div>
+                                <div class="col-3 border-start border-dark">
+                                    <h5><span class="badge bg-dark">수강마감</span></h5>
+                                    <p class="mb-0 text-secondary">최근학습일</p>
+                                    <span>2021.10.30 16:50</span>
+                                    <p class="mb-0 text-secondary">진도율</p>
+                                    <span class="h4">91%</span>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col text-start">
+                                    <button class="btn btn-outline-dark"><i class="bi bi-folder-fill pe-3"></i>학습자료</button>
+                                    <button class="btn btn-outline-dark"><i class="bi bi-printer-fill pe-3"></i>수료증출력</button>                                    
+                                    <button type="button" class="btn btn-outline-dark waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i class="fas fa-book-reader pe-3"></i>수강후기</button>
+                                </div>
+                                <div class="col text-end">
+                                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#Collapse_3" aria-expanded="true" aria-controls="Collapse_123">상세 보기<i class="bi bi-caret-down-fill ps-3"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="Collapse_3">
+                        <div class="card card-body border-0">
+                            <div>
+                                <table class="table table-bordered">
+                                    <tbody class="text-center align-middle">
+                                        <tr>
+                                            <td rowspan="4" style="background-color: #00287A;"><span class="text-white">수료기준</span></td>
+                                            <td style="background-color: #F0F3F7;">총진도율</td>
+                                            <td>80%이상</td>
+                                            <td rowspan="4">반영된 평가,과제 점수 <br/> 합산 60점 이상</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #F0F3F7;">중간평가</td>
+                                            <td>100점 중 10%반영</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="background-color: #F0F3F7;">최종평가</td>
+                                            <td>100점 중 90%반영</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <table class="table table-bordered border-1 align-middle">
+                                    <tbody>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">1차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">80%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">2차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">3차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 91%;" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">91%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">중간평가</td>
+                                            <td class="row border-0">
+                                                <div class="col my-auto">
+                                                    <p class="mb-0"><span class="fw-bold"></span>평가없음</p>                                                                            
+                                                </div>    
+                                                <div class="col-3 text-end my-auto">
+                                                    <p class="mb-0">평가가 없는 과정</p>                                                    
+                                                </div>                                                                                  
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">평가없음</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">5차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">6차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">7차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">8차시</td>
+                                            <td class="row border-0">
+                                                <div class="col">
+                                                    <p class="mb-2">브랜드와 윤리</p>
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>                                                    
+                                                </div>    
+                                                <div class="col-1 text-end">
+                                                    <p class="mb-0">00:21:39</p>
+                                                    <p class="mb-0">100%</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">복습하기</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                        <tr style="background-color: #F2F2F2;">
+                                            <td class="text-center">최종평가</td>
+                                            <td class="row border-0">
+                                                <div class="col my-auto">
+                                                    <p class="mb-0"><span class="fw-bold">68점</span>(재 응시 불가능합니다.)</p>
+                                                </div>    
+                                                <div class="col-3 text-end my-auto">
+                                                    <p class="mb-0">응시일자 : 2022.02.28 06:20</p>
+                                                </div>
+                                                <div class="col-2 text-end">
+                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">수강마감</button>
+                                                </div>                                                                                       
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>                            
+                        </div>
+                    </div>                      
+                </div>
+            </div>
+            <!--진행중인 교육 card End-->
+
+        </div>    
+    </main>
+    
+    <!-- footer START -->
+    <footer class="navbar-fixed-bottom mt-4" style="background-color: #f2f2f2;">
+      <div class="container px-0">
+        <!-- Tops Links -->
+        <div class="row pt-3">
+          <div class="col-sm-7 col-md-6 col-lg-6">
+            <ul class="list-inline lh-lg">
+              <li class="list-inline-item"><a class="text-muted">이용약관</a></li>
+              <li class="list-inline-item"><a class="text-muted">개인정보 취급방침</a></li>
+              <li class="list-inline-item"><a class="text-muted">사업주지원교육 유의사항</a></li>
+              <li class="list-inline-item"><a class="text-muted">본인인증 안내</a></li>
+            </ul>
+          </div>
+          <div class="col text-sm-end">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="width: 13rem;">
+                관련사이트
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment and card -->
+        <div class="row mb-7">
+          <div class="col-sm mb-3 mb-sm-0">
+            <!-- Socials -->
+            <ul class="list-inline list-separator list-separator-light mb-0">
+              <li class="list-inline-item">
+                <div class="card">
+                  <img src="assets/images/이미지 3.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="card">
+                  <img src="assets/images/이미지 4.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                </div>
+              </li>
+              <li class="list-inline-item">
+                <div class="card">
+                  <img src="assets/images/이미지 5.png" class="card-img-top" style="width: 10rem; height: 3rem">
+                </div>
+              </li>
+            </ul>
+            <!-- End Socials -->
+          </div>
+  
+          <div class="col-sm-auto">
+            <!-- Socials -->
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-warning" href="#">카카오채널</a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-success" href="#">N 블로그
+                </a>
+              </li>
+            </ul>
+            <!-- End Socials -->
+          </div>
+        </div>
+    
+        <!-- Bottom footer -->
+        <div class="row">
+          <div class="">
+            <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-lg-start">
+              <!-- copyright text -->              
+              <div class="text-muted"> 
+                <p>원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br /> 
+                  TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+                  통신판매번호 : 제 2021-서울영등포-0322호 <br />                  
+                  COPYRIGHT 2018 원라인에듀 ALLRIGHT & RESERVED.
+                </p>
+                <a class="text-muted">©2022 Booking</a>. All rights reserved.
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer END -->
+    
+    <nav class="floating-menu">
+      
+    </nav>
+    <script type="text/javascript">
+        /*       
+        var options = {
+            chart: {
+                height: 200,
+                type: "radialBar"
+            },
+            
+            series: [50],
+            
+            plotOptions: {
+                radialBar: {
+                    hollow: {
+                        margin: 15,
+                        size: "50%"
+                    },                
+                    dataLabels: {
+                        showOn: "always",
+                        name: {
+                            offsetY: -10,
+                            show: true,
+                            color: "#888",
+                            fontSize: "10px"
+                        },
+                        value: {
+                            color: "#111",
+                            fontSize: "28px",
+                            offsetY: 3,
+                            show: true
+                        }
+                    },
+                    
+                }
+            },
+            stroke: {
+                lineCap: "round",
+            },
+            labels: ["총 진행률"]
+            };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+
+        chart.render();
+        */
+
+        var options = {
+                series: [50,40,30,10,0],
+                options: {
+                    chart: {
+                        type: 'donut',
+                    },
+                    legend: {
+                        position: 'bottom'
+                    },
+                    responsive: [{
+                        breakpoint: 480,
+                    }],
+                    plotOptions: {
+                        pie: {
+                            donut: {
+                                // hollow: {  
+                                //   margin: 15,
+                                //   size: '70%',
+                                //   image: '../../css/images/a-icon.jpg',
+                                //   imageWidth: 64,
+                                //   imageHeight: 64,
+                                //   imageClipped: false
+                                // },
+                                labels: {
+                                    show: true,
+                                    total: {
+                                        showAlways: true,
+                                        show: true,
+                                        label: 'ALARM',
+                                        fontSize: '12px',
+                                        color: 'red'
+                                    },
+                                    value: {
+                                        fontSize: '22px',
+                                        show: true,
+                                        color: 'blue',
+                                    },
+                                },
+                            }
+                        }
+                    },
+                    labels: ["침입", "배회", "쓰러짐", "화재", "안전모"],
+                    title: {
+                        text: '이벤트별 통계',
+                        align: 'center'
+                    },
+                },
+            }
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+      
+    </script>
+
+  </body>
+  
+</html>

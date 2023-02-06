@@ -5,17 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- icon css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>    
+
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Main css-->
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     
     <title>Hello, world!</title>
   </head>
@@ -30,37 +42,15 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-    <style>      
-      html, body {
-        height: 100%;
-        margin: 0;
+    <style>
+      body{
+        overflow-x: hidden;
       }
-      main {
-        min-height: 100%;
-      }
-      footer{
-        margin-top: -100px;
-      }
-
-      .floating-menu{
-        border-radius:100px;
-        z-index:999;
-        padding-top:10px;
-        padding-bottom:10px;
-        right:38.4rem;
-        position:fixed;
-        display:inline-block;
-        bottom:0%;
-        -webkit-transform:translateY(-50%);
-        -ms-transform:translateY(-50%);
-        transform:translateY(-50%)
-      }                    
-      
     </style>
     <main class="pb-5">
-      <div class="container px-0">
+      <div>
         <!-- GNB START-->
-        <div>
+        <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light">
               <!-- Logo START -->
               <a class="navbar-brand" href="index.html">
@@ -113,56 +103,62 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <h3><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">직무</a></h3>
+                        <h4><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">직무능력향상교육</a></h4>
                       </li>
                       <li class="nav-item">
-                        <h3><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">디지털융합</a></h3>
+                        <h4><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">기업직업훈련카드</a></h4>
                       </li>
                       <li class="nav-item">
-                        <h3><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">의료교육</a></h3>
+                        <h4><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">디지털융합</a></h4>
+                      </li>                      
+                      <li class="nav-item">
+                        <h4><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">의료교육</a></h4>
                       </li>
                       <li class="nav-item">
-                        <h3><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 4">영유아교육</a></h3>
+                        <h4><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5">영유아교육</a></h4>
                       </li>
                       <li class="nav-item">
-                        <h3><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 5">산업안전</a></h3>
+                        <h4><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6">산업안전보건교육</a></h4>
                       </li>
                       <li class="nav-item">
-                        <h3><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 6">법정교육</a></h3>
+                        <h4><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7">중대재해처벌법</a></h4>
+                      </li>
+                      <li class="nav-item">
+                        <h4><a class="nav-link fw-bold" aria-current="page" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8">법정교육</a></h4>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div class="col-auto px-2">
-                  <button class="btn btn-prev btn-icon btn-sm btn-outline-secondary rounded-circle" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" id="trending-prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-ad7f6e8e449cf3e5"><i class="bi bi-chevron-left"></i></button>
-                  <button class="btn btn-next btn-icon btn-sm btn-outline-secondary rounded-circle" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" id="trending-next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-ad7f6e8e449cf3e5"><i class="bi bi-chevron-right"></i></button>
+                  <button class="btn btn-prev btn-icon btn-sm btn-outline-light rounded-circle" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" id="trending-prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-ad7f6e8e449cf3e5"><i class="bi bi-chevron-left"></i></button>
+                  <button class="btn btn-next btn-icon btn-sm btn-outline-light rounded-circle" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" id="trending-next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-ad7f6e8e449cf3e5"><i class="bi bi-chevron-right"></i></button>
                 </div>
               </nav>            
               <div class="carousel-inner">
                 <div class="carousel-item active">                
                   <div class="card mb-3 bg-transparent border-0">
                     <div class="row g-0">
-                      <div class="col-md-7 align-self-center">
-                        <div class="card-body">
-                          <h1 class="card-title fw-bold">원하는 시간과 장소에서 <br /> 자유롭게 학습1</h1>
-                          <div class="card-body px-0">
-                            <a href="#" class="text-dark pe-2 text-decoration-none">인사</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">경영기획</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">영업</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">전자상거래</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">품질관리</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">기획</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">마케팅</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">교육</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">커뮤니케이션</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">회계</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">문서작성</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">정보보호</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">리더십</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">생산관리</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">CS</a>
-                          </div>
+                      <div class="col-md-7">
+                        <div class="card-title">
+                          <p class="fw-bold display-5">직무능력향상교육</p>
+                          <span class="h4">정부 지원을 받아 직원의 직무능력을 향상시킬 수 있습니다. <br />고용보험환급제도로 최대 90%까지 지원 받으세요!</span>
                         </div>
+                        <div class="px-0 mt-5">
+                          <a href="#" class="text-dark pe-2 text-decoration-none">인사</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">경영기획</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">영업</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">전자상거래</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">생산관리</a>                          
+                          <a href="#" class="text-dark pe-2 text-decoration-none">마케팅</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">교육</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">리더십</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">CS</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">커뮤니케이션</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">문서작성</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">정보보호</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">서비스경험디자인</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">4차산업</a>
+                        </div>                        
                       </div>
                       <div class="col-md-5">
                         <img src="assets/images/041_원라인에듀_MainBanner2.jpg" class="d-block w-100">
@@ -173,27 +169,25 @@
                 <div class="carousel-item">
                   <div class="card mb-3 bg-transparent border-0">
                     <div class="row g-0">
-                      <div class="col-md-7 align-self-center">
-                        <div class="card-body">
-                          <h1 class="card-title fw-bold">원하는 시간과 장소에서 <br /> 자유롭게 학습2</h1>
-                          <div class="card-body px-0">
-                            <a href="#" class="text-dark pe-2 text-decoration-none">인사</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">경영기획</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">영업</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">전자상거래</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">품질관리</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">기획</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">마케팅</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">교육</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">커뮤니케이션</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">회계</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">문서작성</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">정보보호</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">리더십</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">생산관리</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">CS</a>
-                          </div>
-                        </div>
+                      <div class="col-md-7">
+                        <div class="card-title">
+                          <p class="fw-bold display-5">기업직업훈련카드</p>
+                          <span class="h4">정부 지원을 받아 직원의 직무능력을 향상시킬 수 있습니다.<br />고용보험환급제도로 최대 90%까지 지원 받으세요!</span>
+                        </div>                          
+                        <div class="px-0 mt-5">
+                          <a href="#" class="text-dark pe-2 text-decoration-none">인사</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">경영기획</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">영업</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">전자상거래</a>                          
+                          <a href="#" class="text-dark pe-2 text-decoration-none">마케팅</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">교육</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">리더십</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">CS</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">커뮤니케이션</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">정보보호</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">의료</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">기타</a>                          
+                        </div>                        
                       </div>
                       <div class="col-md-5">
                         <img src="assets/images/041_원라인에듀_MainBanner2.jpg" class="d-block w-100">
@@ -201,30 +195,130 @@
                     </div>
                   </div>
                 </div>
+                <!--디지털융합과정-->
                 <div class="carousel-item">
                   <div class="card mb-3 bg-transparent border-0">
                     <div class="row g-0">
-                      <div class="col-md-7 align-self-center">
-                        <div class="card-body">
-                          <h1 class="card-title fw-bold">원하는 시간과 장소에서 <br /> 자유롭게 학습3</h1>
-                          <div class="card-body px-0">
-                            <a href="#" class="text-dark pe-2 text-decoration-none">인사</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">경영기획</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">영업</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">전자상거래</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">품질관리</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">기획</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">마케팅</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">교육</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">커뮤니케이션</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">회계</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">문서작성</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">정보보호</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">리더십</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">생산관리</a>
-                            <a href="#" class="text-dark pe-2 text-decoration-none">CS</a>
-                          </div>
-                        </div>
+                      <div class="col-md-7">
+                        <div class="card-title">
+                          <p class="fw-bold display-5">디지털융합과정</p>
+                          <span class="h4">디지털융합과정을 수강하면<br />회사 자비 부담금 없이 직무능력향상교육이 가능합니다!</span>
+                        </div>                          
+                        <div class="px-0 mt-5">
+                          <a href="#" class="text-dark pe-2 text-decoration-none">융합서비스기획</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">정보기술컨설팅</a>                                                 
+                        </div>                        
+                      </div>
+                      <div class="col-md-5">
+                        <img src="assets/images/041_원라인에듀_MainBanner2.jpg" class="d-block w-100">
+                      </div>                    
+                    </div>
+                  </div>
+                </div>
+                <!--의료교육과정-->
+                <div class="carousel-item">
+                  <div class="card mb-3 bg-transparent border-0">
+                    <div class="row g-0">
+                      <div class="col-md-7">
+                        <div class="card-title">
+                          <p class="fw-bold display-5">의료교육</p>
+                          <span class="h4">병원행정, 종사자직무교육, 임상간호, 요양지원, 정보관리, 병원인증 등<br />각종 의료관련 교육을 고용보험환급제도로 받으세요!</span>
+                        </div>                          
+                        <div class="px-0 mt-5">
+                          <a href="#" class="text-dark pe-2 text-decoration-none">의료직무</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">병원CS</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">병원행정</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">요양지원</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">감염관리</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">임상간호</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">의료정보</a>
+                        </div>                        
+                      </div>
+                      <div class="col-md-5">
+                        <img src="assets/images/041_원라인에듀_MainBanner2.jpg" class="d-block w-100">
+                      </div>                    
+                    </div>
+                  </div>
+                </div>
+                <!--영유아교육-->
+                <div class="carousel-item">
+                  <div class="card mb-3 bg-transparent border-0">
+                    <div class="row g-0">
+                      <div class="col-md-7">
+                        <div class="card-title">
+                          <p class="fw-bold display-5">영유아교육</p>
+                          <span class="h4">영유아 관련 직무교육을<br />고용보험환급제도로 최대 90%까지 지원 받으세요!</span>
+                        </div>                          
+                        <div class="px-0 mt-5">
+                          <a href="#" class="text-dark pe-2 text-decoration-none">유아</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">영유아</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">보육활동</a>                          
+                        </div>                        
+                      </div>
+                      <div class="col-md-5">
+                        <img src="assets/images/041_원라인에듀_MainBanner2.jpg" class="d-block w-100">
+                      </div>                    
+                    </div>
+                  </div>
+                </div>
+                <!--산업안전과정-->
+                <div class="carousel-item">
+                  <div class="card mb-3 bg-transparent border-0">
+                    <div class="row g-0">
+                      <div class="col-md-7">
+                        <div class="card-title">
+                          <p class="fw-bold display-5">산업안전보건교육</p>
+                          <span class="h4">병원행정, 종사자직무교육, 임상간호, 요양지원, 정보관리, 병원인증 등<br />각종 의료관련 교육을 고용보험환급제도로 받으세요!</span>
+                        </div>                          
+                        <div class="px-0 mt-5">
+                          <a href="#" class="text-dark pe-2 text-decoration-none">근로자 정기안전보건교육</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">관리감독자교육</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">안전보건공단</a>                          
+                        </div>                        
+                      </div>
+                      <div class="col-md-5">
+                        <img src="assets/images/041_원라인에듀_MainBanner2.jpg" class="d-block w-100">
+                      </div>                    
+                    </div>
+                  </div>
+                </div>
+                <!--중대재해처벌법-->
+                <div class="carousel-item">
+                  <div class="card mb-3 bg-transparent border-0">
+                    <div class="row g-0">
+                      <div class="col-md-7">
+                        <div class="card-title">
+                          <p class="fw-bold display-5">중대재해처벌법</p>
+                          <span class="h4">중대재해처벌법에 대해 잘 준비하고 계신가요?<br />업종별 중대재해처벌법 교육을 온라인 비대면 교육으로 받으세요!</span>
+                        </div>                          
+                        <div class="px-0 mt-5">
+                          <a href="#" class="text-dark pe-2 text-decoration-none">유통업</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">서비스업</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">보건업</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">건설업</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">제조업</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">기타사업</a>
+                        </div>                        
+                      </div>
+                      <div class="col-md-5">
+                        <img src="assets/images/041_원라인에듀_MainBanner2.jpg" class="d-block w-100">
+                      </div>                    
+                    </div>
+                  </div>
+                </div>
+                <!--법정교육과정-->
+                <div class="carousel-item">
+                  <div class="card mb-3 bg-transparent border-0">
+                    <div class="row g-0">
+                      <div class="col-md-7">
+                        <div class="card-title">
+                          <p class="fw-bold display-5">법정교육과정</p>
+                          <span class="h4">꼭 들어야하는 법정교육이 부담스러우셨죠?<br />원라인에듀를 통해서 시원하게 해결하세요!</span>
+                        </div>                          
+                        <div class="px-0 mt-5">
+                          <a href="#" class="text-dark pe-2 text-decoration-none">필수교육</a>
+                          <a href="#" class="text-dark pe-2 text-decoration-none">기타</a>                          
+                        </div>                        
                       </div>
                       <div class="col-md-5">
                         <img src="assets/images/041_원라인에듀_MainBanner2.jpg" class="d-block w-100">
@@ -265,10 +359,10 @@
                     <button type="button" class="btn btn-light btn-lg fs-6 w-100 h-100">로그인</button>
                   </div>
                 </div>                                    
-                <div class="row mt-2 d-flex g-2">
-                  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" onclick = "location.href='find_id.html'">아이디 찾기</button></span></div>
-                  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" onclick = "location.href='find_pw.html'">비밀번호 찾기</button></span></div>
-                  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100">회원가입</button></span></div>
+                <div class="row mt-2 d-flex g-2">                  
+                  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#findIdModal">아이디 찾기</button></span></div>
+                  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#findPwModal">비밀번호 찾기</button></span></div>
+                  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" onclick="location.href='sign_up.html'">회원가입</button></span></div>
                 </div>
               </div>                                                            
             </div>
@@ -276,17 +370,68 @@
         </div>
       </div>
       <!-- USER END -->
+      <!-- 아이디 찾기 -->
+      <div class="modal fade" id="findIdModal" tabindex="-1" aria-labelledby="findIdModalTitle" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="findIdModalTitle">아이디 찾기</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-dark mb-1 pt-2 pb-2">
+                회원가입하신 정보와 일치해야 <br />아이디를 찾을 수 있습니다.
+              </p>
+              <form class="position-relative">
+                <input class="form-control mb-2" type="search" placeholder="가입자명" aria-label="Search" />
+                <input class="form-control mb-2" type="search" placeholder="생년월일" aria-label="Search" />
+                <input class="form-control mb-2" type="tel" placeholder="휴대폰" aria-label="Search"/>
+              </form>
+              <button type="button" class="btn btn-primary btn-lg mt-2 w-100">아이디 찾기</button>
+              <div class="text-end">                                
+                <button type="button" class="btn btn-outline-dark mt-2" data-bs-toggle="modal" data-bs-target="#findPwModal">비밀번호 찾기</button>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <!-- 비밀번호 초기화 -->
+      <div class="modal fade" id="findPwModal" tabindex="-1" aria-labelledby="findPwModalTitle" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="findPwModalTitle">비밀번호 찾기</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-dark mb-1 pt-2 pb-2">
+                비밀번호는 회원가입하신 입력하신 <br />휴대폰으로 초기화되어 전송됩니다.
+              </p>
+              <form class="position-relative">
+                <input class="form-control mb-2" type="search" placeholder="아이디" aria-label="Search">
+                <input class="form-control mb-2" type="search" placeholder="가입자명" aria-label="Search">
+                <input class="form-control mb-2" type="search" placeholder="생년월일" aria-label="Search">
+                <input class="form-control mb-2" type="tel" placeholder="휴대폰" aria-label="Search">
+              </form>
+              <button type="button" class="btn btn-primary btn-lg mt-2 w-100">비밀번호 초기화</button>
+              <div class="text-end">                                
+                <button type="button" class="btn btn-outline-dark mt-2" data-bs-toggle="modal" data-bs-target="#findIdModal">아이디 찾기</button>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
   
       <!-- Slot1 START -->
-      <section class="container px-0">
+      <section class="container">
         <div class="row mb-5">        
           <div class="col">
             <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1">
               <!-- 공지사항 START -->
-              <div class="col-lg-4 col-sm-12 mt-4">
+              <div class="col-lg-4 col-sm-12 mt-4 ps-0">
                 <div class="bg-transparent h-100 border-0">
                   <div class="row mb-2">
-                    <div class="col-auto me-auto">
+                    <div class="col-auto">
                       <h4>공지사항</h4>
                     </div>
                     <div class="col-auto">
@@ -295,29 +440,45 @@
                   </div>
                   <!-- 공지사항 리스트 START -->           
                   <div class="list-group">
-                    <div class="list-group-item list-group-item-action flex-column align-items-start my-2 border" style="height: 11rem">                    
+                    <div class="list-group-item list-group-item-action my-2 border">
+                      <div class="align-items-start">
                         <h6 class="mb-1 text-secondary small"><strong><small>2022</small></strong></h6>                                                              
                         <p class="mb-1 h4"><strong>7.13</strong></p>
-                        <p><small>MOTP인증변경 안내</small></p>                    
-                        <span class="small align-bottom"><small><i class="bi bi-heart"></i>조회수 1274건</small></span>                    
+                        <p>MOTP인증변경 안내</p>
+                      </div>                        
+                      <div class="pt-5">
+                        <p class="mb-0"><small><i class="bi bi-heart"></i>조회수 1274건</p></small>
+                      </div>
                     </div>
-                    <div class="list-group-item list-group-item-action flex-column align-items-start my-2 border" style="height: 11rem">                    
+                    <div class="list-group-item list-group-item-action my-2 border">                    
+                      <div class="align-items-start">
                         <h6 class="mb-1 text-secondary small"><strong><small>2022</small></strong></h6>
                         <p class="mb-1 h4"><strong>5.11</strong></p>
-                        <p><small>2022년도 관리감독자 오프라인<br /> 교육안내</small></p>
-                        <span class="small"><small><i class="bi bi-heart"></i>조회수 1274건</small></span>                    
+                        <p>2022년도 관리감독자 오프라인<br /> 교육안내</p>
+                      </div>                        
+                      <div class="pt-4">
+                        <p class="mb-0"><small><i class="bi bi-heart"></i>조회수 1274건</p></small>
+                      </div>
                     </div>
-                    <div class="list-group-item list-group-item-action flex-column align-items-start my-2 border" style="height: 11rem">                    
+                    <div class="list-group-item list-group-item-action my-2 border">                    
+                      <div class="align-items-start">
                         <h6 class="mb-1 text-secondary small"><strong><small>2021</small></strong></h6>                    
                         <p class="mb-1 h4"><strong>11.28</strong></p>
-                        <p><small>인터넷 익스플로러(IE) 지원종료</small></p>                    
-                        <span class="small"><small><i class="bi bi-heart"></i>조회수 1274건</small></span>                    
+                        <p>인터넷 익스플로러(IE) 지원종료</p>
+                      </div>
+                      <div class="pt-5">
+                        <p class="mb-0"><small><i class="bi bi-heart"></i>조회수 1274건</p></small>
+                      </div>
                     </div>
-                    <div class="list-group-item list-group-item-action flex-column align-items-start my-2 border" style="height: 11rem">                    
+                    <div class="list-group-item list-group-item-action my-2 border">                    
+                      <div class="align-items-start">
                         <h6 class="mb-1 text-secondary small"><strong><small>2020</small></strong></h6>                                          
                         <p class="mb-1 h4"><strong>3.30</strong></p>
-                        <p><small>OTP 인증오류 해결 방법</small></p>                    
-                        <span class="small"><small><i class="bi bi-heart"></i>조회수 1274건</small></span>                    
+                        <p>OTP 인증오류 해결 방법</p>
+                      </div>                        
+                      <div class="pt-5">
+                        <p class="mb-0"><small><i class="bi bi-heart"></i>조회수 1274건</p></small>
+                      </div>
                     </div>
                   </div>
                   <!-- 공지사항 리스트 END -->
@@ -353,7 +514,7 @@
                         <div class="rt-items">
                           <div class="rt-box d-flex mb-2">
                             <div class="rt-img">
-                              <a><img src="assets/images/recommend2.png" style="width: 6.5rem; height: 6.5rem;"></a>
+                              <img src="assets/images/recommend2.png" class="rounded avatar-xl">
                             </div>
                             <div class="rt-content px-2">
                               <span class="small text-primary"><small>직무교육 > 디지털 융합과정</small></span>
@@ -362,7 +523,7 @@
                           </div>
                           <div class="rt-box d-flex">
                             <div class="rt-img">
-                              <a href="#"><img src="assets/images/recommend3.png" style="width: 6.5rem; height: 6.5rem;"></a>
+                              <img src="assets/images/recommend3.png" class="rounded avatar-xl">                              
                             </div>
                             <div class="rt-content px-2">
                               <span class="small text-primary"><small>직무교육 > 디지털 융합과정</small></span>
@@ -377,7 +538,7 @@
               </div>
               <!-- 추천교육과정 END-->
   
-              <div class="col-lg-4 col-sm-12 mt-sm-4">
+              <div class="col-lg-4 col-sm-12 mt-sm-4 pe-0">
                 <div class="row mb-3">
                   <div class="col">
                     <h4>디지털융합</h4>
@@ -399,7 +560,7 @@
                       <div class="rt-items">
                         <div class="rt-box d-flex mb-3">
                           <div class="rt-img">
-                            <a><img src="assets/images/041_원라인에듀_MainBanner2.jpg" style="width: 6.5rem; height: 6.5rem;"></a>
+                            <img src="assets/images/041_원라인에듀_MainBanner2.jpg" class="rounded avatar-xl">                            
                           </div>
                           <div class="rt-content px-2">
                             <span class="small text-primary"><small>직무교육 > 디지털 융합과정</small></span>
@@ -408,7 +569,7 @@
                         </div>
                         <div class="rt-box d-flex mb-3">
                           <div class="rt-img">
-                            <a href="#"><img src="assets/images/best1.png" style="width: 6.5rem; height: 6.5rem;"></a>
+                            <img src="assets/images/best1.png" class="rounded avatar-xl">                            
                           </div>
                           <div class="rt-content px-2">
                             <span class="small text-primary"><small>직무교육 > 디지털 융합과정</small></span>
@@ -417,7 +578,7 @@
                         </div>
                         <div class="rt-box d-flex mb-3">
                           <div class="rt-img">
-                            <a><img src="assets/images/best2.png" style="width: 6.5rem; height: 6.5rem;"></a>
+                            <img src="assets/images/best2.png" class="rounded avatar-xl">                            
                           </div>
                           <div class="rt-content px-2">
                             <span class="small text-primary"><small>직무교육 > 디지털 융합과정</small></span>
@@ -425,7 +586,7 @@
                           </div>                                                  </div>
                         <div class="rt-box d-flex mb-3">
                           <div class="rt-img">
-                            <a href="#"><img src="assets/images/best3.png" style="width: 6.5rem; height: 6.5rem;"></a>
+                            <img src="assets/images/best3.png" class="rounded avatar-xl">                            
                           </div>
                           <div class="rt-content px-2">
                             <span class="small text-primary"><small>직무교육 > 디지털 융합과정</small></span>
@@ -434,7 +595,7 @@
                         </div>
                         <div class="rt-box d-flex mb-3">
                           <div class="rt-img">
-                            <a><img src="assets/images/best5.png" style="width: 6.5rem; height: 6.5rem;"></a>
+                            <img src="assets/images/best5.png" class="rounded avatar-xl">                            
                           </div>
                           <div class="rt-content px-2">
                             <span class="small text-primary"><small>직무교육 > 디지털 융합과정</small></span>
@@ -443,7 +604,7 @@
                         </div>
                         <div class="rt-box d-flex mb-3">
                           <div class="rt-img">
-                            <a href="#"><img src="assets/images/best4.png" style="width: 6.5rem; height: 6.5rem;"></a>
+                            <img src="assets/images/best4.png" class="rounded avatar-xl">                            
                           </div>
                           <div class="rt-content px-2">
                             <span class="small text-primary"><small>직무교육 > 디지털 융합과정</small></span>
@@ -462,7 +623,7 @@
       <hr>
       <!-- Slot1 END -->
       <!-- 관련법령안내 START -->
-      <section class="container pb-5 pt-0 pt-5 px-0 h-100">
+      <section class="container pb-5 pt-0 pt-5 h-100">
         <div id="carouselExampleCaptions2" class="carousel carousel-dark slide" data-bs-ride="false">            
           <div class="carousel-inner">
   
@@ -594,68 +755,21 @@
       <!-- 관련법령안내 END -->
       <!-- 수강후기 START -->
       <section class="bg-primary-alt" style="background-image:url('assets/images/review_bg.png'); width:100%; height:690px;">
-        <div class="container px-0" style="height: inherit;">
-          <div class="arrows-inside highlight-selected mb-6 flickity-enabled is-draggable" data-flickity="{ &quot;autoPlay&quot;: true, &quot;imagesLoaded&quot;: true, &quot;wrapAround&quot;: true }" tabindex="0">
-            <div class="flickity-viewport" style="height: 567.531px; touch-action: pan-y;">
-              <div class="flickity-slider" style="left: 0px; transform: translateX(0%);"><div class="carousel-cell col-lg-4 col-md-5 col-9 px-2 py-3" style="position: absolute; left: 0%;" aria-hidden="true">
-                <a target="_blank">
-                  <img src="assets/images/about-company.png" alt="" class="rounded shadow-3d hover-shadow-3d border">
-                </a>
-              </div>
-            <div class="carousel-cell col-lg-4 col-md-5 col-9 px-2 py-3 is-selected" style="position: absolute; left: 33.33%;">
-              <a target="_blank">
-                <img src="assets/images/blog-article.png" alt="" class="rounded shadow-3d hover-shadow-3d border">
-              </a>
-            </div>
-            <div class="carousel-cell col-lg-4 col-md-5 col-9 px-2 py-3" style="position: absolute; left: 66.67%;" aria-hidden="true">
-              <a target="_blank">
-                <img src="assets/images/blog-magazine.png" alt="" class="rounded shadow-3d hover-shadow-3d border">
-              </a>
-            </div>
-            <div class="carousel-cell col-lg-4 col-md-5 col-9 px-2 py-3" style="position: absolute; left: 100%;" aria-hidden="true">
-              <a target="_blank">
-                <img src="assets/images/careers.png" alt="" class="rounded shadow-3d hover-shadow-3d border">
-              </a>
-            </div>
-            <div class="carousel-cell col-lg-4 col-md-5 col-9 px-2 py-3" style="position: absolute; left: 133.33%;" aria-hidden="true">
-              <a target="_blank">
-                <img src="assets/images/case-study.png" alt="" class="rounded shadow-3d hover-shadow-3d border">
-              </a>
-            </div>
-            <div class="carousel-cell col-lg-4 col-md-5 col-9 px-2 py-3" style="position: absolute; left: 166.66%;" aria-hidden="true">
-              <a target="_blank">
-                <img src="assets/images/customer-story.png" alt="" class="rounded shadow-3d hover-shadow-3d border">
-              </a>
-            </div>
-            <div class="carousel-cell col-lg-4 col-md-5 col-9 px-2 py-3" style="position: absolute; left: 200%;" aria-hidden="true">
-              <a target="_blank">
-                <img src="assets/images/knowledgebase.png" alt="" class="rounded shadow-3d hover-shadow-3d border">
-              </a>
-            </div>
-            <div class="carousel-cell col-lg-4 col-md-5 col-9 px-2 py-3" aria-hidden="true" style="position: absolute; left: 233.33%;">
-              <a target="_blank">
-                <img src="assets/images/pricing-slider.png" alt="" class="rounded shadow-3d hover-shadow-3d border">
-              </a>
-            </div>
-            <div class="carousel-cell col-lg-4 col-md-5 col-9 px-2 py-3" aria-hidden="true" style="position: absolute; left: -33.33%;">
-              <a target="_blank">
-                <img src="assets/images/sign-up-image.png" alt="" class="rounded shadow-3d hover-shadow-3d border">
-              </a>
-            </div>
-          </div>
+        <div class="container" style="height: inherit;">
+          
         </div>
-        <button class="flickity-button flickity-prev-next-button previous" type="button" aria-label="Previous">
+        <!--button class="flickity-button flickity-prev-next-button previous" type="button" aria-label="Previous">
           <svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg>
-        </button>
-        <button class="flickity-button flickity-prev-next-button next" type="button" aria-label="Next">
+        </!--button>
+        <button-- class="flickity-button flickity-prev-next-button next" type="button" aria-label="Next">
           <svg class="flickity-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg>
-        </button>
+        </button-->
         </div>
       </div>
       </section>
       <!-- 수강후기 END -->
       <!-- Slot4 START -->
-      <section class="container pt-4 px-0">
+      <section class="container pt-4">
         <div class="row row-cols-1 row-cols-sm-12 row-cols-lg-3 mb-5">
           <!-- 퀵 다운로드 START -->
           <!-- Card -->
@@ -675,7 +789,7 @@
                     </div>
                     <div class="carousel-item">
                       <img class="rounded mx-auto d-block" src="assets/images/ribbon.png">
-                      <div class="text-center mt-4 mb-sm-2">
+                      <div class="text-center mt-4 mb-4">
                         <h5 class="card-title"><span class="fw-bold">기업회원 신청 양식</span></h5>
                         <span class="d-block text-secondary mb-3">Request Document Form</span>
                         <a href="https://github.com/twbs/bootstrap/releases/download/v4.1.3/bootstrap-4.1.3-dist.zip" class="btn btn-primary rounded-pill" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download Bootstrap');">파일 다운로드</a>
@@ -763,7 +877,7 @@
     
     <!-- footer START -->
     <footer style="background-color: #f2f2f2;">
-      <div class="container px-0"  style="width: 1920px;">
+      <div class="container">
         <!-- Tops Links -->
         <div class="row pt-3">
           <div class="col-sm-7 col-md-6 col-lg-6">
@@ -850,5 +964,28 @@
     <nav class="floating-menu">
       
     </nav>
+
+    <script>
+      $(document).ready(function(){
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 1,
+              depth: 100,
+              modifier: 1,
+              slideShadows : true,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+            },
+        });
+      });
+      
+
+    </script>
   </body>
 </html>

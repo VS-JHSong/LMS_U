@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <!-- icon css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">        
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Main css-->
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
+        
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>    
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!--_page.js-->
+    <script src="assets/js/_page.js"></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>       
+    
+    <main>
+        <!--  평가 유의사항 -->                    
+        <!--div>
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col align-self-center">
+                        <p class="h1">중간평가 <span class="text-danger">유의사항</span></p>                    
+                    </div>
+                    <div class="col text-end">
+                        <button type="button" class="btn-close display-5" aria-label="Close"></button>
+                    </div>                
+                </div>
+            </div>            
+            <div style="background-color: #F2F2F2;">
+                <div class="container mt-5 pb-5">
+                    <p class="text-center"><i class="bi bi-exclamation-triangle display-2 text-danger"></i></p>
+                    <div>
+                        <p>1. 중간평가의 <span class="bb-red">응시 제한시간은 없습니다.</span></p>
+                        <p>2. 중간평가는 <span class="text-danger">1회만 응시 가능하며, 재응시 불가</span>합니다.</p>
+                        <p>3. <span class="text-danger">반드시 PC에서 진행</span>하여 주시고, 장애가 발생하지 않도록 유선 인터넷 등을 사용하시기 바랍니다.</p>
+                        <p>4. <span class="text-danger">최종제출 버튼까지 클릭</span> 후 제출해야지만 평가 응시가 완료됩니다.</p>
+                        <p>5. 최종제출을 하지 않은 상태로 학습기간이 종료될 경우에는<span class="text-danger">작성한 답안으로 자동 제출</span>됩니다.</p>
+                        <p>6. 중간평가의 점수는 최종 수료 점수에 반영됩니다. 수료기준의 반영율을 확인하여 주십시오.</p>
+                        <p>7. 평가 결과는 학습기간이 종료되고, <span class="text-danger">첨석이 완료된 후 제공</span>됩니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container"-->
+                <!-- 체크박스 -->
+                <!--div class="text-end my-4 text-secondary">
+                    <input type="checkbox" class="form-check-input h2" id="rememberCheck" checked>
+                    <label class="form-check-label pt-2" for="rememberCheck">위 개인정보 수집 및 이용에 대한 안내를 충분히 숙지했습니다.</label>
+                </!--div-->   
+                <!-- 평가응시 -->
+                <!--div class="text-center">
+                    <button type="button" class="btn btn-primary btn-lg px-5 py-2 waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-fullscreen">평가응시</button>
+                </!--div>
+            </div>
+        </-div-->
+        <!-- 평가 -->
+        <div>
+            <div class="container">
+                <div class="row mt-4">
+                    <div class="col align-self-center">
+                        <p class="h5 text-primary">중간평가</p>
+                        <p class="h1">병원CS A부터 Z까지</p>
+                    </div>
+                    <div class="col text-end">
+                        <button type="button" class="btn-close display-5" aria-label="Close"></button>
+                    </div>                
+                </div>
+            </div>            
+            <div style="background-color: #F2F2F2;">
+                <div class="container mt-5 py-4">
+                    <p class="text-center mb-0">평가는 1회 응시만 가능하며, <span class="text-danger">재응시가 불가능</span>하므로 신중히 응시하시길 바랍니다.</p>                    
+                </div>
+            </div>
+            <div class="container">
+                <!-- 문제영역 -->
+                <div class="row">
+                    <div class="col">
+                        <div class="mt-5">
+                            <div class="mb-3">
+                                <p class="h3">문제 4</p>
+                            </div>
+                            <div>
+                                <p class="mb-0 h5">다음 중 초진 고객에 대한 설명으로 옳은 것은? (배점 : 10)</p>
+                                <ul class="list-group mt-2">
+                                    <li class="list-group-item border-0 p-0 py-1">
+                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Q4_1">
+                                        <label class="form-check-label" for="Q4_1">1. 다시 병원에 내원한 고객</label>
+                                    </li>
+                                    <li class="list-group-item border-0 p-0 py-1">
+                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Q4_2">
+                                        <label class="form-check-label" for="Q4_2">2. 동일의사에게 동일 질병으로 계속 진료</label>
+                                    </li>
+                                    <li class="list-group-item border-0 p-0 py-1">
+                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Q4_3">
+                                        <label class="form-check-label" for="Q4_3">3. 완치 여부가 불분명한 경우 90일 이후 내원</label>
+                                    </li>
+                                    <li class="list-group-item border-0 p-0 py-1">
+                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Q4_4">
+                                        <label class="form-check-label" for="Q4_4">4. 치료 종결 30일 이전에 내원</label>
+                                    </li>                                    
+                                  </ul>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="mb-3">
+                                <p class="h3">문제 5</p>
+                            </div>
+                            <div>
+                                <p class="mb-0 h5">의료기간 세탈물로서 절대 세탁할 수 없는 것은? (배점 : 10)</p>
+                                <ul class="list-group mt-2">
+                                    <li class="list-group-item border-0 p-0 py-1">
+                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Q5_1">
+                                        <label class="form-check-label" for="Q5_1">1. 이불 및 시트</label>
+                                    </li>
+                                    <li class="list-group-item border-0 p-0 py-1">
+                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Q5_2">
+                                        <label class="form-check-label" for="Q5_2">2. 붕대 및 거즈</label>
+                                    </li>
+                                    <li class="list-group-item border-0 p-0 py-1">
+                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Q5_3">
+                                        <label class="form-check-label" for="Q5_3">3. 고객복 및 수술복</label>
+                                    </li>
+                                    <li class="list-group-item border-0 p-0 py-1">
+                                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="Q5_4">
+                                        <label class="form-check-label" for="Q5_4">4. 린넨류</label>
+                                    </li>                                    
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-5">
+                        <div class="d-flex align-items-start">
+                            <div class="card text-center mx-0">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">2</p>                                  
+                                </div>
+                                <div class="card-footer text-muted py-1 px-3">문제01</div>
+                            </div>
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">1</p>                                  
+                                </div>
+                                <div class="card-footer text-muted py-1">문제02</div>
+                            </div>
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">3</p>                                  
+                                </div>
+                                <div class="card-footer text-muted py-1">문제03</div>
+                            </div>
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">3</p>                                  
+                                </div>
+                                <div class="card-footer text-muted py-1">문제04</div>
+                            </div>
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">1</p>
+                                </div>
+                                <div class="card-footer text-muted py-1">문제05</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">2</p>                                  
+                                </div>
+                                <div class="card-footer text-muted py-1">문제06</div>
+                            </div>
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">1</p>                                  
+                                </div>
+                                <div class="card-footer text-muted py-1">문제07</div>
+                            </div>
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">3</p>                                  
+                                </div>
+                                <div class="card-footer text-muted py-1">문제08</div>
+                            </div>
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">3</p>                                  
+                                </div>
+                                <div class="card-footer text-muted py-1">문제09</div>
+                            </div>
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">1</p>
+                                </div>
+                                <div class="card-footer text-muted py-1">문제10</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">2</p>                                  
+                                </div>
+                                <div class="card-footer text-muted py-1">문제11</div>
+                            </div>
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">1</p>                                  
+                                </div>
+                                <div class="card-footer text-muted py-1">문제12</div>
+                            </div>
+                            <div class="card text-center">                                
+                                <div class="card-body p-2">                                  
+                                    <p class="card-text">3</p>                                  
+                                </div>
+                                <div class="card-footer text-muted py-1">문제13</div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <!-- 버튼영역 -->
+                <div class="text-center my-4">
+                    <button type="button" class="btn btn-outline-primary btn-lg py-2 waves-effect waves-light me-2"><i class="bi bi-caret-left-fill pe-2"></i>이전</button>
+                    <button type="button" class="btn btn-primary btn-lg px-5 py-2 waves-effect waves-light disabled">평가응시</button>
+                    <button type="button" class="btn btn-outline-primary btn-lg py-2 waves-effect waves-light ms-2">다음<i class="bi bi-caret-right-fill ps-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    <nav class="floating-menu">
+      
+    </nav>
+    
+
+  </body>
+  
+</html>

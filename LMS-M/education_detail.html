@@ -4,11 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
     <!-- icon css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -16,6 +12,15 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Main css-->
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
     
     <title>Hello, world!</title>
   </head>
@@ -29,36 +34,7 @@
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-    <style>      
-      
-      html, body {
-        height: 100%;
-        margin: 0;
-      }
-
-      main {
-        min-height: 100%;
-      }
-
-      footer{
-        margin-top: -100px;
-      }
-      .floating-menu{
-        border-radius:100px;
-        z-index:999;
-        padding-top:10px;
-        padding-bottom:10px;
-        right:38.4rem;
-        position:fixed;
-        display:inline-block;
-        bottom:0%;
-        -webkit-transform:translateY(-50%);
-        -ms-transform:translateY(-50%);
-        transform:translateY(-50%)
-      }                    
-      
-    </style>
+    -->    
     <main>
       <!-- GNB START-->
       <div class="container px-0">        
@@ -247,35 +223,44 @@
                 </div>
                 <div class="row">
                   <div class="d-block gap-3 col-6">
-                    <button class="btn btn-lg btn-primary" type="button">미리보기</button>
+                    <button class="btn btn-lg btn-primary w-100" type="button">미리보기</button>
                   </div>
                   <div class="d-block gap-3 col-6">
-                    <button class="btn btn-lg btn-primary" type="button">신청하기</button>
+                    <button class="btn btn-lg btn-primary w-100" type="button">신청하기</button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card rounded-3 border-0 mt-4">
-              <!-- Card header -->
-              <div class="card-header border-bottom-0 p-0">
-                  <div>
-                    <!-- Nav -->
-                    <ul class="nav nav-lb-tab bg-white" id="tab" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="table-tab" data-bs-toggle="pill" href="#table" role="tab" aria-controls="table" aria-selected="true">강의소개</a>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="description-tab" data-bs-toggle="pill" href="#description" role="tab" aria-controls="description" aria-selected="false" tabindex="-1">강의목차</a>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="review-tab" data-bs-toggle="pill" href="#review" role="tab" aria-controls="review" aria-selected="false" tabindex="-1">학습공지</a>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="transcript-tab" data-bs-toggle="pill" href="#transcript" role="tab" aria-controls="transcript" aria-selected="false" tabindex="-1">수강후기</a>
-                      </li>                          
-                    </ul>
-                  </div>
-              </div>
+            <div class="card rounded-3 border-0 mt-4">                         
+              <div>
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs row" role="tablist">
+                  <li class="nav-item col p-0">
+                      <a class="nav-link active" data-bs-toggle="tab" href="#table" role="tab">
+                          <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                          <span class="d-none d-sm-block text-center">강의소개</span>
+                      </a>
+                  </li>
+                  <li class="nav-item col p-0">
+                      <a class="nav-link" data-bs-toggle="tab" href="#description" role="tab">
+                          <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                          <span class="d-none d-sm-block text-center">강의목차</span>
+                      </a>
+                  </li>
+                  <li class="nav-item col p-0">
+                      <a class="nav-link" data-bs-toggle="tab" href="#review" role="tab">
+                          <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                          <span class="d-none d-sm-block text-center">학습공지</span>
+                      </a>
+                  </li>
+                  <li class="nav-item col p-0">
+                    <a class="nav-link" data-bs-toggle="tab" href="#transcript" role="tab">
+                        <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                        <span class="d-none d-sm-block text-center">수강후기</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>                                
               <!-- Card Body -->
               <div class="card-body">
                 <div class="tab-content" id="tabContent">
@@ -542,120 +527,124 @@
                   <div class="tab-pane fade" id="transcript" role="tabpanel" aria-labelledby="transcript-tab">
                     <ul class="list-group list-group-flush">
                       <!-- list group -->
-                      <li class="list-group-item py-3 py-lg-0 px-0">
-                        <!-- row -->
-                        <div class="row align-items-center py-3" onclick = "location.href='education_detail_review.html'">                          
-                          <!-- title -->  
-                          <div class="col-10 col-md-9">
-                            <p>
-                              <img src="assets/images/educate/그룹 11719.png" class="img-fluid">
-                              <span><a class="text-decoration-none text-inherit text-dark h5">홍길동</a><span class="small text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</span></span>                              
-                            </p>
+                      <li class="list-group-item d-flex py-4">
+                        <div class="flex-shrink-0 me-3">                              
+                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+                        </div>
+                        <div class="flex-grow-1 row">
+                          <div class="col">
+                            <h6 class="font-size-15 mb-0">홍길동</h6>
+                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+                            <div class="mt-2 small lh-1">
+                              <a class="text-decoration-none text-inherit">
+                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+                              </a>
+                            </div>
                           </div>
-                          <!-- 별점 -->
-                          <div class="col-2 text-lg-end text-md-end col-md-3 text-primary">
+                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
                           </div>
-                          <!-- text -->
-                          <div class="mt-2 small lh-1">
-                            <a class="text-decoration-none text-inherit">
-                              <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
-                            </a>
-                          </div>                          
+                        </div>
+                      </li>
+                      <li class="list-group-item d-flex py-4">
+                        <div class="flex-shrink-0 me-3">                              
+                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+                        </div>
+                        <div class="flex-grow-1 row">
+                          <div class="col">
+                            <h6 class="font-size-15 mb-0">홍길동</h6>
+                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+                            <div class="mt-2 small lh-1">
+                              <a class="text-decoration-none text-inherit">
+                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+                          </div>
                         </div>
                       </li>
                       <!-- list group -->                          
-                      <li class="list-group-item py-3 py-lg-0 px-0">
-                        <!-- row -->
-                        <div class="row align-items-center py-3" onclick = "location.href='education_detail_review.html'">                          
-                          <!-- title -->  
-                          <div class="col-10 col-md-9">                                                                                  
-                            <p>
-                              <img src="assets/images/educate/그룹 11719.png" class="img-fluid">
-                              <span><a class="text-decoration-none text-inherit text-dark h5">홍길동</a><span class="small text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</span></span>                              
-                            </p>
+                      <li class="list-group-item d-flex py-4">
+                        <div class="flex-shrink-0 me-3">                              
+                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+                        </div>
+                        <div class="flex-grow-1 row">
+                          <div class="col">
+                            <h6 class="font-size-15 mb-0">홍길동</h6>
+                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+                            <div class="mt-2 small lh-1">
+                              <a class="text-decoration-none text-inherit">
+                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+                              </a>
+                            </div>
                           </div>
-                          <!-- 별점 -->
-                          <div class="col-2 text-lg-end text-md-end col-md-3 text-primary">
+                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
                           </div>
-                          <!-- text -->
-                          <div class="mt-2 small lh-1">
-                            <a class="text-decoration-none text-inherit">
-                              <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
-                            </a>
-                          </div>                          
                         </div>
                       </li>
                       <!-- list group -->
-                      <li class="list-group-item py-3 py-lg-0 px-0">
-                        <!-- row -->
-                        <div class="row align-items-center py-3" onclick = "location.href='education_detail_review.html'">                          
-                          <!-- title -->  
-                          <div class="col-10 col-md-9">                                                                                  
-                            <p>
-                              <img src="assets/images/educate/그룹 11719.png" class="img-fluid">
-                              <span><a class="text-decoration-none text-inherit text-dark h5">홍길동</a><span class="small text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</span></span>                              
-                            </p>
+                      <li class="list-group-item d-flex py-4">
+                        <div class="flex-shrink-0 me-3">                              
+                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+                        </div>
+                        <div class="flex-grow-1 row">
+                          <div class="col">
+                            <h6 class="font-size-15 mb-0">홍길동</h6>
+                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+                            <div class="mt-2 small lh-1">
+                              <a class="text-decoration-none text-inherit">
+                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+                              </a>
+                            </div>
                           </div>
-                          <!-- 별점 -->
-                          <div class="col-2 text-lg-end text-md-end col-md-3 text-primary">
+                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
                           </div>
-                          <!-- text -->
-                          <div class="mt-2 small lh-1">
-                            <a class="text-decoration-none text-inherit">
-                              <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
-                            </a>
-                          </div>                          
                         </div>
                       </li>
                       <!-- list group -->
-                      <li class="list-group-item py-3 py-lg-0 px-0">
-                        <!-- row -->
-                        <div class="row align-items-center py-3" onclick = "location.href='education_detail_review.html'">                          
-                          <!-- title -->  
-                          <div class="col-10 col-md-9">                                                                                  
-                            <p>
-                              <img src="assets/images/educate/그룹 11719.png" class="img-fluid">
-                              <span><a class="text-decoration-none text-inherit text-dark h5">홍길동</a><span class="small text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</span></span>                              
-                            </p>
+                      <li class="list-group-item d-flex py-4">
+                        <div class="flex-shrink-0 me-3">                              
+                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+                        </div>
+                        <div class="flex-grow-1 row">
+                          <div class="col">
+                            <h6 class="font-size-15 mb-0">홍길동</h6>
+                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+                            <div class="mt-2 small lh-1">
+                              <a class="text-decoration-none text-inherit">
+                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+                              </a>
+                            </div>
                           </div>
-                          <!-- 별점 -->
-                          <div class="col-2 text-lg-end text-md-end col-md-3 text-primary">
+                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
                           </div>
-                          <!-- text -->
-                          <div class="mt-2 small lh-1">
-                            <a class="text-decoration-none text-inherit">
-                              <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
-                            </a>
-                          </div>                          
                         </div>
                       </li>
                       <!-- list group -->
-                      <li class="list-group-item py-3 py-lg-0 px-0">
-                        <!-- row -->
-                        <div class="row align-items-center py-3" onclick = "location.href='education_detail_review.html'">                          
-                          <!-- title -->  
-                          <div class="col-10 col-md-9">                                                                                  
-                            <p>
-                              <img src="assets/images/educate/그룹 11719.png" class="img-fluid">
-                              <span><a class="text-decoration-none text-inherit text-dark h5">홍길동</a><span class="small text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</span></span>                              
-                            </p>
+                      <li class="list-group-item d-flex py-4">
+                        <div class="flex-shrink-0 me-3">                              
+                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+                        </div>
+                        <div class="flex-grow-1 row">
+                          <div class="col">
+                            <h6 class="font-size-15 mb-0">홍길동</h6>
+                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+                            <div class="mt-2 small lh-1">
+                              <a class="text-decoration-none text-inherit">
+                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+                              </a>
+                            </div>
                           </div>
-                          <!-- 별점 -->
-                          <div class="col-2 text-lg-end text-md-end col-md-3 text-primary">
+                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
                             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
                           </div>
-                          <!-- text -->
-                          <div class="mt-2 small lh-1">
-                            <a class="text-decoration-none text-inherit">
-                              <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
-                            </a>
-                          </div>                          
                         </div>
-                      </li>
+                      </div>
                     </ul>
                   </div>
                 </div>

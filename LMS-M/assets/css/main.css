@@ -1,0 +1,44 @@
+html, body {    
+    height: 100%;
+    margin: 0;
+    background-color: #fff;  
+  }
+  main {
+    min-height: 100%;
+  }
+  footer{
+    margin-top: -100px;
+  }
+
+  .floating-menu{
+    border-radius:100px;
+    z-index:999;
+    padding-top:10px;
+    padding-bottom:10px;
+    right:38.4rem;
+    position:fixed;
+    display:inline-block;
+    bottom:0%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%)
+  }      
+
+  .btn-outline-light{
+    color: #eff2f7;
+  }
+  
+  .container{
+    max-width: 1320px;
+  }
+
+  textarea{
+    resize: none;
+  }
+  
+  .swiper-container {width: 100%;padding-top: 50px;padding-bottom: 50px;}
+  .swiper-slide {width: 400px;height: 500px;padding: 5px;}
+  .swiper-content {background-color: #fff;width: 100%;height: 100%;}
+
+  .bb-red{color: red;}
+

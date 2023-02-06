@@ -4,14 +4,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- CSS only -->
-    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"-->
+    
     <!-- icon css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">        
+
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Main css-->
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -137,10 +142,8 @@
                 <div class="col text-start">
                     <p class="text-start mb-0">분류선택</p>
                     <div class="btn btn-group-toggle text-start px-0" data-toggle="buttons">
-                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="vbtn-radio1">전체</label>
 
-                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+                        <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" checked autocomplete="off">
                         <label class="btn btn-outline-primary rounded-pill me-1 mb-2" for="vbtn-radio2">직무교육</label>
 
                         <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
@@ -433,14 +436,38 @@
                 </div>
             </div>
             <div class="col-3">
-              <div class="mx-auto text-center mt-5">
-                <p class="display-1 mb-0 text-danger"><i class="bi bi-inbox"></i></p>
-                <p><span class="text-danger">상세 과정 선택</span>후<br /> 문의하기를 통해 견적을 받아보세요. <br /><br /> 과정은 다중 선택 가능합니다.</p>
+              <div class="">
+                <div class="mx-auto text-center mt-5">
+                  <p class="display-1 mb-0"><i class="bi bi-inbox"></i></p>
+                  <p><span class="text-danger">상세 과정 선택</span>후<br /> 문의하기를 통해 견적을 받아보세요. <br /><br /> 과정은 다중 선택 가능합니다.</p>
+                </div>                
               </div>
+              
+              <div class="border border-secondary mt-4">
+                <div class="mx-2 my-2">
+                  <div class="row">
+                    <div class="col-auto">
+                      <p class="mb-1 small">직무교육 > 커뮤니케이션</p>
+                    </div>                    
+                    <div class="col text-end">
+                      <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>                    
+                  </div>                  
+                  <div>
+                    <span class="badge border border-dark text-secondary px-3">환급</span>                    
+                    <p class="pt-1">변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
+                  </div>
+                  <div>
+                    <p class="small"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
+                  </div>
+                </div>                                
+              </div>
+
               <div>
-                <button type="button" class="btn btn-primary mt-4 w-100">다음</button>
+                <button type="button" class="btn btn-primary mt-4 w-100" onclick="location.href='education_inquiry_detail.html'">다음</button>
               </div>
-            </div>
+            </div>            
+
         </div>        
       </div>    
     </main>
