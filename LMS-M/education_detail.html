@@ -8,19 +8,39 @@
     <!-- icon css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>    
 
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />    
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
     <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />    
     <!-- Main css-->
     <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--ezhelp-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	  <script src="https://939.co.kr/runezhelp.js" charset="utf-8"></script>
+	  <script src="https://hiserver.co.kr/runezchat.js" charset="utf-8"></script>
+
+    <!-- kakao chat-->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     
     <title>Hello, world!</title>
   </head>
@@ -226,7 +246,7 @@
                     <button class="btn btn-lg btn-primary w-100" type="button">미리보기</button>
                   </div>
                   <div class="d-block gap-3 col-6">
-                    <button class="btn btn-lg btn-primary w-100" type="button">신청하기</button>
+                    <button class="btn btn-lg btn-primary w-100" type="button" data-bs-toggle="modal" data-bs-target=".consult-modal">신청하기</button>
                   </div>
                 </div>
               </div>
@@ -654,6 +674,60 @@
         </div>
       </div>
     </main>
+
+    <!-- 문의 modal START-->
+    <div class="modal fade consult-modal" tabindex="-1" role="dialog" aria-labelledby="consultModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title">
+                  <p class="h3 mb-1" id="consultModalLabel">포스트 코로나 시대의 e비즈니스 인사이트</p>                  
+                </div>                  
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                  
+              </div>              
+              <div class="modal-body">                
+                  <div class="d-flex mb-3">
+                    <div class="input-group w-25 me-3">                      
+                      <input type="text" class="form-control" placeholder="기업명" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group w-25 me-3">                      
+                      <input type="text" class="form-control" placeholder="담당자" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group w-50">                      
+                      <input type="tel" class="form-control" placeholder="연락처" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>  
+                  <div class="mb-3">
+                    <div class="input-group w-50 me-3">
+                      <input type="email" class="form-control" placeholder="이메일" aria-label="Email" aria-describedby="basic-addon2">
+                    </div>                    
+                  </div>                  
+                  <div class="mb-3">
+                    <div>
+                      <textarea class="form-control" rows="10" placeholder="메모를 남겨주세요."></textarea>
+                    </div>
+                  </div>
+                  <div class="mb-3" style="background-color: #F2F2F2;">
+                    <div class="p-3">
+                      <p class="text-primary fw-bold">개인정보 수집 및 이용에 대한 안내</p>
+                      <ul class="mx-0">
+                        <li>수집항목 : 이름, 이메일, 전화번호, 그 외 개인이 직접 등록한 문의 내용</li>
+                        <li>수집목적 : 문의 결과 회신</li>
+                        <li>이용기간 : 개인정보 수집 및 이용에 대한 목적이 달성된 후에는 해당 정보를 파기</li>
+                      </ul>
+                    </div>                    
+                  </div>
+                  <!-- 체크박스 -->
+                  <div class="text-start text-secondary mb-3">
+                    <input type="checkbox" class="form-check-input h2" id="rememberCheck" checked>
+                    <label class="form-check-label pt-2" for="rememberCheck">개인정보 수집 및 이용에 대한 안내를 충분히 숙지했습니다.</label>
+                </div>   
+                <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal" aria-label="Close">상담신청</button>
+              </div>
+          </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+    <!-- 문의 modal END-->
 
     
     <!-- footer START -->

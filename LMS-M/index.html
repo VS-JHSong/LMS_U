@@ -14,11 +14,16 @@
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />    
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
     <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />    
     <!-- Main css-->
     <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+
+    
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -28,8 +33,21 @@
 
     <!--swiper-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--ezhelp-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	  <script src="https://939.co.kr/runezhelp.js" charset="utf-8"></script>
+	  <script src="https://hiserver.co.kr/runezchat.js" charset="utf-8"></script>
+
+    <!-- kakao chat-->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     
     <title>Hello, world!</title>
+
+    <script type="text/javascript">
+      
+    </script> 
+
   </head>
   <body>
     <!-- Optional JavaScript; choose one of the two! -->
@@ -362,7 +380,7 @@
                 <div class="row mt-2 d-flex g-2">                  
                   <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#findIdModal">아이디 찾기</button></span></div>
                   <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#findPwModal">비밀번호 찾기</button></span></div>
-                  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" onclick="location.href='sign_up.html'">회원가입</button></span></div>
+                  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" onclick="location.href='sign_up.php'">회원가입</button></span></div>
                 </div>
               </div>                                                            
             </div>
@@ -874,6 +892,89 @@
       <!-- Slot4 END -->
   
     </main>
+
+    <!-- floating menu -->
+    <div class="floating-menu">      
+      <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">          
+          <div id="chat_help" style="visibility: hidden;">
+            <button id="chat_ezHelp"></button>            
+          </div>
+          <button type="button" id="chat_bot" class="btn btn-light border border-dark dd-floating-icon" style="display: none;" onclick="ezcOpen();"><i class="bi bi-chat-right-dots fs-2"></i><br/><p class="mb-0">실시간상담</p></button>
+          <button type="button" id="kakao-chat"class="btn btn-light border border-dark dd-floating-icon" style="display: none;"><i class="fab fa-rocketchat fs-2"></i><br /><p class="mb-0">상담하기</p></button>
+          <button type="button" class="btn btn-light border border-dark dd-floating-icon" style="display: none;" data-bs-toggle="modal" data-bs-target=".inquiry-modal"><i class="far fa-edit fs-2"></i><br /><p class="mb-0">문의하기</p></button>
+          <button type="button" id="window-ezhelp" class="btn btn-light border border-dark dd-floating-icon" style="display: none;"><i class="bi bi-pc-display-horizontal fs-2"></i><br /><p class="mb-0">PC원격제어</p></button>
+          <button type="button" class="btn btn-light border border-dark dd-floating-hide"><</button>
+        </div>        
+        <div class="btn-group" role="group" aria-label="Third group">
+          <button type="button" class="btn btn-light px-4 border border-dark top"><i class="bi bi-caret-up-fill fs-2"></i><br />top</button>
+        </div>
+      </div>
+    </div>    
+    <!-- //floatMenu -->
+
+    <!-- 문의 modal START-->
+    <div class="modal fade inquiry-modal" tabindex="-1" role="dialog" aria-labelledby="inquiryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                <div class="modal-title">
+                  <p class="h3 mb-1" id="inquiryModalLabel">문의</p>
+                  <p class="">요청사항을 남겨주시면 신속하게 연락드리겠습니다.</p>
+                </div>                  
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                  
+              </div>              
+              <div class="modal-body">                
+                  <div class="d-flex mb-3">
+                    <select class="form-select form-select-sm me-3 w-50" aria-label=".form-select-sm example">
+                      <option selected>이의제기</option>
+                      <option value="1">학습질의</option>
+                      <option value="2">시스템문의</option>
+                      <option value="3">기타</option>
+                    </select>
+                    <div class="input-group w-25">                      
+                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                  </div>  
+                  <div class="d-flex mb-3">
+                    <div class="input-group w-75 me-3">
+                      <input type="email" class="form-control" placeholder="이메일" aria-label="Email" aria-describedby="basic-addon2">
+                    </div>
+                    <div class="input-group">
+                      <input type="tel" class="form-control" placeholder="전화번호(-없이 입력해주세요.)" aria-label="Tel" aria-describedby="basic-addon3">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="제목" aria-label="" aria-describedby="basic-addon4">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div>
+                      <textarea class="form-control" rows="10" placeholder="메모를 남겨주세요."></textarea>
+                    </div>
+                  </div>
+                  <div class="mb-3" style="background-color: #F2F2F2;">
+                    <div class="p-3">
+                      <p class="text-primary fw-bold">개인정보 수집 및 이용에 대한 안내</p>
+                      <ul class="mx-0">
+                        <li>수집항목 : 이름, 이메일, 전화번호, 그 외 개인이 직접 등록한 문의 내용</li>
+                        <li>수집목적 : 문의 결과 회신</li>
+                        <li>이용기간 : 개인정보 수집 및 이용에 대한 목적이 달성된 후에는 해당 정보를 파기</li>
+                      </ul>
+                    </div>                    
+                  </div>
+                  <!-- 체크박스 -->
+                  <div class="text-start text-secondary mb-3">
+                    <input type="checkbox" class="form-check-input h2" id="rememberCheck" checked>
+                    <label class="form-check-label pt-2" for="rememberCheck">개인정보 수집 및 이용에 대한 안내를 충분히 숙지했습니다.</label>
+                </div>   
+                <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal" aria-label="Close">문의하기</button>
+              </div>
+          </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+    <!-- 문의 modal END-->
     
     <!-- footer START -->
     <footer style="background-color: #f2f2f2;">
@@ -896,7 +997,7 @@
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>                
               </ul>
             </div>
           </div>
@@ -961,12 +1062,28 @@
     </footer>
     <!-- footer END -->
     
-    <nav class="floating-menu">
-      
-    </nav>
+    
 
     <script>
       $(document).ready(function(){
+        
+        //카카오 채팅
+        Kakao.init('c089c8172def97eb00c07217cae17495'); 
+
+        function kakaoChatStart() {
+          Kakao.Channel.chat({
+            channelPublicId: '_Ixbtxoxb' 
+          });
+        } 
+
+        //원격PC
+        function openWindow_ezHelp() {
+          var url = "https://939.co.kr/oneline";	
+          var Option = "top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no";
+
+          window.open(url, Option);	
+        }
+
         var swiper = new Swiper('.swiper-container', {
             effect: 'coverflow',
             grabCursor: true,
@@ -983,9 +1100,64 @@
               el: '.swiper-pagination',
             },
         });
-      });
-      
 
-    </script>
+        var tmp = parseInt($(".floating-menu").css('top'));
+ 
+        $(window).scroll(function () {
+            var scrollTop = $(window).scrollTop();
+            var obj_position = scrollTop + tmp + "px";
+ 
+            $(".floating-menu").stop().animate({
+                "top": obj_position
+            }, 500);
+            // 스크롤 시 플로팅 메뉴 닫기
+            if($(".dd-floating-icon").is(':visible') == true){
+              $(".dd-floating-icon").hide();
+              $(".dd-floating-hide").text("<");  
+            }  
+
+        }).scroll();        
+
+        $(".dd-floating-hide").click(function(){
+          if($(".dd-floating-icon").is(':visible') == false){                        
+            $(".dd-floating-icon").show();
+            $(this).text(">");            
+          }else{
+            $(".dd-floating-icon").hide();
+            $(this).text("<");
+          }          
+        });
+      
+        function chat_ezHelp() {
+          runezHelpChat ({
+            divid: "chat_ezHelp",
+            userid: "oneline",
+            customerid: "TEST" // 사용자 ID
+          });
+
+        }
+      
+        chat_ezHelp();  
+        
+        $("#chat_help").css("visibility", "visible")
+
+        //카카오 클릭 이벤트
+        $("#kakao-chat").click(function(){
+          kakaoChatStart();
+        });
+        
+        $("#window-ezhelp").click(function(){
+          openWindow_ezHelp();
+        });
+
+        $( '.top' ).click( function() {
+          $( 'html, body' ).animate( { scrollTop : 0 }, 10 );
+          return false;
+        } );
+        
+      });            
+
+
+    </script> 
   </body>
 </html>
