@@ -52,9 +52,9 @@ File: Custom Bootstrap Css File
 body {
   margin: 0;
   /*font-family: var(--bs-font-sans-serif);*/
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 0.875rem;
   /*font-weight: 400;*/
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: .875rem;
   font-weight: 300;
   line-height: 1.5;
   color: #495057;
@@ -75,7 +75,7 @@ hr:not([size]) {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.2; }
 
 h1, .h1 {
@@ -6506,19 +6506,19 @@ textarea.form-control-lg {
   font-style: normal !important; }
 
 .fw-light {
-  font-weight: 300 !important; }
+  font-weight: 100 !important; }
 
 .fw-lighter {
   font-weight: lighter !important; }
 
 .fw-normal {
-  font-weight: 400 !important; }
+  font-weight: 300 !important; }
 
 .fw-bold {
-  font-weight: 600 !important; }
+  font-weight: 500 !important; }
 
 .fw-bolder {
-  font-weight: bolder !important; }
+  font-weight: 700 !important; }
 
 .lh-1 {
   line-height: 1 !important; }

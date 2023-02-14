@@ -1,0 +1,35 @@
+@import url(common.css);
+
+/*
+o(a~z)-(a~z)ps(01~99번째 세션) : 고유 클래스 규칙
+
+
+*/
+.oa-aps03 .col > div {padding-bottom:120%;position:relative;}
+.oa-aps03 .col > div.img01 {background:url('../../../assets/images/about/building.png') no-repeat center center;background-size: cover;}
+.oa-aps03 .col > div > div {position: absolute;bottom:2rem;left:50%;transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.floating-menu{border-radius:100px;z-index:999;padding-top:10px;padding-bottom:10px;right:38.4rem;position:fixed;display:inline-block;bottom:0%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%)transform:translateY(-50%)}
+*/

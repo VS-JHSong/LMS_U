@@ -1,29 +1,3 @@
-  html, body {    
-    height: 100%;
-    margin: 0;
-    background-color: #fff;
-  }
-  main {
-    min-height: 100%;
-    background-color: #fff;
-  }
-  
-  .btn-outline-light{
-    color: #eff2f7;    
-  }
-  
-  .btn-light{
-    background-color: #fff;
-  }
-
-
-  .container{
-    max-width: 1320px;
-  }
-
-  textarea{
-    resize: none;
-  }
   
   .swiper-container {width: 100%;padding-top: 50px;padding-bottom: 50px;}
   .swiper-slide {width: 400px;height: 500px;padding: 5px;}
@@ -31,42 +5,6 @@
 
   .bb-red{color: red;}
 
-  .floating-menu {
-    position: absolute;    
-    right: 50px;
-    border-radius: 70px;
-    bottom: 100px;    
-  }
-
-  .floating-meun .folating-down{
-    right: 50px;    
-  }
-
-  .dropdown-menu[style]{
-    right: 0px !important;
-  }
-
-  #ezcSpeechBubble{
-    width: 1px;
-    height: 1px;
-  }
-
-  #ezchatsmall_container{
-    width: 1px!important; 
-    height: 1px!important;
-  }
-
-  #ezcSpeechBubbleImgWrap{
-    visibility: hidden;
-  }
-
-  #chat_ezHelp{
-    z-index: auto !important;
-    border: hidden;
-  }
-
-  
-  
   
 
   
