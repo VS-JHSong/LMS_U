@@ -45,7 +45,6 @@ $(document).ready(function () {
     $(".evaluation2").hide();
     $(".evaluation1").show();
   });
-  
-  
+
 
 });

@@ -1,469 +1,441 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- icon css
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">-->
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-        
-        <!-- App Css-->
-        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-        <!-- Bootstrap Css -->
-        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-        <!-- Icons Css -->
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <!-- Main css-->
-        <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- AOS CSS -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <!--swiper CSS-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<!-- icon css-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <!--AOS JS-->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <!--swiper JS-->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        <!--google map JS-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
-        <title>Hello, world!</title>
-    </head>
-    <body>    
-        <!-- Optional JavaScript; choose one of the two! -->
+	<!-- App Css-->
+	<link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+	<!-- Bootstrap Css -->
+	<link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />  
+	<!-- Icons Css -->
+	<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+	<!-- visco css-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="assets/css/visco/about.css" rel="stylesheet" type="text/css" />
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        
-        
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-        -->
-        <style>      
-        
-            html, body {
-                height: 100%;
-                margin: 0;
-            }
+	<!-- AOS CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!--swiper CSS-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
-            main {
-                min-height: 100%;
-            }
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!--AOS JS-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!--swiper JS-->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!--google map JS-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-            footer{
-                margin-top: -100px;
-            }
-            .floating-menu{
-                border-radius:100px;
-                z-index:999;
-                padding-top:10px;
-                padding-bottom:10px;
-                right:38.4rem;
-                position:fixed;
-                display:inline-block;
-                bottom:0%;
-                -webkit-transform:translateY(-50%);
-                -ms-transform:translateY(-50%);
-                transform:translateY(-50%)
-            }            
-        
-        </style>
-        
-        <main>
-            <!-- GNB START-->
-            <div class="container px-0">                        
-                <nav class="navbar navbar-expand-lg navbar-light">                
-                    <!-- Logo START -->
-                    <a class="navbar-brand" href="index.html">
-                    <!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
-                    <!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
-                        <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
-                    </a>
-                    <!-- Logo END -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item pe-2">
-                                <a class="nav-link" href="education.html">전체교육</a>
-                            </li>
-                            <li class="nav-item pe-2">
-                                <a class="nav-link text-primary fw-bold" href="about_us.html">교육원소개</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="support.html">고객지원</a>
-                            </li>
-                        </ul>
-                        <!-- Nav Search START -->
-                        <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
-                            <div class="nav-item w-100">
-                                <form class="position-relative">
-                                    <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
-                                    <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
-                                        <i class="bi bi-search"></i>
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- Nav Search END -->
-                        <!-- 교육문의 -->
-                        <button type="button" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
-                    </div>                
-                </nav>                   
-            </div>
-            <!-- GNB END-->
+	<title>Hello, world!</title>
+</head>
+<body>
+	
+	<main>
+		<!-- GNB START-->
+		<div class="container px-0">                        
+			<nav class="navbar navbar-expand-lg navbar-light">                
+				<!-- Logo START -->
+				<a class="navbar-brand" href="index.html">
+				<!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
+				<!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
+					<img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
+				</a>
+				<!-- Logo END -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item pe-2">
+							<a class="nav-link" href="education.html">전체교육</a>
+						</li>
+						<li class="nav-item pe-2">
+							<a class="nav-link text-primary fw-bold" href="about_us.html">교육원소개</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="support.html">고객지원</a>
+						</li>
+					</ul>
+					<!-- Nav Search START -->
+					<div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+						<div class="nav-item w-100">
+							<form class="position-relative">
+								<input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+								<button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+									<i class="bi bi-search"></i>
+								</button>
+							</form>
+						</div>
+					</div>
+					<!-- Nav Search END -->
+					<!-- 교육문의 -->
+					<button type="button" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+				</div>                
+			</nav>                   
+		</div>
+		<!-- GNB END-->
 
-            <!-- USER START -->            
-            <div style="background-color: #00287A;">
-                <div class="container px-4 px-lg-0">  
-                    <div class="row py-4 text-md-start">
-                        <div class="col mb-4 mb-md-0">
-                            <h3 class="text-white mb-1">학습을 위해 로그인을 진행해주세요.</h3>
-                            <p class="text-white mb-1 pt-2 pb-2">회사를 통해 수강을 하시는 경우 문자 또는 카카오톡 메시지로부터 <br/> 받은 정보로 로그인 하세요.</p>
-                            <button type="button" class="btn btn-outline-light btn-sm" style="width: 5.5rem;"><i class="bi bi-globe2 fs-1"></i> <br />LMS SITE</button>
-                            <button type="button" class="btn btn-outline-light btn-sm" style="width: 5.5rem;"><i class="bi bi-twitter fs-1"></i><br />교강사전용</button>
-                        </div>
-                        <div class="col-4">
-                            <div class="row justify-content-end">
-                                <div class="ms-md-8 col-9 pe-0">
-                                    <div class="form-floating pb-2">
-                                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                        <label for="floatingInput">아이디</label>
-                                    </div>
-                                    <div class="form-floating">
-                                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                                        <label for="floatingPassword">비밀번호</label>
-                                    </div>
-                                </div>
-                                <div class="col-3">
-                                    <button type="button" class="btn btn-light btn-lg fs-6" style="height: 7.8rem;">로그인</button>
-                                </div>
-                            </div>
-                            <div class="pt-2">
-                                <span class="pe-1"><button type="button" class="btn btn-outline-light" style="width: 9rem;" onclick = "location.href='find_id.html'">아이디 찾기</button></span>
-                                <span class="pe-1"><button type="button" class="btn btn-outline-light" style="width: 10rem;" onclick = "location.href='find_pw.html'">비밀번호 찾기</button></span>
-                                <span><button type="button" class="btn btn-outline-light" style="width: 6rem;">회원가입</button></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>            
-            <!-- USER END -->      
+		<!-- USER START -->
+		<div style="background-color: #00287A;">
+			<div class="container px-4 px-lg-0">  
+				<div class="row py-4 text-md-start">
+					<div class="col mb-4 mb-md-0">
+						<h3 class="text-white mb-1">학습을 위해 로그인을 진행해주세요.</h3>
+						<p class="text-white mb-1 pt-2 pb-2">회사를 통해 수강을 하시는 경우 문자 또는 카카오톡 메시지로부터 <br/> 받은 정보로 로그인 하세요.</p>
+						<button type="button" class="btn btn-outline-light btn-sm" style="width: 5.5rem;"><i class="bi bi-globe2 fs-1"></i> <br />LMS SITE</button>
+						<button type="button" class="btn btn-outline-light btn-sm" style="width: 5.5rem;"><i class="bi bi-twitter fs-1"></i><br />교강사전용</button>
+					</div>
+					<div class="col-4">
+						<div class="row justify-content-end">
+							<div class="ms-md-8 col-9 pe-0">
+								<div class="form-floating pb-2">
+									<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+									<label for="floatingInput">아이디</label>
+								</div>
+								<div class="form-floating">
+									<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+									<label for="floatingPassword">비밀번호</label>
+								</div>
+							</div>
+							<div class="col-3">
+								<button type="button" class="btn btn-light btn-lg fs-6" style="height: 7.8rem;">로그인</button>
+							</div>
+						</div>
+						<div class="pt-2">
+							<span class="pe-1"><button type="button" class="btn btn-outline-light" style="width: 9rem;" onclick = "location.href='find_id.html'">아이디 찾기</button></span>
+							<span class="pe-1"><button type="button" class="btn btn-outline-light" style="width: 10rem;" onclick = "location.href='find_pw.html'">비밀번호 찾기</button></span>
+							<span><button type="button" class="btn btn-outline-light" style="width: 6rem;">회원가입</button></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- USER END -->
 
-            <!-- side START -->            
-            <div style="background-color: #438DFF;">
-                <div>
-                    <div class="container">
-                        <div class="pt-4 text-white">
-                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-end breadcrumb primary-color">
-                                    <i class="bi bi-house-door-fill pe-2"></i>
-                                    <li class="breadcrumb-item">원라인에듀</li>
-                                    <li class="breadcrumb-item" aria-current="page">교육원소개</li>
-                                </ol>
-                            </nav>
-                        </div>                                   
-                    </div>     
-                </div>                
-                <!-- 소개글 -->                
-                <section id="introduction" class="pb-4" style="background-color: #438DFF;">
-                    <div class="container aos-init aos-animate text-white" data-aos="fade-up">
-                        <div class="fw-bold h5 pt-2 text-white">교육원 소개:</div>
-                        <div class="content text-center">
-                            <div class="h4 text-white">
-                                <p>함께 성장,</p>
-                                <p>발전해가자는 신념으로 <span class="fw-bold">사람이 행복한 교육</span>을 만들겠습니다.</p>                                
-                            </div>
-                            <div>
-                                <p>안녕하세요. 원라인에듀입니다. <br/>
-                                    원라인에듀를 통해 학습자분들을 만나게 되어 무척 기쁘고 감사한 마음입니다. <br/>
-                                    우리 원라인에듀는 사람이 너무나 소중한 교육원입니다. <br/>
-                                    우리 직원분들과 학습자분들과 함께 성장 발전해가자는 신념으로 항상 고민하고 부단히 소통하고, <br/>
-                                    경청하는 행동에 옮기며 사람이 행복한 교육을 만들고자 합니다. <br/><br/>
-                                    우리가 가진 생각과 철학이 현실화 되는 그 날까지 여러분들과 함게 하며, 좋은 문화, <br/>
-                                    신뢰있는 사회를 만들어 가는데 작은 보탬이 되고자 합니다.<br/>
-                                    다변화하는 세상에서 배움의 엄춤이 없는 평생교육의 길. 그 길에서 이상을 실현시키시기 바랍니다.<br/>
-                                    늘 행복하세요!    
-                                </p>  
-                            </div>
-                        </div>
-                    </div>
-                </section>           
-            </div>                        
-            <!---->
-            <!-- 목표 및 경영원칙 -->
-            <section id="rule" class="pt-4 mb-4">
-                <div class="container aos-init aos-animate" data-aos="fade-up">
-                    <div class="section-title fw-bold h5 text-primary">목표 및 경영원칙:</div>
-                    <div class="content text-center">
-                        <div>
-                            <p class="h2">누구에게나 열린 평생교육을 통해</p>
-                            <p class="h2"><span class="fw-bold">소통과 상생의 가치실현</span>을 목표로 합니다.</p>
-                        </div>
-                        
-                        <div class="row row-cols-lg-3 row-cols-sm-12 mx-auto text-white">
-                            <div class="">
-                                <div class="row" style="background-image: url(assets/images/about/building.png); width: 25rem; height: 31.25rem;">
-                                    <div class="align-self-end mb-4">
-                                        <span class="mb-0 h3" style="margin-top: auto;">창의적인 경영</span>
-                                        <p class="h5">creative</p>    
-                                    </div>                                    
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="row" style="background-image: url(assets/images/about/sky.png); width: 25rem; height: 31.25rem;">
-                                    <div class="align-self-end mb-4">
-                                        <span class="mb-0 h3">윤리적이고 투명한 경영</span>
-                                        <p class="h5">ethical & transparent</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="">
-                                <div class="row" style="background-image: url(assets/images/about/sun.png); width: 25rem; height: 31.25rem;">
-                                    <div class="align-self-end mb-4">
-                                        <span class="mb-0 h3">상생하는 경영</span>
-                                        <p class="h5">win-win</p>
-                                    </div>                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>                
-            <!---->                           
-            <!-- 비전 --> 
-            <section id="vision" style="height: 800px;">
-                <div class="pt-4" style="background-color: #00287A; height: 600px;">
-                    <div class="container aos-init aos-animate text-white" data-aos="fade-up">                    
-                        <div class="section-title fw-bold h5 text-white">비전:</div>
-                        <div class="content text-center">
-                            <div>
-                                <p class="h2 text-white">사람이 중심이 되는, 사람을 소중히 하는 문화속에</p>
-                                <p class="h2 text-white"><span class="fw-bold">지속적 자기계발을 지원</span>하고 함께 성장하는 기업이 되겠습니다.</p>
-                                <span style="writing-mode:vertical-rl">......................</span>
-                                <div class="custom-fraction">
-                                    <p class="h5 text-white">인증현황(<span class="current">1</span>/<span class="all">2</span> )</p>
-                                </div>
-                            </div>
-                            <div class="d-flex">
-                                <div class="align-self-end">
-                                    <div class="swiper-button-next"></div>
-                                    <div class="swiper-button-prev"></div>
-                                    <!--
-                                    <button class="btn btn-prev btn-icon btn-sm btn-primary swiper-button-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" id="trending-prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-ad7f6e8e449cf3e5"><i class="bi bi-chevron-left"></i></button>
-                                    <button class="btn btn-next btn-icon btn-sm btn-primary swiper-button-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" id="trending-next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-ad7f6e8e449cf3e5"><i class="bi bi-chevron-right"></i></button> 
-                                    -->
-                                </div>
-                            </div>
-                            <div class="wrapper">
-                                <!-- Swiper -->
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img class="rounded mx-auto d-block" src="assets/images/about/이미지 14.png">
-                                            <div class="text-center mt-4 mb-4">
-                                                <h5 class="card-title"><span class="fw-bold text-primary">원격평생교육시설증</span></h5>
-                                                <span class="d-block text-secondary mb-3">Remote lifelode training facility</span>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img class="rounded mx-auto d-block" src="assets/images/about/이미지 14.png">
-                                            <div class="text-center mt-4 mb-4">
-                                                <h5 class="card-title"><span class="fw-bold text-primary">원격평생교육시설증</span></h5>
-                                                <span class="d-block text-secondary mb-3">Remote lifelode training facility</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="carouselExampleControls" class="swiper mySwiper h-100">
-                                <div class="swiper-wrapper">
-                                    <!-- Card Body -->
-                                    <div class="card-body mt-2">
-                                        <div class="mb-4">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            </section>
-            <!---->
-            <!-- 미션 -->
-            <section id="rule" class="pt-4 mb-4">
-                <div class="container aos-init aos-animate" data-aos="fade-up">
-                    <div class="section-title fw-bold h5 text-primary">미션:</div>
-                    <div class="content">
-                        <div>
-                            <p class="h2">학습자의 만족을 위해 경청하는</p>
-                            <p class="h2"><span class="fw-bold">학습자의 needs를 반영</span>하는 최적의 HRD 교육,</p>
-                            <p class="h2">최상의 LMS</p>
-                        </div>
-                        
-                        <div class="row row-cols-lg-4 justify-content-end">
-                            <div class="px-2">
-                                <div style="background-image: url(assets/images/about/mision1.png); width: 296px; height: 500px;"></div>
-                            </div>
-                            <div class="px-2">
-                                <div style="background-image: url(assets/images/about/mision2.png); width: 296px; height: 500px;"></div>
-                            </div>
-                            <div class="px-2">
-                                <div style="background-image: url(assets/images/about/mision3.png); width: 296px; height: 500px;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr />
-            <!---->
-            <!-- 조직도 -->
-            <section id="rule" class="pt-4 mb-4">
-                <div class="container aos-init aos-animate" data-aos="fade-up">
-                    <div class="section-title fw-bold h5 text-primary">조직도:</div>
-                    <div class="content">                                                
-                        <div class="row row-cols-lg-4 justify-content-end">
-                            
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!---->
-            <!-- 찾아오시는 길 -->
-            <section id="rule" class="pt-4 mb-4" style="background-color: #646464;">
-                <div class="container aos-init aos-animate" data-aos="fade-up">
-                    <div class="row pb-4">
-                        <div class="col-10">
-                            <div class="section-title fw-bold h5 text-white pb-4">찾아오시는 길:</div>
-                            <div>
-                                <p class="pt-4 mb-0" style="color:#42D8FF">주소</p>
-                                <p class="text-white">서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀</p>
-                            </div>                        
-                        </div>
-                        <div class="col-2">
-                            <p class="mb-0" style="color:#42D8FF">전화번호</p>
-                            <p class="text-white mb-1">1811-0014 / 0018</p>
-                            <p class="mb-0" style="color:#42D8FF">팩스</p>
-                            <p class="text-white mb-1">050-8094-0019</p>
-                            <p class="mb-0" style="color:#42D8FF">이메일</p>
-                            <p class="text-white mb-1">oneline0906@oneline.kr</p>
-                        </div>
-                    </div>
-                    <div class="content pb-5">                                                
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.1341037253399!2d126.89032175812875!3d37.525174422174395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9eeeb795672b%3A0xe822ce6fe63bb7cb!2z7JuQ65287J247JeQ65OA!5e0!3m2!1sko!2skr!4v1660616233480!5m2!1sko!2skr" style="width: 1280px; height: 654px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </section>
-            <!---->
-        </main>
-        <!-- main END-->
-    
-        <!-- footer START -->
-        <footer class="navbar-fixed-bottom mt-4" style="background-color: #f2f2f2;">
-            <div class="container px-0">
-                <!-- Tops Links -->
-                <div class="row pt-3">
-                    <div class="col-sm-7 col-md-6 col-lg-6">
-                        <ul class="list-inline lh-lg">
-                            <li class="list-inline-item"><a class="text-muted">이용약관</a></li>
-                            <li class="list-inline-item"><a class="text-muted">개인정보 취급방침</a></li>
-                            <li class="list-inline-item"><a class="text-muted">사업주지원교육 유의사항</a></li>
-                            <li class="list-inline-item"><a class="text-muted">본인인증 안내</a></li>
-                        </ul>
-                    </div>
-                    <div class="col text-sm-end">
-                        <div class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="width: 13rem;">
-                                관련사이트
-                            </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- Payment and card -->
-            <div class="row mb-7">
-                <div class="col-sm mb-3 mb-sm-0">
-                    <!-- Socials -->
-                    <ul class="list-inline list-separator list-separator-light mb-0">
-                        <li class="list-inline-item">
-                            <div class="card">
-                                <img src="assets/images/이미지 3.png" class="card-img-top" style="width: 10rem; height: 3rem">
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="card">
-                                <img src="assets/images/이미지 4.png" class="card-img-top" style="width: 10rem; height: 3rem">
-                            </div>
-                        </li>
-                        <li class="list-inline-item">
-                            <div class="card">
-                                <img src="assets/images/이미지 5.png" class="card-img-top" style="width: 10rem; height: 3rem">
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- Socials End -->
-                    </div>
-        
-                    <div class="col-sm-auto">
-                        <!-- Socials -->
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item">
-                                <a class="btn btn-warning" href="#">카카오채널</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn btn-success" href="#">N 블로그</a>
-                            </li>
-                        </ul>
-                        <!-- Socials End -->
-                    </div>
-                </div>    
-                <!-- Bottom footer -->
-                <div class="row">
-                    <div class="">
-                        <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-lg-start">
-                        <!-- copyright text -->              
-                            <div class="text-muted"> 
-                                <p>원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br /> 
-                                TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
-                                통신판매번호 : 제 2021-서울영등포-0322호 <br />                  
-                                COPYRIGHT 2018 원라인에듀 ALLRIGHT & RESERVED.
-                                </p>
-                                <a class="text-muted">©2022 Booking</a>. All rights reserved.
-                            </div>              
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer END -->
-    
-        <!-- floating START -->
-        <nav class="floating-menu">
-            
-        </nav>
-        <!-- floating END -->        
-    </body>
-    <script type="text/javascript">
-        AOS.init();
-        var swiper = new Swiper(".mySwiper", {                            
-                loop: true,                
-                navigator: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });         
-    </script>
+		<!-- side START -->
+		<div class="oa-aps01">
+			<div class="container">
+				<!--div class="pt-4 text-white"-->
+					<nav class=" text-white pt-2" aria-label="breadcrumb">
+						<ol class="breadcrumb justify-content-end breadcrumb primary-color">
+							<i class="bi bi-house-door-fill pe-2"></i>
+							<li class="breadcrumb-item">원라인에듀</li>
+							<li class="breadcrumb-item" aria-current="page">교육원소개</li>
+						</ol>
+					</nav>
+				<!--/div-->
+			</div>
+			<!-- 소개글 -->
+			<section id="introduction" class="pb-4" style="background-color: #438DFF;">
+				<div class="container oa-aps02 aos-init aos-animate text-white" data-aos="fade-up">
+					<div class="h5 pt-2 text-white">교육원 소개:</div>
+					<div class="content text-center">
+						<div class="text-white h3">
+							함께 성장, 발전해가자는 신념으로 <span class="fw-bolder">사람이 행복한 교육</span>을 만들겠습니다.
+						</div>
+						<div>
+							<p>안녕하세요. 원라인에듀입니다. <br/>
+								원라인에듀를 통해 학습자분들을 만나게 되어 무척 기쁘고 감사한 마음입니다. <br/>
+								우리 원라인에듀는 사람이 너무나 소중한 교육원입니다. <br/>
+								우리 직원분들과 학습자분들과 함께 성장 발전해가자는 신념으로 항상 고민하고 부단히 소통하고,
+								경청하는 행동에 옮기며 사람이 행복한 교육을 만들고자 합니다. <br/><br/>
+								우리가 가진 생각과 철학이 현실화 되는 그 날까지 여러분들과 함게 하며, 좋은 문화,
+								신뢰있는 사회를 만들어 가는데 작은 보탬이 되고자 합니다.<br/>
+								다변화하는 세상에서 배움의 엄춤이 없는 평생교육의 길. 그 길에서 이상을 실현시키시기 바랍니다.<br/>
+								늘 행복하세요!
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!---->
+		<!-- 목표 및 경영원칙 -->
+		<section id="rule" class="pt-4 mb-5">
+			<div class="container oa-aps03 aos-init aos-animate" data-aos="fade-up">
+				<div class="section-title fw-bold h5 text-primary">목표 및 경영원칙:</div>
+				
+					<div class="h3 pb-4 text-center">
+						누구에게나 열린 평생교육을 통해<br />
+						<span class="fw-bolder">소통과 상생의 가치실현</span>을 목표로 합니다.
+					</div>
+					
+					<!--div class="row row-cols-lg-3 row-cols-sm-12 mx-auto">
+					
+						<div class="col" style="background-image: url(assets/images/about/building.png); width: 25rem; height: 31.25rem;">
+							<div class="align-self-end p-3">
+								<p class="mb-0 h4 text-white">창의적인 경영</p>
+								<p class="h5">creative</p>
+							</div>                                    
+						</div>
+						<div class="col" style="background-image: url(assets/images/about/sky.png); width: 25rem; height: 31.25rem;">
+							<div class="align-self-end p-3">
+								<span class="mb-0 h4">윤리적이고 투명한 경영</span>
+								<p class="h5">ethical & transparent</p>
+							</div>
+						</div>
+						<div class="col" style="background-image: url(assets/images/about/sun.png); width: 25rem; height: 31.25rem;">
+							<div class="align-self-end p-3">
+								<span class="mb-0 h4">상생하는 경영</span>
+								<p class="h5">win-win</p>
+							</div>                                    
+						</div>
+					</div-->
+					
+					<!--row-cols-1 : 줄어들었을때 그리드-->
+					<!--row-cols-lg-3 : 기본 그리드-->
+					<!--g-4 : 줄어들었을때 간격-->
+					<!--g-lg-6 : 기본간격-->
+					<div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-5">
+						<div class="col">
+						  <div class="text-white bg-light img01">
+							<div>Row column</div>
+						  </div>
+						</div>
+						<div class="col">
+						  <div class="border bg-light">Row column</div>
+						</div>
+						<div class="col">
+						  <div class="border bg-light">Row column</div>
+						</div>
+					</div>
+
+
+			</div>
+		</section>                
+		<!---->                           
+		<!-- 비전 --> 
+		<section id="vision" style="height: 800px;">
+			<div class="pt-4" style="background-color: #00287A; height: 600px;">
+				<div class="container aos-init aos-animate text-white" data-aos="fade-up">                    
+					<div class="section-title fw-bold h5 text-white">비전:</div>
+					<div class="content text-center">
+						<div>
+							<p class="h2 text-white">사람이 중심이 되는, 사람을 소중히 하는 문화속에</p>
+							<p class="h2 text-white"><span class="fw-bold">지속적 자기계발을 지원</span>하고 함께 성장하는 기업이 되겠습니다.</p>
+							<span style="writing-mode:vertical-rl">......................</span>
+							<div class="custom-fraction">
+								<p class="h5 text-white">인증현황(<span class="current">1</span>/<span class="all">2</span> )</p>
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="align-self-end">
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+								<!--
+								<button class="btn btn-prev btn-icon btn-sm btn-primary swiper-button-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" id="trending-prev" tabindex="0" aria-label="Previous slide" aria-controls="swiper-wrapper-ad7f6e8e449cf3e5"><i class="bi bi-chevron-left"></i></button>
+								<button class="btn btn-next btn-icon btn-sm btn-primary swiper-button-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" id="trending-next" tabindex="0" aria-label="Next slide" aria-controls="swiper-wrapper-ad7f6e8e449cf3e5"><i class="bi bi-chevron-right"></i></button> 
+								-->
+							</div>
+						</div>
+						<div class="wrapper">
+							<!-- Swiper -->
+							<div class="swiper mySwiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img class="rounded mx-auto d-block" src="assets/images/about/이미지 14.png">
+										<div class="text-center mt-4 mb-4">
+											<h5 class="card-title"><span class="fw-bold text-primary">원격평생교육시설증</span></h5>
+											<span class="d-block text-secondary mb-3">Remote lifelode training facility</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<img class="rounded mx-auto d-block" src="assets/images/about/이미지 14.png">
+										<div class="text-center mt-4 mb-4">
+											<h5 class="card-title"><span class="fw-bold text-primary">원격평생교육시설증</span></h5>
+											<span class="d-block text-secondary mb-3">Remote lifelode training facility</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="carouselExampleControls" class="swiper mySwiper h-100">
+							<div class="swiper-wrapper">
+								<!-- Card Body -->
+								<div class="card-body mt-2">
+									<div class="mb-4">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>    
+			</div>
+		</section>
+		<!---->
+		<!-- 미션 -->
+		<section id="rule" class="pt-4 mb-4">
+			<div class="container aos-init aos-animate" data-aos="fade-up">
+				<div class="section-title fw-bold h5 text-primary">미션:</div>
+				<div class="content">
+					<div>
+						<p class="h2">학습자의 만족을 위해 경청하는</p>
+						<p class="h2"><span class="fw-bold">학습자의 needs를 반영</span>하는 최적의 HRD 교육,</p>
+						<p class="h2">최상의 LMS</p>
+					</div>
+					
+					<div class="row row-cols-lg-4 justify-content-end">
+						<div class="px-2">
+							<div style="background-image: url(assets/images/about/mision1.png); width: 296px; height: 500px;"></div>
+						</div>
+						<div class="px-2">
+							<div style="background-image: url(assets/images/about/mision2.png); width: 296px; height: 500px;"></div>
+						</div>
+						<div class="px-2">
+							<div style="background-image: url(assets/images/about/mision3.png); width: 296px; height: 500px;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<hr />
+		<!---->
+		<!-- 조직도 -->
+		<section id="rule" class="pt-4 mb-4">
+			<div class="container aos-init aos-animate" data-aos="fade-up">
+				<div class="section-title fw-bold h5 text-primary">조직도:</div>
+				<div class="content">                                                
+					<div class="row row-cols-lg-4 justify-content-end"></div>
+				</div>
+			</div>
+		</section>
+		<!---->
+		<!-- 찾아오시는 길 -->
+		<section id="rule" class="pt-4 mb-4" style="background-color: #646464;">
+			<div class="container aos-init aos-animate" data-aos="fade-up">
+				<div class="row pb-4">
+					<div class="col-10">
+						<div class="section-title fw-bold h5 text-white pb-4">찾아오시는 길:</div>
+						<div>
+							<p class="pt-4 mb-0" style="color:#42D8FF">주소</p>
+							<p class="text-white">서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀</p>
+						</div>                        
+					</div>
+					<div class="col-2">
+						<p class="mb-0" style="color:#42D8FF">전화번호</p>
+						<p class="text-white mb-1">1811-0014 / 0018</p>
+						<p class="mb-0" style="color:#42D8FF">팩스</p>
+						<p class="text-white mb-1">050-8094-0019</p>
+						<p class="mb-0" style="color:#42D8FF">이메일</p>
+						<p class="text-white mb-1">oneline0906@oneline.kr</p>
+					</div>
+				</div>
+				<div class="content pb-5">                                                
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.1341037253399!2d126.89032175812875!3d37.525174422174395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9eeeb795672b%3A0xe822ce6fe63bb7cb!2z7JuQ65287J247JeQ65OA!5e0!3m2!1sko!2skr!4v1660616233480!5m2!1sko!2skr" style="width: 1280px; height: 654px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</section>
+		<!---->
+	</main>
+	<!-- main END-->
+
+	<!-- footer START -->
+	<footer class="navbar-fixed-bottom mt-4" style="background-color: #f2f2f2;">
+		<div class="container px-0">
+			<!-- Tops Links -->
+			<div class="row pt-3">
+				<div class="col-sm-7 col-md-6 col-lg-6">
+					<ul class="list-inline lh-lg">
+						<li class="list-inline-item"><a class="text-muted">이용약관</a></li>
+						<li class="list-inline-item"><a class="text-muted">개인정보 취급방침</a></li>
+						<li class="list-inline-item"><a class="text-muted">사업주지원교육 유의사항</a></li>
+						<li class="list-inline-item"><a class="text-muted">본인인증 안내</a></li>
+					</ul>
+				</div>
+				<div class="col text-sm-end">
+					<div class="dropdown">
+						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="width: 13rem;">
+							관련사이트
+						</a>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Payment and card -->
+		<div class="row mb-7">
+			<div class="col-sm mb-3 mb-sm-0">
+				<!-- Socials -->
+				<ul class="list-inline list-separator list-separator-light mb-0">
+					<li class="list-inline-item">
+						<div class="card">
+							<img src="assets/images/이미지 3.png" class="card-img-top" style="width: 10rem; height: 3rem">
+						</div>
+					</li>
+					<li class="list-inline-item">
+						<div class="card">
+							<img src="assets/images/이미지 4.png" class="card-img-top" style="width: 10rem; height: 3rem">
+						</div>
+					</li>
+					<li class="list-inline-item">
+						<div class="card">
+							<img src="assets/images/이미지 5.png" class="card-img-top" style="width: 10rem; height: 3rem">
+						</div>
+					</li>
+				</ul>
+				<!-- Socials End -->
+				</div>
+	
+				<div class="col-sm-auto">
+					<!-- Socials -->
+					<ul class="list-inline mb-0">
+						<li class="list-inline-item">
+							<a class="btn btn-warning" href="#">카카오채널</a>
+						</li>
+						<li class="list-inline-item">
+							<a class="btn btn-success" href="#">N 블로그</a>
+						</li>
+					</ul>
+					<!-- Socials End -->
+				</div>
+			</div>    
+			<!-- Bottom footer -->
+			<div class="row">
+				<div class="">
+					<div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-lg-start">
+					<!-- copyright text -->              
+						<div class="text-muted"> 
+							<p>원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br /> 
+							TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+							통신판매번호 : 제 2021-서울영등포-0322호 <br />                  
+							COPYRIGHT 2018 원라인에듀 ALLRIGHT & RESERVED.
+							</p>
+							<a class="text-muted">©2022 Booking</a>. All rights reserved.
+						</div>              
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer END -->
+
+	<!-- floating START -->
+	<nav class="floating-menu">
+		
+	</nav>
+	<!-- floating END -->        
+</body>
+<script type="text/javascript">
+	AOS.init();
+	var swiper = new Swiper(".mySwiper", {                            
+			loop: true,                
+			navigator: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});         
+</script>
 </html>

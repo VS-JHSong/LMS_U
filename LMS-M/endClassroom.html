@@ -11,22 +11,83 @@
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />    
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- Main css-->
     <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
-        
-
+    <!-- Sweet Alert-->
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    
+   
     <!-- JAVASCRIPT -->
     <script src="assets/libs/jquery/jquery.min.js"></script>    
 
+    <!-- Sweet Alerts js -->
+    <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
+        
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
+
     <!-- apexcharts -->
-    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>    
+
+    <!--_page.js-->
+    <script src="assets/js/_page.js"></script>
+
+    <style>
+        .dd-certifi-title{            
+            position: absolute;
+            top: 15%;
+        }
+
+        .dd-certifi-info{
+            position: absolute;
+            top: 28%;            
+            left: 15%;
+        }
+
+        .dd-certifi-body{            
+            position: absolute;
+            top: 50%;            
+        }
+
+        .dd-certifi-date{
+            position: absolute;
+            top: 68%;            
+        }
+
+        .dd-certifi-seal{
+            position: absolute;
+            top: 78%;            
+        }
+        @media print {
+            @page { margin: 0; }
+            body{
+                margin: 0 auto;
+            }
+        }
+    </style>
+    <script>
+        
+        function content_print(){     
+            var initBody = document.body.innerHTML;
+            window.onbeforeprint = function(){
+                document.body.innerHTML = document.getElementById('print-contents').innerHTML;
+            }
+            window.onafterprint = function(){
+                document.body.innerHTML = initBody;
+            }
+            window.print();    
+        } 
+          
+    </script>
 
     <title>Hello, world!</title>
   </head>
@@ -41,6 +102,54 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
+
+    <!--  수료증 Modal -->
+    <div class="modal fade Certificates" tabindex="-1" role="dialog" aria-labelledby="CertificatesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">                
+                <div class="modal-header container">
+                    <h1 class="modal-title" id="CertificatesLabel">수료증 출력</h1>
+                    <button type="button" class="btn-close display-5" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>                    
+                <div class="container mt-5 row align-self-center">
+                    <div id="print-contents" class="col-6">
+                        <img class="img-fluid" src="assets/images/classroom/Certificates.png" />
+                        <div class="dd-certifi-title text-center w-100 px-5">
+                            <p class="h1">수&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 료&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 증</p>
+                        </div>
+                        <div class="dd-certifi-info w-100">
+                            <p class="mb-1 font-size-16 fw-bold">소속회사 : <span>주식회사 비젼코스모</span></p>
+                            <p class="mb-1 font-size-16 fw-bold">성   명 : <span>송정현</span></p>
+                            <p class="mb-1 font-size-16 fw-bold">생년월일 : <span>920629</span></p>
+                            <p class="mb-1 font-size-16 fw-bold">훈련과정 : <span>[新 유비무환] 제조업 정기안전보건교육3_무재해 (3H)</span></p>
+                            <p class="mb-1 font-size-16 fw-bold">훈련직종 : <span>인터넷 훈련과정</span></p>
+                            <p class="mb-1 font-size-16 fw-bold">훈련기간 : <span>2022년 07월 20일 ~ 2022년 08월 19일</span></p>
+                        </div>
+                        <div class="dd-certifi-body text-center w-100">
+                            <p class="mb-1 font-size-22 fw-bold">위 사업장은 산업안전보건법 제 29조의 규정에 의한</p>
+                            <p class="mb-1 font-size-22 fw-bold">근로자 정기 안전•보건교육 과정을</p>
+                            <p class="mb-1 font-size-22 fw-bold">수료하였으므로 이 증서를 수여합니다.</p>
+                        </div>
+                        <div class="dd-certifi-date text-center w-100">
+                            <p class="font-size-20 fw-bold">2023년 02월 06일</p>
+                        </div>
+                        <div class="dd-certifi-seal text-center w-100">
+                            <p class="font-size-22 fw-bold">원라인에듀</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        
+                    </div>
+                </div>                        
+                <div class="container">                            
+                    <!-- 프린트하기 -->
+                    <div class="text-center">                                                    
+                        <button type="button" class="btn btn-primary btn-lg px-5 py-2 waves-effect waves-light" onclick="content_print()">프린트하기</button>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     
     <main>
       <!-- GNB START-->
@@ -59,7 +168,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item pe-2">
-                <a class="nav-link" href="classroom.html">진행중인과정</a>
+                <a class="nav-link" href="classroom.php">진행중인과정</a>
               </li>
               <li class="nav-item pe-2">
                 <a class="nav-link text-primary fw-bold" href="endClassroom.html">학습종료과정</a>
@@ -108,12 +217,12 @@
               </div>              
             </div>
             <div class="row mx-0 justify-content-end"> 
-              <div class="col-2">                
+              <div class="col-2">                   
                 <div id="chart" class="apex-charts"></div>
               </div>
               <div class="col text-end align-self-center">
                 <button type="button" class="btn btn-outline-light me-2 px-2" onclick = "location.href='mypage.html'"><i class="bi bi-person-bounding-box fs-1"></i><br /><span class="">마이페이지</span></button>
-                <button type="button" class="btn btn-outline-light me-2 px-4"><i class="bi bi-bookmark-dash-fill fs-1"></i><br /><span class="">수료증</span></button>
+                <button type="button" class="btn btn-outline-light me-2 px-4"><i class="bi bi-bookmark-dash-fill fs-1"></i><br /><span class="">수료증</span></button>                
                 <button type="button" class="btn btn-outline-light px-4"><i class="bi bi-pencil fs-1"></i><br /><span class="">재응시</span></button>
                 <!--button type="button" class="btn btn-outline-light"><i class="bi bi-book fs-1"></i><br /><span class="">학습 도움말</span></button-->
               </div>              
@@ -132,7 +241,8 @@
                         <li class="breadcrumb-item active" aria-current="page">진행중인교육</li>
                     </ol>
                 </nav>
-            </div>
+            </div>            
+
             <!--진행중인 교육 card-->
             <div class="card mb-3 p-4">
                 <div class="row g-0">
@@ -169,7 +279,7 @@
                             <div class="row mt-4">
                                 <div class="col text-start">
                                     <button class="btn btn-outline-dark"><i class="bi bi-folder-fill pe-3"></i>학습자료</button>
-                                    <button class="btn btn-outline-dark"><i class="bi bi-printer-fill pe-3"></i>수료증출력</button>                                    
+                                    <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target=".Certificates"><i class="bi bi-printer-fill pe-3"></i>수료증출력</button>                                    
                                     <button type="button" class="btn btn-outline-dark waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg"><i class="fas fa-book-reader pe-3"></i>수강후기</button>
                                 </div>
                                 <div class="col text-end">
@@ -1062,58 +1172,37 @@
 
         chart.render();
         */
+                
 
-        var options = {
-                series: [50,40,30,10,0],
-                options: {
-                    chart: {
-                        type: 'donut',
-                    },
-                    legend: {
-                        position: 'bottom'
-                    },
-                    responsive: [{
-                        breakpoint: 480,
-                    }],
-                    plotOptions: {
-                        pie: {
-                            donut: {
-                                // hollow: {  
-                                //   margin: 15,
-                                //   size: '70%',
-                                //   image: '../../css/images/a-icon.jpg',
-                                //   imageWidth: 64,
-                                //   imageHeight: 64,
-                                //   imageClipped: false
-                                // },
-                                labels: {
-                                    show: true,
-                                    total: {
-                                        showAlways: true,
-                                        show: true,
-                                        label: 'ALARM',
-                                        fontSize: '12px',
-                                        color: 'red'
-                                    },
-                                    value: {
-                                        fontSize: '22px',
-                                        show: true,
-                                        color: 'blue',
-                                    },
-                                },
-                            }
-                        }
-                    },
-                    labels: ["침입", "배회", "쓰러짐", "화재", "안전모"],
-                    title: {
-                        text: '이벤트별 통계',
-                        align: 'center'
-                    },
-                },
-            }
+        function printPdfWithModal() {
+            printJS({
+                printable: '/LMS-M/assets/images/1111.pdf',
+                type: 'pdf',
+                showModal: true
+            })
+        }
 
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
+        function printPdfWithModalAndCloseCallback() {
+            printJS({
+                printable: '/LMS-M/assets/images/1111.pdf',
+                type: 'pdf',
+                showModal: true,
+                onPrintDialogClose: () => console.log('The print dialog was closed'),
+                onPdfOpen: () => console.log('Pdf was opened in a new tab due to an incompatible browser')
+            })
+        }
+
+        function printPdfCompatibleBrowser() {
+            printJS({
+                printable: '/LMS-M/assets/images/1111.pdf',
+                type: 'pdf',
+                onBrowserIncompatible: () => {
+                alert('Browser incompatible')
+                return false
+                }
+            })
+        }
+
       
     </script>
 
