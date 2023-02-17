@@ -1,0 +1,397 @@
+
+
+<!DOCTYPE html>
+<html lang="en"  style="background-color: black;">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- icon css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">        
+    <!-- App Css-->
+    <link href="../assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Css -->
+    <link href="../assets/css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- Main css-->
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css" />
+
+    <!-- Sweet Alert-->
+    <link href="../assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
+    
+    <!-- JAVASCRIPT -->
+    <script src="../assets/libs/jquery/jquery.min.js"></script>
+
+    <!-- Sweet Alerts js -->
+    <script src="../assets/libs/sweetalert2/sweetalert2.min.js"></script>
+        
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
+
+    <!-- apexcharts -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!--_page.js-->
+    <script src="../assets/js/_page.js"></script>    
+    <style>
+        .accordion-button::after{
+            display: none;
+        }
+        .video-body {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+        .video-body::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera*/
+        }
+    </style>
+    <script>
+      function eduinfoOpen(){
+        if($("#video-view-area").css("display") == "none"){
+          $("#video-view-area").show();
+          $("body").css("width", "1630px");
+          $(".bi-caret-left-fill").show();
+          $(".bi-caret-right-fill").hide();
+          resizing();
+        }else{
+          $("#video-view-area").hide();
+          $("body").css("width", "1280px");
+          $(".bi-caret-right-fill").show();
+          $(".bi-caret-left-fill").hide();          
+          resizing();
+        }
+
+        function resizing(){
+          var strWidth;
+          var strHeight;
+
+          if($("#video-view-area").css("display") == "none"){            
+            strWidth = $('#videoframe').outerWidth() + (window.outerWidth - window.innerWidth);
+            strHeight = $('#videoframe').outerHeight() + (window.outerHeight - window.innerHeight);
+          }else{            
+            strWidth = $("body").outerWidth() + (window.outerWidth - window.innerWidth);
+            strHeight = $("body").outerHeight() + (window.outerHeight - window.innerHeight);            
+          }
+          /*
+          if ( window.innerWidth && window.innerHeight && window.outerWidth && window.outerHeight ) {
+              strWidth = $('#videoframe').outerWidth() + (window.outerWidth - window.innerWidth);
+              strHeight = $('#videoframe').outerHeight() + (window.outerHeight - window.innerHeight);
+          }
+
+          else {
+              var strDocumentWidth = $(document).outerWidth();
+              var strDocumentHeight = $(document).outerHeight();
+              window.resizeTo ( strDocumentWidth, strDocumentHeight );
+
+              var strMenuWidth = strDocumentWidth - $(window).width();
+              var strMenuHeight = strDocumentHeight - $(window).height();
+
+              strWidth = "1630px";
+              strHeight = $('#videoframe').outerHeight() + strMenuHeight;
+          }
+          */
+          //resize
+          window.resizeTo( strWidth, strHeight );
+        }
+      }
+    </script>
+
+    <title>Hello, world!</title>    
+  </head>
+  <body style="overflow: hidden; width: 1630px;">        
+    <main style="background-color: black;">
+        <div class="row text-white border border-1 m-0 p-0">
+            <div class="col px-0" style="z-index: 9999;">
+              <div class="row justify-content-between">
+                <div class="col-11">
+                  <iframe name="contents" id="videoframe" src="http://192.168.6.10:14080/01/index.html" width="1280" height="768" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>                
+                </div>
+                <div class="col-1 text-end align-self-center">
+                  <button class="p-0" type="button" onclick="eduinfoOpen()" style="height: 50px;"><i class="bi bi-caret-left-fill"></i><i class="bi bi-caret-right-fill" style="display: none;"></i></button>
+                </div>                                
+              </div>              
+            </div>
+            <div id="video-view-area" class="col">
+              <div>
+                  <ul class="nav nav-tabs row" role="tablist">
+                      <li class="nav-item col p-0">
+                          <a class="nav-link active" data-bs-toggle="tab" href="#table" role="tab">
+                              <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                              <span class="d-none d-sm-block text-center small fw-bold p-0">학습요정</span>
+                          </a>
+                      </li>
+                      <li class="nav-item col p-0">
+                          <a class="nav-link" data-bs-toggle="tab" href="#description" role="tab">
+                              <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                              <span class="d-none d-sm-block text-center small fw-bold">강의목록</span>
+                          </a>
+                      </li>
+                      <li class="nav-item col p-0">
+                          <a class="nav-link" data-bs-toggle="tab" href="#review" role="tab">
+                              <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                              <span class="d-none d-sm-block text-center small fw-bold">학습QnA</span>
+                          </a>
+                      </li>
+                      <li class="nav-item col p-0">
+                        <a class="nav-link" data-bs-toggle="tab" href="#transcript" role="tab">
+                            <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                            <span class="d-none d-sm-block text-center small fw-bold">학습질의</span>
+                        </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="video-body card-body px-2" style="overflow-y: auto; height: 768px;">
+                  <div class="tab-content" id="tabContent">
+                    <div class="tab-pane fade active show p-0" id="table" role="tabpanel" aria-labelledby="table-tab">
+                      <!-- 상단 -->
+                      <div class="small">
+                        <p class="small mb-0">직무교육>디지털 융합과정</p>
+                        <p class="text-primary font-size-14 fw-bold mb-1">데이터 경제시대의 디지털 융합</p>
+                        <p class="mb-0">차시 : <span>9차시</span></p>
+                        <p class="mb-0">강의시간 : <span>21시간 31분</span></p>
+                        <p>강사 : <span>홍길동</span></p>
+                      </div>
+                      <hr />
+                      <!-- 학습 목표 -->
+                      <div class="small">
+                          <p class="text-primary font-size-11 fw-bold mb-1">학습목표</p>
+                          <ul>
+                              <li>블록체인의 기초 이론과 기술을 학습하고, 활용 방안 관련 지식을 습득한다.</li>
+                              <li>다양한 사례를 통해서 블록체인과 타 분야의 디지털 융합에 대해 이해할 수 있다.</li>
+                              <li>우리나라를 비롯한 다양한 국가들의 정책을 통해 블록체인의 전망을 이해할 수 있다.</li>
+                          </ul>
+                      </div>
+                      <hr />
+                      <!-- 학습내용 -->
+                      <div class="small">
+                          <p class="text-primary font-size-11 fw-bold mb-1">학습내용</p>
+                          <p class="small">
+                              4차 산업혁명은 지능과 정보의 시대다. <br />
+                              개인이나 기업의 데이터 가치가 증대되었고, 데이터를 사고 파는 시대가 되었다. <br />
+                              그 중심에 블록체인이 있다.                                
+                          </p>
+                          <p class="small">
+                              본 교육과정에서는 블록체인에서 데이터가 어떻게 공유되고 거래할 수 있는지 알아본다. 그리고 다양한 디지털 융합 사례를 통해서 블록체인의 현재와 미래를 이해할 수 있다.
+                          </p>
+                          <p class="small">
+                              이를 통해 개인이나 기업이 블록체인을 이용하여 비즈니스 모델을 설계할 방안에 대해서 제시한다.
+                          </p>
+                      </div>                                                
+                    </div>
+                    <!-- 강의목록 -->
+                    <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
+                      <!-- 상단 -->
+                      <div class="small">
+                          <p class="small mb-0">직무교육>디지털 융합과정</p>
+                          <p class="text-primary font-size-14 fw-bold mb-1">데이터 경제시대의 디지털 융합</p>
+                          <p class="mb-0">차시 : <span>9차시</span></p>
+                          <p class="mb-0">강의시간 : <span>21시간 31분</span></p>
+                          <p>강사 : <span>홍길동</span></p>
+                      </div>
+                      
+                      <table class="table table-border-0 small text-white">
+                        <tbody style="border-style: none;">
+                          <tr>
+                              <td class="text-center">1차시</td>
+                              <td>용모와 복장 갖추기</td>
+                          </tr>
+                          <tr>
+                              <td class="text-center">2차시</td>
+                              <td>전화 고객 응대하기</td>
+                          </tr>
+                          <tr>
+                              <td class="text-center">3차시</td>
+                              <td>전화 고객 판매상담하기</td>
+                          </tr>
+                          <tr>
+                              <td class="text-center">4차시</td>
+                              <td>재고관리하기</td>
+                          </tr>
+                          <tr>
+                              <td class="text-center">5차시</td>
+                              <td>방문 고객 맞이하기</td>
+                          </tr>
+                          <tr class="text-primary">
+                              <td class="text-center">6차시</td>
+                              <td>고객 니즈 파악하기</td>
+                          </tr>
+                          <tr>
+                              <td colspan="2">
+                                  <button type="button" class="btn btn-outline-secondary w-100">중간평가</button>
+                              </td>                              
+                          </tr>
+                          <tr class="text-secondary">
+                              <td class="text-center">7차시</td>
+                              <td>상품 설명하기</td>
+                          </tr>
+                          <tr class="text-secondary">
+                              <td class="text-center">8차시</td>
+                              <td>판매 확정하기</td>
+                          </tr>
+                          <tr class="text-secondary">
+                              <td class="text-center">9차시</td>
+                              <td>성공을 가지고 오는 세일즈 행동</td>
+                          </tr>
+                          <tr class="text-secondary">
+                              <td class="text-center">10차시</td>
+                              <td>구매의 약속 클로징</td>
+                          </tr>
+                          <tr class="text-secondary">
+                              <td class="text-center">11차시</td>
+                              <td>세일즈에서 고객 Needs</td>
+                          </tr>
+                          <tr class="text-secondary">
+                              <td class="text-center">12차시</td>
+                              <td>세일즈 성공을 위한 질무1</td>
+                          </tr>
+                          <tr class="text-secondary">
+                              <td class="text-center">13차시</td>
+                              <td>세일즈 성공을 위한 질무2</td>
+                          </tr>
+                          <tr>
+                              <td class="border-bottom-0" colspan="2">
+                                  <button type="button" class="btn btn-outline-secondary w-100">최종평가</button>
+                              </td>                              
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- 학습QnA -->
+                    <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                      <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <p class="mb-0">Q. <span>평가, 과제는 언제 응시가 가능한가요?</span></p>
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                  <span class="small">
+                                      중간평가는 전체 차시의 50%이상 수강하였을 경우 가능하며, 최종평가와 과제는 진도율 80%이상 되었을 때부터 응시 및 제출이 가능합니다. <br/>
+                                      그리고 평가(중간평가, 최종평가)와 과제는 학습종료일 23시 59분까지 제출 완료된 건에 한해서만 정상 처리됩니다.
+                                  </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <p class="mb-0">Q. <span>중간평가 응시 제한시간이 있나요?</span></p>
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <span class="small">
+                                    중간평가의 경우 응시 제한시간이 없습니다. <br/>
+                                    학습종료일까지는 반드시 중간평가 응시를 완료해 주셔야 합니다.
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <p class="mb-0">Q. <span>최종평가 응시 제한시간이 있나요?</span></p>
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <span class="small">
+                                    최종평가의 경우 응시 제한시간이 60분으로 설정되어 있습니다. <br/>
+                                    <span class="text-danger">평가 입장 시 제한시간은 접속종료 등의 상태에서도 중단 없이 계혹 흘러가게 됩니다. <br /></span>
+                                    예를 들어, 5시에 입장 시 학습자의 사정 등으로 종료되더라도 6시에 평가가 종료되오니 이 점 유의하시어 응시하여 주시기 바랍니다.
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <p class="mb-0">Q. <span>평가 응시 중 오류가 발생했습니다. <br />어떻게 해야 하나요?</span></p>
+                              </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <span class="small">
+                                    평가는 규정상 1회만 응시 가능합니다만, 평가 응시 중 오류가 발생한 경우는 즉시 고객센터로 연락주시기 바랍니다. <br/>
+                                    확인 결과 아래 사항에 해당하는 경우 재응시 신청서와 장애 내역 서류제출 후 평가기간 내에 재응시 가능하도록 조치해 드리겠습니다. <br />
+                                    <span class="text-danger">- 개인적인 사유가 아닌 집단적 시스템 장애 같은 경우, 훈련기관 시스템 장애, 천재지변 등</span>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <p class="mb-0">Q. <span>최종평가 응시 중 시간이 종료되었습니다. <br />어떻게 해야 하나요?</span></p>
+                              </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <span class="small">
+                                    최종평가 응시 제한시간은 60분으로 설정되어 있습니다. <br/>
+                                    평가 제출완료 버튼을 누리지 않은 상태에서 종료가 된 경우는 60분까지 작성한 답안까지 자동 저장되어 제출되며, 재응시는 불가능합니다. <br />                                      
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <p class="mb-0">Q. <span>평가지 답안 제출이 안됩니다.</span></p>
+                              </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <span class="small">
+                                    평가는 모든 문항의 답을 체크하여야 제출이 가능합니다. <br/>
+                                    그러므로 정답을 모르는 문항도 반드시 답을 체크하여야 하며, <br />  
+                                    주관식 같은 경우 '정답 모름' 등으로 간략히 기재한 후 답안 제출을 진행하여야 합니다.                                    
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="transcript" role="tabpanel" aria-labelledby="transcript-tab">
+                      <!-- 상단 -->
+                      <div class="small">
+                        <p class="small mb-0">직무교육>디지털 융합과정</p>
+                        <p class="text-primary font-size-14 fw-bold mb-1">데이터 경제시대의 디지털 융합</p>
+                        <p class="mb-0">차시 : <span>9차시</span></p>
+                        <p class="mb-0">강의시간 : <span>21시간 31분</span></p>
+                        <p>강사 : <span>홍길동</span></p>
+                      </div>
+                      <!-- body -->                        
+                      <div>                          
+                        <div class="mb-3">
+                          <label for="video-view-title" class="form-label text-primary">제목</label>
+                          <input class="form-control" type="text" value="" id="video-view-title">
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="video-view-body" class="form-label text-primary">학습에 관련된 문의를 남겨주세요</label>
+                          <textarea class="form-control w-100" type="text" value="" id="video-view-body" rows="15"></textarea>
+                        </div>
+
+                        <div>
+                          <button type="button" class="btn btn-primary w-100">질문하기</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    
+  </body>
+</html>

@@ -1,0 +1,4 @@
+@import url(common.css);
+
+
+.multi-graph{width: 300px;height: 150px;position: relative;color: #fff;font-size: 22px;font-weight: 600;display: flex;align-items: flex-end;justify-content: center;overflow: hidden;box-sizing : border-box;}

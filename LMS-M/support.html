@@ -7,27 +7,48 @@
     
     <!-- icon css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">        
-
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>    
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <!-- Main css-->
-    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+    <!-- visco css-->
+    <link href="assets/css/visco/support.css" rel="stylesheet" type="text/css" />
 
+    <!-- Sweet Alert-->
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />      
+
+    <!-- Sweet Alerts js -->
+    <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
+        
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-    <script src="assets/libs/jquery/jquery.min.js"></script>    
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--ezhelp-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://939.co.kr/runezhelp.js" charset="utf-8"></script>
+    <script src="https://hiserver.co.kr/runezchat.js" charset="utf-8"></script>
+
+    <!-- kakao chat-->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>  
 
     <!-- apexcharts -->
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
-    <title>Hello, world!</title>
+    <!--_page.js-->
+    <script src="assets/js/_page.js"></script>
+  
+    <title>원라인에듀</title>
   </head>
   <body>    
     <!-- Optional JavaScript; choose one of the two! -->
@@ -44,17 +65,36 @@
     <main>
       <!-- GNB START-->
       <div class="container px-0">                
-        <nav class="navbar navbar-expand-lg navbar-light">                
+        <nav class="navbar navbar-expand-lg navbar-light">
           <!-- Logo START -->
           <a class="navbar-brand" href="index.html">
             <!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
             <!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
             <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
           </a>
-          <!-- Logo END -->
+
+          <!-- Nav Search START mobile -->
+          <div class="nav my-3 my-xl-0 align-items-center d-none d-sm-block d-md-block d-lg-none">
+            <div class="nav-item w-100">
+              <form class="position-relative">
+                <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+                <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- Nav Search END -->
+          <!-- 교육문의 mobile-->
+          <div class="d-none d-sm-block d-md-block d-lg-none">
+            <button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+          </div>
+
+          <!-- Logo END -->              
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button>           
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item pe-2">
@@ -67,8 +107,9 @@
                 <a class="nav-link text-primary fw-bold" href="support.html">고객지원</a>
               </li>
             </ul>
+            <!-- PC -->
             <!-- Nav Search START -->
-            <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+            <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center d-none d-lg-block">
               <div class="nav-item w-100">
                 <form class="position-relative">
                   <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
@@ -80,47 +121,52 @@
             </div>
             <!-- Nav Search END -->
             <!-- 교육문의 -->
-            <button type="button" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
-          </div>                
+            <div class="d-none d-lg-block">
+              <button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+            </div>
+            
+          </div>            
         </nav>
       </div>
       <!-- GNB END-->
 
       <!-- USER START -->      
-      <div class="" style="background-color: #00287A;">
-        <div class="container px-4 px-lg-0">  
-          <div class="row py-4 text-md-start">
-            <div class="col-lg-8 col-md-6 col-sm-8 col-9 mb-4 mb-0 ">
-              <h3 class="text-white mb-1">홍길동님 환영합니다.</h3>
-              <p class="text-white mb-1 pt-2 pb-2">원라인에듀 홈페이지를 방문해주신 여러분을 진심으로 환영합니다.</p>
-              <p class="text-white mb-1 ">
-                <span>수강완료 : </span>1개 &nbsp;&nbsp;&nbsp;<span>진행(대기)중 : </span>
-                <span data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="응시하지 않은 최종평가가 있습니다.">2개</span>
-              </p>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-4 col-3">
-              <div class="row justify-content-end text-end">
-                <div class="">                  
-                  <!--span class="pe-1"><button type="button" class="btn btn-outline-light" onclick = "location.href='find_id.html'"><i class="bi bi-person"></i><span class="px-2">개인정보 수정</span></button></!--span-->
-                  <span class="pe-1"><button type="button" class="btn btn-outline-light" onclick = "location.href='find_id.html'"><i class="bi bi-box-arrow-right"></i><span class="px-2">로그아웃</span></button></span>
-                </div>                
-              </div>              
-            </div>
-            <div class="row mx-0"> 
-              <div class="col-2">                
-                <div id="chart" class="apex-charts" dir="ltr"></div>
+      <div>
+        <div class="" style="background-color: #00287A;">
+          <div class="container px-4 px-lg-0">  
+            <div class="row py-4 text-md-start">
+              <div class="col-lg-8 col-md-6 col-sm-8 col-9 mb-4 mb-0 ">
+                <h3 class="text-white mb-1">홍길동님 환영합니다.</h3>
+                <p class="text-white mb-1 pt-2 pb-2">원라인에듀 홈페이지를 방문해주신 여러분을 진심으로 환영합니다.</p>
+                <p class="text-white mb-1 ">
+                  <span>수강완료 : </span>1개 &nbsp;&nbsp;&nbsp;<span>진행(대기)중 : </span>
+                  <span data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="응시하지 않은 최종평가가 있습니다.">2개</span>
+                </p>
               </div>
-              <div class="col justify-content-end text-end">
-                <button type="button" class="btn btn-outline-light me-2 px-3" onclick="location.href='classroom.php'"><i class="bi bi-person-video3 fs-1"></i><br /><span class="">내 강의실</span></button>
-                <button type="button" class="btn btn-outline-light me-2 px-2" onclick = "location.href='mypage.html'"><i class="bi bi-person-bounding-box fs-1"></i><br /><span class="">마이페이지</span></button>
-                <button type="button" class="btn btn-outline-light me-2 px-4"><i class="bi bi-bookmark-dash-fill fs-1"></i><br /><span class="">수료증</span></button>
-                <button type="button" class="btn btn-outline-light px-4"><i class="bi bi-pencil fs-1"></i><br /><span class="">재응시</span></button>
-                <!--button type="button" class="btn btn-outline-light"><i class="bi bi-book fs-1"></i><br /><span class="">학습 도움말</span></button-->
-              </div>              
+              <div class="col-lg-4 col-md-6 col-sm-4 col-3">
+                <div class="row justify-content-end text-end">
+                  <div class="">                  
+                    <!--span class="pe-1"><button type="button" class="btn btn-outline-light" onclick = "location.href='find_id.html'"><i class="bi bi-person"></i><span class="px-2">개인정보 수정</span></button></!--span-->
+                    <span class="pe-1"><button type="button" class="btn btn-outline-light"><i class="bi bi-box-arrow-right"></i><span class="px-2">로그아웃</span></button></span>
+                  </div>                
+                </div>              
+              </div>
+              <div class="row mx-0"> 
+                <div class="col-2">                
+                  <div id="chart" class="apex-charts" dir="ltr"></div>
+                </div>
+                <div class="col justify-content-end text-end">
+                  <button type="button" class="btn btn-outline-light me-2 px-3" onclick="location.href='classroom.php'"><i class="bi bi-person-video3 fs-1"></i><br /><span class="">내 강의실</span></button>
+                  <button type="button" class="btn btn-outline-light me-2 px-2" onclick = "location.href='mypage.html'"><i class="bi bi-person-bounding-box fs-1"></i><br /><span class="">마이페이지</span></button>
+                  <!--button type="button" class="btn btn-outline-light me-2 px-4"><i class="bi bi-bookmark-dash-fill fs-1"></i><br /><span class="">수료증</span></button-->
+                  <!--button type="button" class="btn btn-outline-light px-4"><i class="bi bi-pencil fs-1"></i><br /><span class="">재응시</span></button-->
+                  <!--button type="button" class="btn btn-outline-light"><i class="bi bi-book fs-1"></i><br /><span class="">학습 도움말</span></button-->
+                </div>              
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </div>      
       <!-- USER END -->      
       <!-- main START -->            
       <div class="container">
@@ -531,94 +577,53 @@
     </main>
     
     <!-- footer START -->
-    <footer class="navbar-fixed-bottom mt-4" style="background-color: #f2f2f2;">
-      <div class="container px-0">
-        <!-- Tops Links -->
-        <div class="row pt-3">
-          <div class="col-sm-7 col-md-6 col-lg-6">
-            <ul class="list-inline lh-lg">
-              <li class="list-inline-item"><a class="text-muted">이용약관</a></li>
-              <li class="list-inline-item"><a class="text-muted">개인정보 취급방침</a></li>
-              <li class="list-inline-item"><a class="text-muted">사업주지원교육 유의사항</a></li>
-              <li class="list-inline-item"><a class="text-muted">본인인증 안내</a></li>
-            </ul>
-          </div>
-          <div class="col text-sm-end">
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="width: 13rem;">
-                관련사이트
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <footer class="oz-footer navbar-fixed-bottom">
+      <div class="container pt-3 pb-9">
+          <div class="row">
+              <!-- left -->
+              <div class="col-12 col-md-9">
+                  <p class="fo-link h6">
+                      <span class="pe-2 h-4"><a>개인정보 취급방침</a></span>
+                      <span class="pe-2 h-4"><a>이용약관</a></span>
+                      <span class="pe-2"><a>사업주지원교육 유의사항</a></span>
+                      <span class="pe-2"><a>본인인증 안내</a></span>
+                  </p>
+                  <div class="fo-imgs mt-3 clearfix">
+                      <img src="assets/images/common/fo-banner01.svg">
+                      <img src="assets/images/common/fo-banner02.svg">
+                      <img src="assets/images/common/fo-banner03.svg">
+                  </div>
+              </div>
 
-        <!-- Payment and card -->
-        <div class="row mb-7">
-          <div class="col-sm mb-3 mb-sm-0">
-            <!-- Socials -->
-            <ul class="list-inline list-separator list-separator-light mb-0">
-              <li class="list-inline-item">
-                <div class="card">
-                  <img src="assets/images/이미지 3.png" class="card-img-top" style="width: 10rem; height: 3rem">
-                </div>
-              </li>
-              <li class="list-inline-item">
-                <div class="card">
-                  <img src="assets/images/이미지 4.png" class="card-img-top" style="width: 10rem; height: 3rem">
-                </div>
-              </li>
-              <li class="list-inline-item">
-                <div class="card">
-                  <img src="assets/images/이미지 5.png" class="card-img-top" style="width: 10rem; height: 3rem">
-                </div>
-              </li>
-            </ul>
-            <!-- End Socials -->
+              <!-- right -->
+              <div class="col-12  col-md-3">
+                  <select class="form-select form-select-md" aria-label=".form-select-md example size 3">                    
+                      <option selected>관련사이트</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                  </select>
+                  <div class="row fo-url">
+                      <div class="col-6 text-center">
+                          <p class="cacao rounded">카카오톡 채널</p>
+                      </div>
+                      <div class="col-6 text-center">
+                          <p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
+                      </div>
+                  </div>
+              </div>
           </div>
-  
-          <div class="col-sm-auto">
-            <!-- Socials -->
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="btn btn-warning" href="#">카카오채널</a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-success" href="#">N 블로그
-                </a>
-              </li>
-            </ul>
-            <!-- End Socials -->
-          </div>
-        </div>
-    
-        <!-- Bottom footer -->
-        <div class="row">
-          <div class="">
-            <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-lg-start">
-              <!-- copyright text -->              
-              <div class="text-muted"> 
-                <p>원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br /> 
+          <div class="mt-3">
+              <p>
+                  원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
                   TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
-                  통신판매번호 : 제 2021-서울영등포-0322호 <br />                  
-                  COPYRIGHT 2018 원라인에듀 ALLRIGHT & RESERVED.
-                </p>
-                <a class="text-muted">©2022 Booking</a>. All rights reserved.
-              </div>              
-            </div>
+                  통신판매번호 : 제 2021-서울영등포-0322호 <br />
+              </p>
+              ⓒ 원라인에듀 Allright & Reserved. ALLRIGHT & RESERVED.
           </div>
-        </div>
       </div>
     </footer>
-    <!-- footer END -->
-    
-    <nav class="floating-menu">
-      
-    </nav>
+    <!-- footer END -->   
     <script type="text/javascript">
       var options = {
           series: [50],

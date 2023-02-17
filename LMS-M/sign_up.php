@@ -11,29 +11,24 @@
     <!-- App Css-->
     <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
     <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- Main css-->
-    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
-
+    <link href="assets/css/visco/sign_up.css" rel="stylesheet" type="text/css" />
     <!-- Sweet Alert-->
     <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" />
 
     
     <!-- JAVASCRIPT -->
     <script src="assets/libs/jquery/jquery.min.js"></script>    
-
     <!-- Sweet Alerts js -->
     <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
-        
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
-
     <!-- apexcharts -->
     <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
-
     <!--_page.js-->
     <script src="assets/js/_page.js"></script>
 
@@ -99,7 +94,7 @@
       
     ?>
     
-    <title>Hello, world!</title>    
+    <title>원라인에듀</title>    
   </head>
   <body>
     <!-- Optional JavaScript; choose one of the two! -->
@@ -120,51 +115,62 @@
             <a class="navbar-brand" href="index.html">
               <!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
               <!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
-              <img
-                class="dark-mode-item navbar-brand-item"
-                src="assets/images/logo.png"
-                alt="logo"
-              /><span class="fw-bold">원라인에듀</span>
+              <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
             </a>
-            <!-- Logo END -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+
+            <!-- Nav Search START mobile -->
+            <div class="nav my-3 my-xl-0 align-items-center d-none d-sm-block d-md-block d-lg-none">
+              <div class="nav-item w-100">
+                <form class="position-relative">
+                  <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+                  <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- Nav Search END -->
+            <!-- 교육문의 mobile-->
+            <div class="d-none d-sm-block d-md-block d-lg-none">
+              <button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+            </div>
+
+            <!-- Logo END -->              
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
-            </button>
+            </button>           
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item pe-2">
-                  <a class="nav-link active" href="#">전체교육</a>
+                  <a class="nav-link" href="education.html">전체교육</a>
                 </li>
                 <li class="nav-item pe-2">
-                  <a class="nav-link" href="#">교육원소개</a>
+                  <a class="nav-link" href="about_us.html">교육원소개</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">고객지원</a>
+                  <a class="nav-link" href="support.html">고객지원</a>
                 </li>
               </ul>
+              <!-- PC -->
               <!-- Nav Search START -->
-              <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+              <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center d-none d-lg-block">
                 <div class="nav-item w-100">
                   <form class="position-relative">
-                    <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search" />
-                    <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit"><i class="bi bi-search"></i></button>
+                    <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+                    <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+                      <i class="bi bi-search"></i>
+                    </button>
                   </form>
                 </div>
               </div>
               <!-- Nav Search END -->
               <!-- 교육문의 -->
-              <button type="button" class="btn btn-primary btn">
-                <i class="bi bi-pencil-square"></i> 교육 문의
-              </button>
-            </div>
+              <div class="d-none d-lg-block">
+                <button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+              </div>
+              
+            </div>            
           </nav>
         </div>
         <!-- GNB END-->
@@ -384,7 +390,12 @@
               <div class="mb-3">
                 <label for="name-input" class="form-label">* 휴대전화</label>
                 <input class="form-control" type="tel" value="" id="phone-input">
-              </div>                        
+              </div>
+              <!-- 이메일 -->
+              <div class="mb-3">
+                <label for="name-input" class="form-label">이메일</label>
+                <input class="form-control" type="email" value="" id="phone-input">
+              </div>       
             </div>   
 
             <!-- 수신 동의 -->            

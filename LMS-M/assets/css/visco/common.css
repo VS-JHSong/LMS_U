@@ -3,8 +3,7 @@ o(a~z)-(a~z)ps(01~99번째 세션) : 고유 클래스 규칙
 
 
 */
-
-
+* {-webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */color-adjust: exact !important;                 /* Firefox 48 – 96 */print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */}
 
 html, body {height:100%;margin:0;background-color:#fff;color: #767676;}
 main {min-height: 100%;background-color: #fff;}
@@ -44,8 +43,6 @@ a:hover {color: #191919 !important;text-decoration:underline !important;font-wei
 .oz-footer .fo-link {padding: .6rem 0;}
 .oz-footer .fo-imgs img {float:left;display:block;height:3rem;width:auto;margin-right:1rem;margin-bottom:1rem; cursor:pointer;}
 .oz-footer .fo-imgs img:last-child {margin-right:0rem;}
-
-
 
 
 

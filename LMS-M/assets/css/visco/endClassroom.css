@@ -1,0 +1,6 @@
+@import url(common.css);
+
+
+.print-contents{background-image: url("assets/images/classroom/Certificates.png");background-repeat: no-repeat;background-size: 100% 100%;}
+.text {color:#1A4663;font-size: 40px;font-weight: 900;}
+@media print {@page { margin: 0;}.print-contents{height: 100%;}}

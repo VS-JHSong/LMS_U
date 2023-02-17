@@ -8,7 +8,11 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:80/LMS-M",
+<<<<<<< HEAD
+            "url": "http://localhost:8080/LMS-M",
+=======
+            "url": "http://localhost:8080",
+>>>>>>> 3c39563ec2803d821f07a65090418188da68907b
             "webRoot": "${workspaceFolder}"
         }
     ]

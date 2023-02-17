@@ -52,13 +52,13 @@ File: Custom Bootstrap Css File
 body {
   margin: 0;
   /*font-family: var(--bs-font-sans-serif);*/
-  /*font-weight: 400;*/
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: .875rem;
+  font-size: 0.875rem;
+  /*font-weight: 400;*/
   font-weight: 300;
   line-height: 1.5;
-  color: #191919;
-  background-color: #fff;
+  color: #495057;
+  background-color: #f8f8f8;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
@@ -67,17 +67,16 @@ hr {
   color: inherit;
   background-color: currentColor;
   border: 0;
-  opacity: 0.2;}
+  opacity: 0.2; }
 
 hr:not([size]) {
   height: 1px; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
-  color: inherit;
   margin-bottom: 0.5rem;
-  font-weight: 300;
-  line-height: 1.2;}
+  font-weight: 600;
+  line-height: 1.2; }
 
 h1, .h1 {
   font-size: calc(1.34375rem + 1.125vw); }
@@ -4820,6 +4819,7 @@ textarea.form-control-lg {
     margin: 0; }
     .modal-fullscreen-lg-down .modal-content {
       min-height: 100%;
+      /*height: 100%;*/
       border: 0;
       border-radius: 0; }
     .modal-fullscreen-lg-down .modal-header {
@@ -6507,19 +6507,19 @@ textarea.form-control-lg {
   font-style: normal !important; }
 
 .fw-light {
-  font-weight: 100 !important; }
+  font-weight: 300 !important; }
 
 .fw-lighter {
   font-weight: lighter !important; }
 
 .fw-normal {
-  font-weight: 300 !important; }
-
-.fw-bold {
   font-weight: 400 !important; }
 
-.fw-bolder {
+.fw-bold {
   font-weight: 600 !important; }
+
+.fw-bolder {
+  font-weight: bolder !important; }
 
 .lh-1 {
   line-height: 1 !important; }
@@ -6573,7 +6573,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #438DFF !important; }
+  color: #0576b9 !important; }
 
 .text-secondary {
   color: #adb5bd !important; }
@@ -6597,13 +6597,10 @@ textarea.form-control-lg {
   color: #eff2f7 !important; }
 
 .text-dark {
-  color: #191919 !important; }
+  color: #343a40 !important; }
 
 .text-white {
   color: #fff !important; }
-
-.text-sb {
-  color: #42D8FF !important; }
 
 .text-body {
   color: #495057 !important; }
@@ -9250,7 +9247,7 @@ html {
   min-height: 100%; }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  color: #191919; }
+  color: #495057; }
 
 a {
   text-decoration: none !important; }
@@ -9695,6 +9692,4 @@ button, a {
 @keyframes animate-positive {
   0% {
     width: 0; } }
-
-
 ============= */
