@@ -1,0 +1,55 @@
+/*
+o(a~z)-(a~z)ps(01~99번째 세션) : 고유 클래스 규칙
+
+
+*/
+* {-webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */color-adjust: exact !important;                 /* Firefox 48 – 96 */print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */}
+
+html, body {height:100%;margin:0;background-color:#fff;color: #767676;}
+main {min-height: 100%;background-color: #fff;}
+textarea{resize: none;}
+a {color: #767676;}
+a:hover {color: #191919 !important;text-decoration:underline !important;font-weight:500;}
+
+.pb-9 {padding-bottom:5rem !important;}
+
+.form-select {border: 1px solid #ced4da;}
+
+#ezcSpeechBubble{width: 1px;height: 1px;}
+#ezchatsmall_container{width: 1px!important;height: 1px!important;}
+#ezcSpeechBubbleImgWrap{visibility: hidden;}
+#chat_ezHelp{z-index: auto !important;border: hidden;}
+
+.container-lg,
+.container{max-width: 1320px;}
+
+.btn-outline-light{color: #eff2f7;}
+.btn-light{background-color: #fff;}
+.floating-menu {position: absolute;right: 50px;border-radius: 70px;bottom: 100px;}
+.floating-meun .folating-down{right: 50px;}
+.dropdown-menu[style]{right: 0px !important;}
+
+.oz-nav {--bs-breadcrumb-divider: '>';}
+.oz-nav ol {margin:0;padding-right:0px;}
+.oz-nav.type2 {background-color:#438DFF;}
+.oz-nav.type2 i,
+.oz-nav.type2 li,
+.oz-nav.type2 .breadcrumb-item + .breadcrumb-item::before {color:#fff;}
+
+.oz-footer {background-color:#F4F4F4;}
+.oz-footer .fo-url {margin-top:1rem;}
+.oz-footer .fo-url .cacao {background-color:#FFD500;cursor:pointer;margin:0;padding:.8rem 0;}
+.oz-footer .fo-url .n-blog {background-color:#42D31A;cursor:pointer;margin:0;padding:.8rem 0;}
+.oz-footer .fo-link {padding: .6rem 0;}
+.oz-footer .fo-imgs img {float:left;display:block;height:3rem;width:auto;margin-right:1rem;margin-bottom:1rem; cursor:pointer;}
+.oz-footer .fo-imgs img:last-child {margin-right:0rem;}
+
+
+
+
+
+
+
+
+
+
