@@ -14,17 +14,18 @@
 	<link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 	<!-- Bootstrap Css -->
 	<link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <!--link href="assets/css/bootstrap.css" id="bootstrap-style" rel="stylesheet" type="text/css" /-->  
 	<!-- Icons Css -->
 	<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-	<!-- visco css-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-	<link href="assets/css/visco/about.css" rel="stylesheet" type="text/css" />
-
 	<!-- AOS CSS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!--swiper CSS-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<!-- visco css-->
+	<link href="assets/css/visco/about.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
 
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
@@ -36,7 +37,7 @@
 	<!--google map JS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-	<title>Hello, world!</title>
+	<title>OA:About us</title>
 </head>
 <body>
 	<main>
@@ -84,45 +85,47 @@
 		</div>
 		<!-- GNB END-->
 
-		
-		<!-- USER START -->
-		<div>
-			<div class="" style="background-color: #00287A;">
-			  <div class="container px-4 px-lg-0">  
-				<div class="row py-4 text-md-start">
-				  <div class="col-lg-8 col-sm-6 mb-4 mb-md-0">
-					<h3 class="text-white mb-1">학습을 위해 로그인을 진행해주세요.</h3>
-					<p class="text-white mb-1 pt-2 pb-2">회사를 통해 수강을 하시는 경우 문자 또는 카카오톡 메시지로부터 <br/> 받은 정보로 로그인 하세요.</p>
-					<button type="button" class="btn btn-outline-light btn-sm" style="width: 5.5rem;"><i class="bi bi-globe2 fs-1"></i> <br />LMS SITE</button>
-					<button type="button" class="btn btn-outline-light btn-sm" style="width: 5.5rem;"><i class="bi bi-twitter fs-1"></i><br />교강사전용</button>
-				  </div>
-				  <div class="col-lg-4 col-sm-6">
-					<div class="row g-2">
-					  <div class="ms-md-8 col-lg-9 col-sm-12 d-grid gap-2">
-						<div class="form-floating">
-						  <input type="email" class="form-control w-100" id="floatingInput" placeholder="name@example.com">
-						  <label for="floatingInput">아이디</label>
-						</div>
-						<div class="form-floating">
-						  <input type="password" class="form-control w-100" id="floatingPassword" placeholder="Password">
-						  <label for="floatingPassword">비밀번호</label>
-						</div>
-					  </div>
-					  <div class="col-lg-3 col-sm-12 mx-0">
-						<button type="button" class="btn btn-light btn-lg fs-6 w-100 h-100">로그인</button>
-					  </div>
-					</div>                                    
-					<div class="row mt-2 d-flex g-2">                  
-					  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#findIdModal">아이디 찾기</button></span></div>
-					  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#findPwModal">비밀번호 찾기</button></span></div>
-					  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" onclick="location.href='sign_up.php'">회원가입</button></span></div>
-					</div>
-				  </div>                                                            
+		<!-- LOGIN USER START -->
+		<section class="oz-mymenu2 mt-1">
+			<div class="container py-4">
+				<h4 class="text-white fw-bold">홍길동님 환영합니다.</h4>
+				<div class="text-white pt-2">
+					원라인에듀 홈페이지를 방문해주신 여러분을 진심으로 환영합니다.
 				</div>
-			  </div>
+				<div class="summary clearfix text-white mt-2 fw-bold">
+					<p class="float-start">수강완료:<span>1</span>개</p>
+					<p class="float-start">진행(대기)중:<span>2</span>개</p>
+				</div>
+				<div class="row">
+					<!-- left -->
+					<div class="col-12 col-md-2">
+						<div style="background-color: #fff;">원형그래프</div>
+					</div>
+					<!-- right -->
+					<div class="col-12  col-md-10">
+						<div class="i-group float-end">
+							<p class="btn btn-outline-light">
+								<i class="material-symbols-outlined">contact_mail</i>
+								<span>내 강의실</span>
+							</p>
+							<p class="btn btn-outline-light">
+								<i class="material-symbols-outlined">manage_search</i>
+								<span>마이페이지</span>
+							</p>
+							<p class="btn btn-outline-light">
+								<i class="material-symbols-outlined">clinical_notes</i>
+								<span>수료증</span>
+							</p>
+							<p class="btn btn-outline-light">
+								<i class="material-symbols-outlined">draft_orders</i>
+								<span>재응시</span>
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		<!-- USER END -->
+		</section>
+		<!-- LOGIN USER END -->
 
 		<!-- Navigation START -->
 		<section class=" oz-nav type2 pt-2 pb-2" aria-label="breadcrumb">
@@ -140,7 +143,7 @@
 		<!-- 소개글 -->
 		<section id="introduction" class="ob-aps01 ob-aps02 pb-4" style="background-color: #438DFF;">
 			<div class="container aos-init aos-animate text-white" data-aos="fade-up">
-				<div class="h5 pt-3 text-white">교육원 소개:</div>
+				<h5 class="pt-3 text-white">교육원 소개:</h5>
 				<div class="content text-center">
 					<div class="text-white h3">
 						함께 성장, 발전해가자는 신념으로 <span class="fw-bolder">사람이 행복한 교육</span>을 만들겠습니다.
@@ -153,7 +156,7 @@
 							경청하는 행동에 옮기며 사람이 행복한 교육을 만들고자 합니다. <br/><br/>
 							우리가 가진 생각과 철학이 현실화 되는 그 날까지 여러분들과 함게 하며, 좋은 문화,
 							신뢰있는 사회를 만들어 가는데 작은 보탬이 되고자 합니다.<br/>
-							다변화하는 세상에서 배움의 엄춤이 없는 평생교육의 길. 그 길에서 이상을 실현시키시기 바랍니다.<br/>
+							다변화하는 세상에서 배움의 멈춤이 없는 평생교육의 길. 그 길에서 이상을 실현시키시기 바랍니다.<br/>
 							늘 행복하세요!
 						</p>
 					</div>
@@ -165,7 +168,7 @@
 		<!-- 목표 및 경영원칙 -->
 		<section id="rule" class="ob-aps02 pb-4">
 			<div class="container aos-init aos-animate" data-aos="fade-up">
-				<div class="pt-3 section-title fw-bold h5 text-primary">목표 및 경영원칙:</div>
+				<h5 class="pt-3 section-title fw-bold text-primary">목표 및 경영원칙:</h5>
 				
 				<div class="h3 pb-4 text-center text-dark">
 					누구에게나 열린 평생교육을 통해<br />
@@ -207,10 +210,10 @@
 		<!-- 비전 --> 
 		<section id="vision" class="ob-aps03">
 			<div class="container aos-init aos-animate text-white" data-aos="fade-up">                    
-				<div class="section-title pt-3 fw-bold h5 text-white">비젼:</div>
+				<h5 class="section-title pt-3 fw-bold text-white">비젼:</h5>
 				<div class="content text-center">
 					<div>
-						<p class="h2 text-white">사람이 중심이 되는,<br />
+						<p class="h3 text-white">사람이 중심이 되는,<br />
 							사람을 소중히 하는 문화속에 <span class="fw-bolder">지속적 자기계발을 지원</span>하고 함께 성장하는 기업이 되겠습니다.
 						</p>
 						<span style="writing-mode:vertical-rl">..........</span>
@@ -230,10 +233,10 @@
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="row mt-2 justify-content-center">
-										<div class="col-7 col-md-4"><p><img class="" src="assets/images/about/이미지 14.png"></p></div>
+										<div class="col-7 col-md-4"><p><img class="shadow" src="assets/images/about/이미지 14.png"></p></div>
 									</div>
 									<div class="text-center mt-2">
-										<h5 class="card-title text-primary"><span class="h5 fw-bold">원격평생교육시설증</span></h5>
+										<p class="card-title text-primary fw-bold">원격평생교육시설증</p>
 										<span class="h6 mb-3 text-primary">Remote lifelode training facility</span>
 									</div>
 								</div>
@@ -248,9 +251,9 @@
 		<!-- 미션 -->
 		<section id="rule" class="ob-aps04">
 			<div class="container aos-init aos-animate" data-aos="fade-up">
-				<div class="section-title pt-5 fw-bold h5 text-primary">미션:</div>
+				<h5 class="section-title pt-5 fw-bold text-primary">미션:</h5>
 				<div class="content">
-					<div class="h2 text-dark">
+					<div class="h3 text-dark">
 						학습자의 만족을 위해 경청하는<br />
 						<span class="fw-bolder">학습자의 needs를 반영</span>하는 최적의 HRD 교육, 최상의 LMS
 					</div>
@@ -282,21 +285,21 @@
 					<div class="row mt-3">
 						<div class="col-12  col-md-9">
 							<div>
-								<span class="text-sb d-block">주소</span>
+								<span class="text-skyblue d-block">주소</span>
 								<p class="mb-0 text-white">서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀</p>
 							</div>
 						</div>
 						<div class="col-12  col-md-3">
 							<div>
-								<span class="text-sb d-block">전화번호</span>
+								<span class="text-skyblue d-block">전화번호</span>
 								<p class="mb-0 text-white">1811-0014 / 0018</p>
 							</div>
 							<div>
-								<span class="text-sb d-block">팩스</span>
+								<span class="text-skyblue d-block">팩스</span>
 								<p class="mb-0 text-white">050-8094-0019</p>
 							</div>
 							<div>
-								<span class="text-sb d-block">이메일</span>
+								<span class="text-skyblue d-block">이메일</span>
 								<p class="mb-0 text-white">oneline0906@oneline.kr</p>
 							</div>
 						</div>
@@ -341,7 +344,7 @@
 					</select>
 					<div class="row fo-url">
 						<div class="col-6 text-center">
-							<p class="cacao rounded">카카오톡 채널</p>
+							<p class="cacao rounded text-dark">카카오톡 채널</p>
 						</div>
 						<div class="col-6 text-center">
 							<p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
