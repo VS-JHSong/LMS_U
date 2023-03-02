@@ -84,7 +84,8 @@
 .om-aps03 .card .txt {min-height:10rem;color:#191919;margin-top:0.5rem;}
 
 .om-aps04 .col {margin-bottom:1rem;}
-.om-aps04 .carousel-inner {border:1px solid #DCDCDC;border-radius:0.46rem;}
+.om-aps04 .carousel-inner {border:1px solid #DCDCDC;border-radius:0.46rem;position: relative;}
+.om-aps04 .carousel-inner h5 {position:absolute;right:0.7rem;top:0.7rem;}
 .om-aps04 .carousel-inner .carousel-item i {font-size:7rem;font-variation-settings:'FILL' 0,'wght' 100,'GRAD' -25,'opsz' 48;}
 .om-aps04 .carousel-inner .carousel-item a {display:inline-block;background-color:#438DFF;color:#fff;}
 .om-aps04 .bankings,.om-aps04 .customer {border-radius:0.46rem;min-height:100%;position: relative;}
