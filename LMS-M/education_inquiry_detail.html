@@ -1,304 +1,310 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- icon css-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">        
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- icon css-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">        
 
-    <!-- App Css-->
-    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
-    <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <!-- visco css-->
-    <link href="assets/css/visco/education_inquiry.css" rel="stylesheet" type="text/css" />
+	<!-- App Css-->
+	<link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+	<!-- Bootstrap Css -->
+	<link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+	<!-- Icons Css -->
+	<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+	<!-- visco css-->
+	<link href="assets/css/visco/education_inquiry.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/visco/visco_slide_min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script> 
-    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>   
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script> 
+	<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script> 
-    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    
-    <title>원라인에듀</title>
-  </head>
-  <body>    
-    <!-- Optional JavaScript; choose one of the two! -->
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script> 
+	<script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	
+	<title>교육문의-문의하기</title>
+</head>
+<body>
+	<main class="pb-9">
+		<!-- GNB START-->
+		<div class="container px-0">
+			<nav class="navbar navbar-expand-lg navbar-light">
+			<!-- Logo START -->
+			<a class="navbar-brand" href="index.html">
+				<!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
+				<!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
+				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
+			</a>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    
-    
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->  
-    
-    <main>
-      <!-- GNB START-->
-      <div class="container px-0">                
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <!-- Logo START -->
-          <a class="navbar-brand" href="index.html">
-            <!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
-            <!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
-            <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
-          </a>
+			<!-- Nav Search START mobile -->
+			<div class="nav my-3 my-xl-0 align-items-center d-none d-sm-block d-md-block d-lg-none">
+				<div class="nav-item w-100">
+				<form class="position-relative">
+					<input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+					<button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+					<i class="bi bi-search"></i>
+					</button>
+				</form>
+				</div>
+			</div>
+			<!-- Nav Search END -->
+			<!-- 교육문의 mobile-->
+			<div class="d-none d-sm-block d-md-block d-lg-none">
+				<button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+			</div>
 
-          <!-- Nav Search START mobile -->
-          <div class="nav my-3 my-xl-0 align-items-center d-none d-sm-block d-md-block d-lg-none">
-            <div class="nav-item w-100">
-              <form class="position-relative">
-                <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
-                <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
-                  <i class="bi bi-search"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-          <!-- Nav Search END -->
-          <!-- 교육문의 mobile-->
-          <div class="d-none d-sm-block d-md-block d-lg-none">
-            <button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
-          </div>
+			<!-- Logo END -->              
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>           
 
-          <!-- Logo END -->              
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>           
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item pe-2">
+					<a class="nav-link" href="education.html">전체교육</a>
+				</li>
+				<li class="nav-item pe-2">
+					<a class="nav-link" href="about_us.html">교육원소개</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="support.html">고객지원</a>
+				</li>
+				</ul>
+				<!-- PC -->
+				<!-- Nav Search START -->
+				<div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center d-none d-lg-block">
+				<div class="nav-item w-100">
+					<form class="position-relative">
+					<input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+					<button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+						<i class="bi bi-search"></i>
+					</button>
+					</form>
+				</div>
+				</div>
+				<!-- Nav Search END -->
+				<!-- 교육문의 -->
+				<div class="d-none d-lg-block">
+				<button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+				</div>
+				
+			</div>            
+			</nav>
+		</div>
+		<!-- GNB END-->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item pe-2">
-                <a class="nav-link" href="education.html">전체교육</a>
-              </li>
-              <li class="nav-item pe-2">
-                <a class="nav-link" href="about_us.html">교육원소개</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="support.html">고객지원</a>
-              </li>
-            </ul>
-            <!-- PC -->
-            <!-- Nav Search START -->
-            <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center d-none d-lg-block">
-              <div class="nav-item w-100">
-                <form class="position-relative">
-                  <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
-                  <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
-                    <i class="bi bi-search"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-            <!-- Nav Search END -->
-            <!-- 교육문의 -->
-            <div class="d-none d-lg-block">
-              <button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
-            </div>
-            
-          </div>            
-        </nav>
-      </div>
-      <!-- GNB END-->
+		<!-- NEW USER START -->
+		<section class="oe-aps-summary">
+			<article class="container py-4">
+				<div class="mb-4  text-center">
+					<p class="text-primary h5">원라인에듀의 과정 선택과 상담을 한번에</p>
+					<p class="text-dark mt-2 h4">교육 문의하기</p>
+				</div>
+				<div class="text-center s-back">
+					<button type="button" class="btn btn-outline-info ps-4" onclick="location.href='education_inquiry.html'">
+						<i class="material-symbols-outlined">west</i>과정선택 화면으로 돌아가기
+					</button>
+				</div>
+			</article>
+		</section>
+		<!-- NEW USER END -->
+		<!-- NEW Content START -->
+		<article class="container mt-5 oe-aps03">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th scope="col">과정</th>
+						<th scope="col">환급여부</th>
+						<th scope="col">교육인원</th>
+					</tr>
+				</thead>
+				<tbody class="align-middle">
+					<tr>
+						<td class="text-start">
+							<div class="form-check t-box">
+								<input class="form-check-input h4" type="checkbox" id="defaultCheck1">
+								<label for="defaultCheck1">
+									<em class="text-primary">직무교육 > 커뮤니케이션</em>
+										<h6>[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</h6>
+										<p class="mt-1 icons clearfix">
+											<span class="float-start"><i class="material-symbols-outlined">bookmarks</i>9차시</span>
+											<span class="float-start"><i class="material-symbols-outlined">schedule</i>4시간 23분</span>
+											<span class="float-start"><i class="material-symbols-outlined">favorite</i>23</span>
+										</p>
+								</label>
+							</div>
+						</td>
+						<td>환급</td>
+						<td>
+							<input class="form-control" type="number" id="quantity1" value="1" min="1" onfocusout="if(this.value=='' || this.value=='0'){this.value='1';}">
+						</td>
+					</tr>
+					<tr>
+						<td class="text-start">
+							<div class="form-check t-box">
+								<input class="form-check-input h4" type="checkbox" id="defaultCheck2">
+								<label for="defaultCheck2">
+									<em class="text-primary">직무교육 > 커뮤니케이션</em>
+										<h6>[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</h6>
+										<p class="mt-1 icons clearfix">
+											<span class="float-start"><i class="material-symbols-outlined">bookmarks</i>9차시</span>
+											<span class="float-start"><i class="material-symbols-outlined">schedule</i>4시간 23분</span>
+											<span class="float-start"><i class="material-symbols-outlined">favorite</i>23</span>
+										</p>
+								</label>
+							</div>
+						</td>
+						<td>환급</td>
+						<td>
+							<input class="form-control" type="number" id="quantity1" value="1" min="1" onfocusout="if(this.value=='' || this.value=='0'){this.value='1';}">
+						</td>
+					</tr>
+					<tr>
+						<td class="text-start">
+							<div class="form-check t-box">
+								<input class="form-check-input h4" type="checkbox" id="defaultCheck3">
+								<label for="defaultCheck3">
+									<em class="text-primary">직무교육 > 커뮤니케이션</em>
+										<h6>[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</h6>
+										<p class="mt-1 icons clearfix">
+											<span class="float-start"><i class="material-symbols-outlined">bookmarks</i>9차시</span>
+											<span class="float-start"><i class="material-symbols-outlined">schedule</i>4시간 23분</span>
+											<span class="float-start"><i class="material-symbols-outlined">favorite</i>23</span>
+										</p>
+								</label>
+							</div>
+						</td>
+						<td>환급</td>
+						<td>
+							<input class="form-control" type="number" id="quantity1" value="1" min="1" onfocusout="if(this.value=='' || this.value=='0'){this.value='1';}">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="sub-mits mt-5">
+				
 
-      <!-- USER START -->      
-      <div class="" style="background-color: #F0F3F7">
-        <div class="container px-4 px-lg-0">  
-          <div class="py-4 text-center">
-            <div class="mb-3">
-              <p class="text-primary mb-1 h6">원라인에듀의 과정 선택과 상담을 한번에</p>
-              <p class="text-dark mb-0 mt-0 h5">교육 문의하기</p>              
-            </div>
-            <div>
-                <button type="button" class="btn btn-outline-primary" onclick="location.href='education_inquiry.html'"><i class="bi bi-arrow-left"></i>&nbsp; 과정선택 화면으로 돌아가기</button>
-            </div>                        
-          </div>
-        </div>
-      </div>
-      <!-- USER END -->      
-      <!-- main START -->            
-      <div class="container px-0">        
-        <div class="mt-4">
-            <!-- 상세영역 -->
-            <div class="text-center">
-                <table class="table table-bordered">
-                    <thead style="background-color: #F0F3F7;">
-                        <tr>
-                        <th scope="col" width="80%">과정</th>
-                        <th scope="col" width="8%">환급여부</th>
-                        <th scope="col" width="12%">교육인원</th>
-                        </tr>
-                    </thead>
-                    <tbody class="align-middle">
-                        <tr>
-                            <td class="text-start">
-                                <div class="form-check">
-                                    <input class="form-check-input mx-0 h1 mt-4" type="checkbox" id="defaultCheck1" checked>
-                                    <label class="form-check-label" for="defaultCheck1">                                
-                                        <div class="col ps-3">
-                                            <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>
-                                            <p class="fs-xs mb-1">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
-                                            <p class="small mb-0"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
-                                        </div>
-                                    </label>
-                                </div>
-                            </td>
-                            <td>환급</td>
-                            <td>
-                                <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 9rem;">
-                                    <input class="form-control" type="number" id="quantity1" value="1" min="1" onfocusout="if(this.value=='' || this.value=='0'){this.value='1';}">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="text-start">
-                                <div class="form-check">
-                                    <input class="form-check-input mx-0 h1 mt-4" type="checkbox" id="defaultCheck2" checked>
-                                    <label class="form-check-label" for="defaultCheck2">
-                                        <div class="col ps-3">
-                                            <p class="text-primary small mt-2 mb-1">직무교육 > 커뮤니케이션</p>
-                                            <p class="fs-xs mb-1">[계층교육 시리즈] 변화의 실행력, 조직의 미래를 만들어가는 중간관리자</p>
-                                            <p class="small mb-0"><i class="bi bi-files">9차시</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-clock">4시간 23분</i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-chat-fill">23</i></p>
-                                        </div>
-                                    </label>
-                                </div>
-                            </td>
-                            <td>비환급</td>
-                            <td>
-                                <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 9rem;">
-                                    <input class="form-control" type="number" id="quantity1" value="1" min="1" onfocusout="if(this.value=='' || this.value=='0'){this.value='1';}">
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>                
-            </div>
-            <hr />
-            <div>
-              <div class="mb-3">                
-                <select class="form-select w-25">
-                    <option>기업</option>
-                    <option>개인</option>
-                    <option>기타</option>
-                </select>
-              </div>
-              <div class="mt-4 row">
-                  <div class="col-auto">
-                      <div class="form-check form-check-inline h5">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
-                          <label class="form-check-label" for="inlineRadio1">대기업</label>
-                      </div>
-                      <div class="form-check form-check-inline h5">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                          <label class="form-check-label" for="inlineRadio2">중소기업</label>
-                      </div>
-                      <div class="form-check form-check-inline h5">
-                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                          <label class="form-check-label" for="inlineRadio3">우선지원기업</label>
-                      </div>
-                  </div>                    
-                  <div class="col">
-                      <p class="text-end text-secondary">※기업유형은 근로복지공단 (Tel. 1588-075)에서 확인 가능합니다.</p>
-                  </div>                    
-              </div>
-              <div>
-                  <div class="input-group mb-4 w-50">
-                      <input type="text" class="form-control" placeholder="기업명" aria-label="companyname" aria-describedby="basic-addon1">
-                  </div>
-                  <form class="mb-6">
-                    <!--input-->
-                    <div class="row mx-0 mb-4">
-                      <input type="text" class="col form-control me-2" placeholder="담당자" aria-label="Username" aria-describedby="basic-addon2">
-                      <input type="tel" class="col form-control me-2" placeholder="연락 받을 전화번호" aria-label="phonenumber" aria-describedby="basic-addon3">
-                      <input type="email" class="col form-control" placeholder="연락 받을 이메일" aria-label="email" aria-describedby="basic-addon4">
-                    </div>
-                    <!-- 메모 -->
-                    <div class="mb-4">
-                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="메모를 남겨주세요" rows="9"></textarea>
-                    </div>
-                    <!-- 안내 -->
-                    <div style="background-color: #F2F2F2;">
-                      <p class="text-primary mb-1 small p-3">개인정보 수집 및 이용에 대한 안내</p>
-                      <ul class="small pb-3">
-                        <li>수집항목 : 이름,회사명,이메일,전화번호,그 외 개인이 직접 등록한 문의 내용</li>
-                        <li>수집목적 : 문의 결과 회신</li>
-                        <li>이용기간 : 개인정보 수집 및 이용에 대한 목적이 달성된 후에는 해당 정보를 파기</li>
-                      </ul>
-                    </div>
-                    <!-- 체크박스 -->
-                    <div class="text-end mb-4 text-secondary">
-                      <input type="checkbox" class="form-check-input h2" id="rememberCheck">
-                      <label class="form-check-label pt-2" for="rememberCheck">위 개인정보 수집 및 이용에 대한 안내를 충분히 숙지했습니다.</label>
-                    </div>
-                    <!-- Button -->
-                    <button class="btn w-100 btn-primary">
-                      선택과정 문의하기
-                    </button>          
-                  </form>                    
-              </div>
-            </div>            
-          </div>        
-        </div>    
+				<div class="mt-3 row">
+					<div class="col-12 col-md-3">
+						<select class="form-select col-12 col-md-3">
+							<option>기업</option>
+							<option>개인</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="mt-3 row">
+					<div class="col-12 col-md-6">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+							<label class="form-check-label" for="inlineRadio1">대기업</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">중소기업</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+							<label class="form-check-label" for="inlineRadio3">우선지원기업</label>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<p class="text-end text-secondary">※기업유형은 근로복지공단 (Tel. 1588-075)에서 확인 가능합니다.</p>
+					</div>
+				</div>
+				<div class="mt-3 row">
+					<div class="col-12 col-md-6">
+						<input type="text" class="form-control" placeholder="기업명" aria-label="companyname" aria-describedby="basic-addon1">
+					</div>
+				</div>
+				<div class="mt-1 row g-lg-3 g-3">
+					<div class="col-12 col-md-4">
+						<input type="text" class="form-control" placeholder="담당자" aria-label="companyname" aria-describedby="basic-addon1">
+					</div>
+					<div class="col-12 col-md-4">
+						<input type="text" class="form-control" placeholder="연락 받을 전화번호" aria-label="companyname" aria-describedby="basic-addon1">
+					</div>
+					<div class="col-12 col-md-4">
+						<input type="text" class="form-control" placeholder="연락 받을 이메일" aria-label="companyname" aria-describedby="basic-addon1">
+					</div>
+				</div>
+				<textarea class="form-control mt-3" id="exampleFormControlTextarea1" placeholder="메모를 남겨주세요" rows="9"></textarea>
+				<div class="bg-secondary mt-3 p-3">
+					<p class="text-primary h6">개인정보 수집 및 이용에 대한 안내</p>
+					<div class="mt-3">
+						<q>수집항목 : 이름,회사명,이메일,전화번호,그 외 개인이 직접 등록한 문의 내용</q>
+						<q>수집목적 : 문의 결과 회신</q>
+						<q>이용기간 : 개인정보 수집 및 이용에 대한 목적이 달성된 후에는 해당 정보를 파기</q>
+					</div>
+				</div>
+				<div class="text-end mt-3 text-secondary">
+					<input type="checkbox" class="form-check-input" id="rememberCheck">
+					<label class="form-check-label" for="rememberCheck">위 개인정보 수집 및 이용에 대한 안내를 충분히 숙지했습니다.</label>
+				</div>
+				<button class="btn w-100 btn-primary mt-3">선택과정 문의하기</button>  
+			</div>
+		</article>
+		<!-- NEW Content START -->
     </main>
     
-    <!-- footer START -->
-   <footer class="oz-footer navbar-fixed-bottom">
-    <div class="container pt-3 pb-9">
-      <div class="row">
-        <!-- left -->
-        <div class="col-12 col-md-9">
-          <p class="fo-link h6">
-            <span class="pe-2 h-4"><a>개인정보 취급방침</a></span>
-            <span class="pe-2 h-4"><a>이용약관</a></span>
-            <span class="pe-2"><a>사업주지원교육 유의사항</a></span>
-            <span class="pe-2"><a>본인인증 안내</a></span>
-          </p>
-          <div class="fo-imgs mt-3 clearfix">
-            <img src="assets/images/common/fo-banner01.svg">
-            <img src="assets/images/common/fo-banner02.svg">
-            <img src="assets/images/common/fo-banner03.svg">
-          </div>
-        </div>
+	<!-- footer START -->
+	<footer class="oz-footer navbar-fixed-bottom">
+		<div class="container pt-3 pb-9">
+		<div class="row">
+			<!-- left -->
+			<div class="col-12 col-md-9">
+			<p class="fo-link h6">
+				<span class="pe-2 h-4"><a>개인정보 취급방침</a></span>
+				<span class="pe-2 h-4"><a>이용약관</a></span>
+				<span class="pe-2"><a>사업주지원교육 유의사항</a></span>
+				<span class="pe-2"><a>본인인증 안내</a></span>
+			</p>
+			<div class="fo-imgs mt-3 clearfix">
+				<img src="assets/images/common/fo-banner01.svg">
+				<img src="assets/images/common/fo-banner02.svg">
+				<img src="assets/images/common/fo-banner03.svg">
+			</div>
+			</div>
 
-        <!-- right -->
-        <div class="col-12  col-md-3">
-          <select class="form-select form-select-md" aria-label=".form-select-md example size 3">
-            
-            <option selected>관련사이트</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <div class="row fo-url">
-            <div class="col-6 text-center">
-              <p class="cacao rounded">카카오톡 채널</p>
-            </div>
-            <div class="col-6 text-center">
-              <p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mt-3">
-        <p>
-          원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
-          TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
-          통신판매번호 : 제 2021-서울영등포-0322호 <br />
-        </p>
-        ⓒ 원라인에듀 Allright & Reserved. ALLRIGHT & RESERVED.
-      </div>
-    </div>
-  </footer>
-  <!-- footer END -->      
-  </body>  
+			<!-- right -->
+			<div class="col-12  col-md-3">
+			<select class="form-select form-select-md" aria-label=".form-select-md example size 3">
+				
+				<option selected>관련사이트</option>
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+			</select>
+			<div class="row fo-url">
+				<div class="col-6 text-center">
+				<p class="cacao rounded">카카오톡 채널</p>
+				</div>
+				<div class="col-6 text-center">
+				<p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="mt-3">
+			<p>
+			원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
+			TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+			통신판매번호 : 제 2021-서울영등포-0322호 <br />
+			</p>
+			ⓒ 원라인에듀 Allright & Reserved. ALLRIGHT & RESERVED.
+		</div>
+		</div>
+	</footer>
+	<!-- footer END -->      
+</body>  
 </html>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1392" height="358" viewBox="0 0 1392 358">
+  <g id="그룹_12586" data-name="그룹 12586" transform="translate(-788 -3797)">
+    <g id="사각형_12846" data-name="사각형 12846" transform="translate(788 3797)" fill="#fff" stroke="#00287a" stroke-width="3">
+      <rect width="448" height="159" rx="8" stroke="none"/>
+      <rect x="1.5" y="1.5" width="445" height="156" rx="6.5" fill="none"/>
+    </g>
+    <g id="사각형_12849" data-name="사각형 12849" transform="translate(788 3996)" fill="#fff" stroke="#00287a" stroke-width="3">
+      <rect width="448" height="159" rx="8" stroke="none"/>
+      <rect x="1.5" y="1.5" width="445" height="156" rx="6.5" fill="none"/>
+    </g>
+    <rect id="사각형_12847" data-name="사각형 12847" width="448" height="159" rx="8" transform="translate(1319 3797)" fill="#438dff"/>
+    <rect id="사각형_12850" data-name="사각형 12850" width="448" height="159" rx="8" transform="translate(1319 3996)" fill="#438dff"/>
+    <rect id="사각형_12848" data-name="사각형 12848" width="330" height="159" rx="8" transform="translate(1850 3797)" fill="#00287a"/>
+    <rect id="사각형_12851" data-name="사각형 12851" width="330" height="159" rx="8" transform="translate(1850 3996)" fill="#00287a"/>
+    <text id="우선지원_대상기업" data-name="우선지원 대상기업" transform="translate(1013 3888)" fill="#00287a" font-size="26" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="-98.592" y="0">우선지원 대상기업</tspan></text>
+    <text id="대규모기업" transform="translate(1013 4087)" fill="#00287a" font-size="26" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR"><tspan x="-59.8" y="0">대규모기업</tspan></text>
+    <text id="고용안정_직업능력_개별사업부_보험료" data-name="고용안정,
+직업능력 개별사업부 보험료" transform="translate(1543 3869)" fill="#fff" font-size="26" font-family="NotoSansCJKkr-Light, Noto Sans CJK KR" font-weight="300"><tspan x="-51.09" y="0">고용안정,</tspan><tspan x="-149.292" y="38">직업능력 개별사업부 보험료</tspan></text>
+    <text id="고용안정_직업능력_개별사업부_보험료-2" data-name="고용안정,
+직업능력 개별사업부 보험료" transform="translate(1543 4068)" fill="#fff" font-size="26" font-family="NotoSansCJKkr-Light, Noto Sans CJK KR" font-weight="300"><tspan x="-51.09" y="0">고용안정,</tspan><tspan x="-149.292" y="38">직업능력 개별사업부 보험료</tspan></text>
+    <text id="_240_" data-name="240%" transform="translate(2015 3888)" fill="#fff" font-size="26" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-weight="700"><tspan x="-35.477" y="0">240%</tspan></text>
+    <text id="_100_" data-name="100%" transform="translate(2015 4087)" fill="#fff" font-size="26" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-weight="700"><tspan x="-35.477" y="0">100%</tspan></text>
+    <path id="clear" d="M586.5,89.621l-8.485,8.485-2.122-2.121,8.486-8.485-8.485-8.485,2.121-2.121,8.485,8.485,8.485-8.485,2.121,2.121L588.622,87.5l8.485,8.485-2.121,2.121Z" transform="translate(1218.107 3789.106)" fill="#00287a"/>
+    <path id="clear-2" data-name="clear" d="M586.5,89.621l-8.485,8.485-2.122-2.121,8.486-8.485-8.485-8.485,2.121-2.121,8.485,8.485,8.485-8.485,2.121,2.121L588.622,87.5l8.485,8.485-2.121,2.121Z" transform="translate(1218.107 3988.5)" fill="#00287a"/>
+    <path id="equals" d="M545,1052v-3h30v3Zm0-9v-3h30v3Z" transform="translate(720 2831)" fill="#00287a"/>
+    <path id="equals-2" data-name="equals" d="M545,1052v-3h30v3Zm0-9v-3h30v3Z" transform="translate(720 3030.395)" fill="#00287a"/>
+  </g>
+</svg>

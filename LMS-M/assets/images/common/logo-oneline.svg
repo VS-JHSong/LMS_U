@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118.248" height="71.809" viewBox="0 0 118.248 71.809">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_12882" data-name="사각형 12882" width="118.248" height="71.809" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_12881" data-name="사각형 12881" width="118.248" height="71.81" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="사각형_12879" data-name="사각형 12879" width="99.871" height="71.809" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="사각형_12880" data-name="사각형 12880" width="103.599" height="60.591" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="logo-oneline" clip-path="url(#clip-path)">
+    <g id="그룹_12595" data-name="그룹 12595" transform="translate(0 0)">
+      <g id="그룹_12594" data-name="그룹 12594" clip-path="url(#clip-path-2)">
+        <g id="그룹_12590" data-name="그룹 12590" transform="translate(18.377 0)" opacity="0.75">
+          <g id="그룹_12589" data-name="그룹 12589" transform="translate(0 0)">
+            <g id="그룹_12588" data-name="그룹 12588" clip-path="url(#clip-path-3)">
+              <path id="패스_3518" data-name="패스 3518" d="M98.793,11.949A30.118,30.118,0,0,0,79.539,14.21c-12.471,3.111-20.281-3.968-25.33-8.555A18.153,18.153,0,1,0,37.278,35.916,18.049,18.049,0,0,0,47.535,35.1c8.642-1.908,12.162,1.5,15.052,11a30.259,30.259,0,1,0,36.2-34.159" transform="translate(-22.894 0)" fill="#6d5fd6"/>
+            </g>
+          </g>
+        </g>
+        <g id="그룹_12593" data-name="그룹 12593" transform="translate(0 11.202)" opacity="0.91">
+          <g id="그룹_12592" data-name="그룹 12592">
+            <g id="그룹_12591" data-name="그룹 12591" clip-path="url(#clip-path-4)">
+              <path id="패스_3519" data-name="패스 3519" d="M85.445,38.236a18.065,18.065,0,0,0-8.854,2.306c-8.4,3.234-13.141,1.358-18.166-7.378A30.263,30.263,0,1,0,48.1,68.643c11.814-6.169,21.039-.819,27.017,2.678A18.154,18.154,0,1,0,85.445,38.236" transform="translate(0 -13.954)" fill="#4871e5"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

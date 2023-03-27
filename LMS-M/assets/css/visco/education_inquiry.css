@@ -1,1 +1,48 @@
 @import url(common.css);
+
+.oe-aps-summary {background-color: #F0F3F7;}
+.oe-aps-summary label {min-width:3rem;}
+.oe-aps-summary .s-back button {position: relative;}
+.oe-aps-summary .s-back button i {position: absolute;top:50%;left:0.25rem;transform:translateY(-50%);font-size: 1.24rem;}
+
+.oe-aps02 .list-group {border-top: 1px solid #767676;}
+.oe-aps02 .list-group li {position: relative;border-bottom: 1px solid #DCDCDC;}
+.oe-aps02 .list-group li input {margin:0;padding:0;position: absolute;top:50%;left:0;transform:translateY(-50%);}
+.oe-aps02 .list-group li label {margin: 0rem;padding: 0rem;margin-left: 2rem;font-weight: 300;display: block;}
+.oe-aps02 .list-group li .imgs {width:6rem;height:6rem;}
+.oe-aps02 .list-group li .imgs img {width:inherit;height:inherit;}
+@media (max-width: 992px) {.oe-aps02 .list-group li .imgs {border: 1px solid red;display: none;}}
+.oe-aps02 .list-group li .badge {position: absolute;top:0;right:0;}
+.oe-aps02 .rights .r-box .icons span,
+.oe-aps02 .list-group li .icons span {margin-right:0.5rem;padding-left:1.3rem;line-height:1.5rem;position: relative;}
+.oe-aps02 .rights .r-box .icons span i,
+.oe-aps02 .list-group li .icons span i {position: absolute;top:0;left:0;line-height:1.5rem;display: inline-block;font-size: 1.24rem;font-variation-settings:'FILL' 1,'wght' 100,'GRAD' -25,'opsz' 48;}
+.oe-aps02 .rights .r-nons i {font-size: 6.4rem;font-variation-settings:'FILL' 1,'wght' 100,'GRAD' -25,'opsz' 48;}
+.oe-aps02 .rights .r-box {position: relative;}
+.oe-aps02 .rights .r-box .btn-close {position: absolute;top:0.6rem;right:0.25rem;}
+.oe-aps02 .rights .r-box > p {width:calc(100% - 1rem);}
+
+.oe-aps03 table {text-align: center;}
+.oe-aps03 table td:nth-child(2) {width:10rem;}
+.oe-aps03 table td:nth-child(3) {width:10rem;}
+@media (max-width: 992px) {
+	.oe-aps03 table td:nth-child(2) {width:5rem;}
+	.oe-aps03 table td:nth-child(3) {width:6.8rem;}
+}
+.oe-aps03 thead {background-color: #F0F3F7;}
+.oe-aps03 .t-box {position: relative;}
+.oe-aps03 .t-box input {margin:0;padding:0;position: absolute;top:50%;left:0;transform:translateY(-50%);}
+.oe-aps03 .t-box label {margin: 0rem;padding: 0rem;margin-left: 1.2rem;font-weight: 300;display: block;}
+.oe-aps03 .t-box .icons span {margin-right:0.5rem;padding-left:1.3rem;line-height:1.5rem;position: relative;}
+.oe-aps03 .t-box .icons span i {position: absolute;top:0;left:0;line-height:1.5rem;display: inline-block;font-size: 1.24rem;}
+.oe-aps03 .btn-group {padding-right: 9rem;}
+
+
+
+
+
+
+
+
+
+

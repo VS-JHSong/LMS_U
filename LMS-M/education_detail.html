@@ -1,840 +1,850 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- icon css-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <!--swiper-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>    
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- App Css-->
-    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
-    <!-- Bootstrap Css -->
-    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />    
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    
-    <!-- Icons Css -->
-    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />        
-    <!-- visco css-->
-    <link href="assets/css/visco/education.css" rel="stylesheet" type="text/css" />
+	<!--swiper-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<!-- App Css-->
+	<link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+	<!-- Bootstrap Css -->
+	<link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<!-- Icons Css -->
+	<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<!-- visco css-->
+	<link href="assets/css/visco/education.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/visco/visco_slide_min.css" rel="stylesheet" type="text/css" />
+	
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <!--jquery-->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!--jquery-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<!--swiper-->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!--ezhelp-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://939.co.kr/runezhelp.js" charset="utf-8"></script>
+	<script src="https://hiserver.co.kr/runezchat.js" charset="utf-8"></script>
+	<!-- apexcharts (반 도넛 차트) -->
+	<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
-    <!--swiper-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<title>전체 > 직무교육 </title>
+</head>
+<body>
+	<main class="pb-9">
+		<!-- GNB START-->
+		<div class="container px-0">        
+			<div>
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<!-- Logo START -->
+				<a class="navbar-brand" href="index.html">
+				<!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
+				<!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
+				<img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
+				</a>
 
-    <!--ezhelp-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	  <script src="https://939.co.kr/runezhelp.js" charset="utf-8"></script>
-	  <script src="https://hiserver.co.kr/runezchat.js" charset="utf-8"></script>
+				<!-- Nav Search START mobile -->
+				<div class="nav my-3 my-xl-0 align-items-center d-none d-sm-block d-md-block d-lg-none">
+				<div class="nav-item w-100">
+					<form class="position-relative">
+					<input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+					<button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+						<i class="bi bi-search"></i>
+					</button>
+					</form>
+				</div>
+				</div>
+				<!-- Nav Search END -->
+				<!-- 교육문의 mobile-->
+				<div class="d-none d-sm-block d-md-block d-lg-none">
+				<button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+				</div>
 
-    <!-- kakao chat-->
-    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-    
-    <title>Hello, world!</title>
-  </head>
-  <body>    
-    <!-- Optional JavaScript; choose one of the two! -->
+				<!-- Logo END -->              
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>           
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    
-    
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->    
-    <main>
-      <!-- GNB START-->
-      <div class="container px-0">        
-        <div>
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <!-- Logo START -->
-            <a class="navbar-brand" href="index.html">
-              <!--img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo"-->
-              <!--img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo"-->
-              <img class="dark-mode-item navbar-brand-item" src="assets/images/logo.png" alt="logo"><span class="fw-bold">원라인에듀</span>
-            </a>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item pe-2">
+					<a class="nav-link text-primary fw-bold" href="education.html">전체교육</a>
+					</li>
+					<li class="nav-item pe-2">
+					<a class="nav-link" href="about_us.html">교육원소개</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="support.html">고객지원</a>
+					</li>
+				</ul>
+				<!-- PC -->
+				<!-- Nav Search START -->
+				<div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center d-none d-lg-block">
+					<div class="nav-item w-100">
+					<form class="position-relative">
+						<input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
+						<button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+						<i class="bi bi-search"></i>
+						</button>
+					</form>
+					</div>
+				</div>
+				<!-- Nav Search END -->
+				<!-- 교육문의 -->
+				<div class="d-none d-lg-block">
+					<button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
+				</div>
+				
+				</div>            
+			</nav>
+			</div>        
+		</div>
+		<!-- GNB END-->
 
-            <!-- Nav Search START mobile -->
-            <div class="nav my-3 my-xl-0 align-items-center d-none d-sm-block d-md-block d-lg-none">
-              <div class="nav-item w-100">
-                <form class="position-relative">
-                  <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
-                  <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
-                    <i class="bi bi-search"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-            <!-- Nav Search END -->
-            <!-- 교육문의 mobile-->
-            <div class="d-none d-sm-block d-md-block d-lg-none">
-              <button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
-            </div>
+		<!-- USER START -->
+		<section class="oz-mymenu2 mt-1">
+			<article class="container py-4">
+				<h4 class="text-white fw-bold">홍길동님 환영합니다.</h4>
+				<div class="text-white mt-1">
+					원라인에듀 홈페이지를 방문해주신 여러분을 진심으로 환영합니다.
+				</div>
+				<div class="summary mt-3">
+					<h5>수강완료:<span>1</span>개</h5>
+					<h5>진행(대기)중:<span>2</span>개</h5>
+				</div>
 
-            <!-- Logo END -->              
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>           
+				<div class="menus clearfix mt-4">
+					<div class="lefts">
+						<div class="my-charts" style="position:relative"> 
+							<div id="chart" dir="ltr"></div>
+							<h6 style="color:#f4f4f4;position:absolute;left:50%;top:60%;transform:translate(-50%, -50%);">총진행율</h6>
+						</div>
+						<script type="text/javascript">
+							var options = {
+								series: [70],
+								colors: ['#42D8FF'],
+								chart: {
+									type: 'radialBar',
+									sparkline: {
+									enabled: true,
+									}
+								},
+								plotOptions: {
+									radialBar: {
+										startAngle: -90,
+										endAngle: 90,
+										dataLabels: {
+											name: {
+											show: false
+											},
+											value: {
+											offsetY: -2,
+											fontSize: '200%',
+											color: '#fff',
+											}
+										},
+										hollow: {
+										size: '100%',
+										},
+										track: {
+										show: true,
+										strokeWidth: '100%',
+										background: '#999',
+										opacity: .5,
+										margin: -20,
+										}
+									}
+								},
+							};
+							var chart = new ApexCharts(document.querySelector("#chart"), options);
+							chart.render();
+						</script>
+					</div>
+					<div class="rights">
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">contact_mail</i>
+							<span>내 강의실</span>
+						</p>
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">manage_search</i>
+							<span>마이페이지</span>
+						</p>
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">clinical_notes</i>
+							<span>수료증</span>
+						</p>
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">draft_orders</i>
+							<span>재응시</span>
+						</p>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!-- USER END -->
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item pe-2">
-                  <a class="nav-link text-primary fw-bold" href="education.html">전체교육</a>
-                </li>
-                <li class="nav-item pe-2">
-                  <a class="nav-link" href="about_us.html">교육원소개</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="support.html">고객지원</a>
-                </li>
-              </ul>
-              <!-- PC -->
-              <!-- Nav Search START -->
-              <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center d-none d-lg-block">
-                <div class="nav-item w-100">
-                  <form class="position-relative">
-                    <input class="form-control pe-5 bg-transparent" type="search" aria-label="Search">
-                    <button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
-                      <i class="bi bi-search"></i>
-                    </button>
-                  </form>
-                </div>
-              </div>
-              <!-- Nav Search END -->
-              <!-- 교육문의 -->
-              <div class="d-none d-lg-block">
-                <button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary btn"><i class="bi bi-pencil-square"></i>  교육 문의</button>
-              </div>
-              
-            </div>            
-          </nav>
-        </div>        
-      </div>
-      <!-- GNB END-->
+		<!-- Navigation START -->
+		<section class=" oz-nav pt-2 pb-2" aria-label="breadcrumb">
+			<nav class="container">
+				<ol class="justify-content-end breadcrumb">
+					<i class="material-symbols-outlined pe-2">home</i>
+					<li class="breadcrumb-item">원라인에듀</li>
+					<li class="breadcrumb-item">전체교육</li>
+					<li class="breadcrumb-item">직무교육과정</li>
+					<li class="breadcrumb-item">마케팅</li>
+				</ol>
+			</nav>
+		</section>
+		<!-- Navigation END -->
 
-      <!-- USER START -->
-      <div>
-        <div class="" style="background-color: #00287A;">
-          <div class="container px-4 px-lg-0">  
-            <div class="row py-4 text-md-start">
-              <div class="col-lg-8 col-sm-6 mb-4 mb-md-0">
-                <h3 class="text-white mb-1">학습을 위해 로그인을 진행해주세요.</h3>
-                <p class="text-white mb-1 pt-2 pb-2">회사를 통해 수강을 하시는 경우 문자 또는 카카오톡 메시지로부터 <br/> 받은 정보로 로그인 하세요.</p>
-                <button type="button" class="btn btn-outline-light btn-sm" style="width: 5.5rem;"><i class="bi bi-globe2 fs-1"></i> <br />LMS SITE</button>
-                <button type="button" class="btn btn-outline-light btn-sm" style="width: 5.5rem;"><i class="bi bi-twitter fs-1"></i><br />교강사전용</button>
-              </div>
-              <div class="col-lg-4 col-sm-6">
-                <div class="row g-2">
-                  <div class="ms-md-8 col-lg-9 col-sm-12 d-grid gap-2">
-                    <div class="form-floating">
-                      <input type="email" class="form-control w-100" id="floatingInput" placeholder="name@example.com">
-                      <label for="floatingInput">아이디</label>
-                    </div>
-                    <div class="form-floating">
-                      <input type="password" class="form-control w-100" id="floatingPassword" placeholder="Password">
-                      <label for="floatingPassword">비밀번호</label>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-12 mx-0">
-                    <button type="button" class="btn btn-light btn-lg fs-6 w-100 h-100">로그인</button>
-                  </div>
-                </div>                                    
-                <div class="row mt-2 d-flex g-2">                  
-                  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#findIdModal">아이디 찾기</button></span></div>
-                  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" data-bs-toggle="modal" data-bs-target="#findPwModal">비밀번호 찾기</button></span></div>
-                  <div class="col-lg-4 col-sm-12"><span><button type="button" class="btn btn-outline-light w-100" onclick="location.href='sign_up.php'">회원가입</button></span></div>
-                </div>
-              </div>                                                            
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- USER END -->      
+		<!-- content START -->
+		<article class="container oa-common">
+			<div class="row">
+				<!-- pc일때 -->
+				<nav class="col-lg-3 d-none d-lg-block w-nav">
+					<div class="titles">
+						<i class="material-symbols-outlined">school</i>
+						<h4>전체교육과정</h4>
+					</div>
+					<div class="m-menu">
+						<p onclick = "location.href='education.html'">직무</p>
+						<p class="on"  onclick = "location.href='education.html'">의료</p>
+						<p onclick = "location.href='education.html'">영/유아</p>
+						<p onclick = "location.href='education.html'">산업안전</p>
+						<p onclick = "location.href='education.html'">법정</p>
+						<p onclick = "location.href='education.html'">중대재해처벌</p>
+						<p onclick = "location.href='education.html'">기업직업훈련카드</p>
+					</div>
+					<div class="s-manu">
+						<p class="on" onclick="location.href='guide_consignment.html'">
+							위탁교육안내
+							<i class="material-symbols-outlined">book</i>
+						</p>
+						<p onclick = "location.href='guide_education_progress.html'">
+							교육진행절차
+							<i class="material-symbols-outlined">play_lesson</i>
+						</p>
+						<p onclick = "location.href='guide_refunds.html'">
+							환급절차
+							<i class="material-symbols-outlined">auto_stories</i>
+						</p>
+						<p onclick = "location.href='guide_info_use.html'">
+							교육이용안내
+							<i class="material-symbols-outlined">local_library</i>
+						</p>
+						<p onclick = "location.href='guide_development.html'">
+							과정개발절차
+							<i class="material-symbols-outlined">beenhere</i>
+						</p>
+					</div>
+				</nav>
+				<!-- 태블릿/모바일 일때 -->
+				<div class="col-12 d-lg-none h-nav">
+					<h2 class="">전체교육과정</h2>
+					<div class="mt-3">
+						<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onchange="location = this.value;">
+							<option selected value="education.html">직무교육</option>
+							<option value="education.html">디지털융합</option>
+							<option value="education.html">의료교육</option>
+							<option value="education.html">산업안전</option>
+							<option value="education.html">법정교육</option>
+						</select>
+					</div>
+					<div class="s-menu">
+						<span onclick="location.href='guide_consignment.html'">
+							<i class="material-symbols-outlined">book</i>
+							위탁교육안내
+						</span>
+						<span class="on" onclick = "location.href='guide_education_progress.html'">
+							<i class="material-symbols-outlined">play_lesson</i>
+							교육진행절차
+						</span>
+						<span onclick = "location.href='guide_refunds.html'">
+							<i class="material-symbols-outlined">auto_stories</i>
+							환급절차
+						</span>
+						<span onclick = "location.href='guide_info_use.html'">
+							<i class="material-symbols-outlined">local_library</i>
+							교육이용안내
+						</span>
+						<span onclick = "location.href='guide_development.html'">
+							<i class="material-symbols-outlined">beenhere</i>
+							과정개발절차
+						</span>
+					</div>
+				</div>
+				<!-- 본문컨텐츠 -->
+				<div class="col-lg-9 oa-bps">
+					<div class="row clearfix bps-su">
+						<p class="l-img"><img src="assets/images/common/@thum-06.png"></p>
+						<div class="su-r">
+							<h2>포스트 코로나 시대의 e비즈니스 <br/>인사이트</h2>
+							<div class="r-txts">
+								<p><span>차시</span>16차시</p>
+								<p><span>교육시간</span>28시간 37분</p>
+								<p><span>강사</span><a href="#a">오준석</a></p>
+							</div>
+							<div class="row g-1 r-bts">
+								<div class="col-12  col-md-4">
+									<button class="btn btn-lg btn-danger w-100" type="button">미리보기</button>
+								</div>
+								<div class="col-12  col-md-4">
+									<button class="btn btn-lg btn-muted w-100" type="button" data-bs-toggle="modal" data-bs-target=".consult-modal">신청하기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="nav nav-tabs row mt-5" role="tablist">
+						<li class="nav-item col">
+							<a class="nav-link active" data-bs-toggle="tab" href="#table" role="tab">
+								강의소개
+							</a>
+						</li>
+						<li class="nav-item col">
+							<a class="nav-link" data-bs-toggle="tab" href="#description" role="tab">
+								강의목차
+							</a>
+						</li>
+						<li class="nav-item col">
+							<a class="nav-link" data-bs-toggle="tab" href="#review" role="tab">
+								학습공지
+							</a>
+						</li>
+						<li class="nav-item col">
+							<a class="nav-link" data-bs-toggle="tab" href="#transcript" role="tab">
+								수강후기
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content mt-4" id="tabContent">
+						<!--강의소개-->
+						<div class="tab-pane fade active show" id="table" role="tabpanel" aria-labelledby="table-tab">
+							<div class="pane-cons">
+								<h6 class="text-info">재생권장 인터넷 브라우저</h6>
+								<p>모든 인터넷 브라우저</p>
+							</div>
+							<div class="pane-cons">
+								<h6 class="text-info">수료기준 및 수강정원</h6>
+								<table class="">
+									<colgroup>
+										<col width="20%">
+										<col width="20%">
+										<col width="20%">
+										<col width="20%">
+										<col width="20%">
+									</colgroup>
+									<thead class="text-center">
+										<tr>
+											<th>수강정원</th>
+											<th>총진도율</th>
+											<th>중간평가</th>
+											<th>최종평가</th>
+											<th>과제</th>
+										</tr>
+									</thead>
+									<tbody class="text-center align-middle">
+										<tr>
+											<td rowspan="2">0명</td>
+											<td rowspan="2">80%이상</td>
+											<td>총100점 / 10%반영</td>
+											<td>총100점 / 90%반영</td>
+											<td>없음</td>
+										</tr>
+										<tr>
+											<td colspan="3">반영된 평가, 과제 점수 합산 60점 이상</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="pane-cons">
+								<h6 class="text-info">수료기준 및 수강정원</h6>
+								<table>
+									<colgroup>
+										<col width="*">
+										<col width="14.2%">
+										<col width="14.2%">
+										<col width="14.2%">
+										<col width="14.2%">
+										<col width="14.2%">
+										<col width="14.2%">
+									</colgroup>
+									<thead class="text-center align-middle">
+										<tr>
+											<th rowspan="2">교육비</th>
+											<th colspan="2">환급 : 우선지원 기업</th>
+											<th colspan="2">환급 : 대규모(1000인 미만)</th>
+											<th colspan="2">환급 : 대규모(1000인 이상)</th>
+										</tr>
+										<tr>
+											<th>정부지원금</th>
+											<th>자부담금</th>
+											<th>정부지원금</th>
+											<th>자부담금</th>
+											<th>정부지원금</th>
+											<th>자부담금</th>
+										</tr>
+									</thead>
+									<tbody class="text-center align-middle">
+										<tr>
+											<td>190,960원</td>
+											<td>190,960원</td>
+											<td>190,960원</td>
+											<td>190,960원</td>
+											<td>190,960원</td>
+											<td>190,960원</td>
+											<td>190,960원</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="pane-cons">
+								<h6 class="text-info">과정소개</h6>
+								<q>e-비즈니스의 개념 및 특징과 파급효과를 이해할 수 있다.</q>
+								<q>적절한 상품과 서비스를 시장조사를 통하여 구매대상자가 원하는 상품의 개발전략을 수립하고 그에 따른 마케팅 계획과 판매계획, 투자계획을 수립할 수 있다.</q>
+								<q>온라인 동향을 기반으로 관련 상품 시장의 마케팅 동향을 파악할 수 있고, 최신 온라인 동향에 맞는 뉴미디어 매체를 분석할 수 있다</q>
+							</div>
+							<div class="pane-cons">
+								<h6 class="text-info">대상</h6>
+								<q>판매직 종사자</q>
+								<q>판매 담당자 임직원</q>
+								<q>전자상거래 담당자</q>
+							</div>
+							<div class="pane-cons">
+								<h6 class="text-info">목표</h6>
+								<q>e-비즈니스의 개념 및 특징과 파급효과를 이해할 수 있다.</q>
+								<q>적절한 상품과 서비스를 시장조사를 통하여 구매대상자가 원하는 상품의 개발전략을 수립하고 그에 따른 마케팅 계획과 판매계획, 투자계획을 수립할 수 있다.</q>
+								<q>온라인 동향을 기반으로 관련 상품 시장의 마케팅 동향을 파악할 수 있고, 최신 온라인 동향에 맞는 뉴미디어 매체를 분석할 수 있다</q>
+							</div>
+						</div>
+						<!--강의목차-->
+						<div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
+							<div class="bps-list">
+								<p><span>1차시</span>전략경영의 기초<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>경영 환경의 변화와 전략이론의 진화<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>불확실성에 효과적으로 대응하기 위한 거시환경분석<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>전략경영의 기초<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>경영 환경의 변화와 전략이론의 진화<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>불확실성에 효과적으로 대응하기 위한 거시환경분석 불확실성에<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>전략경영의 기초<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>경영 환경의 변화와 전략이론의 진화<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>불확실성에 효과적으로 대응하기 위한 거시환경분석<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>전략경영의 기초<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>경영 환경의 변화와 전략이론의 진화<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>불확실성에 효과적으로 대응하기 위한 거시환경분석<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>전략경영의 기초<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>경영 환경의 변화와 전략이론의 진화<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>불확실성에 효과적으로 대응하기 위한 거시환경분석<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>전략경영의 기초<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>경영 환경의 변화와 전략이론의 진화<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>불확실성에 효과적으로 대응하기 위한 거시환경분석<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>전략경영의 기초<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>경영 환경의 변화와 전략이론의 진화<span class="px-2 text-primary">00:10</span></p>
+								<p><span>1차시</span>불확실성에 효과적으로 대응하기 위한 거시환경분석<span class="px-2 text-primary">00:10</span></p>
+							</div>
+						</div>
+						<!--공지-->
+						<div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+							<div class="bps-nots">
+								<div class="notebox" onclick="location.href='education_detail_notice.html'">
+									<p><span class="me-2 px-1 badge bg-info">공통</span>오류대응</p>
+									<div class="icons mt-1">
+										<span><i class="material-symbols-outlined">pace</i>2022-12-30 12:23</span>
+										<span><i class="material-symbols-outlined">visibility</i>23</span>
+									</div>
+								</div>
+								<div class="notebox">
+									<p><span class="me-2 px-1 badge bg-primary">교육</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)</p>
+									<div class="icons mt-1">
+										<span><i class="material-symbols-outlined">pace</i>2022-12-30 12:23</span>
+										<span><i class="material-symbols-outlined">visibility</i>23</span>
+									</div>
+								</div>
+								<div class="notebox">
+									<p><span class="me-2 px-1 badge bg-primary">교육</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)에 대한 오류처리법 (레지스트리 변경)</p>
+									<div class="icons mt-1">
+										<span><i class="material-symbols-outlined">pace</i>2022-12-30 12:23</span>
+										<span><i class="material-symbols-outlined">visibility</i>23</span>
+									</div>
+								</div>
+								<div class="notebox">
+									<p><span class="me-2 px-1 badge bg-primary">교육</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)</p>
+									<div class="icons mt-1">
+										<span><i class="material-symbols-outlined">pace</i>2022-12-30 12:23</span>
+										<span><i class="material-symbols-outlined">visibility</i>23</span>
+									</div>
+								</div>
+								<div class="notebox">
+									<p><span class="me-2 px-1 badge bg-primary">교육</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)</p>
+									<div class="icons mt-1">
+										<span><i class="material-symbols-outlined">pace</i>2022-12-30 12:23</span>
+										<span><i class="material-symbols-outlined">visibility</i>23</span>
+									</div>
+								</div>
+								<div class="notebox">
+									<p><span class="me-2 px-1 badge bg-primary">교육</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)</p>
+									<div class="icons mt-1">
+										<span><i class="material-symbols-outlined">pace</i>2022-12-30 12:23</span>
+										<span><i class="material-symbols-outlined">visibility</i>23</span>
+									</div>
+								</div>
+								<div class="notebox">
+									<p><span class="me-2 px-1 badge bg-primary">교육</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)</p>
+									<div class="icons mt-1">
+										<span><i class="material-symbols-outlined">pace</i>2022-12-30 12:23</span>
+										<span><i class="material-symbols-outlined">visibility</i>23</span>
+									</div>
+								</div>
+								<div class="notebox">
+									<p><span class="me-2 px-1 badge bg-primary">교육</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)</p>
+									<div class="icons mt-1">
+										<span><i class="material-symbols-outlined">pace</i>2022-12-30 12:23</span>
+										<span><i class="material-symbols-outlined">visibility</i>23</span>
+									</div>
+								</div>
+								<div class="notebox">
+									<p><span class="me-2 px-1 badge bg-primary">교육</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)</p>
+									<div class="icons mt-1">
+										<span><i class="material-symbols-outlined">pace</i>2022-12-30 12:23</span>
+										<span><i class="material-symbols-outlined">visibility</i>23</span>
+									</div>
+								</div>
+								<div class="notebox">
+									<p><span class="me-2 px-1 badge bg-primary">교육</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)</p>
+									<div class="icons mt-1">
+										<span><i class="material-symbols-outlined">pace</i>2022-12-30 12:23</span>
+										<span><i class="material-symbols-outlined">visibility</i>23</span>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex justify-content-center mt-4">
+								<nav aria-label="Page navigation example">
+									<ul class="pagination">
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<li class="page-item"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+										</a>
+									</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+						<!--수강후기-->
+						<div class="tab-pane fade" id="transcript" role="tabpanel" aria-labelledby="transcript-tab">
+							<div class="bps-re">
+								<div class="rebox">
+									<p class="files"><img src="assets/images/common/@iu.png"></p>
+									<div class="txts">
+										<h6 class="mb-0">공일</h6>
+										<div class="clearfix mt-1"><span>2022.05.21</span><i class="material-symbols-outlined ms-2">schedule</i><span>15:38</span></div>
+										<p class="pb-3 mt-2">
+											이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. 그거 말고는 다 괜찮았어요
+										</p>
+									</div>
+									<div class="star-ratings my-1">
+										<div class="star-ratings-fill":style="{width:ratingToPercent + '%'}">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+										<div class="star-ratings-base">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+									</div>
+								</div>
+								<div class="rebox">
+									<p class="files"><img src="assets/images/common/@iu.png"></p>
+									<div class="txts">
+										<h6 class="mb-0">공일</h6>
+										<div class="clearfix mt-1"><span>2022.05.21</span><i class="material-symbols-outlined ms-2">schedule</i><span>15:38</span></div>
+										<p class="pb-3 mt-2">
+											이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. 그거 말고는 다 괜찮았어요
+										</p>
+									</div>
+									<div class="star-ratings my-1">
+										<div class="star-ratings-fill":style="{width:ratingToPercent + '%'}">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+										<div class="star-ratings-base">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+									</div>
+								</div>
+								<div class="rebox">
+									<p class="files"><img src="assets/images/common/@iu.png"></p>
+									<div class="txts">
+										<h6 class="mb-0">공일</h6>
+										<div class="clearfix mt-1"><span>2022.05.21</span><i class="material-symbols-outlined ms-2">schedule</i><span>15:38</span></div>
+										<p class="pb-3 mt-2">
+											이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. 그거 말고는 다 괜찮았어요
+										</p>
+									</div>
+									<div class="star-ratings my-1">
+										<div class="star-ratings-fill":style="{width:ratingToPercent + '%'}">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+										<div class="star-ratings-base">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+									</div>
+								</div>
+								<div class="rebox">
+									<p class="files"><img src="assets/images/common/@iu.png"></p>
+									<div class="txts">
+										<h6 class="mb-0">공일</h6>
+										<div class="clearfix mt-1"><span>2022.05.21</span><i class="material-symbols-outlined ms-2">schedule</i><span>15:38</span></div>
+										<p class="pb-3 mt-2">
+											이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. 그거 말고는 다 괜찮았어요
+										</p>
+									</div>
+									<div class="star-ratings my-1">
+										<div class="star-ratings-fill":style="{width:ratingToPercent + '%'}">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+										<div class="star-ratings-base">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+									</div>
+								</div>
+								<div class="rebox">
+									<p class="files"><img src="assets/images/common/@iu.png"></p>
+									<div class="txts">
+										<h6 class="mb-0">공일</h6>
+										<div class="clearfix mt-1"><span>2022.05.21</span><i class="material-symbols-outlined ms-2">schedule</i><span>15:38</span></div>
+										<p class="pb-3 mt-2">
+											이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. 그거 말고는 다 괜찮았어요
+										</p>
+									</div>
+									<div class="star-ratings my-1">
+										<div class="star-ratings-fill":style="{width:ratingToPercent + '%'}">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+										<div class="star-ratings-base">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+									</div>
+								</div>
+								<div class="rebox">
+									<p class="files"><img src="assets/images/common/@iu.png"></p>
+									<div class="txts">
+										<h6 class="mb-0">공일</h6>
+										<div class="clearfix mt-1"><span>2022.05.21</span><i class="material-symbols-outlined ms-2">schedule</i><span>15:38</span></div>
+										<p class="pb-3 mt-2">
+											이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. 그거 말고는 다 괜찮았어요
+										</p>
+									</div>
+									<div class="star-ratings my-1">
+										<div class="star-ratings-fill":style="{width:ratingToPercent + '%'}">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+										<div class="star-ratings-base">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+									</div>
+								</div>
+								<div class="rebox">
+									<p class="files"><img src="assets/images/common/@iu.png"></p>
+									<div class="txts">
+										<h6 class="mb-0">공일</h6>
+										<div class="clearfix mt-1"><span>2022.05.21</span><i class="material-symbols-outlined ms-2">schedule</i><span>15:38</span></div>
+										<p class="pb-3 mt-2">
+											이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. 그거 말고는 다 괜찮았어요
+										</p>
+									</div>
+									<div class="star-ratings my-1">
+										<div class="star-ratings-fill":style="{width:ratingToPercent + '%'}">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+										<div class="star-ratings-base">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+									</div>
+								</div>
+								<div class="rebox">
+									<p class="files"><img src="assets/images/common/@iu.png"></p>
+									<div class="txts">
+										<h6 class="mb-0">공일</h6>
+										<div class="clearfix mt-1"><span>2022.05.21</span><i class="material-symbols-outlined ms-2">schedule</i><span>15:38</span></div>
+										<p class="pb-3 mt-2">
+											이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. 그거 말고는 다 괜찮았어요
+										</p>
+									</div>
+									<div class="star-ratings my-1">
+										<div class="star-ratings-fill":style="{width:ratingToPercent + '%'}">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+										<div class="star-ratings-base">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+									</div>
+								</div>
+								<div class="rebox">
+									<p class="files"><img src="assets/images/common/@iu.png"></p>
+									<div class="txts">
+										<h6 class="mb-0">공일</h6>
+										<div class="clearfix mt-1"><span>2022.05.21</span><i class="material-symbols-outlined ms-2">schedule</i><span>15:38</span></div>
+										<p class="pb-3 mt-2">
+											이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. 그거 말고는 다 괜찮았어요
+										</p>
+									</div>
+									<div class="star-ratings my-1">
+										<div class="star-ratings-fill":style="{width:ratingToPercent + '%'}">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+										<div class="star-ratings-base">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+									</div>
+								</div>
+								<div class="rebox">
+									<p class="files"><img src="assets/images/common/@iu.png"></p>
+									<div class="txts">
+										<h6 class="mb-0">공일</h6>
+										<div class="clearfix mt-1"><span>2022.05.21</span><i class="material-symbols-outlined ms-2">schedule</i><span>15:38</span></div>
+										<p class="pb-3 mt-2">
+											이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. 그거 말고는 다 괜찮았어요
+										</p>
+									</div>
+									<div class="star-ratings my-1">
+										<div class="star-ratings-fill":style="{width:ratingToPercent + '%'}">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+										<div class="star-ratings-base">
+											<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex justify-content-center mt-4">
+								<nav aria-label="Page navigation example">
+									<ul class="pagination">
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<li class="page-item"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+										</a>
+									</li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<!-- contents END-->
+	</main>
 
-      <!-- side START -->            
-      <div class="container">
-        <div class="mt-4">
-          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-end">
-              <i class="bi bi-house-door-fill pe-2"></i>
-              <li class="breadcrumb-item text-muted">원라인에듀</a></li>
-              <li class="breadcrumb-item text-muted">전체교육</a></li>
-              <li class="breadcrumb-item text-muted">직무교육과정</li>
-              <li class="breadcrumb-item active" aria-current="page">마케팅</li>                                                                          
-            </ol>
-          </nav>
-        </div>
-        <div class="row mb-5">
-          <!-- pc일때 -->
-          <div class="col-lg-3 d-none d-lg-block">            
-            <div class="d-flex justify-content-center align-items-center mb-0 h4" style="background-color: #00287A; height: 10rem;">
-              <p class="text-center"><img src="assets/images/study.png" /><br /><span class="badge mt-2">전체교육</span></p>              
-            </div>
-            <ul class="list-group">
-              <li class="list-group-item list-group-item-action list-group-item-primary border-0">
-                  <a class="nav-link active" href="account-profile.html">직무교육</a>
-              </li>
-              <li class="list-group-item list-group-item-action list-group-item-primary border-0">
-                  <a class="nav-link" href="account-bookings.html">디지털융합</a>
-              </li>
-              <li class="list-group-item list-group-item-action list-group-item-primary border-0">
-                  <a class="nav-link" href="account-travelers.html">의료교육</a>
-              </li>
-              <li class="list-group-item list-group-item-action list-group-item-primary border-0">
-                  <a class="nav-link" href="account-payment-details.html">산업안전</a>
-              </li>
-              <li class="list-group-item list-group-item-action list-group-item-primary border-0">
-                  <a class="nav-link" href="account-wishlist.html">법정교육</a>
-              </li>
-            </ul>
-            <ul class="list-group">
-              <li class="list-group-item d-flex justify-content-between" onclick="location.href='consignment_training_guide.html'">
-                <div class="align-self-center">
-                  <h6 class="my-0 small">위탁교육 안내</h6>
-                </div>
-                <div class="align-self-end">
-                  <i class="bi bi-bookmark-dash-fill"></i>
-                </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                <div class="align-self-center">
-                  <h6 class="my-0 small">교육 진행 절차</h6>
-                </div>
-                <div class="align-self-end">
-                  <i class="bi bi-pc-display-horizontal"></i>
-                </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                <div class="align-self-center">
-                  <h6 class="my-0 small">환급 절차</h6>
-                </div>
-                <div class="align-self-end">
-                  <i class="bi bi-bag-fill"></i>
-                </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                <div class="align-self-center">
-                  <h6 class="my-0 small">교육 이용 안내</h6>
-                </div>
-                <div class="align-self-end">
-                  <i class="bi bi-file-post-fill"></i>
-                </div>
-              </li>
-              <li class="list-group-item d-flex justify-content-between">
-                <div class="align-self-center">
-                  <h6 class="my-0 small">과정 개발 절차</h6>
-                </div>
-                <div class="align-self-end">
-                  <i class="bi bi-lightbulb-fill"></i>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <!-- 태블릿/모바일 일때 -->
-          <div class="col-12 d-lg-none mb-3">
-            <div class="justify-content-start align-items-center mb-0 p-3 h4" style="background-color: #00287A;">
-              <div class="row mb-3">
-                <div class="col-4">
-                  <p class="text-center mb-0"><img src="assets/images/study.png" /><br/><span class="badge mt-2">전체교육</span></p>
-                </div>
-                <div class="col-8 align-self-center text-end">
-                  <select class="form-select form-select-lg w-75" aria-label="Default select example" onchange="location = this.value;">
-                    <option selected value="education.html">직무교육</option>
-                    <option value="education.html">디지털융합</option>
-                    <option value="education.html">의료교육</option>
-                    <option value="education.html">산업안전</option>
-                    <option value="education.html">법정교육</option>
-                  </select>
-                </div>
-              </div>       
-              <div class="row row-cols-2 row-cols-lg-4">
-                <div class="col px-1 py-1 mt-0">
-                  <button type="button" class="btn btn-outline-light text-start w-100"><span>위탁교육안내</span><span class="float-end"><i class="bi bi-bookmark-dash-fill"></i></span></button>
-                </div>
-                <div class="col px-1 py-1 mt-0">
-                  <button type="button" class="btn btn-outline-light text-start w-100"><span>교육 진행 절차</span><span class="float-end"><i class="bi bi-pc-display-horizontal"></i></span></button>
-                </div>
-                <div class="col px-1 py-1 mt-0">
-                  <button type="button" class="btn btn-outline-light text-start w-100"><span>환급 절차</span><span class="float-end"><i class="bi bi-bag-fill"></i></span></button>
-                </div>
-                <div class="col px-1 py-1 mt-0">
-                  <button type="button" class="btn btn-outline-light text-start w-100"><span>교육 이용 안내</span><span class="float-end"><i class="bi bi-file-post-fill"></i></span></button>
-                </div>
-                <div class="col px-1 py-1 mt-0">
-                  <button type="button" class="btn btn-outline-light text-start w-100"><span>과정 개발 절차</span><span class="float-end"><i class="bi bi-lightbulb-fill"></i></span></button>
-                </div>
-              </div>                    
-            </div>
-          </div>
-          <div class="col-md-7 col-lg-9 row">
-            <div class="row">
-              <div class="col-lg-4">
-                <img src="assets/images/educate/NoPath_detail.png" style="width:19rem;" />
-              </div>
-              <div class="col-lg-8">
-                <p class="h3 align-top mt-4 mb-5">
-                  포스트 코로나 시대의 e비즈니스 인사이트
-                </p>
-                <div class="row pt-4">
-                  <div class="col-lg-3">
-                    <p class="text-muted">차시</p>
-                    <p class="text-muted">총 교육시간</p>
-                    <p class="text-muted">강사</p>
-                  </div>
-                  <div class="col-lg-9">
-                    <p>16차시</p>
-                    <p>28시간 37분</p>
-                    <p>오준석</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="d-block gap-3 col-6">
-                    <button class="btn btn-lg btn-primary w-100" type="button">미리보기</button>
-                  </div>
-                  <div class="d-block gap-3 col-6">
-                    <button class="btn btn-lg btn-primary w-100" type="button" data-bs-toggle="modal" data-bs-target=".consult-modal">신청하기</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card rounded-3 border-0 mt-4">                         
-              <div>
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs row" role="tablist">
-                  <li class="nav-item col p-0">
-                      <a class="nav-link active" data-bs-toggle="tab" href="#table" role="tab">
-                          <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
-                          <span class="d-none d-sm-block text-center">강의소개</span>
-                      </a>
-                  </li>
-                  <li class="nav-item col p-0">
-                      <a class="nav-link" data-bs-toggle="tab" href="#description" role="tab">
-                          <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
-                          <span class="d-none d-sm-block text-center">강의목차</span>
-                      </a>
-                  </li>
-                  <li class="nav-item col p-0">
-                      <a class="nav-link" data-bs-toggle="tab" href="#review" role="tab">
-                          <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
-                          <span class="d-none d-sm-block text-center">학습공지</span>
-                      </a>
-                  </li>
-                  <li class="nav-item col p-0">
-                    <a class="nav-link" data-bs-toggle="tab" href="#transcript" role="tab">
-                        <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
-                        <span class="d-none d-sm-block text-center">수강후기</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>                                
-              <!-- Card Body -->
-              <div class="card-body">
-                <div class="tab-content" id="tabContent">
-                  <div class="tab-pane fade active show" id="table" role="tabpanel" aria-labelledby="table-tab">
-                    <!-- 재생권장 -->
-                    <div class="mb-4">
-                      <p class="h5" style="color:#00287A;">재생권장 인터넷 브라우저</p>
-                      <p class="text-secondary">모든 인터넷 브라우저</p>
-                    </div>
-                    <!-- 수료기준 -->
-                    <div class="mb-4">
-                      <p class="h5" style="color:#00287A;">수료기준 및 수강정원</p>
-                      <table class="table table-bordered">
-                        <tbody class="text-center align-middle">
-                          <tr style="background-color: #F0F3F7;">
-                            <td>수강정원</td>
-                            <td>총진도율</td>
-                            <td>중간평가</td>
-                            <td>최종평가</td>
-                            <td>과제</td>
-                          </tr>
-                          <tr>
-                            <td rowspan="2">0명</td>
-                            <td rowspan="2">80%이상</td>
-                            <td>총100점 / 10%반영</td>
-                            <td>총100점 / 90%반영</td>
-                            <td>없음</td>
-                          </tr>
-                          <tr>
-                            <td colspan="3">반영된 평가, 과제 점수 합산 60점 이상</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <!-- 교육비 안내 -->
-                    <div class="mb-4">
-                      <p class="h5" style="color:#00287A;">교육비 안내</p>
-                      <table class="table table-bordered">
-                        <tbody class="text-center align-middle">
-                          <tr style="background-color: #F0F3F7;">
-                            <td rowspan="2">수강정원</td>
-                            <td colspan="2">최종평가</td>
-                            <td colspan="2">최종평가</td>
-                            <td colspan="2">최종평가</td>
-                          </tr>
-                          <tr style="background-color: #F0F3F7;">
-                            <td>총진도율</td>
-                            <td>총진도율</td>
-                            <td>중간평가</td>
-                            <td>최종평가</td>
-                            <td>최종평가</td>
-                            <td>과제</td>
-                          </tr>
-                          <tr>
-                            <td>190,960원</td>
-                            <td>190,960원</td>
-                            <td>190,960원</td>
-                            <td>190,960원</td>
-                            <td>190,960원</td>
-                            <td>190,960원</td>
-                            <td>190,960원</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <!--과정소개-->
-                    <div class="mb-4">
-                      <p class="h5" style="color:#00287A;">과정소개</p>
-                      <ul class="text-muted">
-                        <li>e-비즈니스의 개념 및 특징과 파급효과를 이해할 수 있다.</li>
-                        <li>적절한 상품과 서비스를 시장조사를 통하여 구매대상자가 원하는 상품의 개발전략을 수립하고 그에 따른 마케팅 계획과 판매계획, 투자계획을 수립할 수 있다.</li>
-                        <li>온라인 동향을 기반으로 관련 상품 시장의 마케팅 동향을 파악할 수 있고, 최신 온라인 동향에 맞는 뉴미디어 매체를 분석할 수 있다</li>
-                      </ul>
-                    </div>
-                    <!--교육대상-->
-                    <div class="mb-4">
-                      <p class="h5" style="color:#00287A;">과정대상</p>
-                      <ul class="text-muted">
-                        <li>판매직 종사자</li>
-                        <li>판매 담당자 임직원</li>
-                        <li>전자상거래 담당자</li>
-                      </ul>
-                    </div>
-                    <!--교육목표-->
-                    <div class="mb-4">
-                      <p class="h5" style="color:#00287A;">과정목표</p>
-                      <ul class="text-muted">
-                        <li>e-비즈니스의 개념 및 특징과 파급효과를 이해할 수 있다.</li>
-                        <li>적절한 상품과 서비스를 시장조사를 통하여 구매대상자가 원하는 상품의 개발전략을 수립하고 그에 따른 마케팅 계획과 판매계획, 투자계획을 수립할 수 있다.</li>
-                        <li>온라인 동향을 기반으로 관련 상품 시장의 마케팅 동향을 파악할 수 있고, 최신 온라인 동향에 맞는 뉴미디어 매체를 분석할 수 있다</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
-                    <table class="table table-border-0">
-                      <tbody style="border-style: none;">
-                        <tr>
-                          <td class="text-center">1차시</td>
-                          <td>전략경영의 기초<span class="px-2 text-primary">00:10</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">2차시</td>
-                          <td>전략의 원리<span class="px-2 text-primary">03:20</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">3차시</td>
-                          <td>경영 환경의 변화와 전략이론의 진화<span class="px-2 text-primary">04:00</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">4차시</td>
-                          <td>외부환경분석<span class="px-2 text-primary">09:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">5차시</td>
-                          <td>불확실성에 효과적으로 대응하기 위한 거시환경분석<span class="px-2 text-primary">09:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">6차시</td>
-                          <td>뉴 시대의 비즈니스를 위한 산업환경분석<span class="px-2 text-primary">05:33</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">7차시</td>
-                          <td>경쟁자보다 한 발 앞서나가는 경쟁자 분석<span class="px-2 text-primary">13:10</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">8차시</td>
-                          <td>내부능력분석<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">9차시</td>
-                          <td>목적과 활동을 서로 연결하라, 핵심활동분석<span class="px-2 text-primary">29:10</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">10차시</td>
-                          <td>나만 알고 싶은 성공 비밀, 핵심역량분석<span class="px-2 text-primary">14:36</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">11차시</td>
-                          <td>나만 알고 싶은 성공 비밀, 핵심역량분석<span class="px-2 text-primary">14:36</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">12차시</td>
-                          <td>디지털 시대의 남다른 경쟁력, 디지털 3C분석<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">13차시</td>
-                          <td>전사전략 수립<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">14차시</td>
-                          <td>핵심을 놓치지 않는 성장전략의 수립<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">15차시</td>
-                          <td>파트너십을 활용한 성장 전략, M&A의 전략적 제휴<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">16차시</td>
-                          <td>현지화냐, 표준화냐! 글로벌 전략!<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">17차시</td>
-                          <td>경쟁전략 수립<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">18차시</td>
-                          <td>경쟁 우위 확보를 위한 기본 전략, 본원적 경쟁전략<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">19차시</td>
-                          <td>경쟁우위가 지속될 수 없는 지금은 초경쟁 시대<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">20차시</td>
-                          <td>경쟁을 뛰어넘어 새로운 성장으로, 블루오션 전략<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">21차시</td>
-                          <td>디지털 시대의 혁신 전략<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">22차시</td>
-                          <td>파괴적 혁신의 이유 있는 성공 전략<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">23차시</td>
-                          <td>새로운 수익 창출을 위한 비즈니스 모델 혁신<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">24차시</td>
-                          <td>비즈니스의 판을 바꾸는 플랫폼 전략<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">25차시</td>
-                          <td>선택이 아닌 필수! 디지털 트랜스포메이션 전략<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">26차시</td>
-                          <td>전략실행 및 평가<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">27차시</td>
-                          <td>좋은 비전과 전략 다음엔 실행이다! 조직과 평가 시스템<span class="px-2 text-primary">08:52</span></td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">28차시</td>
-                          <td>익숙한 것과 결별하라! 변화 관리<span class="px-2 text-primary">00:52</span></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
-                    <table class="table table-border-0 table-hover">
-                      <tbody class="table-border-0">
-                        <tr onclick = "location.href='education_detail_notice.html'">
-                          <td class="border-bottom-1"><span class="pe-2 text-primary">[공통]</span>오류대응<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
-                        </tr>
-                        <tr>
-                          <td class="border-bottom-1"><span class="pe-2 text-primary">[공통]</span>MOTP인증오류 해결방법 [반복현상]<i class="bi bi-paperclip"></i><p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
-                        </tr>
-                        <tr>
-                          <td><span class="pe-2 text-primary">[공통]</span>인터넷 익스플로러(IE) 지원종료 안내<i class="bi bi-paperclip"></i><p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
-                        </tr>
-                        <tr>
-                          <td><span class="pe-2 text-primary">[공통]</span>코로나19 예방관련수칙 안내<i class="bi bi-paperclip"></i><p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
-                        </tr>
-                        <tr>
-                          <td><span class="pe-2 text-primary">[공통]</span>학습진행 메뉴얼(비환급과정)<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
-                        </tr>
-                        <tr>
-                          <td><span class="pe-2 text-primary">[공통]</span>원격훈련 훈련생 OTP인증 사용법 안내<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
-                        </tr>
-                        <tr>
-                          <td><span class="pe-2 text-primary">[공통]</span>2022 관리감독자 오프라인 교육안내<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
-                        </tr>
-                        <tr>
-                          <td><span class="pe-2 text-primary">[공통]</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
-                        </tr>
-                        <tr>
-                          <td><span class="pe-2 text-primary">[공통]</span>2022년 안전보건교육 안내서 공유<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <div class="d-flex justify-content-center">
-                      <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                            </a>
-                          </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="transcript" role="tabpanel" aria-labelledby="transcript-tab">
-                    <ul class="list-group list-group-flush">
-                      <!-- list group -->
-                      <li class="list-group-item d-flex py-4">
-                        <div class="flex-shrink-0 me-3">                              
-                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
-                        </div>
-                        <div class="flex-grow-1 row">
-                          <div class="col">
-                            <h6 class="font-size-15 mb-0">홍길동</h6>
-                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
-                            <div class="mt-2 small lh-1">
-                              <a class="text-decoration-none text-inherit">
-                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
-                              </a>
-                            </div>
-                          </div>
-                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="list-group-item d-flex py-4">
-                        <div class="flex-shrink-0 me-3">                              
-                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
-                        </div>
-                        <div class="flex-grow-1 row">
-                          <div class="col">
-                            <h6 class="font-size-15 mb-0">홍길동</h6>
-                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
-                            <div class="mt-2 small lh-1">
-                              <a class="text-decoration-none text-inherit">
-                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
-                              </a>
-                            </div>
-                          </div>
-                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- list group -->                          
-                      <li class="list-group-item d-flex py-4">
-                        <div class="flex-shrink-0 me-3">                              
-                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
-                        </div>
-                        <div class="flex-grow-1 row">
-                          <div class="col">
-                            <h6 class="font-size-15 mb-0">홍길동</h6>
-                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
-                            <div class="mt-2 small lh-1">
-                              <a class="text-decoration-none text-inherit">
-                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
-                              </a>
-                            </div>
-                          </div>
-                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- list group -->
-                      <li class="list-group-item d-flex py-4">
-                        <div class="flex-shrink-0 me-3">                              
-                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
-                        </div>
-                        <div class="flex-grow-1 row">
-                          <div class="col">
-                            <h6 class="font-size-15 mb-0">홍길동</h6>
-                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
-                            <div class="mt-2 small lh-1">
-                              <a class="text-decoration-none text-inherit">
-                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
-                              </a>
-                            </div>
-                          </div>
-                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- list group -->
-                      <li class="list-group-item d-flex py-4">
-                        <div class="flex-shrink-0 me-3">                              
-                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
-                        </div>
-                        <div class="flex-grow-1 row">
-                          <div class="col">
-                            <h6 class="font-size-15 mb-0">홍길동</h6>
-                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
-                            <div class="mt-2 small lh-1">
-                              <a class="text-decoration-none text-inherit">
-                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
-                              </a>
-                            </div>
-                          </div>
-                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </li>
-                      <!-- list group -->
-                      <li class="list-group-item d-flex py-4">
-                        <div class="flex-shrink-0 me-3">                              
-                            <img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
-                        </div>
-                        <div class="flex-grow-1 row">
-                          <div class="col">
-                            <h6 class="font-size-15 mb-0">홍길동</h6>
-                            <span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
-                            <div class="mt-2 small lh-1">
-                              <a class="text-decoration-none text-inherit">
-                                <span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
-                              </a>
-                            </div>
-                          </div>
-                          <div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-         </div>
-        </div>
-      </div>
-    </main>
+	<!-- footer START -->
+	<footer class="oz-footer navbar-fixed-bottom">
+	<div class="container pt-3 pb-9">
+		<div class="row">
+		<!-- left -->
+		<div class="col-12 col-md-9">
+			<p class="fo-link h6">
+			<span class="pe-2 h-4"><a>개인정보 취급방침</a></span>
+			<span class="pe-2 h-4"><a>이용약관</a></span>
+			<span class="pe-2"><a>사업주지원교육 유의사항</a></span>
+			<span class="pe-2"><a>본인인증 안내</a></span>
+			</p>
+			<div class="fo-imgs mt-3 clearfix">
+			<img src="assets/images/common/fo-banner01.svg">
+			<img src="assets/images/common/fo-banner02.svg">
+			<img src="assets/images/common/fo-banner03.svg">
+			</div>
+		</div>
 
-    <!-- 문의 modal START-->
-    <div class="modal fade consult-modal" tabindex="-1" role="dialog" aria-labelledby="consultModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-              <div class="modal-header">
-                <div class="modal-title">
-                  <p class="h3 mb-1" id="consultModalLabel">포스트 코로나 시대의 e비즈니스 인사이트</p>                  
-                </div>                  
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                  
-              </div>              
-              <div class="modal-body">                
-                  <div class="d-flex mb-3">
-                    <div class="input-group w-25 me-3">                      
-                      <input type="text" class="form-control" placeholder="기업명" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <div class="input-group w-25 me-3">                      
-                      <input type="text" class="form-control" placeholder="담당자" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <div class="input-group w-50">                      
-                      <input type="tel" class="form-control" placeholder="연락처" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                  </div>  
-                  <div class="mb-3">
-                    <div class="input-group w-50 me-3">
-                      <input type="email" class="form-control" placeholder="이메일" aria-label="Email" aria-describedby="basic-addon2">
-                    </div>                    
-                  </div>                  
-                  <div class="mb-3">
-                    <div>
-                      <textarea class="form-control" rows="10" placeholder="메모를 남겨주세요."></textarea>
-                    </div>
-                  </div>
-                  <div class="mb-3" style="background-color: #F2F2F2;">
-                    <div class="p-3">
-                      <p class="text-primary fw-bold">개인정보 수집 및 이용에 대한 안내</p>
-                      <ul class="mx-0">
-                        <li>수집항목 : 이름, 이메일, 전화번호, 그 외 개인이 직접 등록한 문의 내용</li>
-                        <li>수집목적 : 문의 결과 회신</li>
-                        <li>이용기간 : 개인정보 수집 및 이용에 대한 목적이 달성된 후에는 해당 정보를 파기</li>
-                      </ul>
-                    </div>                    
-                  </div>
-                  <!-- 체크박스 -->
-                  <div class="text-start text-secondary mb-3">
-                    <input type="checkbox" class="form-check-input h2" id="rememberCheck" checked>
-                    <label class="form-check-label pt-2" for="rememberCheck">개인정보 수집 및 이용에 대한 안내를 충분히 숙지했습니다.</label>
-                </div>   
-                <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal" aria-label="Close">상담신청</button>
-              </div>
-          </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </div>
-    <!-- 문의 modal END-->
+		<!-- right -->
+		<div class="col-12  col-md-3">
+			<select class="form-select form-select-md" aria-label=".form-select-md example size 3">
+			
+			<option selected>관련사이트</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+			</select>
+			<div class="row fo-url">
+			<div class="col-6 text-center">
+				<p class="cacao rounded">카카오톡 채널</p>
+			</div>
+			<div class="col-6 text-center">
+				<p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
+			</div>
+			</div>
+		</div>
+		</div>
+		<div class="mt-3">
+		<p>
+			원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
+			TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+			통신판매번호 : 제 2021-서울영등포-0322호 <br />
+		</p>
+		ⓒ 원라인에듀 Allright & Reserved. ALLRIGHT & RESERVED.
+		</div>
+	</div>
+	</footer>
+	<!-- footer END -->
 
-    
-    <!-- footer START -->
-    <footer class="oz-footer navbar-fixed-bottom">
-      <div class="container pt-3 pb-9">
-        <div class="row">
-          <!-- left -->
-          <div class="col-12 col-md-9">
-            <p class="fo-link h6">
-              <span class="pe-2 h-4"><a>개인정보 취급방침</a></span>
-              <span class="pe-2 h-4"><a>이용약관</a></span>
-              <span class="pe-2"><a>사업주지원교육 유의사항</a></span>
-              <span class="pe-2"><a>본인인증 안내</a></span>
-            </p>
-            <div class="fo-imgs mt-3 clearfix">
-              <img src="assets/images/common/fo-banner01.svg">
-              <img src="assets/images/common/fo-banner02.svg">
-              <img src="assets/images/common/fo-banner03.svg">
-            </div>
-          </div>
-
-          <!-- right -->
-          <div class="col-12  col-md-3">
-            <select class="form-select form-select-md" aria-label=".form-select-md example size 3">
-              
-              <option selected>관련사이트</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <div class="row fo-url">
-              <div class="col-6 text-center">
-                <p class="cacao rounded">카카오톡 채널</p>
-              </div>
-              <div class="col-6 text-center">
-                <p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mt-3">
-          <p>
-            원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
-            TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
-            통신판매번호 : 제 2021-서울영등포-0322호 <br />
-          </p>
-          ⓒ 원라인에듀 Allright & Reserved. ALLRIGHT & RESERVED.
-        </div>
-      </div>
-    </footer>
-	  <!-- footer END -->    
-  </body>
+	<!-- 문의 modal START-->
+	<article class="modal fade consult-modal">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4>포스트 코로나 시대의 e비즈니스 인사이트</h4>
+					<p>메모를 남겨주시면 신속하게 연락드리겠습니다.</p>
+					<div data-bs-dismiss="modal" aria-label="Close"><i class="material-symbols-outlined">close</i></div>
+				</div>
+				<div class="modal-body">
+					
+					<div class="d-flex pb-3">
+						<p class="input-group w-25 me-3"><input type="text" class="form-control" placeholder="기업명" aria-label="Username" aria-describedby="basic-addon1"></p>
+						<p class="input-group w-25 me-3"><input type="text" class="form-control" placeholder="담당자" aria-label="Username" aria-describedby="basic-addon1"></p>
+						<p class="input-group w-50"><input type="tel" class="form-control" placeholder="연락처" aria-label="Username" aria-describedby="basic-addon1"></p>
+					</div>
+					<div class="mb-3">
+						<p class="input-group w-50 me-3"><input type="email" class="form-control" placeholder="이메일" aria-label="Email" aria-describedby="basic-addon2"></p>
+					</div>
+					<div class="mb-3">
+						<p  class="input-group w-100"><textarea class="form-control" rows="7" placeholder="메모를 남겨주세요."></textarea></p>
+					</div>
+					<div class="p-3 bg-secondary">
+						<p class="text-primary fw-bold">개인정보 수집 및 이용에 대한 안내</p>
+						<div class="mt-2">
+							<q>수집항목 : 이름, 이메일, 전화번호, 그 외 개인이 직접 등록한 문의 내용</q>
+							<q>수집목적 : 문의 결과 회신</q>
+							<q>이용기간 : 개인정보 수집 및 이용에 대한 목적이 달성된 후에는 해당 정보를 파기</q>
+						</div>
+					</div>
+					<!-- 체크박스 -->
+					<div class="text-end mt-3">
+						<input type="checkbox" class="form-check-input" id="rememberCheck" checked>
+						<label class="form-check-label" for="rememberCheck">개인정보 수집 및 이용에 대한 안내를 충분히 숙지했습니다.</label>
+					</div>   
+					<button type="button" class="btn btn-primary w-100 mt-3" data-bs-dismiss="modal" aria-label="Close">교육 신청하기</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</article><!-- 문의 modal END-->
+</body>
 </html>

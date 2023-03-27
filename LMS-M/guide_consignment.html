@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--swiper-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<!-- App Css-->
+	<link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+	<!-- Bootstrap CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<!-- Icons Css -->
+	<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<!-- visco css-->
+	<link href="assets/css/visco/education.css" rel="stylesheet" type="text/css" />
+	
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!--jquery-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<!--swiper-->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!--ezhelp-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://939.co.kr/runezhelp.js" charset="utf-8"></script>
+	<script src="https://hiserver.co.kr/runezchat.js" charset="utf-8"></script>
+	<!-- apexcharts (반 도넛 차트) -->
+	<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+	<title>전체교육 > 위탁교육안내 </title>
+</head>
+<body>
+	<main class="pb-9">
+		<!-- NEW GNB START-->
+		<section>
+			<article class="container">
+				<div class="gnbs clearfix">
+					<div class="g-logo" onclick="location.href='index.html'">
+						<img class="pe-1" src="assets/images/common/logo-oneline.svg">
+						<h5>원라인에듀</h5>
+					</div>
+					<!-- 웹 -->
+					<div class="g-menu">
+						<span class="h5" onclick="location.href='education.html'">전체교육</span>
+						<span class="h5" onclick="location.href='about_us.html'">교육원 소개</span>
+						<span class="h5" onclick="location.href='support.html'">고객지원</span>
+					</div>
+					<div class="gr-web">
+						<form class="position-relative me-3">
+							<input class="form-control" type="search" aria-label="Search">
+							<button class="bg-transparent position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+								<i class="material-symbols-outlined h5">search</i>
+							</button>
+						</form>
+						<button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary"><i class="material-symbols-outlined">outgoing_mail</i>교육문의</button>
+					</div>
+					<!-- 모바일 -->
+					<div class="gr-mobile">
+						<p class="mo-search"><i class="material-symbols-outlined h5">search</i></p>
+						<p class="mo-inq" onclick="location.href='education_inquiry.html'"><i class="material-symbols-outlined h5">outgoing_mail</i></p>
+						<p class="mo-more d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="material-symbols-outlined h5">menu</i></p>
+					</div>
+				</div>
+				<!-- 모바일 메뉴확장 -->
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						...
+					</div>
+				</div>
+			</article>
+		</section>
+		<!-- NEW GNB END-->
+
+		<!-- USER START -->
+		<section class="oz-mymenu2">
+			<article class="container py-4">
+				<h4 class="text-white fw-bold">홍길동님 환영합니다.</h4>
+				<div class="text-white mt-1">
+					원라인에듀 홈페이지를 방문해주신 여러분을 진심으로 환영합니다.
+				</div>
+				<div class="summary mt-3">
+					<h5>수강완료:<span>1</span>개</h5>
+					<h5>진행(대기)중:<span>2</span>개</h5>
+				</div>
+
+				<div class="menus clearfix mt-4">
+					<div class="lefts">
+						<div class="my-charts" style="position:relative"> 
+							<div id="chart" dir="ltr"></div>
+							<h6 style="color:#f4f4f4;position:absolute;left:50%;top:60%;transform:translate(-50%, -50%);">총진행율</h6>
+						</div>
+						<script type="text/javascript">
+							var options = {
+								series: [70],
+								colors: ['#42D8FF'],
+								chart: {
+									type: 'radialBar',
+									sparkline: {
+									enabled: true,
+									}
+								},
+								plotOptions: {
+									radialBar: {
+										startAngle: -90,
+										endAngle: 90,
+										dataLabels: {
+											name: {
+											show: false
+											},
+											value: {
+											offsetY: -2,
+											fontSize: '200%',
+											color: '#fff',
+											}
+										},
+										hollow: {
+										size: '100%',
+										},
+										track: {
+										show: true,
+										strokeWidth: '100%',
+										background: '#999',
+										opacity: .5,
+										margin: -20,
+										}
+									}
+								},
+							};
+							var chart = new ApexCharts(document.querySelector("#chart"), options);
+							chart.render();
+						</script>
+					</div>
+					<div class="rights">
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">contact_mail</i>
+							<span>내 강의실</span>
+						</p>
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">manage_search</i>
+							<span>마이페이지</span>
+						</p>
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">clinical_notes</i>
+							<span>수료증</span>
+						</p>
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">draft_orders</i>
+							<span>재응시</span>
+						</p>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!-- USER END -->
+
+		<!-- Navigation START -->
+		<section class=" oz-nav pt-2 pb-2" aria-label="breadcrumb">
+			<nav class="container">
+				<ol class="justify-content-end breadcrumb">
+					<i class="material-symbols-outlined pe-2">home</i>
+					<li class="breadcrumb-item">원라인에듀</li>
+					<li class="breadcrumb-item">전체교육</li>
+					<li class="breadcrumb-item">위탁교육안내</li>
+				</ol>
+			</nav>
+		</section>
+		<!-- Navigation END -->
+
+		<!-- content START -->
+		<article class="container oa-common">
+			<div class="row">
+				<!-- pc일때 -->
+				<nav class="col-lg-3 d-none d-lg-block w-nav">
+					<div class="titles">
+						<i class="material-symbols-outlined">school</i>
+						<h4>전체교육과정</h4>
+					</div>
+					<div class="m-menu">
+						<p onclick = "location.href='education.html'">직무</p>
+						<p class="on"  onclick = "location.href='education.html'">의료</p>
+						<p onclick = "location.href='education.html'">영/유아</p>
+						<p onclick = "location.href='education.html'">산업안전</p>
+						<p onclick = "location.href='education.html'">법정</p>
+						<p onclick = "location.href='education.html'">중대재해처벌</p>
+						<p onclick = "location.href='education.html'">기업직업훈련카드</p>
+					</div>
+					<div class="s-manu">
+						<p class="on" onclick="location.href='guide_consignment.html'">
+							위탁교육안내
+							<i class="material-symbols-outlined">book</i>
+						</p>
+						<p onclick = "location.href='guide_education_progress.html'">
+							교육진행절차
+							<i class="material-symbols-outlined">play_lesson</i>
+						</p>
+						<p onclick = "location.href='guide_refunds.html'">
+							환급절차
+							<i class="material-symbols-outlined">auto_stories</i>
+						</p>
+						<p onclick = "location.href='guide_info_use.html'">
+							교육이용안내
+							<i class="material-symbols-outlined">local_library</i>
+						</p>
+						<p onclick = "location.href='guide_development.html'">
+							과정개발절차
+							<i class="material-symbols-outlined">beenhere</i>
+						</p>
+					</div>
+				</nav>
+				<!-- 태블릿/모바일 일때 -->
+				<div class="col-12 d-lg-none h-nav">
+					<h2 class="">전체교육과정</h2>
+					<div class="mt-3">
+						<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onchange="location = this.value;">
+							<option selected value="education.html">직무교육</option>
+							<option value="education.html">디지털융합</option>
+							<option value="education.html">의료교육</option>
+							<option value="education.html">산업안전</option>
+							<option value="education.html">법정교육</option>
+						</select>
+					</div>
+					<div class="s-menu">
+						<span onclick="location.href='guide_consignment.html'">
+							<i class="material-symbols-outlined">book</i>
+							위탁교육안내
+						</span>
+						<span class="on" onclick = "location.href='guide_education_progress.html'">
+							<i class="material-symbols-outlined">play_lesson</i>
+							교육진행절차
+						</span>
+						<span onclick = "location.href='guide_refunds.html'">
+							<i class="material-symbols-outlined">auto_stories</i>
+							환급절차
+						</span>
+						<span onclick = "location.href='guide_info_use.html'">
+							<i class="material-symbols-outlined">local_library</i>
+							교육이용안내
+						</span>
+						<span onclick = "location.href='guide_development.html'">
+							<i class="material-symbols-outlined">beenhere</i>
+							과정개발절차
+						</span>
+					</div>
+				</div>
+				<!-- 본문컨텐츠 -->
+				<div class="col-lg-9 oa-cps">
+					<div class="cps-title">
+						<h2>위탁교육안내</h2>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">사업주 위탁교육이란?</h6>
+						<div>
+							사업주가 훈련비용은 부담하여 재직근로자 및 채용예정자를 다른 훈련기관에 위탁하고 해당 훈련기관이 훈련실시, 훈련생관리 등을 직접 수행하는 직업능력개발훈련입니다.
+						</div>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">훈련대상</h6>
+						<div>
+							<q>고용보험 피보험자</q>
+							<q>고용보험 피보험자가 아닌 자로서 해당 사업주에게 고용된 자</q>
+							<q>해당 사업이나 그 사업과 관련되는 사업에서 고용하려는 자(채용예정자)</q>
+						</div>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">지원절차</h6>
+						<div>
+                            <p>사업주는 훈련비 중 정부지원금을 제외한 자기부담금을 후련기관에 납부하여 재직근로자 등을 대상으로 직업훈련을 실시하는 경우 고용노동부에서 훈련비 등을 지원합니다.</p>
+                            <img class="info-diagram dia-01" src="assets/images/educate/img_diagram01.svg">
+						</div>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">지원대상</h6>
+						<p>고용보험에 가입한 사업주로서 소속 근로자 등에게 사전에 고용노동부장관으로부터 과정인정을 받아 교육훈련을 직접 또는 위탁하여 실시하는 사업주</p>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">사업주 훈련 지원내용</h6>
+						<div>
+							<q>훈련내용 및 대상에 따라 표준훈련비 비용 조정</q>
+							<q>단, 고시일 이전 인정받은 후련과정은 종전 규정에 따름</q>
+						</div>
+						<table class="mt-2">
+							<colgroup>
+								<col width="16%">
+								<col width="16%">
+								<col width="*">
+							</colgroup>
+							<thead>
+								<tr class="text-center">
+									<th colspan="2" style="width: 280px;">구분</th>
+									<th>지원내용</th>
+								</tr>
+							</thead>
+							<tbody class="align-middle">
+								<tr>
+									<td class="text-center text-dark fw-bold" rowspan="3">훈련비</td>
+									<td class="text-center text-dark fw-bold">우선지원기업</td>
+									<td class="px-1">
+										<p class="text-primary">훈련에 소요된 비용 일부 지원</p>
+										<div class="mt-2">
+											<q>훈련비 지원금(직무법정 및 외국어 外 과정) : 등극별 훈련비 X 훈련시간 X 수료인원 X 90% X 공급정도 (훈련비 지원금 지원율 조정계수)</q>
+											<q>훈련비 지원금 (직무법정 및 외국어과정) : 등급별 훈련비 X 훈련시간 X 수료인원 X 50%</q>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center text-dark fw-bold">중견기업<br/>(1000인 미만)</td>
+									<td class="px-1">
+										<p class="text-primary">훈련에 소요된 비용 일부 지원</p>
+										<div class="mt-2">
+											<q>훈련비 지원금(직무법정 및 외국어 外 과정) : 등극별 훈련비 X 훈련시간 X 수료인원 X 80% X 공급정도 (훈련비 지원금 지원율 조정계수)</q>
+											<q>훈련비 지원금 (직무법정 및 외국어과정) : 등급별 훈련비 X 훈련시간 X 수료인원 X 40%</q>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center text-dark fw-bold">대기업<br/>(1000인 이상)</td>
+									<td class="px-1">
+										<p class="text-primary">훈련에 소요된 비용 일부 지원</p>
+										<p class="text-danger mt-1">※단,고용노동부장관이 고시한 금액을 초과할 수 없음</p>
+										<div class="mt-2">
+											<q>훈련비 지원금(직무법정 및 외국어 外 과정) : 등극별 훈련비 X 훈련시간 X 수료인원 X 40% X 공급정도 (훈련비 지원금 지원율 조정계수)</q>
+											<q>훈련비 지원금 (직무법정 및 외국어과정) : 등급별 훈련비 X 훈련시간 X 수료인원 X 20%</q>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p class="text-danger mt-2">
+							※ 공통법정훈련과정 ->산업안전보건(근로자, 관리감독자를 대상으로 하는 정기안전·보건교육), 개인정보 보호, 직장 내 성희롱 예방 관련 과정(직무과정일지라도 1개 차시를 직장 내 성희롱 예방 내용 등으로 조합 구성할 경우에도 공통법정훈련으로 분류)
+						</p>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">사업주 훈련 지원한도</h6>
+						<img class="info-diagram dia-02" src="assets/images/educate/img_diagram02.svg">
+					</div>
+				</div>
+			</div>
+		</article>
+		<!-- contents END-->
+	</main>
+	<!-- footer START -->
+	<footer class="oz-footer navbar-fixed-bottom">
+		<div class="container pt-3 pb-9">
+			<div class="row">
+				<!-- left -->
+				<div class="col-12 col-md-9">
+					<p class="fo-link h6">
+						<span class="pe-2 h-4"><a href="#a">개인정보 취급방침</a></span>
+						<span class="pe-2 h-4"><a href="#a">이용약관</a></span>
+						<span class="pe-2"><a href="#a">사업주지원교육 유의사항</a></span>
+						<span class="pe-2"><a href="#a">본인인증 안내</a></span>
+					</p>
+					<div class="fo-imgs mt-3 clearfix">
+						<img src="assets/images/common/fo-banner01.svg">
+						<img src="assets/images/common/fo-banner02.svg">
+						<img src="assets/images/common/fo-banner03.svg">
+					</div>
+				</div>
+
+				<!-- right -->
+				<div class="col-12  col-md-3">
+					<select class="form-select form-select-md" aria-label=".form-select-md example size 3">                    
+						<option selected>관련사이트</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+					<div class="row fo-url">
+						<div class="col-6 text-center">
+							<p class="cacao rounded">카카오톡 채널</p>
+						</div>
+						<div class="col-6 text-center">
+							<p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mt-3">
+				<p>
+					원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
+					TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+					통신판매번호 : 제 2021-서울영등포-0322호 <br />
+				</p>
+				ⓒ 원라인에듀 Allright & Reserved.
+			</div>
+		</div>
+	</footer>
+	<!-- footer END -->
+</body>
+</html>

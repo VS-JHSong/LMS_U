@@ -5,37 +5,41 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- icon css-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
+	<!--swiper-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<!-- App Css-->
 	<link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
 	<!-- Bootstrap Css -->
 	<link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 	<!-- Icons Css -->
 	<link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-	<!-- AOS CSS -->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<!--swiper CSS-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<!-- visco css-->
 	<link href="assets/css/visco/about.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
+	<link href="assets/css/visco/visco_slide_min.css" rel="stylesheet" type="text/css" />
 
 
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-	<!--AOS JS-->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<!--swiper JS-->
+	<!--jquery-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<!--swiper-->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-	<!--google map JS-->
+	<!--ezhelp-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://939.co.kr/runezhelp.js" charset="utf-8"></script>
+	<script src="https://hiserver.co.kr/runezchat.js" charset="utf-8"></script>
+	<!-- apexcharts (반 도넛 차트) -->
+	<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+	<!--AOS JS (인증서)-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!--google map JS-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script-->
 
 	<title>OA:About us</title>
 </head>
@@ -87,43 +91,91 @@
 
 		<!-- LOGIN USER START -->
 		<section class="oz-mymenu2 mt-1">
-			<div class="container py-4">
+			<article class="container py-4">
 				<h4 class="text-white fw-bold">홍길동님 환영합니다.</h4>
-				<div class="text-white pt-2">
+				<div class="text-white mt-1">
 					원라인에듀 홈페이지를 방문해주신 여러분을 진심으로 환영합니다.
 				</div>
-				<div class="summary clearfix text-white mt-2 fw-bold">
-					<p class="float-start">수강완료:<span>1</span>개</p>
-					<p class="float-start">진행(대기)중:<span>2</span>개</p>
+				<div class="summary mt-3">
+					<h5>수강완료:<span>1</span>개</h5>
+					<h5>진행(대기)중:<span>2</span>개</h5>
 				</div>
-				<div class="row">
-					<!-- left -->
-					<div class="col-12 col-md-2">
-						<div style="background-color: #fff;">원형그래프</div>
-					</div>
-					<!-- right -->
-					<div class="col-12  col-md-10">
-						<div class="i-group float-end">
-							<p class="btn btn-outline-light">
-								<i class="material-symbols-outlined">contact_mail</i>
-								<span>내 강의실</span>
-							</p>
-							<p class="btn btn-outline-light">
-								<i class="material-symbols-outlined">manage_search</i>
-								<span>마이페이지</span>
-							</p>
-							<p class="btn btn-outline-light">
-								<i class="material-symbols-outlined">clinical_notes</i>
-								<span>수료증</span>
-							</p>
-							<p class="btn btn-outline-light">
-								<i class="material-symbols-outlined">draft_orders</i>
-								<span>재응시</span>
-							</p>
+
+				<div class="menus clearfix mt-3">
+					<div class="lefts">
+						<div class="my-charts" style="position:relative"> 
+							<div id="chart" dir="ltr"></div>
+							<h6 style="color:#f4f4f4;position:absolute;left:50%;top:60%;transform:translate(-50%, -50%);">총진행율</h6>
 						</div>
+						<script type="text/javascript">
+							var options = {
+								series: [38],
+								colors: ['#42D8FF'],
+								chart: {
+									type: 'radialBar',
+									sparkline: {
+									enabled: true,
+									}
+								},
+								plotOptions: {
+									radialBar: {
+										startAngle: -90,
+										endAngle: 90,
+										dataLabels: {
+											name: {
+											show: false
+											},
+											value: {
+											offsetY: -2,
+											fontSize: '200%',
+											color: '#fff',
+											}
+										},
+										hollow: {
+										size: '100%',
+										},
+										track: {
+										show: true,
+										strokeWidth: '100%',
+										background: '#999',
+										opacity: .5,
+										margin: -20,
+										}
+									}
+								},
+							  };
+							  var chart = new ApexCharts(document.querySelector("#chart"), options);
+							  chart.render();
+						</script>
+					</div>
+					<div class="rights">
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">contact_mail</i>
+							<span>내 강의실</span>
+						</p>
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">manage_search</i>
+							<span>마이페이지</span>
+						</p>
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">clinical_notes</i>
+							<span>수료증</span>
+						</p>
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">draft_orders</i>
+							<span>재응시</span>
+						</p>
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">clinical_notes</i>
+							<span>수료증</span>
+						</p>
+						<p class="btn btn-outline-light">
+							<i class="material-symbols-outlined">draft_orders</i>
+							<span>재응시</span>
+						</p>
 					</div>
 				</div>
-			</div>
+			</article>
 		</section>
 		<!-- LOGIN USER END -->
 
@@ -131,7 +183,7 @@
 		<section class=" oz-nav type2 pt-2 pb-2" aria-label="breadcrumb">
 			<nav class="container">
 				<ol class="justify-content-end breadcrumb">
-					<i class="bi bi-house-door-fill pe-2"></i>
+					<i class="material-symbols-outlined pe-2">home</i>
 					<li class="breadcrumb-item">원라인에듀</li>
 					<li class="breadcrumb-item" aria-current="page">교육원소개</li>
 				</ol>
@@ -142,7 +194,7 @@
 		<!-- side START -->
 		<!-- 소개글 -->
 		<section id="introduction" class="ob-aps01 ob-aps02 pb-4" style="background-color: #438DFF;">
-			<div class="container aos-init aos-animate text-white" data-aos="fade-up">
+			<article class="container aos-init aos-animate text-white" data-aos="fade-up">
 				<h5 class="pt-3 text-white">교육원 소개:</h5>
 				<div class="content text-center">
 					<div class="text-white h3">
@@ -161,13 +213,13 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</article>
 		</section>
 		<!---->
 		
 		<!-- 목표 및 경영원칙 -->
 		<section id="rule" class="ob-aps02 pb-4">
-			<div class="container aos-init aos-animate" data-aos="fade-up">
+			<article class="container aos-init aos-animate" data-aos="fade-up">
 				<h5 class="pt-3 section-title fw-bold text-primary">목표 및 경영원칙:</h5>
 				
 				<div class="h3 pb-4 text-center text-dark">
@@ -204,12 +256,12 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</article>
 		</section>
 		<!---->
 		<!-- 비전 --> 
 		<section id="vision" class="ob-aps03">
-			<div class="container aos-init aos-animate text-white" data-aos="fade-up">                    
+			<article class="container aos-init aos-animate text-white" data-aos="fade-up">                    
 				<h5 class="section-title pt-3 fw-bold text-white">비젼:</h5>
 				<div class="content text-center">
 					<div>
@@ -245,12 +297,12 @@
 						<!-- Swiper END -->
 					</div>
 				</div>
-			</div>
+			</article>
 		</section>
 		<!---->
 		<!-- 미션 -->
 		<section id="rule" class="ob-aps04">
-			<div class="container aos-init aos-animate" data-aos="fade-up">
+			<article class="container aos-init aos-animate" data-aos="fade-up">
 				<h5 class="section-title pt-5 fw-bold text-primary">미션:</h5>
 				<div class="content">
 					<div class="h3 text-dark">
@@ -263,23 +315,23 @@
 						<div class="col-4 col-md-3"><p class="img03"></p></div>
 					</div>
 				</div>
-			</div>
+			</article>
 		</section>
 		<hr />
 		<!---->
 		<!-- 조직도 -->
 		<section id="rule" class="ob-aps05 pb-4">
-			<div class="container aos-init aos-animate" data-aos="fade-up">
+			<article class="container aos-init aos-animate" data-aos="fade-up">
 				<div class="section-title fw-bold h5 text-primary">조직도:</div>
 				<div class="content mt-4">                                                
 					<img class="rounded mx-auto d-block" src="assets/images/about/organization-chart.svg">
 				</div>
-			</div>
+			</article>
 		</section>
 		<!---->
 		<!-- 찾아오시는 길 -->
 		<section id="rule" class="ob-aps06 pb-4" style="background-color: #646464;">
-			<div class="container aos-init aos-animate" data-aos="fade-up">
+			<article class="container aos-init aos-animate" data-aos="fade-up">
 				<div class="section-title fw-bold h5 text-white pt-3">찾아오시는 길:</div>
 				<div class="content">
 					<div class="row mt-3">
@@ -308,7 +360,7 @@
 						<iframe class="rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582.1341037253399!2d126.89032175812875!3d37.525174422174395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9eeeb795672b%3A0xe822ce6fe63bb7cb!2z7JuQ65287J247JeQ65OA!5e0!3m2!1sko!2skr!4v1660616233480!5m2!1sko!2skr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
-			</div>
+			</article>
 		</section>
 		<!---->
 	</main>

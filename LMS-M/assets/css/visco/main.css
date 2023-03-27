@@ -11,9 +11,9 @@
 .om-slide.bg6 {background-color:#fffbc1;}
 .om-slide.bg7 {background-color:#e9e9e9;}
 .om-slide.bg8 {background-color:#bfeaf5;}
-.om-slide nav .float-start {width:calc(100% - 7rem);}
+.om-slide nav .float-start {width:calc(100% - 7.2rem);}
 .om-slide nav .float-start > span {display: inline-block;margin-right:1rem;line-height:2rem;color:#191919;cursor:pointer;}
-.om-slide nav .float-start > span.on {font-weight:500;position: relative;}
+.om-slide nav .float-start > span.on {font-weight:500;position: relative;color:#191919;}
 .om-slide nav .float-start > span.on::before {content:"";position: absolute;left:0;bottom:0;width:100%;height:2px;background-color:#191919;}
 .om-slide nav .float-end > span {display:inline-block;width:2rem;height:2rem;border:1px solid #191919;border-radius:2rem;position: relative;margin-left:0.2rem;}
 .om-slide nav .float-end > span i {font-size:2rem;position: absolute;top:50%;left:50%;transform:translate(-50% , -50%);color:#191919;}
@@ -59,18 +59,22 @@
 .om-aps01 .area-02 .emp > div {background-color:#191919;}
 .om-aps01 .area-02 .emp > div > div {padding-bottom:100%;position:relative;overflow:hidden;margin:0 auto;}
 .om-aps01 .area-02 .emp > div > div img {position: absolute;top:0;left:0;width:100%;height:100%;}
-@media (max-width: 720px) {
-.om-aps01 .area-02 .emp > div > div {width:50%;padding-bottom:50%;background-color:#767676;}
-.om-aps01 .area-02 .emp > div > div img {width:100%;height:100%;margin: 0 auto;display:block;margin:0 auto;}}
+@media (max-width: 992px) {
+	.om-aps01 .area-02 {padding-bottom: 1.6rem; border-bottom: 2px solid #767676;}
+	.om-aps01 .area-02 .emp > div > div {width:50%;padding-bottom:50%;background-color:#767676;}
+	.om-aps01 .area-02 .emp > div > div img {width:100%;height:100%;margin: 0 auto;display:block;margin:0 auto;}
+}
 .om-aps01 .area-02 .emp > div > div img:hover {transform: scale(1.2);transition-duration: 0.5s;cursor:pointer;}
 
 .om-aps02 {border-top:2px solid #767676;}
 
 .om-aps03 {height:auto;background-image:url('../../../assets/images/common/img-view01.png');background-repeat: no-repeat;background-position: 50% 50%;background-size:100% auto;background-color:#767676;}
-@media (max-width: 720px) {.om-aps03 {background-size:auto 100%;}}
-.om-aps03 .container {height:inherit;}
-.om-aps03 .swiper-container {width:84%;padding:0;}
-.om-aps03 .card {width:20rem;border-radius:0.46rem;margin:0 auto;border:none;}
+@media (max-width: 992px) {
+	.om-aps03 {background-size:auto 100%;}
+}
+.om-aps03 .container {height:auto;}
+
+.om-aps03 .card {border-radius:0.46rem;margin:0 auto;border:none;}
 .om-aps03 .card .profile > p {width:3.4rem;height:3.4rem;border-radius:2rem;background-color:#BFBFBF;background-image:url('../../../assets/images/common/icon_default_uaer.svg');background-repeat: no-repeat;background-position: 50% 50%;background-size:2rem auto;overflow:hidden;}
 .om-aps03 .card .profile > p img {object-fit:cover;width:inherit;height:inherit;}
 .om-aps03 .card .profile > div {padding-left:0.7rem;margin-top:0.4rem;}
@@ -78,9 +82,7 @@
 .om-aps03 .card .profile > div i {float:left;line-height:	1.5rem;padding-top:0.08rem;}
 .om-aps03 .card .navs i {line-height:2rem;}
 .om-aps03 .card .navs p {line-height:2rem;}
-.om-aps03 .card .star-ratings {font-size:2.24rem;color:#BFBFBF;position:relative;unicode-bidi: bidi-override;width: max-content;-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: #191919;}
-.om-aps03 .card .star-ratings-fill {color: #fff58c;padding: 0;position: absolute;z-index: 1;display: flex;top: 0;left: 0;overflow: hidden;-webkit-text-fill-color: gold;}
-.om-aps03 .card .star-ratings-base {z-index: 0;padding: 0;}
+.om-aps03 .card .star-ratings {font-size:2rem;}
 .om-aps03 .card .txt {min-height:10rem;color:#191919;margin-top:0.5rem;}
 
 .om-aps04 .col {margin-bottom:1rem;}
@@ -94,15 +96,14 @@
 .om-aps04 .bankings > i {top:0.7rem;right:0.7rem;}
 .om-aps04 .bankings > div > p {position: relative;}
 .om-aps04 .bankings > div > p em {position: absolute;left:0;top:0;}
-.om-aps04 .bankings > div > p span {padding-left:4rem;}
+.om-aps04 .bankings > div > p span {padding-left:4rem;display: block;}
 .om-aps04 .bankings > p {position: absolute;bottom:1rem;left:0;width:100%;}
 .om-aps04 .customer {background-color:#FFF2F5;}
 .om-aps04 .customer > i {top:0.7rem;right:0.7rem;color:#E8C4CC;}
 .om-aps04 .customer h2 {color:#FF154C;}
 .om-aps04 .customer > div > p {position: relative;}
 .om-aps04 .customer > div > p em {position: absolute;left:0;top:0;}
-.om-aps04 .customer > div > p span {padding-left:4rem;}
-
+.om-aps04 .customer > div > p span {padding-left:4rem;display: block;}
 
 
 
