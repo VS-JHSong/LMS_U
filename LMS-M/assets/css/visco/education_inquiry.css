@@ -23,6 +23,7 @@
 .oe-aps02 .rights .r-box > p {width:calc(100% - 1rem);}
 
 .oe-aps03 table {text-align: center;}
+.oe-aps03 table td {padding:0.6rem;}
 .oe-aps03 table td:nth-child(2) {width:10rem;}
 .oe-aps03 table td:nth-child(3) {width:10rem;}
 @media (max-width: 992px) {
@@ -36,6 +37,7 @@
 .oe-aps03 .t-box .icons span {margin-right:0.5rem;padding-left:1.3rem;line-height:1.5rem;position: relative;}
 .oe-aps03 .t-box .icons span i {position: absolute;top:0;left:0;line-height:1.5rem;display: inline-block;font-size: 1.24rem;}
 .oe-aps03 .btn-group {padding-right: 9rem;}
+.oe-aps03 .sub-mits {border-top:1px solid #767676;}
 
 
 

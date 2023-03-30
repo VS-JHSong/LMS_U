@@ -8,20 +8,22 @@ o(a~z)-(a~z)ps(01~99번째 세션) : 고유 클래스 규칙
 .ob-aps01 {background-color:#438DFF;}
 
 .ob-aps02 .col > div {padding-bottom:130%;position:relative;}
-.ob-aps02 .col > div.img01 {background:url('../../../assets/images/about/building.png') no-repeat center center;background-size: cover;}
-.ob-aps02 .col > div.img02 {background:url('../../../assets/images/about/sky.png') no-repeat center center;background-size: cover;}
-.ob-aps02 .col > div.img03 {background:url('../../../assets/images/about/sun.png') no-repeat center center;background-size: cover;}
+.ob-aps02 .col > div.img01 {background:url('../../../assets/images/about/target01.png') no-repeat center center;background-size: cover;}
+.ob-aps02 .col > div.img02 {background:url('../../../assets/images/about/target02.png') no-repeat center center;background-size: cover;}
+.ob-aps02 .col > div.img03 {background:url('../../../assets/images/about/target03.png') no-repeat center center;background-size: cover;}
 .ob-aps02 .col > div > div {position:absolute;bottom:2rem;left:50%;width:100%;transform:translateX(-50%);}
 
-.ob-aps03 {position: relative;}
-.ob-aps03::before {content:"";position:absolute;top:0;left:0;width:100%;height:74%;background-color: #00287A;}
+.ob-aps03 {position: relative;padding-bottom: 3rem;}
+.ob-aps03::before {content:"";position:absolute;top:0;left:0;width:100%;height:74%;background-color: #00287A;z-index: -10;}
 .ob-aps03 .swiper-slide .row > div > p {padding-bottom:150%;position: relative;}
 .ob-aps03 .swiper-slide .row > div > p > img {position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;}
 
+.ob-aps04 {border-bottom: 2px solid #DCDCDC;}
 .ob-aps04 .row > div > p {background-color:aliceblue;padding-bottom:150%;}
 .ob-aps04 .row > div > p.img01 {background:url('../../../assets/images/about/mision1.png') no-repeat center center;background-size:cover;}
 .ob-aps04 .row > div > p.img02 {background:url('../../../assets/images/about/mision2.png') no-repeat center center;background-size:cover;}
 .ob-aps04 .row > div > p.img03 {background:url('../../../assets/images/about/mision3.png') no-repeat center center;background-size:cover;}
+
 
 .ob-aps05 .content img {width:100%;height:auto;}
 
