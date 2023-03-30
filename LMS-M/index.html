@@ -51,9 +51,9 @@
 <body>
 	<main>
 		<!-- NEW GNB START-->
-		<section>
+		<section class="gnbs">
 			<article class="container">
-				<div class="gnbs clearfix">
+				<div class="clearfix">
 					<div class="g-logo" onclick="location.href='index.html'">
 						<img class="pe-1" src="assets/images/common/logo-oneline.svg">
 						<h5>원라인에듀</h5>
@@ -83,11 +83,15 @@
 				<!-- 모바일 메뉴확장 -->
 				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 					<div class="offcanvas-header">
-						<h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						<!--h5 class="offcanvas-title" id="offcanvasRightLabel">원라인에듀</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button-->
+						<p data-bs-dismiss="offcanvas" aria-label="Close"><i class="material-symbols-outlined">close</i></p>
 					</div>
+					
 					<div class="offcanvas-body">
-						...
+						<h1 onclick="location.href='education.html'">전체교육</h1>
+						<h1 onclick="location.href='about_us.html'">교육원 소개</h1>
+						<h1 onclick="location.href='support.html'">고객지원</h1>
 					</div>
 				</div>
 			</article>
@@ -674,57 +678,56 @@
 
     
     
-    <!-- footer START -->
-    <footer class="oz-footer navbar-fixed-bottom">
-      <div class="container pt-3 pb-9">
-        <div class="row">
-          <!-- left -->
-          <div class="col-12 col-lg-9">
-            <p class="fo-link h6">
-              <span class="pe-2 h-4"><a href="#a">개인정보 취급방침</a></span>
-              <span class="pe-2 h-4"><a href="#a">이용약관</a></span>
-              <span class="pe-2"><a href="#a">사업주지원교육 유의사항</a></span>
-              <span class="pe-2"><a href="#a">본인인증 안내</a></span>
-            </p>
-            <div class="fo-imgs mt-3 clearfix">
-              <img src="assets/images/common/fo-banner01.svg">
-              <img src="assets/images/common/fo-banner02.svg">
-              <img src="assets/images/common/fo-banner03.svg">
-            </div>
-          </div>
+	<!-- footer START -->
+	<footer class="oz-footer navbar-fixed-bottom">
+	<div class="container pt-3 pb-9">
+		<div class="row">
+		<!-- left -->
+		<div class="col-12 col-lg-9">
+			<p class="fo-link h6">
+			<span class="pe-2 h-4"><a href="#a">개인정보 취급방침</a></span>
+			<span class="pe-2 h-4"><a href="#a">이용약관</a></span>
+			<span class="pe-2"><a href="#a">사업주지원교육 유의사항</a></span>
+			<span class="pe-2"><a href="#a">본인인증 안내</a></span>
+			</p>
+			<div class="fo-imgs mt-3 clearfix">
+			<img src="assets/images/common/fo-banner01.svg">
+			<img src="assets/images/common/fo-banner02.svg">
+			<img src="assets/images/common/fo-banner03.svg">
+			</div>
+		</div>
 
-          <!-- right -->
-          <div class="col-12  col-lg-3">
-            <select class="form-select form-select-md" aria-label=".form-select-md example size 3">
-              
-              <option selected>관련사이트</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-            <div class="row fo-url">
-              <div class="col-6 text-center">
-                <p class="cacao rounded">카카오톡 채널</p>
-              </div>
-              <div class="col-6 text-center">
-                <p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mt-3">
-          <p>
-            원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
-            TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
-            통신판매번호 : 제 2021-서울영등포-0322호 <br />
-          </p>
-          ⓒ 원라인에듀 Allright & Reserved.
-        </div>
-      </div>
-    </footer>
+		<!-- right -->
+		<div class="col-12  col-lg-3">
+			<select class="form-select form-select-md" aria-label=".form-select-md example size 3">
+			
+			<option selected>관련사이트</option>
+			<option value="1">One</option>
+			<option value="2">Two</option>
+			<option value="3">Three</option>
+			</select>
+			<div class="row fo-url">
+			<div class="col-6 text-center">
+				<p class="cacao rounded">카카오톡 채널</p>
+			</div>
+			<div class="col-6 text-center">
+				<p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
+			</div>
+			</div>
+		</div>
+		</div>
+		<div class="mt-3">
+		<p>
+			원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
+			TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+			통신판매번호 : 제 2021-서울영등포-0322호 <br />
+		</p>
+		ⓒ 원라인에듀 Allright & Reserved.
+		</div>
+	</div>
+	</footer>
 	<!-- footer END --> 
 	
-
 	<!-- New floating menu -->
     <article class="oa-nfm">
 		<div class="fm-right top"><i class="material-symbols-outlined">expand_less</i><span>TOP</span></div>
@@ -737,7 +740,6 @@
 			<p class="closes"><i class="material-symbols-outlined">chevron_right</i></p>
 		</div>
 	</article><!-- //New floating menu -->
-
 
 	<!-- 문의 modal START-->
 	<article class="modal fade inquiry-modal">
