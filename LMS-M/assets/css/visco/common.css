@@ -11,8 +11,10 @@ p {padding:0rem;margin:0rem;}
 table {margin:0rem;}
 em {font-style: normal;}
 ul {padding:0 !important;margin:0 !important; border-radius:0rem !important;}
-li {padding:0 !important;margin:0 !important; border-radius:0rem !important;}
-
+ul > li {padding:0 !important;margin:0 !important; border-radius:0rem !important;}
+ol.ol-depth {margin:0;list-style:none;padding-left:2rem;position:relative;}
+ol.ol-depth > li {position:relative;padding-left:1rem;}
+ol.ol-depth > li:before {content:'';display:block;position:absolute;top:0.64rem;left:0rem;width:4px;height:4px;background-color:#438DFF;border-radius:50%;}
 
 /* CSS 변경 */
 a {color: #767676;text-decoration: none;}
@@ -23,19 +25,38 @@ h1,h2,h3,h4,h5,h6 {margin-bottom: 0rem;font-weight: 400;color:#191919;}
 textarea {resize: none;}
 q {quotes:none;display:block;position:relative;padding-left:1rem;}
 q:before {content:'';display:block;position:absolute;top:0.64rem;left:0rem;width:5px;height:5px;border:1px solid #191919;border-radius:50%;}
-q:after {content:'';content:none;}
 
 .modal-header {border-bottom:none;position: relative;display: block;}
 .modal-header h4 {width:calc(100% - 3rem);}
 .modal-header p {margin-top: 0.4rem;color: #999;}
-.modal-header div {position: absolute;top: 0;right: 0;width: 3rem;height: 3.68rem;cursor: pointer;}
+.modal-header div {position: absolute;top: 0;right: 0;width: 3rem;height: 3.68rem;cursor: pointer;border: 1px solid red;}
 .modal-header div i {position: absolute;top: 50%;left: 50%;transform:translate(-50%,-50%);font-size: 2.21rem;color:#191919;}
 .modal-header div:hover i {font-variation-settings:'FILL' 0,'wght' 400,'GRAD' -25,'opsz' 48;}
 .modal-body .mt-links {margin-top: 0.68rem;}
 .modal-body .mt-links span {position: relative;padding-left: 1.7rem;}
-.modal-body .mt-links span i {position: absolute;top: 50%;left: 0;transform:translateY(-50%);font-size:1.83rem;}
+.modal-body .mt-links span i {position:absolute;top: 50%;left: 0;transform:translateY(-50%);font-size:1.83rem;}
 .modal-body .mt-links span:hover,
 .modal-body .mt-links span:hover i {color: #00287A;cursor: pointer;}
+
+
+.modal-header.mhc2 p {margin-top:0rem;position:relative;}
+.modal-header.mhc2 p i {position:absolute;top:50%;right:0;transform:translateY(-50%);font-size:1.8rem;color:#191919;font-variation-settings:'FILL'0,'wght'200;}
+.modal-body.mbc2 {text-align:center;}
+.modal-body.mbc2 .mbc-cons .icons {height:5rem;position:relative;}
+.modal-body.mbc2 .mbc-cons .icons i {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);font-size:4rem;color:#BFBFBF;font-variation-settings:'FILL'0,'wght'400;}
+.modal-body.mbc2 .mbc-cons .cons-detail {margin-top:2rem;}
+.modal-body.mbc2 .mbc-cons .cons-detail h6 {margin-top:0.7rem;margin-bottom:1.4rem;}
+.modal-body.mbc2 .mbc-bts {margin-top:1.6rem;margin-bottom:1rem;}
+.modal-body.mbc2 .mbc-bts button {min-width:5rem;}
+
+.modal-header.mhc3 {position:relative;}
+.modal-header.mhc3 i {position:absolute;top:1rem;right:0.6rem;font-size:2.6rem;color:#191919;font-variation-settings:'FILL'0,'wght'300;cursor:pointer;}
+.modal-body.mbc3 {margin-top:2rem;}
+.modal-body.mbc3 .mbc-cons > div {margin-top:2rem;}
+.modal-body.mbc3 .mbc-cons > div h6 {margin-bottom:2rem;color:#438DFF;}
+.modal-body.mbc3 .mbc-cons > div .tits {color:#191919;margin-bottom:1rem;font-weight:400;}
+.modal-body.mbc3 .mbc-cons > div .details {margin-bottom:2rem;}
+	
 
 .pb-9 {padding-bottom: 5rem !important;}
 .mt-9 {margin-top: 5rem !important;}
@@ -130,13 +151,12 @@ table th, table td {border:1px solid #E9EBEC;padding:0.6rem 0;}
 #chat_ezHelp {z-index: auto !important;border: hidden;}
 
 /* Global Navigation-bar */
-.gnbs {padding-top: 1.68rem;padding-bottom: 1.21rem;}
+.gnbs {padding-top: 0.92rem;padding-bottom: 0.48rem;}
 .gnbs article {position:relative;}
 .gnbs .g-logo {float: left;cursor: pointer;}
-.gnbs .g-logo img {float: left;display: block;width: auto;height: 3.2rem;}
-.gnbs .g-logo h5 {float: left;line-height: 3.2rem;font-weight: 900;}
-.gnbs .g-menu {float: left;margin-left: 2rem;}
-.gnbs .g-menu span {display:block;float:left;line-height: 3.2rem;font-weight: 400;margin-right: 2rem;}
+.gnbs .g-logo img {display: block;width: auto;height: 5.2rem;}
+.gnbs .g-menu {float: left;margin-left: 2.31rem;}
+.gnbs .g-menu span {display:block;float:left;line-height: 5.2rem;font-weight: 400;margin-right: 2rem;}
 .gnbs .g-menu span:hover {color: #438DFF;cursor: pointer;}
 .gnbs .gr-web {position:absolute;right:0.6rem;top:50%;transform:translateY(-50%);}
 .gnbs .gr-web form,
@@ -210,19 +230,17 @@ table th, table td {border:1px solid #E9EBEC;padding:0.6rem 0;}
 .oz-mymenu1 .i-group p i {display:block;position:absolute;left:50%;bottom:1.6rem;transform:translateX(-50%);font-size:2.8rem;}
 .oz-mymenu1 .i-group p span {display:inline-block;position:absolute;left:50%;bottom:.4rem;transform:translateX(-50%);width:100%;}
 .oz-mymenu1 .logs {position: relative;}
-.oz-mymenu1 .logs input[type="text"] {border:0;width:calc(100% - 5.5rem);}
+.oz-mymenu1 .logs input[type="text"],
+.oz-mymenu1 .logs input[type="password"] {border:0;width:calc(100% - 5.5rem);}
 .oz-mymenu1 .logs .log-in {position: absolute;top:0;right:0;width:5rem;height:5rem;}
 .oz-mymenu1 .btns {margin-top:0.1rem;}
 .oz-mymenu1 .btns button {display:inline-block;width:100%;}
 @media (max-width: 992px) {
 	.oz-mymenu1 {text-align:center;}
-	.oz-mymenu2 .summary {text-align:center;}
-	.oz-mymenu2 .menus .lefts {width:100%;margin:0 auto;}
-	.oz-mymenu2 .menus .lefts .my-charts {width:15rem;margin:0 auto;}
-	.oz-mymenu2 .menus .rights {width:100%;margin-top:1rem;text-align:center;}
 }
 /* 내메뉴-로그인 */
 .oz-mymenu2 {background-color: #00287A}
+.oz-mymenu2 .my-out {position: relative;border: 1px solid red;}
 .oz-mymenu2 .summary h5 {margin-right:2rem;display: inline-block;color:#fff;}
 .oz-mymenu2 .summary h5:last-child {margin-right:0rem;}
 .oz-mymenu2 .menus .lefts {float:left;width:14rem;}
@@ -231,12 +249,18 @@ table th, table td {border:1px solid #E9EBEC;padding:0.6rem 0;}
 .oz-mymenu2 .menus .rights p i {display:block;position:absolute;left:50%;bottom:1.6rem;transform:translateX(-50%);font-size:2.8rem;}
 .oz-mymenu2 .menus .rights p span {display:inline-block;position:absolute;left:50%;bottom:.4rem;transform:translateX(-50%);width:100%;}
 @media (max-width: 992px) {
-	.oz-mymenu2 {text-align:center;}
 	.oz-mymenu2 .summary {text-align:center;}
-	.oz-mymenu2 .menus .lefts {width:100%;margin:0 auto;}
+	.oz-mymenu2 .menus .lefts {float:none;width:100%;margin:0 auto;}
 	.oz-mymenu2 .menus .lefts .my-charts {width:15rem;margin:0 auto;}
-	.oz-mymenu2 .menus .rights {width:100%;margin-top:1rem;text-align:center;}
+	.oz-mymenu2 .menus .rights {float:none;width:100%;margin-top:1rem;text-align:center;}
 }
+
+/* 마이페이지 & 회원가입 SUMMER */
+.oz-summer {background-color:#438DFF;text-align:center;}
+.oz-summer i {font-size:6rem;color:#fff;}
+.oz-summer h2 {color:#fff;}
+.oz-summer span {color:#fff;margin-top:0.6rem;display:inline-block;}
+
 
 /* floating menu */
 .oa-nfm {position: fixed;bottom:2.18rem;right:0.76rem;height: 5.46rem;z-index: 900;}

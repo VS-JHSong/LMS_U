@@ -22,7 +22,6 @@
 	<!-- visco css-->
 	<link href="assets/css/visco/education.css" rel="stylesheet" type="text/css" />
 	
-
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -37,11 +36,11 @@
 	<!-- apexcharts (반 도넛 차트) -->
 	<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
 
-	<title>전체 > 직무교육 > 공지 </title>
+	<title>전체교육 > 교육이용안내 </title>
 </head>
 <body>
 	<main class="pb-9">
-		<!-- GNB START-->
+		<!-- NEW GNB START-->
 		<section class="gnbs">
 			<article class="container">
 				<div class="clearfix gnb-areas">
@@ -86,10 +85,10 @@
 				</div>
 			</article>
 		</section>
-      	<!-- GNB END-->
+		<!-- NEW GNB END-->
 
 		<!-- USER START -->
-		<section class="oz-mymenu2 mt-1">
+		<section class="oz-mymenu2">
 			<article class="container py-4">
 				<h4 class="text-white fw-bold">홍길동님 환영합니다.</h4>
 				<div class="text-white mt-1">
@@ -177,8 +176,7 @@
 					<i class="material-symbols-outlined pe-2">home</i>
 					<li class="breadcrumb-item">원라인에듀</li>
 					<li class="breadcrumb-item">전체교육</li>
-					<li class="breadcrumb-item">직무교육과정</li>
-					<li class="breadcrumb-item">마케팅</li>
+					<li class="breadcrumb-item">교육이용안내</li>
 				</ol>
 			</nav>
 		</section>
@@ -203,7 +201,7 @@
 						<p onclick = "location.href='education.html'">기업직업훈련카드</p>
 					</div>
 					<div class="s-manu">
-						<p class="on" onclick="location.href='guide_consignment.html'">
+						<p onclick="location.href='guide_consignment.html'">
 							위탁교육안내
 							<i class="material-symbols-outlined">book</i>
 						</p>
@@ -215,7 +213,7 @@
 							환급절차
 							<i class="material-symbols-outlined">auto_stories</i>
 						</p>
-						<p onclick = "location.href='guide_info_use.html'">
+						<p class="on" onclick = "location.href='guide_info_use.html'">
 							교육이용안내
 							<i class="material-symbols-outlined">local_library</i>
 						</p>
@@ -242,7 +240,7 @@
 							<i class="material-symbols-outlined">book</i>
 							위탁교육안내
 						</span>
-						<span class="on" onclick = "location.href='guide_education_progress.html'">
+						<span onclick = "location.href='guide_education_progress.html'">
 							<i class="material-symbols-outlined">play_lesson</i>
 							교육진행절차
 						</span>
@@ -250,7 +248,7 @@
 							<i class="material-symbols-outlined">auto_stories</i>
 							환급절차
 						</span>
-						<span onclick = "location.href='guide_info_use.html'">
+						<span class="on" onclick = "location.href='guide_info_use.html'">
 							<i class="material-symbols-outlined">local_library</i>
 							교육이용안내
 						</span>
@@ -261,142 +259,174 @@
 					</div>
 				</div>
 				<!-- 본문컨텐츠 -->
-				<div class="col-lg-9 oa-bps">
-					<div class="row clearfix bps-su">
-						<p class="l-img"><img src="assets/images/common/@thum-06.png"></p>
-						<div class="su-r">
-							<h2>포스트 코로나 시대의 e비즈니스 인사이트</h2>
-							<div class="r-txts">
-								<p><span>차시</span>16차시</p>
-								<p><span>교육시간</span>28시간 37분</p>
-								<p><span>강사</span><a href="#a">오준석</a></p>
-							</div>
-							<div class="row g-1 r-bts">
-								<div class="col-12  col-md-4">
-									<button class="btn btn-lg btn-danger w-100" type="button">미리보기</button>
-								</div>
-								<div class="col-12  col-md-4">
-									<button class="btn btn-lg btn-muted w-100" type="button" data-bs-toggle="modal" data-bs-target=".consult-modal">신청하기</button>
-								</div>
-							</div>
+				<div class="col-lg-9 oa-cps">
+					<div class="cps-title">
+						<h2>교육이용안내</h2>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">자동 수강, 제출 프로그램 방지 MOTP 시스템 안내</h6>
+						<div>
+							<q>첫 차시와 이후 8차시 단위로 MOTP 인증 필요</q>
+							<q>중간평가, 최종평가, 과제제출 페이지 입장 전 하루 1번씩 인증 필요</q>
 						</div>
 					</div>
-					<ul class="nav nav-tabs row mt-5" role="tablist">
-						<li class="nav-item col">
-							<a class="nav-link active" data-bs-toggle="tab" role="tab">
-								강의소개
-							</a>
-						</li>
-						<li class="nav-item col">
-							<a class="nav-link" data-bs-toggle="tab" role="tab">
-								강의목차
-							</a>
-						</li>
-						<li class="nav-item col">
-							<a class="nav-link" data-bs-toggle="tab" role="tab">
-								학습공지
-							</a>
-						</li>
-						<li class="nav-item col">
-							<a class="nav-link" data-bs-toggle="tab" role="tab">
-								수강후기
-							</a>
-						</li>
-					</ul>
-					<div class="tab-content mt-4" id="tabContent">
-						<div class="bps-nots-view">
-							<div class="view-title">
-								<p><span class="badge bg-info">공통</span><span class="ms-2">2022-12-30 12:23</span></p>
-								<h4 class="mt-2">진도 적립에 장애가 있을 경우 대처방안</h4>
-							</div>
-							<div class="view-attach">
-								<a class="d-block my-1" href="#a">
-									<i class="material-symbols-outlined">description</i>
-									2022_교육데모_2021-00131_비용승인처리.zip
-								</a>
-								<a class="d-block my-1" href="#a">
-									<i class="material-symbols-outlined">description</i>
-									소녀시대.jpg
-								</a>
-							</div>
-							<div class="view-text">
-								진도 적립에 장애가 있을 경우 아래방법을 순서대로 진행해주세요.
-								<br/>
-								<br/>
-								1.Internet Explorer메뉴모음 -> [도구] -> [인터넷옵션]을 클릭<br/>
-								2.[개인정보]탭으로 이동 [고급]을 클릭<br/>
-								3.아래 이미지와 같이 항목을 설정<br/>
-								4.다시 학습을 진행<br/>
-								<br/>
-								<br/>
-								위와 같은 조치를 하고 동영상을 이미 다 학습 하였음에도 불구하고 계속 진도가 나가지 않는다면,
-								동영상 학습창의 화면 왼쪽 하단의 "List"명을 1~2초 간격을 두고 처음부터 차례대로 한 번씩 클릭하신 후 동영상 창을 닫고,
-								[NEXT]버튼을 눌러보시면 다음 단계로 이동 되시는 것을 확인 하실 수 있습니다.
-								<br/>
-								위와 같은 조치에도 불구하고 계속 진도가 나가지 않는다면 고객의 소리 또는 고객행복센터(1588-6559)로 문의 주세요.
-							</div>
-							<div class="view-bts mt-4">
-								<button type="button" class="btn px-4 btn-outline-body me-1">이전</button>
-								<button type="button" class="btn px-4 btn-outline-body">다음</button>
+					<div class="cps-cons">
+						<h6 class="text-info">환급절차</h6>
+						<div>
+							<q>교육진행은 본인 인증을 위해 다음과 같은 페이지에서 휴대폰인증 혹은 아이핀 인증을 필요로 합니다.</q>
+							<ol class="ol-depth">
+								<li>최초 회원가입 시</li>
+								<li>사업장 단체 가입으로 아이디 자동 발급되어 최초 로그인 시</li>
+								<li>최초 과정교육 시작 시</li>
+							</ol>
+						</div>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">사업주 지원 훈련 규정 일일진도제한 안내</h6>
+						<div>
+							<q>사업주 지원 훈련 규정 상 하루 최대 8차시 까지만 수강이 가능합니다.</q>
+						</div>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">수료기준 안내</h6>
+						<div>
+							<q>대부분의 과정의 수료기준은 진도율 80% 이상, 총점 60점 이상입니다.</q>
+							<q>평가 항목이나 반영비율은 과정별 상이할 수있습니다.</q>
+						</div>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">강의 진행 시 주의사항</h6>
+						<div>
+							<q>중간평가는 강의 전체차시 기준 50% 이상 되어야 응시 가능합니다.</q>
+							<q>모든 수강과정의 최종 평가응시와 과제제출은 진도율이 80% 이상 되어야 가능합니다.</q>
+							<q>평가(중간/최종)와 과제는 1회만 응시 가능하며, (재응시 불가) 최종평가는 응시 제한시간이 있습니다.</q>
+							<q>최종평가의 경우 제한시간이 있으며 접속종료 등의 상태에서도 중단없이 계속 흘러가게 됩니다.</q>
+						</div>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">과제 제출시 모사답안 기준 및 처리 안내</h6>
+						<table>
+							<tbody class="align-middle">
+								<colgroup>
+									<col width="25%">
+									<col width="*">
+								</colgroup>
+								<tr>
+									<td colspan="2" class="px-3 text-center bg-info text-white">
+										모사답안 기준
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="px-3 text-center bg-secondary">
+										과제에 있어 타인의 답안을 그대로 복사하거나 일부 문구만을 수정하여 제출한 답안을 말한다.<br/>
+										(모사답안 적용 대상 : 과제(레포트) )
+									</td>
+								</tr>
+								<tr>
+									<td class="px-3 text-center text-info">
+										적용기준 ▶
+									</td>
+									<td class="text-left px-3">
+										<q>기본 정보나 개요를 묻는 문제, 답안이 동일할 수밖에 없는 계산형, 실습형, 학습내용에서 발췌하는 내용은 적용하지 않는다.<br/>(단, 문제에서 제시되지 않은 조건 예를 들어, 도형의 위치, 선 굵기 등이 일치하는 경우는 모사답안 처리대상에 포함된다.)</q>
+										<q>문항별 및 전체 답안이 90%이상 동일한 경우</q>
+										<q>오타, 띄어쓰기, 특수문자 등 내용이 유사하거나 동일한 경우</q>
+										<q>단락의 앞뒤 구성을 바꿔서 동일한 내용의 답안을 제출한 경우</q>
+										<q>문항별 및 전체 답안이 90%이상 동일한 경우</q>
+										<q>사고력 측정형, 사례 제시형, 현업적용형과 같은 문제 유형의 답안이 80%이상 동일한 경우</q>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="cps-cons">
+						<h6 class="text-info">모사답안 처리 방침</h6>
+						<table>
+							<tbody class="align-middle">
+								<colgroup>
+									<col width="25%">
+									<col width="*">
+								</colgroup>
+								<tr>
+									<td colspan="2" class="px-3 text-center bg-primary text-white">
+										모사답안 기준
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="px-3 text-center bg-secondary">
+										해당 문항 및 과제 0점 처리하며, 제출자와 답안 제공자 모두 0점 처리된다.
+									</td>
+								</tr>
+								<tr>
+									<td class="px-3 text-center text-primary">
+										처리절차 ▶
+									</td>
+									<td class="text-left px-3">
+										<q>모사체크 프로그램을 가동한다.</q>
+										<q>첨삭을 진행할 시 모사율이 90%이상인 학습자를 중점적으로 1차 확인을 한다.</q>
+										<q>모사가 의심되는 학습자의 경우 모사답안의심여부에 체크하고, 채점기준에 맞게 첨삭을 진행한 후 점수를 부여한다.</q>
+										<q>첨삭완료 후 교육운영자가 2차 확인을 한다.</q>
+										<q>모사답안이 의심되는 학습자에게 통보하고, 모사답안 여부를 최종 확인한다.</q>
+										<q>모사답안인 경우 교육운영자가 해당 문항 및 과제에 대해 0점 처리한다.</q>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 
-								<button type="button" class="btn px-4 btn-primary float-end" onclick="location.href='education_detail.html'">목록으로</button>
-							</div>
-						</div>
-					</div>
+
+					
 				</div>
 			</div>
 		</article>
 		<!-- contents END-->
 	</main>
+	<!-- footer START -->
+	<footer class="oz-footer navbar-fixed-bottom">
+		<div class="container pt-3 pb-9">
+			<div class="row">
+				<!-- left -->
+				<div class="col-12 col-md-9">
+					<p class="fo-link h6">
+						<span class="pe-2 h-4"><a href="#a">개인정보 취급방침</a></span>
+						<span class="pe-2 h-4"><a href="#a">이용약관</a></span>
+						<span class="pe-2"><a href="#a">사업주지원교육 유의사항</a></span>
+						<span class="pe-2"><a href="#a">본인인증 안내</a></span>
+					</p>
+					<div class="fo-imgs mt-3 clearfix">
+						<img src="assets/images/common/fo-banner01.svg">
+						<img src="assets/images/common/fo-banner02.svg">
+						<img src="assets/images/common/fo-banner03.svg">
+					</div>
+				</div>
 
-<!-- footer START -->
-<footer class="oz-footer navbar-fixed-bottom">
-	<div class="container pt-3 pb-9">
-	<div class="row">
-		<!-- left -->
-		<div class="col-12 col-md-9">
-		<p class="fo-link h6">
-			<span class="pe-2 h-4"><a>개인정보 취급방침</a></span>
-			<span class="pe-2 h-4"><a>이용약관</a></span>
-			<span class="pe-2"><a>사업주지원교육 유의사항</a></span>
-			<span class="pe-2"><a>본인인증 안내</a></span>
-		</p>
-		<div class="fo-imgs mt-3 clearfix">
-			<img src="assets/images/common/fo-banner01.svg">
-			<img src="assets/images/common/fo-banner02.svg">
-			<img src="assets/images/common/fo-banner03.svg">
-		</div>
-		</div>
-
-		<!-- right -->
-		<div class="col-12  col-md-3">
-		<select class="form-select form-select-md" aria-label=".form-select-md example size 3">
-			
-			<option selected>관련사이트</option>
-			<option value="1">One</option>
-			<option value="2">Two</option>
-			<option value="3">Three</option>
-		</select>
-		<div class="row fo-url">
-			<div class="col-6 text-center">
-			<p class="cacao rounded">카카오톡 채널</p>
+				<!-- right -->
+				<div class="col-12  col-md-3">
+					<select class="form-select form-select-md" aria-label=".form-select-md example size 3">                    
+						<option selected>관련사이트</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+					<div class="row fo-url">
+						<div class="col-6 text-center">
+							<p class="cacao rounded">카카오톡 채널</p>
+						</div>
+						<div class="col-6 text-center">
+							<p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-6 text-center">
-			<p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
+			<div class="mt-3">
+				<p>
+					원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
+					TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+					통신판매번호 : 제 2021-서울영등포-0322호 <br />
+				</p>
+				ⓒ 원라인에듀 Allright & Reserved.
 			</div>
 		</div>
-		</div>
-	</div>
-	<div class="mt-3">
-		<p>
-		원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
-		TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
-		통신판매번호 : 제 2021-서울영등포-0322호 <br />
-		</p>
-		ⓒ 원라인에듀 Allright & Reserved. ALLRIGHT & RESERVED.
-	</div>
-	</div>
-</footer>
-<!-- footer END -->    
+	</footer>
+	<!-- footer END -->
 </body>
 </html>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88.858" height="177.794" viewBox="0 0 88.858 177.794">
+  <defs>
+    <filter id="사각형_12899">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_12900">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.161" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="사각형_12901">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-3"/>
+      <feFlood flood-opacity="0.161" result="color-3"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+      <feComposite operator="in" in="color-3"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon-lock01" transform="translate(-615.571 -954.328)">
+    <path id="Icon_ionic-ios-phone-portrait" data-name="Icon ionic-ios-phone-portrait" d="M86.2,2.25H23.261A13.059,13.059,0,0,0,10.125,15.307v151.2a13.445,13.445,0,0,0,13.136,13.533h62.9c7.263,0,12.819-6.231,12.819-13.533V15.307A12.734,12.734,0,0,0,86.2,2.25ZM48.621,11.378H60.527a1.587,1.587,0,0,1,0,3.175H48.621a1.587,1.587,0,0,1,0-3.175Zm6.151,162.714a6.905,6.905,0,1,1,6.905-6.905A6.91,6.91,0,0,1,54.772,174.091Zm37.107-19.446H17.269a.8.8,0,0,1-.794-.794V23.284a.8.8,0,0,1,.794-.794h74.61a.8.8,0,0,1,.794.794V153.851A.8.8,0,0,1,91.879,154.645Z" transform="translate(605.446 952.078)" fill="#54bcc5"/>
+    <g data-type="innerShadowGroup">
+      <rect id="사각형_12899-2" data-name="사각형 12899" width="16" height="16" transform="translate(632 1031)" fill="#dcdcdc"/>
+      <g transform="matrix(1, 0, 0, 1, 615.57, 954.33)" filter="url(#사각형_12899)">
+        <rect id="사각형_12899-3" data-name="사각형 12899" width="16" height="16" transform="translate(16.43 76.67)" fill="#fff"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <rect id="사각형_12900-2" data-name="사각형 12900" width="16" height="16" transform="translate(652 1031)" fill="#dcdcdc"/>
+      <g transform="matrix(1, 0, 0, 1, 615.57, 954.33)" filter="url(#사각형_12900)">
+        <rect id="사각형_12900-3" data-name="사각형 12900" width="16" height="16" transform="translate(36.43 76.67)" fill="#fff"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <rect id="사각형_12901-2" data-name="사각형 12901" width="16" height="16" transform="translate(672 1031)" fill="#dcdcdc"/>
+      <g transform="matrix(1, 0, 0, 1, 615.57, 954.33)" filter="url(#사각형_12901)">
+        <rect id="사각형_12901-3" data-name="사각형 12901" width="16" height="16" transform="translate(56.43 76.67)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
