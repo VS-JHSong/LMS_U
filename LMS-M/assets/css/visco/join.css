@@ -1,0 +1,48 @@
+@import url(common.css);
+
+.og-cons .cons-title {font-size:1.8rem;font-weight:400;text-align:center;color:#438DFF;margin:2.2rem 0;}
+.og-aps .aps-boxs {margin-bottom:2rem;}
+.og-aps .aps-boxs .box-title {position:relative;line-height:1.96rem;font-weight:500;color:#00287A;}
+.og-aps .aps-boxs .box-title button {position: absolute;top:0;right:0;}
+.og-aps .aps-boxs .box-txt {margin-top:0.46rem;border:1px solid #BFBFBF;background-color:#F6F6F6;height:8.4rem;overflow:auto;color:#191919;}
+
+.og-bps .bps-boxs {border: 1px solid #DCDCDC;border-radius:0.4rem;}
+.og-bps .bps-boxs .icons {height:9rem;position:relative;}
+.og-bps .bps-boxs .icons img {position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);}
+.og-bps .bps-boxs .icons img.img01 {height:5.2rem;}
+.og-bps .bps-boxs .icons img.img02 {height:4.2rem;}
+.og-bps .bps-boxs > p {min-height:7.4rem;}
+
+.og-cps .cps-inp {margin-bottom: 1rem;}
+.og-cps .form-label {color:#191919;font-weight:500;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+join_terms			(약관동의)
+join_cert			(인증)
+join_input			(정보입력)
+join_clear			(완료)
+
+pop_vf_terms		(이용약관 전문보기)
+pop_vf_Policy		(개인정보보호정책 전문보기)
+pop_vf_acs			(ACS안내 전문보기)
+
+
+<span class="material-symbols-outlined">
+join_left
+</span>
+
+
+*/

@@ -1,6 +1,5 @@
-@import url(common.css);odal
+@import url(common.css);
 
-.oe-aps-summary {background-color: #F0F3F7;}
 .oe-aps-summary {background-color: #F0F3F7;}
 .oe-aps-summary label {min-width:3rem;}
 .oe-aps-summary .s-back button {position: relative;}
