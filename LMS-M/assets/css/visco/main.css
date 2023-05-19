@@ -67,6 +67,7 @@
 .om-aps01 .area-02 .emp > div > div img:hover {transform: scale(1.2);transition-duration: 0.5s;cursor:pointer;}
 
 .om-aps02 {border-top:2px solid #767676;}
+.om-aps02 .imgs img {width:9.2rem;}
 
 .om-aps03 {height:auto;background-image:url('../../../assets/images/common/img-view01.png');background-repeat: no-repeat;background-position: 50% 50%;background-size:100% auto;background-color:#767676;}
 @media (max-width: 992px) {

@@ -26,10 +26,7 @@
 .oa-common .h-nav .s-menu span:hover {cursor:pointer;color:#191919;font-weight:400;}
 .oa-common .h-nav .s-menu span:hover i {font-variation-settings:'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 48;}
 
-.nav-tabs .nav-link {text-align: center;color:#999;}
-.nav-tabs .nav-link.active {color:#191919;}
-.tab-pane h6 {margin-bottom:0.8rem;font-weight: 500;}
-.tab-pane .pane-cons {margin-bottom:1.6rem;}
+
 
 .oa-aps .bg-cover {height:12.5rem;background-image:url('../../../assets/images/educate/bg-@sample01.png');background-repeat: no-repeat;background-position: 50% 50%;background-size:auto 100%;overflow:hidden;position: relative;text-align: center;}
 .oa-aps .bg-cover form {width:50%;margin: 0 auto;margin-top:2.1rem;}

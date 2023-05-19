@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--swiper-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<!-- App Css-->
+	<!--link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" /-->
+	<!-- Bootstrap.min Css -->
+	<!--link href="assets/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" type="text/css" /-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<!-- Icons Css -->
+	<!--link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" /-->
+	<!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<!--link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"-->
+	<!-- visco css-->
+	<link href="assets/css/visco/join.css" rel="stylesheet" type="text/css" />
+	
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!--jquery-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<!--swiper-->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!--ezhelp-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://939.co.kr/runezhelp.js" charset="utf-8"></script>
+	<script src="https://hiserver.co.kr/runezchat.js" charset="utf-8"></script>
+	<!-- apexcharts (반 도넛 차트) -->
+	<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+	<title>회원가입 > 약관동의 </title>
+</head>
+<body>
+    <main class="pb-9">
+		<!-- NEW GNB START-->
+		<section class="gnbs">
+			<article class="container">
+				<div class="clearfix gnb-areas">
+					<div class="g-logo" onclick="location.href='index.html'">
+						<img class="" src="assets/images/common/edu-logo.svg">
+					</div>
+					<!-- 웹 -->
+					<div class="g-menu">
+						<span class="h5" onclick="location.href='education.html'">전체교육</span>
+						<span class="h5" onclick="location.href='about_us.html'">교육원 소개</span>
+						<span class="h5" onclick="location.href='support.html'">고객지원</span>
+					</div>
+					<div class="gr-web">
+						<form class="position-relative me-3">
+							<input class="form-control" type="search" aria-label="Search">
+							<button class="bg-transparent position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+								<i class="material-symbols-outlined h5">search</i>
+							</button>
+						</form>
+						<button type="button" onclick="location.href='education_inquiry.html'" class="btn btn-primary"><i class="material-symbols-outlined">outgoing_mail</i>교육문의</button>
+					</div>
+					<!-- 모바일 -->
+					<div class="gr-mobile">
+						<p class="mo-search"><i class="material-symbols-outlined">search</i></p>
+						<p class="mo-inq" onclick="location.href='education_inquiry.html'"><i class="material-symbols-outlined h5">outgoing_mail</i></p>
+						<p class="mo-more d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="material-symbols-outlined">menu</i></p>
+					</div>
+				</div>
+				<!-- 모바일 메뉴확장 -->
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+					<div class="offcanvas-header">
+						<!--h5 class="offcanvas-title" id="offcanvasRightLabel">원라인에듀</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button-->
+						<p data-bs-dismiss="offcanvas" aria-label="Close"><i class="material-symbols-outlined">close</i></p>
+					</div>
+					
+					<div class="offcanvas-body">
+						<h1 onclick="location.href='education.html'">전체교육</h1>
+						<h1 onclick="location.href='about_us.html'">교육원 소개</h1>
+						<h1 onclick="location.href='support.html'">고객지원</h1>
+					</div>
+				</div>
+			</article>
+		</section>
+		<!-- NEW GNB END-->
+
+		<!-- Summary START -->
+		<section class="oz-summer">
+			<article class="container py-4">
+				<div><i class="material-symbols-outlined h1" style="font-variation-settings:'FILL'1">person</i></div>
+				<h2>마이페이지</h2>
+				<span>
+					이 데이터는 나에게만 공개됩니다.<br/>
+					국가안전교육원은 사용자의 개인정보 보호와 보안을 중요하게 생각합니다.
+				</span>
+			</article>
+		</section>
+		<!-- Summary END -->
+
+		<!-- Navigation START -->
+		<section class=" oz-nav pt-2 pb-2" aria-label="breadcrumb">
+			<nav class="container">
+				<ol class="justify-content-end breadcrumb">
+					<i class="material-symbols-outlined pe-2">home</i>
+					<li class="breadcrumb-item">원라인에듀</li>
+					<li class="breadcrumb-item">회원가입</li>
+				</ol>
+			</nav>
+		</section>
+		<!-- Navigation END -->
+
+
+		<!-- main START -->
+		<div class="container">
+			<div class="mt-4">
+			</div>
+			<div class="row mb-5">
+			<div class="col-md-12 col-lg-12">
+				<div class="card rounded-3 border-0 mt-4">
+				<!-- Card header -->
+				<div class="border-bottom-0 p-0">
+					<div>                  
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs row" role="tablist">
+						<li class="nav-item col p-0">
+							<a class="nav-link active" data-bs-toggle="tab" href="#profile" role="tab">
+								<span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+								<span class="d-none d-sm-block text-center">내정보</span>
+							</a>
+						</li>
+						<li class="nav-item col p-0">
+							<a class="nav-link" data-bs-toggle="tab" href="#history" role="tab">
+								<span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+								<span class="d-none d-sm-block text-center">내활동</span>
+							</a>
+						</li>                    
+					</ul>
+					</div>
+				</div>
+				<div class="tab-content" id="tabContent">
+					<!-- 내정보 -->
+					<div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="my-4">                      
+						<div class="d-none d-lg-block text-center mb-5">
+						<label class="position-relative mb-2" for="uploadfile-1" title="Replace this pic">                        
+							<span class="avatar avatar-xl">
+							<img id="uploadfile-1-preview" class="avatar-img rounded-circle border border-white" src="assets/images/mypage/NoPath - 복사본 (31).png" alt="">
+							</span>
+						</label>
+						<h5 class="card-title mb-0 text-secondary small mb-1">1:1비율 50KB이내</h5>
+						<label class="btn btn-outline-primary mb-0" for="uploadfile-1">사진변경</label>
+						<input id="uploadfile-1" class="form-control d-none" type="file">                      
+						</div>
+					</div>                                                                          
+					<hr />   
+					<div class="card-body">
+						<div class="row mb-3">
+							<!-- 아이디 -->
+						<div class="col-lg-2 col-md-4 col-12">
+							<h5>아이디</h5>
+						</div>
+						<div class="col-lg-10 col-md-8 col-12">
+							abcd12@visioncosmo.net                  
+						</div>
+						</div>
+						<!-- 비밀번호 -->
+						<div class="row mb-3">
+						<div class="col-lg-2 col-md-4 col-12">
+							<h5>비밀번호</h5>
+						</div>
+						<div class="col-lg-10 col-md-8 col-12">
+							<span class="pe-1"><button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#password_change">비밀번호 변경</button></span>                        
+						</div>
+						</div>
+						<!--비밀번호 변경모달-->
+						<div class="modal fade" id="password_change" tabindex="-1" aria-labelledby="password_changeTitle" style="display: none;" aria-modal="true" role="dialog">
+						<div class="modal-dialog modal-dialog-centered">
+							<div class="modal-content">
+							<div class="modal-header">
+								<h1 class="modal-title fs-5" id="password_changeTitle">비밀번호 변경</h1>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<p>비밀번호를 변경하시겠습니까?</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+								<button type="button" class="btn btn-primary">확인</button>
+							</div>
+							</div>
+						</div>
+						</div>
+						<!-- 성별 -->
+						<div class="row mb-3">
+						<div class="col-lg-2 col-md-4 col-12">
+							<h5>성별</h5>
+						</div>
+						<div class="col-lg-10 col-md-8 col-12">
+							남
+						</div>
+						</div>
+						<!-- 이름 -->
+						<div class="row mb-3">
+						<div class="col-lg-2 col-md-4 col-12">
+							<h5>이름</h5>
+						</div>
+						<div class="col-lg-10 col-md-8 col-12">
+							홍길동
+						</div>
+						</div>
+						<!-- 생년월일 -->
+						<div class="row mb-3">
+						<div class="col-lg-2 col-md-4 col-12">
+							<h5>생년월일</h5>
+						</div>
+						<div class="col-lg-10 col-md-8 col-12">
+							1992-08-23
+						</div>
+						</div>
+						<!-- 휴대전화 -->
+						<div class="row mb-3">
+						<div class="col-lg-2 col-md-4 col-12">
+							<h5>휴대전화</h5>
+						</div>
+						<div class="col-lg-10 col-md-8 col-12">
+							010-0100-0010
+						</div>
+						</div>
+					</div>                
+					<div class="pt-4 pb-4" style="background-color: #F2F2F2;">                  
+						<ul class="small">
+						<li>회원탈퇴 신청 후에는 원라인에듀 웹사이트에서 이용하셨던 수강정보, 결제 및 포인트, 시험 및 테스트 정보, 개인정보 등 모든 정보가 삭제되며 복구가 불가능 합니다.</li>
+						<li>회원탈퇴 신청후에는 0일 동안은 회원가입이 불가능합니다.</li>                    
+						</ul>
+						<div class="text-end">                      
+						<a href="" class="small text-dark fw-bold pe-4" data-bs-toggle="modal" data-bs-target="#withdrawal">회원탈퇴하기</a>
+						</div>                  
+					</div>              
+					<div>
+						<button type="button" class="btn btn-primary mt-4 w-100" data-bs-toggle="modal" data-bs-target="#infosave">내정보 저장</button>
+					</div>
+
+					<!--회원탈퇴 모달-->
+					<div class="modal fade" id="withdrawal" tabindex="-1" aria-labelledby="withdrawalTitle" style="display: none;" aria-modal="true" role="dialog">
+						<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+							<h1 class="modal-title fs-5" id="withdrawalTitle">탈퇴</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+							<p>회원을 탈퇴하시겠습니까?</p>
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+							<button type="button" class="btn btn-primary">회원탈퇴하기</button>
+							</div>
+						</div>
+						</div>
+					</div>                  
+					<!--내정보 모달-->
+					<div class="modal fade" id="infosave" tabindex="-1" aria-labelledby="infosaveTitle" style="display: none;" aria-modal="true" role="dialog">
+						<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+							<h1 class="modal-title fs-5" id="infosaveTitle">저장</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+							<p>정보를 저장하시겠습니까?</p>
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+							<button type="button" class="btn btn-primary">저장하기</button>
+							</div>
+						</div>
+						</div>
+					</div>
+					</div>  
+								
+					<!-- 내 활동 시작 -->
+					<div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+
+					<div class="row my-4">
+						<div class="col">
+						<p class="h4">진행중인 교육</p>
+						</div>
+						<div class="col text-end">
+						<button type="button" class="btn btn-outline-dark" onclick="location.href='classroom.php'">내 강의실로 이동하기</button>
+						</div>
+					</div>
+					<!-- 교육진행상황 -->
+					<div class="row mt-4">
+						<div class="col-lg-4 col-sm-12">
+						<div class="card">
+							<div class="text-center mt-4">
+							<p class="text-primary mb-1 small">의료교육 > 직무교육</p>
+							<p class="pb-2 fw-bold">Good Morning, 고객 만족 서비스</p>                          
+							</div>
+							<div class="mx-5"> 
+							<canvas id="myChart"></canvas>
+							<div class="text-center">
+								<p class="mb-0 text-secondary">과정진도율</p>
+								<p class="h1 fw-bold" style="color: #00287A;">0%</p>
+							</div>
+							</div>
+							<div class="card-body row">
+							<div class="col-4">
+								<p>수강기간</p>
+								<p>복습기간</p>
+								<p>최근학습일</p>
+							</div>
+							<div class="col-8">
+								<p>2020.11.10 ~ 2020.12.09</p>
+								<p>2022.01.20</p>
+								<p>없음<span class="text-danger">(종료 D-8)</span></p>
+							</div>
+							</div>
+						</div>
+						</div>
+						<div class="col-lg-4 col-sm-12">
+						<div class="card">
+							<div class="text-center mt-4">
+							<p class="text-primary mb-1 small">의료교육 > 직무교육</p>
+							<p class="pb-2 fw-bold">인정받는 멀티플레이어의 Followership 발휘하기</p>
+							</div>
+							<div class="mx-5">
+							<canvas id="myChart2"></canvas>
+							<div class="text-center">
+								<p class="mb-0 text-secondary">과정진도율</p>
+								<p class="h1 fw-bold" style="color: #00287A;">100%</p>
+							</div>
+							</div>
+							<div class="card-body row">
+							<div class="col-4">
+								<p>수강기간</p>
+								<p>복습기간</p>
+								<p>최근학습일</p>
+							</div>
+							<div class="col-8">
+								<p>2020.11.10 ~ 2020.12.09</p>
+								<p>2022.01.20</p>
+								<p>없음<span class="text-danger">(종료 D-8)</span></p>
+							</div>
+							</div>
+						</div>
+						</div>
+						<div class="col-lg-4 col-sm-12">
+						<div class="card">
+							<div class="text-center mt-4">
+							<p class="text-primary mb-1 small">의료교육 > 직무교육</p>
+							<p class="pb-2 fw-bold">[비즈니스 명견만리] 4차 산업혁명시대의 생각스킬과 공유경제의 미래</p>
+							</div>
+							<div class="mx-5"> 
+							<canvas id="myChart3"></canvas>
+							<div class="text-center">
+								<p class="mb-0 text-secondary">과정진도율</p>
+								<p class="h1 fw-bold" style="color: #00287A;">50%</p>
+							</div>
+							</div>
+							<div class="card-body row">
+							<div class="col-4">
+								<p>수강기간</p>
+								<p>복습기간</p>
+								<p>최근학습일</p>
+							</div>
+							<div class="col-8">
+								<p>2020.11.10 ~ 2020.12.09</p>
+								<p>2022.01.20</p>
+								<p>없음<span class="text-danger">(종료 D-8)</span></p>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<!-- 종료된 과정 -->
+					<div class="row mt-2 align-items-center" style="background-color: #F0F3F7;">
+						<div class="col py-3 mb-0" style="color: #00287A;">
+						<i class="bi bi-trophy-fill h3"></i>
+						<span>총 12개의 종료된 과정이 있습니다.</span>
+						</div>
+						<div class="col py-3 mb-0 text-end">
+						<a href="endClassroom.html"><p class="mb-0">학습종료과정보기<i class="bi bi-chevron-right"></i></p></a>
+						</div>
+					</div>
+					<!-- 내 수강후기 -->
+					<div class="mt-4">
+						<div class="col">
+						<p class="h4">내 수강후기</p>
+						</div>
+						<hr />
+						<ul class="list-group list-group-flush">
+						<!-- list group -->
+						<li class="list-group-item py-3 py-lg-0 px-0">
+							<!-- row -->
+							<div class="row align-items-center py-3" onclick = "location.href='education_detail_review.html'">
+							<!-- title -->
+							<div class="col-10 col-md-9">
+								<p>
+								<img src="assets/images/educate/그룹 11719.png" class="img-fluid">
+								<span><a class="text-decoration-none text-inherit text-dark h5">홍길동</a><span class="small text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</span></span>                              
+								</p>
+							</div>
+							<!-- 별점 -->
+							<div class="col-2 text-lg-end text-md-end col-md-3 text-primary">
+								<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+							</div>
+							<!-- text -->
+							<div class="mt-2 small lh-1">
+								<a class="text-decoration-none text-inherit">
+								<span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+								</a>
+							</div>                          
+							</div>
+						</li>
+						<!-- list group -->                          
+						<li class="list-group-item py-3 py-lg-0 px-0">
+							<!-- row -->
+							<div class="row align-items-center py-3" onclick = "location.href='education_detail_review.html'">                          
+							<!-- title -->  
+							<div class="col-10 col-md-9">                                                                                  
+								<p>
+								<img src="assets/images/educate/그룹 11719.png" class="img-fluid">
+								<span><a class="text-decoration-none text-inherit text-dark h5">홍길동</a><span class="small text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</span></span>                              
+								</p>
+							</div>
+							<!-- 별점 -->
+							<div class="col-2 text-lg-end text-md-end col-md-3 text-primary">
+								<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+							</div>
+							<!-- text -->
+							<div class="mt-2 small lh-1">
+								<a class="text-decoration-none text-inherit">
+								<span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+								</a>
+							</div>                          
+							</div>
+						</li>
+						<!-- list group -->
+						<li class="list-group-item py-3 py-lg-0 px-0">
+							<!-- row -->
+							<div class="row align-items-center py-3" onclick = "location.href='education_detail_review.html'">                          
+							<!-- title -->  
+							<div class="col-10 col-md-9">                                                                                  
+								<p>
+								<img src="assets/images/educate/그룹 11719.png" class="img-fluid">
+								<span><a class="text-decoration-none text-inherit text-dark h5">홍길동</a><span class="small text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</span></span>                              
+								</p>
+							</div>
+							<!-- 별점 -->
+							<div class="col-2 text-lg-end text-md-end col-md-3 text-primary">
+								<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+							</div>
+							<!-- text -->
+							<div class="mt-2 small lh-1">
+								<a class="text-decoration-none text-inherit">
+								<span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+								</a>
+							</div>                          
+							</div>
+						</li>
+						<!-- list group -->
+						<li class="list-group-item py-3 py-lg-0 px-0">
+							<!-- row -->
+							<div class="row align-items-center py-3" onclick = "location.href='education_detail_review.html'">                          
+							<!-- title -->  
+							<div class="col-10 col-md-9">                                                                                  
+								<p>
+								<img src="assets/images/educate/그룹 11719.png" class="img-fluid">
+								<span><a class="text-decoration-none text-inherit text-dark h5">홍길동</a><span class="small text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</span></span>                              
+								</p>
+							</div>
+							<!-- 별점 -->
+							<div class="col-2 text-lg-end text-md-end col-md-3 text-primary">
+								<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+							</div>
+							<!-- text -->
+							<div class="mt-2 small lh-1">
+								<a class="text-decoration-none text-inherit">
+								<span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+								</a>
+							</div>
+							</div>
+						</li>
+						<!-- list group -->
+						<li class="list-group-item py-3 py-lg-0 px-0">
+							<!-- row -->
+							<div class="row align-items-center py-3" onclick = "location.href='education_detail_review.html'">                          
+							<!-- title -->  
+							<div class="col-10 col-md-9">                                                                                  
+								<p>
+								<img src="assets/images/educate/그룹 11719.png" class="img-fluid">
+								<span><a class="text-decoration-none text-inherit text-dark h5">홍길동</a><span class="small text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</span></span>                              
+								</p>
+							</div>
+							<!-- 별점 -->
+							<div class="col-2 text-lg-end text-md-end col-md-3 text-primary">
+								<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+							</div>
+							<!-- text -->
+							<div class="mt-2 small lh-1">
+								<a class="text-decoration-none text-inherit">
+								<span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+								</a>
+							</div>                          
+							</div>
+						</li>
+						</ul>
+						<hr />
+					</div>                  
+					<!-- 내 문의 -->
+					<div class="mt-4">
+						<div class="col">
+						<p class="h4">내 문의</p>
+						</div>
+						<hr />
+						<table class="table table-border-0 table-hover">
+						<tbody class="table-border-0">
+							<tr onclick = "location.href='mypage_notice.html'">
+							<td class="border-bottom-1">
+								<span class="pe-2 text-primary">[이의제기]</span>답변해주세요.
+								<p>
+								<i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"></span>
+								</p>
+								<div class="text-end">
+								<span class="badge border border-dark text-dark">답변대기중</span>
+								</div>                            
+							</td>
+							</tr>
+							<tr>
+							<td class="border-bottom-1">
+								<span class="pe-2 text-primary">[시스템]</span>수수료 출력에 대한 건의사항 있습니다.
+								<i class="bi bi-paperclip"></i>
+								<p>
+								<i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"></span>
+								</p>
+								<div class="text-end">
+								<span class="badge border border-primary text-primary">답변준비중</span>
+								</div>                            
+							</td>
+							</tr>                                                
+							<tr>
+							<td>
+								<span class="pe-2 text-primary">[교육]</span>법정의무교육에 관한 문의
+								<p>
+								<i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"></span>
+								</p>
+								<div class="text-end">
+								<span class="badge border border-secondary text-secondary">답변완료</span>
+								</div>                            
+							</td>
+							</tr>
+						</tbody>
+						</table>                                      
+					</div>
+					<!-- 내 학습질의 -->
+					<div class="mt-4">
+						<div class="col">
+						<p class="h4">내 학습질의</p>
+						</div>
+						<hr />
+						<ul class="list-group list-group-flush">
+						<div class="align-items-center text-center mb-4 text-secondary">
+							<p class="display-1 mb-0"><i class="bi bi-inbox"></i></p>
+							<span>내가 작성한 글이 없습니다.</span>
+						</div>
+						</ul>
+						<hr />
+					</div>   
+					<!-- 접속 이력 -->
+					<div class="mt-4">
+						<div class="col">
+						<p class="h4">접속 이력</p>
+						</div>
+						<hr />
+						<table class="table table-border-0 table-hover">
+						<thead>
+							<tr>
+							<th>접속 일시</th>
+							<th>OS</th>
+							<th>IP</th>
+							<th>브라우저</th>
+							</tr>
+						</thead>
+						<tbody class="table-border-0">
+							<tr>
+							<td class="border-bottom-1">
+								2022-10-31 09:30
+							</td>
+							<td>
+								Windows 10
+							</td>
+							<td>
+								192.168.0.1
+							</td>
+							<td>
+								Chrome
+							</td>
+							</tr>
+							<tr>
+							<td class="border-bottom-1">
+								2022-10-31 09:30
+							</td>
+							<td>
+								Windows 10
+							</td>
+							<td>
+								192.168.0.1
+							</td>
+							<td>
+								Chrome
+							</td>
+							</tr>
+							<tr>
+							<td class="border-bottom-1">
+								2022-10-31 09:30
+							</td>
+							<td>
+								Windows 10
+							</td>
+							<td>
+								192.168.0.1
+							</td>
+							<td>
+								Chrome
+							</td>
+							</tr>
+						</tbody>
+						</table>                                      
+					</div>               
+					</div>                                                
+				</div>                                  
+				</div>
+			</div>
+			</div>
+		</div>    
+    </main>
+    
+    <!-- footer START -->
+    <footer class="oz-footer navbar-fixed-bottom">
+      <div class="container pt-3 pb-9">
+          <div class="row">
+              <!-- left -->
+              <div class="col-12 col-md-9">
+                  <p class="fo-link h6">
+                      <span class="pe-2 h-4"><a>개인정보 취급방침</a></span>
+                      <span class="pe-2 h-4"><a>이용약관</a></span>
+                      <span class="pe-2"><a>사업주지원교육 유의사항</a></span>
+                      <span class="pe-2"><a>본인인증 안내</a></span>
+                  </p>
+                  <div class="fo-imgs mt-3 clearfix">
+                      <img src="assets/images/common/fo-banner01.svg">
+                      <img src="assets/images/common/fo-banner02.svg">
+                      <img src="assets/images/common/fo-banner03.svg">
+                  </div>
+              </div>
+
+              <!-- right -->
+              <div class="col-12  col-md-3">
+                  <select class="form-select form-select-md" aria-label=".form-select-md example size 3">                    
+                      <option selected>관련사이트</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                  </select>
+                  <div class="row fo-url">
+                      <div class="col-6 text-center">
+                          <p class="cacao rounded">카카오톡 채널</p>
+                      </div>
+                      <div class="col-6 text-center">
+                          <p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-3">
+              <p>
+                  원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
+                  TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+                  통신판매번호 : 제 2021-서울영등포-0322호 <br />
+              </p>
+              ⓒ 원라인에듀 Allright & Reserved. ALLRIGHT & RESERVED.
+          </div>
+      </div>
+    </footer>
+    <!-- footer END --> 
+  </body>
+  <script type="text/javascript"> 
+    var num = 0;
+    var num2 = 1;
+    var num3 = 0.5;
+    var data = {
+          labels: [
+            "1",
+          ],
+          datasets: [{
+            data: [num, 1-num],
+            backgroundColor: [
+                "#00287A"                
+            ]
+          }]
+        };
+    var data2 = {
+      labels: [
+        "2",
+      ],
+      datasets: [{
+        data: [num2, 1-num2],
+        backgroundColor: [
+            "#00287A"                
+        ]
+      }]
+    };
+    var data3 = {
+      labels: [
+        "3",
+      ],
+      datasets: [{
+        data: [num3, 1-num3],
+        backgroundColor: [
+            "#00287A"                
+        ]
+      }]
+    };
+    var ctx = document.getElementById("myChart");
+    var ctx2 = document.getElementById("myChart2");
+    var ctx3 = document.getElementById("myChart3");
+
+    // And for a doughnut chart
+    var myDoughnutChart = new Chart(ctx, {
+          type: 'doughnut',
+          data: data,
+          options: {
+            legend: { 
+              display: false,
+              responsive: true, 
+            }, 
+            events:[],  
+            cutoutPercentage:80,       
+            animation:false, 
+            rotation: 1 * Math.PI,
+            circumference: 1 * Math.PI
+          }
+        });
+        // And for a doughnut chart
+    var myDoughnutChart = new Chart(ctx2, {
+          type: 'doughnut',
+          data: data2,
+          options: {
+            legend: { 
+              display: false,
+              responsive: true, 
+            }, 
+            events:[],  
+            cutoutPercentage:80,       
+            animation:false, 
+            rotation: 1 * Math.PI,
+            circumference: 1 * Math.PI
+          }
+        });
+        // And for a doughnut chart
+    var myDoughnutChart = new Chart(ctx3, {
+          type: 'doughnut',
+          data: data3,
+          options: {
+            legend: { 
+              display: false,
+              responsive: true, 
+                          
+            }, 
+            events:[],        
+            cutoutPercentage:80,       
+            animation:false, 
+            rotation: 1 * Math.PI,
+            circumference: 1 * Math.PI
+          }
+        });
+    </script> 
+</html>

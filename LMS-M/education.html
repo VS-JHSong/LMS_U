@@ -37,6 +37,7 @@
 	<script src="https://hiserver.co.kr/runezchat.js" charset="utf-8"></script>
 	<!-- apexcharts (반 도넛 차트) -->
 	<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+	<script src="assets/js/vc_chart.js"></script>
 
 	<title>전체교육</title>
 </head>
@@ -120,53 +121,13 @@
 							<div id="chart" dir="ltr"></div>
 							<h6 style="color:#f4f4f4;position:absolute;left:50%;top:60%;transform:translate(-50%, -50%);">총진행율</h6>
 						</div>
-						<script type="text/javascript">
-							var options = {
-								series: [70],
-								colors: ['#42D8FF'],
-								chart: {
-									type: 'radialBar',
-									sparkline: {
-									enabled: true,
-									}
-								},
-								plotOptions: {
-									radialBar: {
-										startAngle: -90,
-										endAngle: 90,
-										dataLabels: {
-											name: {
-											show: false
-											},
-											value: {
-											offsetY: -2,
-											fontSize: '200%',
-											color: '#fff',
-											}
-										},
-										hollow: {
-										size: '100%',
-										},
-										track: {
-										show: true,
-										strokeWidth: '100%',
-										background: '#999',
-										opacity: .5,
-										margin: -20,
-										}
-									}
-								},
-							  };
-							  var chart = new ApexCharts(document.querySelector("#chart"), options);
-							  chart.render();
-						</script>
 					</div>
 					<div class="rights">
 						<p class="btn btn-outline-light">
 							<i class="material-symbols-outlined">contact_mail</i>
 							<span>내 강의실</span>
 						</p>
-						<p class="btn btn-outline-light">
+						<p class="btn btn-outline-light" onclick="location.href='mypage.html'">
 							<i class="material-symbols-outlined">manage_search</i>
 							<span>마이페이지</span>
 						</p>
