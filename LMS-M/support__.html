@@ -20,9 +20,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<!--link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"-->
 	<!-- visco css-->
-	<link href="assets/css/visco/about.css" rel="stylesheet" type="text/css" />
-
-
+	<link href="assets/css/visco/mypage.css" rel="stylesheet" type="text/css" />
+	
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -36,13 +35,9 @@
 	<script src="https://hiserver.co.kr/runezchat.js" charset="utf-8"></script>
 	<!-- apexcharts (반 도넛 차트) -->
 	<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
-	<!--AOS JS (인증서)-->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<!--google map JS-->
-	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script-->
 	<script src="assets/js/vc_chart.js"></script>
 
-	<title>OA:About us</title>
+	<title>고객지원</title>
 </head>
 <body>
 	<main>
@@ -150,15 +145,102 @@
 		<!-- LOGIN USER END -->
 
 		<!-- Navigation START -->
-		<section class="oz-nav type" aria-label="breadcrumb">
+		<section class=" oz-nav pt-2 pb-2" aria-label="breadcrumb">
 			<nav class="container">
 				<ol class="justify-content-end breadcrumb">
-					<i class="material-symbols-outlined">home</i>
+					<i class="material-symbols-outlined pe-2">home</i>
 					<li class="breadcrumb-item">원라인에듀</li>
-					<li class="breadcrumb-item" aria-current="page">교육원소개</li>
+					<li class="breadcrumb-item">마이페이지</li>
 				</ol>
 			</nav>
 		</section>
 		<!-- Navigation END -->
+
+
+
+
+
+
+	 
 	</main>
+	
+	<!-- footer START -->
+	<footer class="oz-footer navbar-fixed-bottom">
+	<div class="container pt-3 pb-9">
+		<div class="row">
+			<!-- left -->
+			<div class="col-12 col-md-9">
+				<p class="fo-link h6">
+					<span class="pe-2 h-4"><a>개인정보 취급방침</a></span>
+					<span class="pe-2 h-4"><a>이용약관</a></span>
+					<span class="pe-2"><a>사업주지원교육 유의사항</a></span>
+					<span class="pe-2"><a>본인인증 안내</a></span>
+				</p>
+				<div class="fo-imgs mt-3 clearfix">
+					<img src="assets/images/common/fo-banner01.svg">
+					<img src="assets/images/common/fo-banner02.svg">
+					<img src="assets/images/common/fo-banner03.svg">
+				</div>
+			</div>
+
+			<!-- right -->
+			<div class="col-12  col-md-3">
+				<select class="form-select form-select-md" aria-label=".form-select-md example size 3">                    
+					<option selected>관련사이트</option>
+					<option value="1">One</option>
+					<option value="2">Two</option>
+					<option value="3">Three</option>
+				</select>
+				<div class="row fo-url">
+					<div class="col-6 text-center">
+						<p class="cacao rounded">카카오톡 채널</p>
+					</div>
+					<div class="col-6 text-center">
+						<p class="n-blog text-white rounded"><span class="fw-bolder">N</span> 블로그</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="mt-3">
+			<p>
+				원라인에듀 | 대표 : 이주영 | 주소 : 서울 영등포구 선유로 130 에이스 하이테크시티3 705호 원라인에듀 <br />
+				TEL : 1811-0018,1811-0014 | FAX : 050-8094-0019 | 사업자등록번호 : 7978600772 <br />
+				통신판매번호 : 제 2021-서울영등포-0322호 <br />
+			</p>
+			ⓒ 원라인에듀 Allright & Reserved. ALLRIGHT & RESERVED.
+		</div>
+	</div>
+	</footer>
+	<!-- footer END -->   
+	<script type="text/javascript">
+	var options = {
+		series: [50],
+		chart: {
+		type: 'radialBar',          
+		sparkline: {
+			enabled: true
+		}
+		},
+		plotOptions: {
+		radialBar: {
+			startAngle: -90,
+			endAngle: 90,            
+			dataLabels: {
+			name: {
+				show: false
+			},
+			value: {                
+				offsetY: -2,
+				fontSize: '15px'
+			}
+			}
+		}
+		},                    
+		};
+
+		var chart = new ApexCharts(document.querySelector("#chart"), options);
+		chart.render();            
+	</script>
 </body>
+
+</html>

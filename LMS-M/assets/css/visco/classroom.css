@@ -1,1 +1,18 @@
 @import url(common.css);
+
+
+.modal-header {position: relative;background-color:#fff;}
+.modal-header button {position: absolute;top:50%;right:2rem;transform:translateY(-50%);font-size:2rem;}
+
+
+
+
+
+
+/*
+						<div class="modal-header container">
+							<h5 class="text-danger">최종평가</h5>
+							<h1 class="modal-title" id="evaluationNoticeLabel">병원CS A부터 Z까지</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+*/

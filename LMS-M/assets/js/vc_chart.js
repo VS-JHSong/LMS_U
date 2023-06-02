@@ -37,11 +37,7 @@ $(document).ready(function () {
 		},
 		};
 		var chart = new ApexCharts(document.querySelector("#chart"), options);
-		var chart2 = new ApexCharts(document.querySelector("#chart2"), options);
-		var chart3 = new ApexCharts(document.querySelector("#chart3"), options);
 		chart.render();
-		chart2.render();
-		chart3.render();
 });
 
 
