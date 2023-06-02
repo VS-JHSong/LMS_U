@@ -143,7 +143,7 @@
 			</article>
 		</section>
 		<!-- LOGIN USER END -->
-
+		
 		<!-- Navigation START -->
 		<section class=" oz-nav pt-2 pb-2" aria-label="breadcrumb">
 			<nav class="container">
@@ -161,7 +161,412 @@
 
 
 
-	 
+	<!-- main START -->            
+	<div class="container">
+		<div class="mt-4">
+		<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+			<ol class="breadcrumb justify-content-end">
+			<i class="bi bi-house-door-fill pe-2"></i>
+			<li class="breadcrumb-item text-muted">원라인에듀</a></li>
+			<li class="breadcrumb-item text-muted">고객지원</a></li>              
+			<li class="breadcrumb-item active" aria-current="page">공지사항</li>
+			</ol>
+		</nav>
+		</div>
+		<div class="row mb-5">          
+		<div class="col-md-12 col-lg-12">            
+			<div class="card rounded-3 border-0 mt-4">
+			<!-- Card header -->
+			<div class="border-bottom-0 p-0">
+				<div class="">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs row" role="tablist">
+					<li class="nav-item col p-0">
+						<a class="nav-link active" data-bs-toggle="tab" href="#notice" role="tab">                            
+							<span class="d-none d-sm-block text-center">공지사항</span>
+						</a>
+					</li>
+					<li class="nav-item col p-0">
+						<a class="nav-link" data-bs-toggle="tab" href="#FAQ" role="tab">                            
+							<span class="d-none d-sm-block text-center">자주묻는질문</span>
+						</a>
+					</li>
+					<li class="nav-item col p-0">
+						<a class="nav-link" data-bs-toggle="tab" href="#review" role="tab">                            
+							<span class="d-none d-sm-block text-center">수강후기</span>
+						</a>  
+					</li>
+				</ul>
+				</div>
+			</div>      
+
+			<div class="tab-content" id="tabContent">
+				<!-- 공지사항 -->
+				<div class="tab-pane fade active show" id="notice" role="tabpanel" aria-labelledby="notice-tab">                  
+				<div class="row my-4">                      
+					<div class="">
+					<!-- 검색영역 -->
+					<div class="nav my-3 my-xl-0 justify-content-end ">
+						<div class="dropdown-center px-2">
+						<button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							내용
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Action two</a></li>
+							<li><a class="dropdown-item" href="#">Action three</a></li>
+						</ul>
+						</div>
+						<div class="nav-item">
+						<form class="position-relative">
+							<input class="form-control pe-5 bg-transparent" type="search" placeholder="키워드를 입력해주세요" aria-label="Search">
+							<button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+							<i class="bi bi-search"></i>
+							</button>
+						</form>
+						</div>                          
+					</div>
+					<div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-2 pb-4 pt-4 border-bottom mb-2">
+						<div class="px-1 py-1 mt-0 btn">
+						<div class="p-2 border small btn-outline-primary text-start"><span>전체</span></div>
+						</div>
+						<div class="px-1 py-1 mt-0 btn">                               
+						<div class="p-2 border small btn-outline-primary text-start"><span>공지</span></div>
+						</div>
+						<div class="px-1 py-1 mt-0 btn">
+						<div class="p-2 border small btn-outline-primary text-start"><span>시스템 공지</span></div>
+						</div>                          
+					</div> 
+					<table class="table table-border-0 table-hover">
+						<tbody class="table-border-0">
+						<tr onclick = "location.href='notice_detail.html'">
+							<td class="border-bottom-1"><span class="pe-2 text-primary">[시스템공지]</span>오류대응<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td class="border-bottom-1"><span class="pe-2 text-primary">[공통]</span>MOTP인증오류 해결방법 [반복현상]<i class="bi bi-paperclip"></i><p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[공통]</span>인터넷 익스플로러(IE) 지원종료 안내<i class="bi bi-paperclip"></i><p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[공통]</span>코로나19 예방관련수칙 안내<i class="bi bi-paperclip"></i><p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[공통]</span>학습진행 메뉴얼(비환급과정)<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[공통]</span>원격훈련 훈련생 OTP인증 사용법 안내<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[공통]</span>2022 관리감독자 오프라인 교육안내<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[공통]</span><비공개 연결이 아닙니다>에 대한 오류처리법 (레지스트리 변경)<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[공통]</span>2022년 안전보건교육 안내서 공유<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						</tbody>  
+					</table>
+					<div class="d-flex justify-content-center">
+						<nav aria-label="Page navigation example">
+						<ul class="pagination">
+							<li class="page-item">
+							<a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+							</li>
+						</ul>
+						</nav>
+					</div>
+					</div>               
+				</div>                                                          
+				</div>    
+				<!-- FAQ 시작 -->              
+				<div class="tab-pane fade" id="FAQ" role="tabpanel" aria-labelledby="FAQ-tab">                  
+				<div class="row my-4">                      
+					<div class="">                      
+					<!-- 검색영역 -->
+					<div class="nav my-3 my-xl-0 justify-content-end">
+						<div class="dropdown-center px-2">
+						<button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							내용
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Action two</a></li>
+							<li><a class="dropdown-item" href="#">Action three</a></li>
+						</ul>
+						</div>
+						<div class="nav-item">
+						<form class="position-relative">
+							<input class="form-control pe-5 bg-transparent" type="search" placeholder="키워드를 입력해주세요." aria-label="Search">
+							<button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+							<i class="bi bi-search"></i>
+							</button>
+						</form>
+						</div>                          
+					</div>
+					<div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-2 pb-4 pt-4 border-bottom mb-2">
+						<div class="px-1 py-1 mt-0 btn">
+						<div class="p-2 border small btn-outline-primary text-start"><span>전체</span></div>
+						</div>
+						<div class="px-1 py-1 mt-0 btn">                               
+						<div class="p-2 border small btn-outline-primary text-start"><span>학습</span></div>
+						</div>
+						<div class="px-1 py-1 mt-0 btn">
+						<div class="p-2 border small btn-outline-primary text-start"><span>과제</span></div>
+						</div>
+						<div class="px-1 py-1 mt-0 btn">
+						<div class="p-2 border small btn-outline-primary text-start"><span>평가</span></div>
+						</div>
+						<div class="px-1 py-1 mt-0 btn">
+						<div class="p-2 border small btn-outline-primary text-start"><span>회원가입</span></div>
+						</div>
+						<div class="px-1 py-1 mt-0 btn">
+						<div class="p-2 border small btn-outline-primary text-start"><span>회원탈퇴</span></div>
+						</div>
+						<div class="px-1 py-1 mt-0 btn">
+						<div class="p-2 border small btn-outline-primary text-start"><span>본인인증</span></div>
+						</div>
+						<div class="px-1 py-1 mt-0 btn">
+						<div class="p-2 border small btn-outline-primary text-start"><span>기타</span></div>
+						</div>
+					</div> 
+					<table class="table table-border-0 table-hover">
+						<tbody class="table-border-0">
+						<tr onclick = "location.href='FAQ_detail.html'">
+							<td class="border-bottom-1"><span class="pe-2 text-primary">[본인인증]</span>mOTP이용 방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td class="border-bottom-1"><span class="pe-2 text-primary">[학습]</span><비공개 연결이 아닙니다>에 대한 오류처리법(레지스트리 변경)<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[회원탈퇴]</span>수강생 수료증 출력방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						<tr>
+							<td><span class="pe-2 text-primary">[학습]</span>00 해결방법<p><i class="bi bi-clock-history pr-2"></i> 2022-12-30 12:23 <span class="px-2 text-secondary"><i class="bi bi-eye-fill"></i>23</span></p></td>
+						</tr>
+						</tbody>  
+					</table>
+					<div class="d-flex justify-content-center">
+						<nav aria-label="Page navigation example">
+						<ul class="pagination">
+							<li class="page-item">
+							<a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+							</li>
+						</ul>
+						</nav>
+					</div>
+					</div>               
+				</div>                                                          
+				</div>
+				<!-- review 시작 -->
+				<div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">                  
+				<div class="row my-4">                      
+					<div class="">                      
+					<!-- 검색영역 -->
+					<div class="nav my-3 my-xl-0 justify-content-end">
+						<div class="dropdown-center px-2">
+						<button class="btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							내용
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Action two</a></li>
+							<li><a class="dropdown-item" href="#">Action three</a></li>
+						</ul>
+						</div>
+						<div class="nav-item">
+						<form class="position-relative">
+							<input class="form-control pe-5 bg-transparent" type="search" placeholder="키워드를 입력해주세요." aria-label="Search">
+							<button class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset" type="submit">
+							<i class="bi bi-search"></i>
+							</button>
+						</form>
+						</div>                          
+					</div>                      
+					<ul class="list-group list-group-flush">
+						<!-- list group -->
+						<li class="list-group-item d-flex py-4">
+						<div class="flex-shrink-0 me-3">                              
+							<img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+						</div>
+						<div class="flex-grow-1 row">
+							<div class="col">
+							<h6 class="font-size-15 mb-0">홍길동</h6>
+							<span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+							<div class="mt-2 small lh-1">
+								<a class="text-decoration-none text-inherit">
+								<span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+								</a>
+							</div>
+							</div>
+							<div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+							<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+							</div>
+						</div>
+						</li>
+						<li class="list-group-item d-flex py-4">
+						<div class="flex-shrink-0 me-3">                              
+							<img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+						</div>
+						<div class="flex-grow-1 row">
+							<div class="col">
+							<h6 class="font-size-15 mb-0">홍길동</h6>
+							<span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+							<div class="mt-2 small lh-1">
+								<a class="text-decoration-none text-inherit">
+								<span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+								</a>
+							</div>
+							</div>
+							<div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+							<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+							</div>
+						</div>
+						</li>
+						<!-- list group -->                          
+						<li class="list-group-item d-flex py-4">
+						<div class="flex-shrink-0 me-3">                              
+							<img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+						</div>
+						<div class="flex-grow-1 row">
+							<div class="col">
+							<h6 class="font-size-15 mb-0">홍길동</h6>
+							<span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+							<div class="mt-2 small lh-1">
+								<a class="text-decoration-none text-inherit">
+								<span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+								</a>
+							</div>
+							</div>
+							<div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+							<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+							</div>
+						</div>
+						</li>
+						<!-- list group -->
+						<li class="list-group-item d-flex py-4">
+						<div class="flex-shrink-0 me-3">                              
+							<img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+						</div>
+						<div class="flex-grow-1 row">
+							<div class="col">
+							<h6 class="font-size-15 mb-0">홍길동</h6>
+							<span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+							<div class="mt-2 small lh-1">
+								<a class="text-decoration-none text-inherit">
+								<span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+								</a>
+							</div>
+							</div>
+							<div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+							<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+							</div>
+						</div>
+						</li>
+						<!-- list group -->
+						<li class="list-group-item d-flex py-4">
+						<div class="flex-shrink-0 me-3">                              
+							<img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+						</div>
+						<div class="flex-grow-1 row">
+							<div class="col">
+							<h6 class="font-size-15 mb-0">홍길동</h6>
+							<span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+							<div class="mt-2 small lh-1">
+								<a class="text-decoration-none text-inherit">
+								<span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+								</a>
+							</div>
+							</div>
+							<div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+							<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+							</div>
+						</div>
+						</li>
+						<!-- list group -->
+						<li class="list-group-item d-flex py-4">
+						<div class="flex-shrink-0 me-3">                              
+							<img src="assets/images/educate/그룹 11719.png" class="img-fluid">  
+						</div>
+						<div class="flex-grow-1 row">
+							<div class="col">
+							<h6 class="font-size-15 mb-0">홍길동</h6>
+							<span><small class="text-muted"><i class="bi bi-clock-history pr-2"></i>2022-12-30 12:23</small></span>
+							<div class="mt-2 small lh-1">
+								<a class="text-decoration-none text-inherit">
+								<span class="text-muted">이번 교육은 영상이 PC에서 재생이 잘 안되기도 하고 오류가 많아서 핸드폰과 번갈아 가면서 들어야했고 영상의 크기가 최적화가 안되어서 재생버튼이 보이지 않는 겨웅가 있습니다. <br /> 그거 말고는 다 괜찮았어요</span>
+								</a>
+							</div>
+							</div>
+							<div class="text-lg-end text-start col-md-12 col-lg-2 col-sm-1 text-primary">
+							<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-styujar-fill"></i><i class="bi bi-star-fill"></i>
+							</div>
+						</div>
+						</div>
+					</ul>
+					<div class="d-flex justify-content-center">
+						<nav aria-label="Page navigation example">
+						<ul class="pagination">
+							<li class="page-item">
+							<a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+							</li>
+						</ul>
+						</nav>
+					</div>
+					</div>               
+				</div>                                                          
+				</div>
+			</div>                                  
+			</div>
+		</div>
+		</div>
+	</div>    
 	</main>
 	
 	<!-- footer START -->
