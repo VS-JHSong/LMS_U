@@ -4,12 +4,18 @@
 .modal-header {position: relative;background-color:#fff;}
 .modal-header button {position: absolute;top:50%;right:2rem;transform:translateY(-50%);font-size:2rem;}
 
-
-
+.scor-wa {position:relative;}
+.scor-wa::before {content:'';width:80px;height:80px;position:absolute;top:50%;left:0;transform:translateY(-50%);display:inline-block;background-image:url('../../../assets/images/common/thumb-01.png');background-repeat: no-repeat;background-position: 50% 50%;background-size:100% auto;}
+.scor-answer {position:relative;}
+.scor-answer::before {content:'';width:80px;height:80px;position:absolute;top:50%;left:0;transform:translateY(-50%);display:inline-block;background-image:url('../../../assets/images/common/thumb-02.png');background-repeat: no-repeat;background-position: 50% 50%;background-size:90% auto;}
 
 
 
 /*
+
+background-image:url('../../../assets/images/common/thumb-01.png');background-repeat: no-repeat;background-position: 50% 50%;background-size:100% auto;background-color:#767676;
+
+
 						<div class="modal-header container">
 							<h5 class="text-danger">최종평가</h5>
 							<h1 class="modal-title" id="evaluationNoticeLabel">병원CS A부터 Z까지</h1>

@@ -404,7 +404,7 @@
                                                     <p class="mb-0">평가시간 : 80분</p>                                                    
                                                 </div>
                                                 <div class="col-2 text-end">
-                                                    <button type="button" class="btn btn-outline-dark btn-lg disabled">평가응시</button>
+                                                    <button type="button" class="btn btn-outline-dark btn-lg" data-bs-toggle="modal" data-bs-target=".evaluation-scoring">평가응시</button>
                                                 </div>                                                                                       
                                             </td>
                                         </tr>
@@ -749,7 +749,109 @@
                                 <button type="button" class="btn btn-primary btn-lg px-5 py-2 waves-effect waves-light disabled">평가응시</button>
                                 <button type="button" class="btn btn-outline-primary btn-lg py-2 waves-effect waves-light ms-2 evaluation-next">다음<i class="bi bi-caret-right-fill ps-2"></i></button>
                             </div>
-                            
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+			<!--  채점 Modal1 -->
+            <div id="evaluation-detail" class="modal evaluation-scoring" tabindex="-1" role="dialog" aria-labelledby="evaluationDetailLabel" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+						<div class="modal-header container">
+							<h3 class="modal-title" id="evaluationNoticeLabel">병원CS A부터 Z까지</h3>
+							<h6 class="">응시일 : 2016년 6월 18일  18:30:02   /   모사답안여부 : 모사답안</h6>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+                       
+                        <div style="background-color: #F2F2F2;">
+                            <div class="container py-4">
+                                <div class="text-center">
+									수고하셨습니다.<br/>
+									채점은 <span class="h6 text-danger">수강기간 종료 이후</span>부터 이루어집니다.<br/>
+									<span class="h6 text-danger">평가응시는 불가능합니다.</span>
+								</div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <!-- 문제영역 -->
+                            <div class="evaluation1">
+								<div class="text-end my-3"><span class="h6">총점 (80) =</span>  객관식 (60) + 주관식 (20)</div>
+								<div class="mt-5">
+									<p class="h3 scor-wa">문제 4</p>
+									<p class="h5 mt-2">다음 중 초진 고객에 대한 설명으로 옳은 것은? (배점 : 10)</p>
+									<div class="card my-3 bg-secondary border-primary">
+										<p class="card-body text-info">
+											<span class="me-3">획득점수 : 0</span>
+											<span class="me-3">배점 : 10</span>
+											<span class="me-3">정답 : 02</span>
+										</p>
+									</div>
+									<ul class="list-group">
+										<li class="list-group-item border-0 p-0 py-1">
+											<input class="form-check-input me-1" type="radio" name="listGroupRadio4" id="Q4_1">
+											<label class="form-check-label" for="Q4_1">1. 다시 병원에 내원한 고객</label>
+										</li>
+										<li class="list-group-item border-0 p-0 py-1">
+											<input class="form-check-input me-1" type="radio" name="listGroupRadio4" value="" id="Q4_2">
+											<label class="form-check-label" for="Q4_2">2. 동일의사에게 동일 질병으로 계속 진료</label>
+										</li>
+										<li class="list-group-item border-0 p-0 py-1">
+											<input class="form-check-input me-1" type="radio" name="listGroupRadio4" value="" id="Q4_3">
+											<label class="form-check-label" for="Q4_3">3. 완치 여부가 불분명한 경우 90일 이후 내원</label>
+										</li>
+										<li class="list-group-item border-0 p-0 py-1">
+											<input class="form-check-input me-1" type="radio" name="listGroupRadio4" value="" id="Q4_4">
+											<label class="form-check-label" for="Q4_4">4. 치료 종결 30일 이전에 내원</label>
+										</li>                                    
+									</ul>
+									<div class="card my-3 bg-secondary border-body">
+										<div class="card-body">
+											<div class="text-primary h5">문제 해설</div>
+											<p class="mt-2">
+												산재보상보험은 상시 1인 이상 사업장 및 건설현장 등에서 일을 하다가 업무상 재해를 입은 근로자에게 해택을 주는 것이다.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="mt-5">
+									<p class="h3 scor-answer">문제 5</p>
+									<p class="h5 mt-2">의료기간 세탈물로서 절대 세탁할 수 없는 것은? (배점 : 10)</p>
+									<div class="card my-3 bg-secondary border-primary">
+										<p class="card-body text-info">
+											<span class="me-3">획득점수 : 0</span>
+											<span class="me-3">배점 : 10</span>
+											<span class="me-3">정답 : 02</span>
+										</p>
+									</div>
+									<ul class="list-group mt-2">
+										<li class="list-group-item border-0 p-0 py-1">
+											<input class="form-check-input me-1" type="radio" name="listGroupRadio5" value="" id="Q5_1">
+											<label class="form-check-label" for="Q5_1">1. 이불 및 시트</label>
+										</li>
+										<li class="list-group-item border-0 p-0 py-1">
+											<input class="form-check-input me-1" type="radio" name="listGroupRadio5" value="" id="Q5_2">
+											<label class="form-check-label" for="Q5_2">2. 붕대 및 거즈</label>
+										</li>
+										<li class="list-group-item border-0 p-0 py-1">
+											<input class="form-check-input me-1" type="radio" name="listGroupRadio5" value="" id="Q5_3">
+											<label class="form-check-label" for="Q5_3">3. 고객복 및 수술복</label>
+										</li>
+										<li class="list-group-item border-0 p-0 py-1">
+											<input class="form-check-input me-1" type="radio" name="listGroupRadio5" value="" id="Q5_4">
+											<label class="form-check-label" for="Q5_4">4. 린넨류</label>
+										</li>                                    
+									</ul>
+									<div class="card my-3 bg-secondary border-body">
+										<div class="card-body">
+											<div class="text-primary h5">문제 해설</div>
+											<p class="mt-2">
+												산재보상보험은 상시 1인 이상 사업장 및 건설현장 등에서 일을 하다가 업무상 재해를 입은 근로자에게 해택을 주는 것이다.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
                         </div>
                     </div><!-- /.modal-content -->
                 </div><!-- /.modal-dialog -->
@@ -822,7 +924,7 @@
                                             <li>
                                                 <p class="text-danger">모사답안인 경우 교육운영자가 해당 문항 및 과제에 대해 0점 처리한다.</p>
                                             </li>
-                                        </ul>                                    
+                                        </ul>
                                     </div>
                                 </div>
                             </div>                            
